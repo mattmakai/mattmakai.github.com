@@ -1,0 +1,24 @@
+{% extends 'blog-base.html' %}
+
+{% block is_blog %} class="active" {% endblock %}
+{% block blog_title %}My Blog{% endblock %}
+{% block blog_content %}
+  {% if not articles %}
+    No posts yet!
+  {% endif %}
+  {% for article in dates|reverse %}
+    {% if article.category == "blog" %}
+      <div class="post">
+        <h1 class="blog-title">
+          <a href="{{ article.url }}">{{ article.title }}</a>
+        </h1>
+        <div class="blog-content">
+          {{ article.content }}
+          <div class="meta">
+            Posted on {{ article.date.strftime('%m.%d.%Y') }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endblock %}
