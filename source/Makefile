@@ -1,5 +1,5 @@
 run:
-	#lessc --compress ./theme/less/cam.less > ./theme/static/css/cam.css
+	lessc --compress ./theme/less/mm.less > ./theme/static/css/mm.css
 	mkdir ./output
 	cp -R theme/static/css theme/static/js theme/static/img output/
 	cp -R static-html/* output/

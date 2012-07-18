@@ -6,46 +6,50 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
   <title>Matt Makai</title>
   <meta name="description" content="I am Matt Makai.">
   <meta name="author" content="Matthew Makai">
-
   <meta name="viewport" content="width=device-width,initial-scale=1">
-
-  <!-- CSS concatenated and minified via ant build script-->
-  <link rel="stylesheet" href="/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/css/mm.css" />
-  <!-- end CSS-->
-
   <script src="/js/modernizr-2.0.6.min.js"></script>
 </head>
 
 <body>
-  <div class="topbar">
-    <div class="topbar-inner">
-      <div class="container">
-        <a href="/" class="brand">Matt Makai</a>
-        <ul class="nav">
-          <li  class="active" ><a href="/">Blog</a></li>
-          <li ><a href="/pages/presentations.html">Presentations</a></li>
-          <li><a href="/work.html">Work</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="http://github.com/makaimc/">Code (github.com)</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div style="background-image: url('/img/gradient-down-transparent-blue.png'); background-repeat: repeat-x; height: 600px;"> 
-  </div>
   <div class="container">
-    
-<div class="hero-unit">
-  <div class="row">
-    <div class="span10">
-      <h1>My Blog</h1>
-      
+    <div class="row">
+      <div class="span3">
+        <div class="well sidebar-nav">
+          <h3>Matt Makai dot com</h3>
+          <ul class="nav nav-list">
+            <li  class="active" ><a href="/">Blog</a></li>
+            <li ><a href="/presentations.html">Presentations</a></li>
+            <li><a href="/work.html">Work</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="http://twitter.com/makaimc/">Twitter</a></li>
+            <li><a href="https://github.com/makaimc/">Code (github.com)</a></li>
+          </ul>
+        </div>
+        <div class="well">
+          <a href="/about.html">
+            <img class="thumbnail" src="/img/matt-makai.jpg" height="150" width="145" alt="Matt Makai portrait." />
+          </a>
+          Welcome to my blog on<br/>software development.
+          <br/><br/>
+          I currently work for<br/>
+          <a href="http://www.excella.com/">Excella Consulting</a><br/>
+          in Arlington, VA.
+
+          
+          </ul>
+        </div>
+      </div>
+      <div class="span8 well">
+        
+  <h2></h2>
   
+  
+  
+    
   
     
   
@@ -61,13 +65,10 @@
 problem in a structured manner. Looking for spreadsheets that run
 business-critical operations is an opportunity to build a system that
 replaces an ad hoc bunch of columns with a normalized, scalable database.
-This opportunity holds regardless of whether you're an employee of that
-organization or a consultant.</p>
-
-          <div class="meta">
-            Posted on 07.14.2012
-          </div>
+This opportunity holds regardless of whether you're an employee of ...
+          (<a href="spreadsheets-as-beachhead.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -82,27 +83,10 @@ organization or a consultant.</p>
 Yipit is a tech start up in New York specializing in daily deals. Their
 platform is built on Python/Django and they write a lot of detailed
 posts on topics such as how they set up their configuration management
-and what to watch for when upgrading from Django 1.3.1 to 1.4.</li>
-<li><a class="reference external" href="http://www.reddit.com/r/django">Django subreddit</a>:
-The Django subreddit often rolls up lesser-known blogs that have interesting
-technical posts.</li>
-<li><a class="reference external" href="http://lincolnloop.com/blog/categories/django/">Lincoln Loop django tagged posts</a>:
-Lincoln Loop is a consulting practice based on user experience and building
-services with the Python/Django stack. They write about a range of technical
-topics but their Django specific posts are tagged with 'django'.</li>
-<li><a class="reference external" href="http://www.askthepony.com/blog/">Ask the Pony blog</a>:
-A weekly updated blog, but unfortunately it seems to have gone silent
-since August of 2011. Still some great existing posts on the site.</li>
-<li><a class="reference external" href="http://pydanny.com/">Pydanny's blog</a>:
-Daniel Greenfield (PyDanny) is an influential developer and blogger in
-the Python world. He writes on general Python subjects as well as specific
-Django topics of interest.</li>
-</ul>
-
-          <div class="meta">
-            Posted on 06.22.2012
-          </div>
+and what to watch for when ...
+          (<a href="favorite-django-article-sources.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -117,27 +101,10 @@ like for rebuilding my database. This is particularly useful early in
 a project lifecycle before I start using South for database migrations
 and instead I am building new tables and columns at a fast clip.</p>
 <div class="highlight"><pre>def rebuild_db():
-  run(&#39;mysql -u %s -p%s -e &quot;drop database if exists %s&quot;&#39; % (env.db_user,
-    env.db_passwd, env.db_schema))
-  run(&#39;mysql -u %s -p%s -e &quot;create database %s&quot;&#39; % (env.db_user,
-    env.db_passwd, env.db_schema))
-  virtualenv(&#39;python %smanage.py syncdb --noinput&#39; % \
-    env.deploy_dir)
-  virtualenv(&#39;python %smanage.py loaddata %s/core/&#39; +
-    &#39;fixtures/test.json&#39; % (env.deploy_dir, env.deploy_dir))
-</pre></div>
-<p>A few notes:</p>
-<ul class="simple">
-<li>You should define env.db_user, env.db_passwd, env.db_schema,
-env.deploy_dir in your fabfile before calling this function.</li>
-<li>I put my main test.json fixture under a &quot;core&quot; app directory. Parameterize
-these settings if your project structure differs.</li>
-</ul>
-
-          <div class="meta">
-            Posted on 06.12.2012
-          </div>
+  run(&#39;mysql -u ...
+          (<a href="fabfile-function-rebuilding-django-mysql-database.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -151,16 +118,10 @@ these settings if your project structure differs.</li>
 particular order).</p>
 <ul class="simple">
 <li><a class="reference external" href="http://me.veekun.com/blog/2012/05/23/python-faq-descriptors/">Python FAQ: Descriptors</a></li>
-<li><a class="reference external" href="http://www.mikkolehtinen.com/blog/2012/05/25/rewindy-tech-stack/">Backbone/Python Tech Stack</a></li>
-<li><a class="reference external" href="http://docs.python.org/release/3.1.5/howto/advocacy.html">Python Advocacy How To</a></li>
-<li><a class="reference external" href="http://satyajit.ranjeev.in/2012/05/17/python-a-few-things-to-remember.html">A Few Things to Remember While Coding in Python</a></li>
-<li><a class="reference external" href="http://lukeplant.me.uk/blog/posts/some-quick-django-optimisation-lessons/">Some quick Django optimisation lessons</a></li>
-</ul>
-
-          <div class="meta">
-            Posted on 05.27.2012
-          </div>
+<li><a class="reference external" ...
+          (<a href="recent-python-posts.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -174,27 +135,10 @@ particular order).</p>
 <a class="reference external" href="http://www.boozallen.com/">big</a>
 <a class="reference external" href="http://www.lockheedmartin.com/">lumbering</a>
 <a class="reference external" href="http://www.saic.com/">companies</a>* that government uses a
-&quot;small business only&quot; category to get companies with less than $25 million
-in revenue into the bidding process.</p>
-<p>In an RFP, you generally lay out your recommended approach to solving
-the problem(s) the agency states it has. You then show how you've solved
-similar problems in the past by embellishing your accomplishments. This is
-where the RFP process is bullshit. The government should ask for all the
-similar ways in which you've <em>screwed up</em> in the past. That would balance
-out the fact that most of the companies have messed things up so badly,
-(<a class="reference external" href="http://www.fiercegovernmentit.com/story/fbi-puts-sentinel-hold/2010-03-21">for example, Sentinel</a>) that they don't actually have more experiences
-solving the problem than most small businesses.</p>
-<p>Of course this doesn't really solve the problem because large firms have
-plenty more advantages, such as connections, money, name recognition, etc,
-but it seems like stating your failures with the successes in the RFP
-would be a nice change to the process.</p>
-<p>* These are just a sample of the massive corporations I'm talking about.
-Also I used to work for Booz Allen so I am not exempt from this rant.</p>
-
-          <div class="meta">
-            Posted on 05.25.2012
-          </div>
+&quot;small business ...
+          (<a href="government-rfp-bullshit.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -209,20 +153,10 @@ Also I used to work for Booz Allen so I am not exempt from this rant.</p>
 <p>I needed to grab some files with wget while working on a Linux server I was
 setting up for a Django deployment. Unfortunately, I was behind a firewall
 and had to use a specific proxy for HTTP connections.</p>
-<p>pip makes it easy, just do 'pip install --proxy my.proxy.server:8080 packages'
-and I figured wget would have the same commandline argument to specify a
-proxy. No such luck.</p>
-<p>I found the following link that specified
-<a class="reference external" href="http://www.linuxquestions.org/questions/linux-software-2/wget-with-proxy-276075/">'man wget' as the answer</a> unhelpful (and a dick answer anyway).</p>
-<p>So for future reference, 'export http_proxy=my.proxy.server:port', will
-specify a proxy server to use with wget. I also found
-<a class="reference external" href="http://www.gnu.org/software/wget/manual/html_node/Proxies.html">this proxies link</a>
-useful as well.</p>
-
-          <div class="meta">
-            Posted on 05.24.2012
-          </div>
+<p>pip makes it ...
+          (<a href="wget-proxy-servers.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -238,53 +172,10 @@ useful as well.</p>
 <a class="reference external" href="http://bootstrappingdesign.com/">Bootstrapping Design</a> by Jarrod Drysdale
 and
 <a class="reference external" href="http://sachagreif.com/ebook/">Step by Step UI Design</a> by Sacha Greif. Both
-books came out around the same time and were on the front page of Hacker News,
-so they are linked in my brain and probably many other people's minds. I felt
-I got a lot of value out of each book and for different reasons. If I
-had to do it over again, I would still purchase both.</p>
-<p><strong>Bootstrapping Design</strong></p>
-<p>Bootstrapping Design had a lot of specific advice for web application
-designers. In particular, the chapters on typography and color were fantastic.
-The typography advice on using a sans serif font for headlines and a serif
-font for block text really improved my designs (which need to be incorporated
-into this blog). The advice on choosing one color to start with and then
-using a second color sparingly really helped get me past that initial hurdle
-of uncertainty around picking color schemes.</p>
-<p>I've read the CRAP (Contrast, Repetition, Alignment, and Proximity) principles
-before, so I had a general understanding of how to use them in good design.
-Bootstrapping Design presented specific tips on how to handle each of these
-principles in practice, which is often lacking from other books.</p>
-<p>Overall there were only two areas I could see improvement in this book. First,
-incorporating a complete example (similar to how Step by Step UI Design
-is presented) at the end of the book that reinforces the tips presented.
-Second, the advice and tips presented were so useful I found myself saying,
-&quot;I really want more advice like this.&quot;</p>
-<p><strong>Step by Step UI Design</strong></p>
-<p>Step by Step UI Design presents a complete example from start to finish of
-a web application screen design. A Photoshop PSD is included in the deluxe
-package of the book (I purchased this deluxe version). I found the PSD
-useful while going through the book although I'm on the fence as to whether
-I would spend the extra money for it if I had to do it over again.</p>
-<p>What I really liked about this book was that it was very practical and
-focused on creating a single web application screen. The explanations
-behind why certain design decisions were made opened
-up the curtain as to what goes on in a designers' mind during the creation
-process. As a software developer but non-design expert, the logical,
-rational look at the process greatly appealed to my analytical method of
-thinking.</p>
-<p>I found the book short enough to read in a single sitting. It is worth
-several read-throughs simply because it is difficult to assimilate all the
-details at once. When Step by Step UI Design is combined with Sacha's recent
-<a class="reference external" href="http://sachagreif.com/the-toolbox-from-idea-to-launch-in-10-hours/">post on the 10 hours it took to create The Toolbox</a>  it provides a complete picture
-of how to both come up with an idea, design it, and execute it quickly.</p>
-<p>Overall I am very pleased I purchased both of these design books. I recommend
-them to fellow software developers who want to improve their design
-thinking and have a more comfortable grasp on the design process.</p>
-
-          <div class="meta">
-            Posted on 05.22.2012
-          </div>
+books came out around the same time and were on the front page of ...
+          (<a href="recent-design-books.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -297,59 +188,10 @@ thinking and have a more comfortable grasp on the design process.</p>
           <p>A couple of weekends ago, I watched my little brother Luke graduate from
 <a class="reference external" href="http://www.jmu.edu/">JMU</a>. Dr. Rose, the outgoing President of JMU gave
 the commencement address. I've attended <a class="reference external" href="http://www.jmu.edu/">enough</a>
-<a class="reference external" href="http://www.vt.edu/">graduation</a> <a class="reference external" href="http://www.virginia.edu/">ceremonies</a>
-to know that most of them sound the same and this speech by Dr. Rose was
-no different. There is usually a whole lot of &quot;be different&quot; and &quot;work hard&quot;
-with a lot of rah-rah and the occasional funny story thrown in.</p>
-<p>Tradition runs through all aspects of our higher education system and maybe
-that's why most graduation speeches sound the same. But I believe that is a
-disservice to undergraduates who are about to get a major shock when they
-jump into the real world. So here are the key points I'd use in a speech.</p>
-<ol class="arabic simple">
-<li><strong>No one &quot;owes&quot; you anything</strong></li>
-</ol>
-<p>Sure, you have a college degree from a &quot;prestigious&quot; university. So does
-everyone else you're competing with. If you're from a privileged upper
-middle class existence like me, you've been told how wonderful you are all
-your life. Let's get it straight right now, <em>you don't matter for shit.</em>
-Once you accept that fact, you can begin to figure out how you actually
-can build yourself into something that does matter to other people. You can
-figure out how to make real a difference in the world. But before you figure
-out how to make a difference...</p>
-<ol class="arabic simple" start="2">
-<li><strong>Work like you have a chip on your shoulder</strong></li>
-</ol>
-<p>Your first job out of college will have a lot of meaningless tasks thrown
-at you. Work on them fervently and with passion. Learn everything you can
-as quickly as possible and deliver great results, even if the tasks seem
-&quot;meaningless.&quot; People will take note. They will give you more responsibility.
-You will continue to learn and expand your horizon.</p>
-<p>Don't listen to people who tell you to slow down. Remember that
-<a class="reference external" href="http://sivers.org/kimo">there is no speed limit</a>. Ignore anyone
-that tells you that you are going to burn out or can't do it. Do you truly
-want to work full-time and go to graduate school at the same time while
-still enjoying yourself and meeting new people? Do it. Do everything with
-a ferocity and determination. Once you can throw yourself into anything and
-succeed...</p>
-<ol class="arabic simple" start="3">
-<li><strong>Figure out how you will truly add value</strong></li>
-</ol>
-<p>Once you realize no one owes you anything and you decide to work with a
-passionate intensity regardless of the tasks, figure out where you want
-to add value. What's value? I highly recommend reading
-<a class="reference external" href="http://www.amazon.com/gp/product/1591843529/ref=as_li_ss_tl?ie=UTF8&amp;tag=minimneeds-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1591843529">The Personal MBA by Josh Kauffman</a>. Whether you want to start your own business,
-work in an existing corporation, or freelance with consulting work, that
-book will help you put a framework around what you want to do with your
-professional life.</p>
-<p>Those are the three main professional points of advice I give to any
-college grad who wants to succeed and be happy in the real world. That isn't
-<em>everything</em> you need to know, but it will ultimately lead you in the
-right professional direction.</p>
-
-          <div class="meta">
-            Posted on 05.17.2012
-          </div>
+<a class="reference external" ...
+          (<a href="advice-college-graduates.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -361,14 +203,10 @@ right professional direction.</p>
         <div class="blog-content">
           <p><a class="reference external" href="http://blakemasters.tumblr.com/peter-thiels-cs183-startup">Stanford's CS183 class with Peter Thiel</a> is simply amazing. A <em>huge</em> thank you to Blake Masters
 for writing up summaries of each class. Every class notes post I have read
-has been amazingly insightful. I highly recommend checking it out if you
-are interested in how technology is shaping the world and learning about
-entrepreneurship from some of the major Silicon Valley investors.</p>
-
-          <div class="meta">
-            Posted on 05.09.2012
-          </div>
+has been amazingly insightful. I highly recommend checking it out if ...
+          (<a href="stanford-cs-183-class-notes.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -379,19 +217,14 @@ entrepreneurship from some of the major Silicon Valley investors.</p>
         </h1>
         <div class="blog-content">
           <p>Over the weekend I finished up the
-<a class="reference external" href="static/presentations/what-is-big-data.html">big data presentation</a> that I am
+<a class="reference external" href="/presentations/what-is-big-data.html">big data presentation</a> that I am
 presenting to Excella's Business Intelligence Center of Excellence this
 evening at 530pm.</p>
 <p>I prefer my presentations minimal to keep them as an aid
-to my talk (instead of reading from the slides). Therefore it may be hard
-to follow unless you actually hear the talk. Nevertheless, the slides are
-there and present one view of this whole &quot;big data&quot; concept that seems to
-be hyped up everywhere now.</p>
-
-          <div class="meta">
-            Posted on 05.07.2012
-          </div>
+to my talk (instead of reading from the ...
+          (<a href="big-data-presentation.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -405,64 +238,10 @@ be hyped up everywhere now.</p>
 on Mac OS X for a couple of reasons. First, I want to have an easy way
 of demoing software and uploading videos to Vimeo. Second, short
 screencasts like the ones provided by
-<a class="reference external" href="http://www.teamtreehouse.com/">Treehouse</a> (highly recommended site
-for learning programming and web design by the way), are a great way to
-help others learn new technologies. For example, yesterday I helped a
-coworker set up static file serving from the Django built-in server used
-for development. He was really close and just needed a few lines of code
-to get it working. Blog posts are good for when you're searching for a
-quick fix, but a short screencast that walks you through the whole process
-is great too. So those scenarios are my basic use cases for screencasting.
-Also, I don't mind paying for great software since I plan to use it almost
-every day.</p>
-<dl class="docutils">
-<dt>I downloaded and tried the following options:</dt>
-<dd><ol class="first last arabic simple">
-<li>Quicktime Pro (built into Mac OS X) - free</li>
-<li><a class="reference external" href="http://www.shinywhitebox.com/ishowu-hd/">iShowU HD</a> - $60 (for Pro)</li>
-<li><a class="reference external" href="http://www.syniumsoftware.com/screenium/">Screenium</a> - $40</li>
-<li><a class="reference external" href="http://www.telestream.net/screen-flow/">ScreenFlow</a> - $99</li>
-</ol>
-</dd>
-</dl>
-<p>Here's what I thought of each product.</p>
-<p>I couldn't figure out how to get Quicktime Pro to both record the screen
-and my microphone at the same time. I'm sure it's possible and I read you
-can just record separately and put both of them together in iMovie but
-I found that onerous. Scratch this one for serious screencasting.</p>
-<p>I really liked iShowU HD's feature for showing what you're typing on the
-screen. I found it very slick and helpful to people watching the video. My
-only hang up with it was that if I mistyped and was too slow in catching
-myself, iShowU HD thought I was typing a separate block of text instead
-of continuing with the existing line. Basically I needed to not make as
-many mistakes - probably a good thing. I also liked that I could record
-only a piece of the screen instead of recording the whole screen and editing
-it later. The major downside to iShowU HD was that it did not have any
-editing capabilities after the video was finished. I know I could use
-iMovie or something like that but I prefer just staying in the program and
-doing my work from there.</p>
-<p>Speaking of editing within the program, both Screenium and ScreenFlow
-provide both recording and editing parts to the programs. This was
-very appealing to me. I played around with Screenium and subjectively I
-liked parts of it but did not like others. I created a couple of
-short screencasts with Screenium and then did the same with ScreenFlow.
-I felt like ScreenFlow just jived better with what I was trying to do
-and was easier to use. The difference in price did not matter to me. I
-have not gone ahead and purchased ScreenFlow but I plan to within the next
-few days. My recommendation is if you want screencasting software with
-editing capabilities, try both Screenflow and Screenium and see which one
-fits you better.</p>
-<p>One last note: some of these products are now on the Mac App Store. I read
-some pretty scathing reviews that the software did not work as well when
-purchased from there. This may be becasue the software is new to the App
-Store and it will get better. But do your due diligence to make sure you
-do not end up with a neutered product due to the API limitations placed
-on apps in the Mac OS X App Store.</p>
-
-          <div class="meta">
-            Posted on 05.04.2012
-          </div>
+<a class="reference external" href="http://www.teamtreehouse.com/">Treehouse</a> (highly recommended ...
+          (<a href="screencasting-software-for-mac-os-x.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -475,27 +254,10 @@ on apps in the Mac OS X App Store.</p>
           <p>This little
 <a class="reference external" href="http://www.irrlicht3d.org/pivot/entry.php?id=1295">rant about paying developers what the market demands instead of complaining you can't find them</a>
 climbed its way up to the top of the
-<a class="reference external" href="http://news.ycombinator.com/">Hacker News</a> charts this morning and for
-good reason. While the blog post was written specifically for the Austrian
-market, great software developers are in high demand everywhere.</p>
-<p>There is a limited supply of people with development skills. When
-software developers' skills are used properly, there is great potential
-for creating value in organizations ranging from startups to large
-government and commercial organizations. I've seen many organization make
-the mistake of paying as little as possible for their developers. That
-is a losing strategy (one I often come into to try to fix - although
-usually by then the organization is dug in too deep and is too far behind
-the competition for it to matter).</p>
-<p>Great developers know their worth. They will seek out environments where
-either the salary is high enough that they feel they are adequately
-paid or compensated with a mix of salary, equity, and benefits. If you're
-not able to &quot;find&quot; developers, increase your offer in salary, vacation
-days, or some other compensation, such as 20% time for side projects.</p>
-
-          <div class="meta">
-            Posted on 05.03.2012
-          </div>
+<a class="reference external" href="http://news.ycombinator.com/">Hacker News</a> charts this morning and ...
+          (<a href="pay-for-developers.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -508,44 +270,10 @@ days, or some other compensation, such as 20% time for side projects.</p>
           <p>The concept of an all-JavaScript stack on both the client and server is
 hardly new, but I'm finding the idea more appealing now that the projects
 have matured. I see notifications like this
-<a class="reference external" href="http://www.marketwatch.com/story/10gen-committed-to-making-mongodb-de-facto-data-store-for-nodejs-applications-2012-04-25">press release by 10gen</a>
-that they are making a commitment to better integration with node.js.
-Granted it is a press release, but I do see the effort 10gen is putting in
-through the new tutorials and code releases for MongoDB.</p>
-<p>Python and Django continue to be my day job technologies of choice. They are
-great for quickly building web applications. Python and Django are still
-fun and productive. But it feels like there's an industry shift going on
-that will continue to provide fuel to the all- or mostly-JavaScript stack.</p>
-<p>So I am starting a new side project with <a class="reference external" href="http://www.mongodb.org/">MongoDB</a>,
-<a class="reference external" href="http://nodejs.org/">node.js</a>, and
-<a class="reference external" href="http://documentcloud.github.com/backbone/">Backbone.js</a>. I know what the
-project will be but I am not yet sure if I will just open source it or
-make it a pay-for access web application.</p>
-<p>What do I currently find appealing about learning the
-MongoDB/node.js/Backbone.js stack (there must be a better name for this
-similar to the LAMP stack)?</p>
-<p><strong>1. Mastering JavaScript fundamentals</strong></p>
-<p>Although I've written plenty of JQuery and standard JavaScript code,
-I still don't feel like I &quot;get it&quot; when it comes to JavaScript fundamentals.
-Part of learning this stack is figuring out how to do JavaScript the right
-way.</p>
-<p><strong>2. Comparing a traditional LAMP stack with the node.js stack</strong></p>
-<p>Non-blocking I/O on node.js sounds like it makes sense. But what does it
-really mean when you get into the details? What are the real implications
-for coding fast web applications? I'm curious to learn more about how
-this works.</p>
-<p><strong>3. Is it fun?</strong></p>
-<p>As I wrote above, programming in Python/Django is <em>fun</em>. Way more fun than
-the Java code I used to write. I still cringe when thinking about how damn
-difficult it was to write a web application in Struts. So will writing a
-web application in node.js with a NoSQL MongoDB backend and a client-side
-MVC framework be fun? I just don't know until I write a project with these
-technologies.</p>
-
-          <div class="meta">
-            Posted on 05.02.2012
-          </div>
+<a class="reference external" ...
+          (<a href="mongodb-nodejs-backbonejs.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -557,15 +285,10 @@ technologies.</p>
         <div class="blog-content">
           <p><a class="reference external" href="http://www.djangoproject.com/">Django</a>, the web application framework
 for perfectionists with deadlines, is now
-<a class="reference external" href="https://groups.google.com/forum/?fromgroups#!topic/django-developers/9--P57ezyBs">officially on Github</a>. Welcome Django, it's about time you migrated
-over!</p>
-<p>The code and documentation can now be found in the
-<a class="reference external" href="https://github.com/django/django">official repository</a>.</p>
-
-          <div class="meta">
-            Posted on 04.28.2012
-          </div>
+<a class="reference external" href="https://groups.google.com/forum/?fromgroups#!topic/django-developers/9--P57ezyBs">officially on Github</a>. Welcome Django, it's about time you ...
+          (<a href="django-on-github.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -579,14 +302,10 @@ over!</p>
 IMPORTANT. Do not skimp on preserving your data.</p>
 <p>You never know when an errant &quot;drop database ...&quot; will screw up your afternoon.
 Even the fantastic developers at
-<a class="reference external" href="https://github.com/blog/744-today-s-outage">Github are not immune</a> to making
-costly mistakes.</p>
-<p>Don't tempt fate. Back up your database frequently.</p>
-
-          <div class="meta">
-            Posted on 04.27.2012
-          </div>
+<a class="reference external" href="https://github.com/blog/744-today-s-outage">Github are ...
+          (<a href="database-backups.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -599,21 +318,10 @@ costly mistakes.</p>
           <p>Yesterday had a couple of interesting Python &amp; MongoDB related posts on
 <a class="reference external" href="http://news.ycombinator.com/">Hacker News</a>.</p>
 <p>The first post was on
-<a class="reference external" href="http://isbullsh.it/2012/04/Web-crawling-with-scrapy/">scrapping websites with scrapy and storing the data in MongoDB</a>. The post walks through establishing
-the URL patterns to crawl then shows an example of how to set up the
-MongoDB mapping in a .py file.</p>
-<p>The second post showed the results of a project to
-<a class="reference external" href="http://thomasst.ch/mongoadmin/">recreate the Django admin interface with Twitter Bootstrap for MongoDB backends</a>. I've worked on several projects where
-using MongoDB with Django would have been advantageous but recreating the
-admin interface was a significant hurdle. It's great to see community projects
-that break down these barriers.</p>
-<p>Hopefully future Django releases can incorporate some of this work to
-make it easier to work with non-relational databases when necessary.</p>
-
-          <div class="meta">
-            Posted on 04.24.2012
-          </div>
+<a class="reference external" href="http://isbullsh.it/2012/04/Web-crawling-with-scrapy/">scrapping websites with scrapy and storing the data in MongoDB</a>. ...
+          (<a href="python-mongodb-news.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -627,53 +335,10 @@ make it easier to work with non-relational databases when necessary.</p>
 <a class="reference external" href="https://www.ep.io/blog/epio-closing-down/">Epio closing down</a>
 got me thinking about the Python PaaS industry. I did not have any personal
 experience with Epio, but from the
-<a class="reference external" href="http://news.ycombinator.com/item?id=3860196">discussion on Hacker News</a>
-it sounded like these guys were top notch developers and just nice guys
-in general. While it's difficult to see Epio's platform close down after
-all the effort invested in it, I'm sure those guys will end up in a great
-place. If they didn't already have multiple great job offers I'd be shocked.</p>
-<p>I've only personally used Google App Engine, Heroku, and Gondor PaaS,
-Amazon Web Services IaaS, and Slicehost and Linode for virtual private
-servers. I currently use Linode (for my side business) and Amazon Web Services  (for this blog plus side projects).</p>
-<p>Linode is great, especially when combined with Ubuntu images along with
-Fabric and cuisine for server set up. Amazon Web Services is also a fantastic
-platform when <a class="reference external" href="https://github.com/boto/boto">boto</a> is used to automate
-EC2, S3, etc. Right now I'm very happy with the combination of those two
-services.</p>
-<p>A few years ago I worked with Google App Engine both on side projects and
-some client projects. I still have a certain gut reaction when I think about
-using GAE. I liked the ease of deployment and the tie in to the Google APIs.
-However, I was really concerned about the lock in since the Python code
-I wrote had to be written in a certain way. The Python 2.5 restriction,
-which is now lifted to 2.7, didn't bother me too much. The big thing for me
-on GAE was the uncertainty over the eventual production costs (I used the beta
-version). Those pricing fears proved to be
-<a class="reference external" href="http://www.informationweek.com/news/cloud-computing/platform/231600672">an issue</a> for developers that went full-on in the platform. I'm glad I got out
-when I did before production GAE went live.</p>
-<p><a class="reference external" href="https://gondor.io/">Gondor</a> seemed interesting, but I really only
-played with the beta. I was concerned that they were too small to really be
-a player in the field and
-I didn't want to get locked to their platform. On the plus side, there really
-wasn't much code modification necessary to deploy a Django project.</p>
-<p>Heroku is a great platform - assuming you work within the boundaries. I found
-the shared database performance very limited. The performance was often
-an order of magnitude worse than on a very small private VPS with PostgreSQL.
-However the ease of deployment was fantastic. &quot;git push heroku master&quot; felt
-just as natural as interacting with Github all day. I could easily see
-getting into the workflow where the only platform a developer uses is
-Heroku. The dedicated database cost did scare me though. If there were a
-lower cost, $50/month instance, that might help. I'd have to do more
-research at that point to do a cost/benefit analysis over AWS or a VPS.</p>
-<p>There's no silver bullet for Python developers looking to deploy on a PaaS.
-Still, it's great to have options. For prototyping apps, Gondor and Heroku
-make great choices (as long as you don't immediately need a lot of database
-storage and performance). For production apps though, I still lean towards a
-mix of AWS and virtual private servers.</p>
-
-          <div class="meta">
-            Posted on 04.19.2012
-          </div>
+<a class="reference external" href="http://news.ycombinator.com/item?id=3860196">discussion on Hacker ...
+          (<a href="consolidation-python-hosting-industry.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -686,12 +351,10 @@ mix of AWS and virtual private servers.</p>
           <p>Kenneth Reitz has another great post on how to
 <a class="reference external" href="http://kennethreitz.com/repository-structure-and-python.html">structure repositories for Python projects</a>. Repository structure is one of those topics
 that everyone seems to come up with a slightly different way of doing so
-it's great to see some direction from a leader in the Python field.</p>
-
-          <div class="meta">
-            Posted on 04.18.2012
-          </div>
+it's great to see some direction ...
+          (<a href="repository-structure-and-python.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -705,30 +368,10 @@ it's great to see some direction from a leader in the Python field.</p>
 source Django application written by developers at the Consumer Financial
 Protection Bureau. Nudge is designed to be the Django equivalent to Ramp
 for WordPress.</p>
-<p>In a nutshell, Nudge allows content creators to develop their content on
-a staging server. When the content is ready to go to production, Nudge
-provides an admin interface for selecting only the pieces of content that
-should be pushed to production. Nudge allows fine-grained control of which
-content to push because not all content needs to go live at the same time.</p>
-<p>Considering how often Django is used in media companies, I was surprised
-that I could not find another project that was equivalent to Nudge.
-It's completely possible that this type of app has already been written
-but never open sourced.</p>
-<p>Which brings me to another point: it's great to see the government open
-source useful projects. When developers are thinking &quot;hey this code will
-actually see the light of day&quot; there is a lot of motivation to get it
-done right. Too often when I've consulted for other government
-agencies so many corners are cut partially because developers know
-that their project will never go to production or be open sourced.</p>
-<p>It's also great to see the <a class="reference external" href="http://techcrunch.com/2012/04/09/u-s-consumer-financial-protection-bureau-gets-open-source-publishes-on-github/">positive press</a>
-and <a class="reference external" href="http://radar.oreilly.com/2012/04/open-source-government-cfpb.html">recognition</a> that CFPB received for being a forward-thinking government agency.</p>
-<p>We need more of this great work coming from the government. Let's hope
-other agencies take note.</p>
-
-          <div class="meta">
-            Posted on 04.17.2012
-          </div>
+<p>In a nutshell, Nudge allows content creators to develop their ...
+          (<a href="django-nudge.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -742,30 +385,10 @@ other agencies take note.</p>
 programming background in a &quot;heavier&quot; language like Java. When I first
 started creating websites with Django 0.96, I was programming Java systems
 during the day and relaxed in the evenings by using Python/Django. I found
-the speed at which I could create sites allowed me to feel like I was
-accomplishing something even though I did not have full days to focus on
-side project development.</p>
-<p>One of the hurdles I found with Django was just figuring out how to deploy
-the projects to a production server. &quot;python manage.py runserver&quot; wasn't
-going to cut it. In addition, once I got the sites live, I was not sure
-of how to properly monitor them. The following links helped me a lot to
-learn what the &quot;big boys&quot; in the Django space were using in production:</p>
-<ol class="arabic simple">
-<li><a class="reference external" href="http://f.souza.cc/2011/11/setting-up-a-django-production-environment-compiling-and-configuring-nginx/">Setting up a Production Django Environment</a></li>
-<li><a class="reference external" href="http://instagram-engineering.tumblr.com/post/20541814340/keeping-instagram-up-with-over-a-million-new-users-in">Instagram Production Engineering</a></li>
-<li><a class="reference external" href="http://tech.yipit.com/2011/12/15/introducing-xenia-smart-monitoring-of-custom-application-level-metrics/">Yipit Monitoring Key Metrics</a></li>
-<li><a class="reference external" href="http://www.robgolding.com/blog/2011/11/12/django-in-production-part-1---the-stack/">Django in Production - Part 1</a></li>
-<li><a class="reference external" href="http://www.sparklewise.com/django-settings-for-production-and-development-best-practices/">Django Settings for Production and Development</a></li>
-<li><a class="reference external" href="http://adrian.org.ar/python/automatic-setup-of-django-nginx-and-gunicorn-on-ec2">Automatic Set Up of Django With nginx &amp; gunicorn</a></li>
-</ol>
-<p>Those are the best articles I've come across recently that I wish I had when
-I first started deploying Django projects (to be fair, those links didn't
-yet exist nor did many of the technologies that are now commonplace).</p>
-
-          <div class="meta">
-            Posted on 04.16.2012
-          </div>
+the speed at which I could create sites ...
+          (<a href="django-in-production.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -780,17 +403,10 @@ a custom Python/Django stack I wrote. Although I liked some of the
 work I did, I just
 was not satisfied with the overall result. So I'm relaunching the blog
 with the core written in Markdown and jinja2 with
-<a class="reference external" href="http://pelican.readthedocs.org/en/2.8/index.html">Pelican</a> used to
-generate the static HTML pages.</p>
-<p>I'm also
-<a class="reference external" href="http://www.github.com/makaimc/matt-makai-static-blog">open sourcing</a>
-the code and content for anyone else interested in creating their
-own Pelican-driven blog.</p>
-
-          <div class="meta">
-            Posted on 03.10.2012
-          </div>
+<a class="reference external" ...
+          (<a href="matt-makai-dot-com-site-relaunch.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -804,10 +420,9 @@ own Pelican-driven blog.</p>
         <div class="blog-content">
           <p>This <a class="reference external" href="http://tatiyants.com/devops-is-ruining-my-craft/">DevOps blog post</a> is a great satirical take on the automation and DevOps movement. The post is written as an &quot;interview&quot; with a current sysadmin and it's definitely worth the quick read.</p>
 
-          <div class="meta">
-            Posted on 02.23.2012
-          </div>
+          (<a href="devops-ruining-my-craft.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -820,37 +435,10 @@ own Pelican-driven blog.</p>
           <p>During my talk to django-district last night, I explained that Django
 1.4 drops support for Python 2.4 because the core committers wanted to
 use Python's context managers. Python 2.4 would not suffice because
-context managers are a <a class="reference external" href="http://www.python.org/dev/peps/pep-0343/">Python 2.5+ feature</a>.</p>
-<p>Someone in the audience asked what a context manager is, and I was annoyed
-with myself for not having a clear, concise answer. So to paraphrase the
-old saying, now &quot;there's a blog post for that.&quot;</p>
-<div class="section" id="id1">
-<h2>Python Context Managers</h2>
-<p>A context manager is created syntactically using the 'with' statement.
-Here is an example:</p>
-<div class="highlight"><pre>with open(&quot;example.txt&quot;) as f:
-    data = f.read()
-    print len(data)
-</pre></div>
-<p>The code above opens a file, reads its contents, and prints the length
-of the string read from the file. Since we are using the with statement,
-the file will always be closed after it is read. This behavior is because
-the 'with' statement performs actions on entry (the __enter__ method)
-and on exit (the __exit__ method), regardless of how the block of code
-exits. See this <a class="reference external" href="http://preshing.com/20110920/the-python-with-statement-by-example">blog post with a detailed explanation</a> of the process a context
-manager runs through.</p>
-<p>The context manager essentially can be thought of as an alternative to a try-finally block (before context managers these blocks were more common). So the concise way of explaining a context manager is that it is a statement that defines the runtime context for how a block of code should be executed. Context managers are particularly useful for locking/unlocking as well as setting or reseting state before a code block is executed.</p>
-<div class="section" id="references">
-<h3>References</h3>
-<p>[1] <a class="reference external" href="http://preshing.com/20110920/the-python-with-statement-by-example">http://preshing.com/20110920/the-python-with-statement-by-example</a></p>
-<p>[2] <a class="reference external" href="http://effbot.org/zone/python-with-statement.htm">http://effbot.org/zone/python-with-statement.htm</a></p>
-</div>
-</div>
-
-          <div class="meta">
-            Posted on 02.22.2012
-          </div>
+context managers are a <a class="reference external" href="http://www.python.org/dev/peps/pep-0343/">Python 2.5+ ...
+          (<a href="python-context-managers.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -861,13 +449,10 @@ manager runs through.</p>
         </h1>
         <div class="blog-content">
           <p>The Django 1.4 beta release is <a class="reference external" href="https://www.djangoproject.com/weblog/2012/feb/15/14-beta-1/">now available</a> for testing.</p>
-<p>Although the 1.4 beta can be <a class="reference external" href="https://www.djangoproject.com/download/">downloaded as a package</a>, it's probably best to get it from the SVN development branch (also mirrored on github) so you can update and take advantage of bug fixes as they are incorporated into the code base.</p>
-<p>For more information on the new features coming in 1.4, come see <a class="reference external" href="http://www.mattmakai.com/blog/django-district-feb-meetup-lightning-talk/">my talk on Tuesday night's Django District meetup in DC</a>.</p>
-
-          <div class="meta">
-            Posted on 02.16.2012
-          </div>
+<p>Although the 1.4 beta can be <a class="reference external" href="https://www.djangoproject.com/download/">downloaded as a package</a>, it's probably best to get it from the SVN ...
+          (<a href="django-1-4-beta-released.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -879,15 +464,10 @@ manager runs through.</p>
         <div class="blog-content">
           <p>I'll be giving a 10 minute lightning talk on updates and incompatibilities in
 the upcoming <a class="reference external" href="https://docs.djangoproject.com/en/dev/releases/1.4/">Django 1.4 release</a>. If you're interested in Python/Django and want to hear more,
-<a class="reference external" href="http://www.django-district.org/events/48873672/">RSVP on meetup.com</a>.
-There will be some other great talks as well on EC2 + github integration,
-monitoring your apps with Graphite and Sentry, and Django chartit.</p>
-<p>My impress.js slides for the talk will be posted on this site over the weekend.</p>
-
-          <div class="meta">
-            Posted on 02.15.2012
-          </div>
+<a class="reference external" ...
+          (<a href="django-district-feb-meetup-lightning-talk.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -900,18 +480,10 @@ monitoring your apps with Graphite and Sentry, and Django chartit.</p>
           <p>Django 1.4 is the first Django release to
 <a class="reference external" href="https://docs.djangoproject.com/en/dev/releases/1.4/#backwards-incompatible-changes-in-1-4">remove support for Python 2.4</a>. This change is an expected
 for two reasons. First, beginning with Django 1.2, Python 2.3 support
-was dropped and the community was notified that Django 1.4 would again
-increment the required Python version. Second, the Django core
-developers need <a class="reference external" href="http://mmakai.com/post/8732320824/django-1-4-and-beyond">support for context managers</a>, which were added in Python 2.5.</p>
-<p>Note that although Django 1.4 supports Python 2.5+, it does not
-yet support Python 3.x. Although progress has been made porting Django
-to Python 3.x, it is not fully tested or ready for release as specified
-in Django's release process.</p>
-
-          <div class="meta">
-            Posted on 01.25.2012
-          </div>
+was dropped and the community was notified ...
+          (<a href="django-1-4-requires-python-2-5.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -924,28 +496,10 @@ in Django's release process.</p>
           <p>Alex Gaynor, a Django core committer and author of much of the
 object-relational mapping (ORM) code,
 <a class="reference external" href="http://speakerdeck.com/u/alex/p/why-i-hate-the-django-orm">gave a presentation</a> on what he hates about the mapping layer. Every ORM layer in
-existence has issues, especially for edge cases, but Django's has
-been criticized lately for
-<a class="reference external" href="http://www.nitinh.com/2009/02/why-django-orm-sucks-it-takes-a-hell-lot-of-memory-in-processing/">various</a>
-<a class="reference external" href="http://jeffcroft.com/blog/2008/jul/25/top-ten-things-suck-about-django-revisited/">reasons</a>.
-Alex's presentation addresses concerns are in three areas of the ORM layer:</p>
-<p>1. Inconsistencies in querying syntax are confusing and were
-built up without an overall strategy over time</p>
-<p>2. Complex queries are virtually impossible with the existing syntax,
-especially compared to SQLAlchemy</p>
-<p>3. Aggregation queries take strings instead of objects, which is
-inconsistent with other query types and limits the aggregation
-queries' usefulness</p>
-<p>Alex's point during the presentation is to bring up the most glaring issues,
-show why they need to be fixed in future Django releases, and move the
-Django ORM from an &quot;80/20&quot; solution closer to a &quot;90/10&quot; solution that
-is easier to apply across a broader set of use cases.</p>
-<p>Slides: <a class="reference external" href="http://speakerdeck.com/u/alex/p/why-i-hate-the-django-orm">Why I hate the Django ORM</a> (Speaker Deck)</p>
-
-          <div class="meta">
-            Posted on 01.20.2012
-          </div>
+existence has issues, especially for edge cases, but Django's ...
+          (<a href="what-author-django-orm-hates-about-it.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -960,47 +514,10 @@ I'll begin with the caveat that these seven steps only apply in the
 Internet space and not other avenues such as starting a bakery.
 From my (limited) experience, everyone goes through these steps in
 order. Some steps take hours, while others can take years.</p>
-<p>The seven steps are:</p>
-<ol class="arabic simple">
-<li>Putting something online through a platform such as Tumblr, spreading
-the word, receiving critical feedback, and improving your work</li>
-<li>Building and putting out any type of website of your own creation</li>
-<li>Building a site conceived from your own idea with potential
-for monetization</li>
-<li>Launching your first web application with a sign up process and
-methods for payments</li>
-<li>Getting your first paying customer, obtaining feedback, and
-improving your product</li>
-<li>Having a steady stream of customers</li>
-<li>Becoming profitable, growing your customer base, and increasing
-your product's value to your customers</li>
-</ol>
-<p>By understanding these seven steps, you can assess your own position
-and determine how you can take the next step. The goal
-is not to rush through each step to get to the next one, but instead
-to learn at each milestone. Become comfortable with yourself, your
-own skills, and determine what aspects you need to improve.</p>
-<p>For example, I created many sites with Python and Django in 2009. I
-designed, developed, and deployed them, learning a lot about
-Django's best practices and Linux system administration in the
-process. However, I realized I had (and still have to some extent)
-a deficiency in design. I knew that before I could take the next
-step towards building a site that could be monetized and feel good
-about it, I needed to learn better design and get to know more
-people who could give me honest, critical feedback on my website designs.</p>
-<p>Once I spent several months reading, drawing, building, and
-discussing designs, I felt more comfortable that I could take the
-next step. About six months and a lot of late nights later, I
-launched <a class="reference external" href="https://www.proofdriven.com/">ProofDriven</a> with a
-reasonable design I was okay starting with that I knew I could
-improve as I grow more comfortable in this step. Eventually I
-can look ahead to the next step in the path towards Internet
-entrepreneurship.</p>
-
-          <div class="meta">
-            Posted on 01.18.2012
-          </div>
+<p>The ...
+          (<a href="the-seven-steps.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -1014,21 +531,10 @@ entrepreneurship.</p>
 file name than &quot;index.html&quot; for your first page. This can be tricky for first time
 PhoneGap/iOS developers because there is no stub function or properties file for
 specifying the file like there is in Android and BlackBerry projects.</p>
-<p>In your AppDelegate.m file, add the following method and change the return value to the
-HTML file you want to use.</p>
-<div class="highlight"><pre>+ (NSString*) startPage
-{
-  return @&quot;different.html&quot;;
-}
-</pre></div>
-<p>Bonus: you can also use this to specify a different path than www. For example, if
-you have a combined Android and iOS project where Android requires the assets directory,
-specify &quot;../assets/www/yourfile.html&quot; as the return value.</p>
-
-          <div class="meta">
-            Posted on 01.05.2012
-          </div>
+<p>In ...
+          (<a href="specify-html-file-phonegap-ios.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -1041,24 +547,10 @@ specify &quot;../assets/www/yourfile.html&quot; as the return value.</p>
           <p>A couple of guys from Heroku gave a talk tonight at DC Python and it looked like a good
 solution for running small sites. However, I was disappointed that set up was more
 difficult on Ubuntu 10.04 than turn key installers on Windows and Mac OS X. The set
-up <a class="reference external" href="http://toolbelt.herokuapp.com/linux/readme">instructions</a> required a few
-modifications to work properly.</p>
-<div class="highlight"><pre>sudo apt-add-repository &#39;deb http://toolbelt.herokuapp.com/ubuntu ./&#39;
-curl http://toolbelt.herokuapp.com/apt/release.key | sudo apt-key add -
-sudo apt-get update
-sudo apt-get install heroku-toolbelt
-sudo apt-get install ruby libopenssl-ruby ruby1.8-dev
-sudo apt-get install libreadline-ruby
-</pre></div>
-<p>Type &quot;heroku&quot; at the command line to check that the installation is working properly.</p>
-<p>Sources:</p>
-<p>[1] <a class="reference external" href="http://wmilesn.com/2011/10/code/avoiding-pitfalls-when-setting-up-heroku-for-node-js-on-ubuntu/">http://wmilesn.com/2011/10/code/avoiding-pitfalls-when-setting-up-heroku-for-node-js-on-ubuntu/</a></p>
-<p>[2] <a class="reference external" href="http://rukuro-blog.heroku.com/2011/05/11/ruby-readline-loaderror">http://rukuro-blog.heroku.com/2011/05/11/ruby-readline-loaderror</a></p>
-
-          <div class="meta">
-            Posted on 01.03.2012
-          </div>
+up <a class="reference external" ...
+          (<a href="heroku-ubuntu-10-04.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -1071,21 +563,10 @@ sudo apt-get install libreadline-ruby
           <p>I saw <a class="reference external" href="https://github.com/bartaz/impress.js">impress.js</a>, a really cool CSS3
 transformation-based presentation Javascript library on Hacker News yesterday.
 The <a class="reference external" href="http://bartaz.github.com/impress.js/">demo</a> is flashy - similar to Prezi
-but without Flash, plus new 3D effects. The only downside compared to an
-established browser slideshow library such as <a class="reference external" href="https://github.com/geraldb/s6">S6</a> was
-that my Logitech presentation pointer didn't work for advancing and reversing the slides.</p>
-<p>After a little digging, I found out that presentation pointers emulate page up/down
-key strokes. So I <a class="reference external" href="https://github.com/makaimc/impress.js">forked the impress.js</a>
-library, updated the code, and issued a
-<a class="reference external" href="https://github.com/bartaz/impress.js/pull/15">pull request</a> to add the presentation
-pointer capability. Thanks to <a class="reference external" href="https://github.com/bartaz">Bartek</a>'s quick response,
-the pull request was merged and closed just a few hours later. So now
-presentation pointers work great with impress.js.</p>
-
-          <div class="meta">
-            Posted on 01.02.2012
-          </div>
+but without Flash, plus new 3D ...
+          (<a href="impress-js-works-with-presentation-pointers.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -1099,13 +580,10 @@ presentation pointers work great with impress.js.</p>
 <a class="reference external" href="http://mmakai.com/">http://mmakai.com/</a>.</p>
 <p>Eventually I'll transfer the posts' content to this site and redirect the URLs to
 their new locations, but for now I'm leaving the old posts on Tumblr.
-There is also a nice way to browse the posts in the
-<a class="reference external" href="http://mmakai.com/archive/">archive</a>.</p>
-
-          <div class="meta">
-            Posted on 01.01.2012
-          </div>
+There is also a nice way to browse the ...
+          (<a href="older-blog-posts.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
@@ -1116,220 +594,34 @@ There is also a nice way to browse the posts in the
         </h1>
         <div class="blog-content">
           <p><em>Note</em>: <strong>This post is outdated</strong> because I am
-<a class="reference external" href="static/matt-makai-dot-com-site-relaunch.html">already on a new blog platform</a>.</p>
+<a class="reference external" href="/matt-makai-dot-com-site-relaunch.html">already on a new blog platform</a>.</p>
 <p>To kick off 2012, I'm shifting my technical blog from Tumblr to my own platform.</p>
-<p>I created this site with <a class="reference external" href="http://python.org/">Python</a>,
-<a class="reference external" href="http://www.djangoproject.com/">Django</a>,
-<a class="reference external" href="http://www.mysql.com/">MySQL</a>, and
-<a class="reference external" href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>.</p>
-<p>The site is hosted on a Linux <a class="reference external" href="http://www.linode.com/">Linode</a> instance and runs
-on <a class="reference external" href="http://nginx.org/">nginx</a> and
-<a class="reference external" href="http://gunicorn.org/">Green Unicorn</a>.</p>
-<p>Once 2012 kicks off, I will add my presentations and (potentially) screencasts on technical content.</p>
-
-          <div class="meta">
-            Posted on 01.01.2012
-          </div>
+<p>I created this site with <a class="reference external" ...
+          (<a href="new-blog.html">read more</a>)
         </div>
+        <hr/>
       </div>
     
   
 
-    </div>
-    <div class="span5 blog-sidebar-section">
-      <div class="row about-section">
-        <div class="span2">
-          <div class="media-grid">
-            <ul class="no-left-margin">
-              <li>
-                <a href="/about.html">
-                  <img class="thumbnail" src="/img/mm-square-small.png" height="100" width="100" alt="Matt Makai portrait." />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="span3 about-text">
-          Welcome to my blog on<br/>software development.
-          <br/><br/>
-          I currently work for<br/>
-          <a href="http://www.excella.com/">Excella Consulting</a><br/>
-          in Arlington, VA.
-        </div>
+
       </div>
-      <h4 class="blog-sidebar">Post Titles at a Glance</h4>
-      <ul class="blog-sidebar">
-        
-        
-          
-        
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="spreadsheets-as-beachhead.html">Spreadsheets As A Beachhead</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="favorite-django-article-sources.html">My Favorite Django Article Sources</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="fabfile-function-rebuilding-django-mysql-database.html">Fabric Function For Rebuilding a Django MySQL Database</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="recent-python-posts.html">Recent Python Posts</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="government-rfp-bullshit.html">RFP Bullshit</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="wget-proxy-servers.html">wget and Proxy Servers</a></li>
-          
-        
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="recent-design-books.html">Recent Design Books</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="advice-college-graduates.html">Advice to College Graduates</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="stanford-cs-183-class-notes.html">Stanford's CS183 Class Notes</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="big-data-presentation.html">Big Data Presentation</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="screencasting-software-for-mac-os-x.html">Screencasting on Mac OS X</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="pay-for-developers.html">Can't &quot;Find&quot; Developers? Increase Your Offer</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="mongodb-nodejs-backbonejs.html">MongoDB, node.js, and Backbone.js</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="django-on-github.html">Django Officially On Github</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="database-backups.html">Database Backups</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="python-mongodb-news.html">Python &amp; MongoDB News</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="consolidation-python-hosting-industry.html">Consolidation in the Python Hosting Industry</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="repository-structure-and-python.html">Repository Structure and Python</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="django-nudge.html">Django Nudge (django-nudge)</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="django-in-production.html">Django in Production</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="matt-makai-dot-com-site-relaunch.html">Site Relaunch</a></li>
-          
-        
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="devops-ruining-my-craft.html">&quot;DevOps is Ruining My Craft&quot;</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="python-context-managers.html">Python Context Managers</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="django-1-4-beta-released.html">Django 1.4 Beta Released</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="django-district-feb-meetup-lightning-talk.html">Django District February Meetup Lightning Talk</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="django-1-4-requires-python-2-5.html">Django 1.4 Requires Python 2.5+</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="what-author-django-orm-hates-about-it.html">What the Django's ORM Author Hates About It</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="the-seven-steps.html">The Seven Steps</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="specify-html-file-phonegap-ios.html">Specify the HTML File for PhoneGap and iOS</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="heroku-ubuntu-10-04.html">Heroku on Ubuntu 10.04</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="impress-js-works-with-presentation-pointers.html">Impress.js: Now Works With Presentation Pointers</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="new-blog.html">New Blog</a></li>
-          
-        
-          
-            <li class="posts-at-a-glance"><a href="older-blog-posts.html">Older Blog Posts</a></li>
-          
-        
-      </ul>
     </div>
   </div>
-</div>
 
-  </div>
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="/js/jquery-1.6.4.min.js"><\/script>')</script>
-
-
-  <!-- scripts concatenated and minified via ant build script-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/jquery-1.7.2.min.js"><\/script>')</script>
   <script defer src="/js/plugins.js"></script>
   <script defer src="/js/script.js"></script>
-  <!-- end scripts-->
-
-
   <script> // Change UA-XXXXX-X to be your site's ID
     window._gaq = [['_setAccount','UA-19910497-3'],['_trackPageview'],['_trackPageLoadTime']];
     Modernizr.load({
       load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
     });
   </script>
-
-
   <!--[if lt IE 7 ]>
     <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
   <![endif]-->
-  
 </body>
 </html>

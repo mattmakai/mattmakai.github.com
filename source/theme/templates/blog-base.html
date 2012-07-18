@@ -1,45 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="hero-unit">
-  <div class="row">
-    <div class="span10">
-      <h1>{% block blog_title %}{% endblock %}</h1>
-      {% block blog_content %}{% endblock %}
-    </div>
-    <div class="span5 blog-sidebar-section">
-      <div class="row about-section">
-        <div class="span2">
-          <div class="media-grid">
-            <ul class="no-left-margin">
-              <li>
-                <a href="/about.html">
-                  <img class="thumbnail" src="/img/mm-square-small.png" height="100" width="100" alt="Matt Makai portrait." />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="span3 about-text">
-          Welcome to my blog on<br/>software development.
-          <br/><br/>
-          I currently work for<br/>
-          <a href="http://www.excella.com/">Excella Consulting</a><br/>
-          in Arlington, VA.
-        </div>
-      </div>
-      <h4 class="blog-sidebar">Post Titles at a Glance</h4>
-      <ul class="blog-sidebar">
-        {% if not articles %}
-          No posts yet!
-        {% endif %}
-        {% for a in articles %}
-          {% if a.category == "blog" %}
-            <li class="posts-at-a-glance"><a href="{{ a.url }}">{{ a.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-</div>
+  <h2>{% block blog_title %}{% endblock %}</h2>
+  {% block blog_content %}{% endblock %}
 {% endblock %}

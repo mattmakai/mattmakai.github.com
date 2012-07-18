@@ -3,20 +3,9 @@
 {% block blog_title %}{{ article.title }}{% endblock %}
 
 {% block blog_content %}
-  <div class="post">
-    <div class="blog-content">
-      {{ article.content }}
-    </div>
-
-    <div class="follow-on-twitter">
-      If you read this far then you should 
-      <a href="http://twitter.com/makaimc">follow me on Twitter</a>.
-    </div>
-
-    <div class="meta">
-      Posted by {{ article.author }} 
-      on {{ article.date.strftime('%m.%d.%Y') }}.
-    </div>
-  </div>
-  <a class="btn primary" href="/">Return to Blog</a>
+  {% if article.category == 'post' %}
+    {% include "post.html" %}
+  {% elif article.category == 'presentations' %}
+    {% include "presentations.html" %}
+  {% endif %}
 {% endblock %}
