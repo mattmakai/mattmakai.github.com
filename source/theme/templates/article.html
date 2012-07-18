@@ -3,7 +3,7 @@
 {% block blog_title %}{{ article.title }}{% endblock %}
 
 {% block blog_content %}
-  {% if article.category == 'post' %}
+  {% if article.category == 'blog' %}
     {% include "post.html" %}
   {% elif article.category == 'presentations' %}
     {% include "presentations.html" %}
