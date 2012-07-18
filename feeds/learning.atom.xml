@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/learning.atom.xml" rel="self"></link><id>http://www.mattmakai.com</id><updated>2012-03-02T00:00:00Z</updated><entry><title>Socrata and Pelican</title><link href="http://www.mattmakai.com/socrata-and-pelican.html" rel="alternate"></link><updated>2012-03-02T00:00:00Z</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-03-02:/socrata-and-pelican.html/</id><summary type="html">&lt;p&gt;Socrata is a cool tool for data storage and exploration as well as
-creating APIs.&lt;/p&gt;
-</summary></entry></feed>
