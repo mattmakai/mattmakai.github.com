@@ -1,13 +1,7 @@
 {% extends "base.html" %}
-{% block title %}{{ page.title }}{% endblock %}
 
 {% block content %}
-<div class="hero-unit">
-  <h1 class="hero-unit-h1">{{ page.title }}</h1>
-  <div class="span12">
-    <p class="presentation-group">
-      {{ page.content }}
-    </p>
-  </div>
-</div>
+  {% if page.category == 'presentations' %}
+    {% include "presentations.html" %}
+  {% endif %}
 {% endblock %}

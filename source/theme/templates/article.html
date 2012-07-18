@@ -5,7 +5,5 @@
 {% block blog_content %}
   {% if article.category == 'blog' %}
     {% include "post.html" %}
-  {% elif article.category == 'presentations' %}
-    {% include "presentations.html" %}
   {% endif %}
 {% endblock %}
