@@ -1,4 +1,0 @@
-Work
-====
-
-:category: work
