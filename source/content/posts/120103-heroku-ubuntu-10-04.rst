@@ -15,7 +15,7 @@ modifications to work properly.
 .. code-block:: heroku-setup-code
 
   sudo apt-add-repository 'deb http://toolbelt.herokuapp.com/ubuntu ./'
-  curl http://toolbelt.herokuapp.com/apt/release.key | sudo apt-key add -
+  curl https://toolbelt.herokuapp.com/apt/release.key | sudo apt-key add -
   sudo apt-get update
   sudo apt-get install heroku-toolbelt
   sudo apt-get install ruby libopenssl-ruby ruby1.8-dev

@@ -576,7 +576,7 @@ difficult on Ubuntu 10.04 than turn key installers on Windows and Mac OS X. The 
 up &lt;a class="reference external" href="http://toolbelt.herokuapp.com/linux/readme"&gt;instructions&lt;/a&gt; required a few
 modifications to work properly.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-add-repository &amp;#39;deb http://toolbelt.herokuapp.com/ubuntu ./&amp;#39;
-curl http://toolbelt.herokuapp.com/apt/release.key | sudo apt-key add -
+curl https://toolbelt.herokuapp.com/apt/release.key | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install heroku-toolbelt
 sudo apt-get install ruby libopenssl-ruby ruby1.8-dev
