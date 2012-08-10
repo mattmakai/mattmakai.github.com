@@ -90,13 +90,93 @@
     </div>
 
     <div class="step" data-scale="8" data-x="30000" data-y="4000">
-        <div id="mvt-viz"></div>
+        <img src="/img/presentations/django-introduction/mvt.png" />
+    </div>
+
+    <div class="step" data-scale="8" data-x="40000" data-y="4000">
+        <h1>Model</h1>
+    </div>
+    
+    <div class="step" data-scale="8" data-x="10000" data-y="11000">
+        <h1>View</h1>
+    </div>
+    
+    <div class="step" data-scale="8" data-x="20000" data-y="11000">
+        <h1>Template</h1>
+    </div>
+    
+    <div class="step" data-scale="8" data-x="30000" data-y="11000">
+        <h1>Django Development</h1>
+        <ul>
+            <li>Rigorous structure</li>
+            <li>Pragmatic solutions</li>
+            <li>More functionality</li>
+            <li>Easier maintenance</li>
+        </ul>
+    </div>
+    
+    <div class="step" data-scale="8" data-x="40000" data-y="11000">
+        <h1>? ' s</h1>
     </div>
 
     <div id="overview" class="step" data-x="27000" data-y="2000" data-scale="40">
     </div>
+    
+    <div class="step" data-scale="8" data-x="10000" data-y="20000">
+        <h1>Django Request Process</h1>
+    </div>
+    
+    <div class="step" data-scale="8" data-x="20000" data-y="20000">
+        <h1 style="color: yellow;">models.py</h1>
+        <pre>
+from django.db import models
 
-    <div id="references" class="step slide" data-x="40000" data-y="40000">
+class Faq(mdoels.model):
+    name = models.CharField(max_length=255)
+    slug = models.CharField(max_length=255, unique=True)
+    question = models.CharField(max_length=255, unique=True)
+    answer = models.TextField(blank=True)
+</pre>
+    </div>
+    
+    <div class="step" data-scale="8" data-x="30000" data-y="20000">
+        <h1 style="color: yellow;">urls.py</h1>
+        <pre>
+from django.conf.urls.defaults import *
+
+urlpatterns = patterns('core.views',
+    url(r'^$', 'landing', name='landing_page'),
+    url(r'^benefits/$', 'benefits', name='benefits'),
+    url(r'^faq/$', 'faq', name='faq'),
+    url(r'^contact/$', 'contact', name='contact'),
+    url(r'^thanks/$', 'thanks'),
+    url(r'^sign-up/', 'signUp', name="sign_up"),
+)
+        </pre>
+    </div>
+    
+
+    <div class="step" data-scale="8" data-x="40000" data-y="20000">
+        <h1 style="color: yellow;">views.py</h1>
+        <pre>
+from django.shortcuts import render_to_response
+from django.template import RequestContext
+from models import Faq
+
+def faq(req):
+    faq = Faq.objects.all()
+    p = {'is_faq': True, 'faq': faq}
+    if req.user.is_authenticated():
+        p['is_signed_in'] = True
+    return render_to_response('faq.html', p, 
+        context_instance=RequestContext(req))
+</pre>
+    </div>
+
+    <div id="overview2" class="step" data-x="27000" data-y="31000" data-scale="40">
+    </div>
+
+    <div id="references" class="step slide" data-x="60000" data-y="40000">
         <ul>
             <li>Caveman &amp; wheel: http://daveharman.com/wp-content/uploads/2012/01/reinvent-wheel.jpg</li>
         </ul>
@@ -107,8 +187,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
+        /* might use d3 here in the future
         var data = ['model', 'view', 'template'];
         var svg = d3.select("#mvt-viz").append("svg:svg");
+        */
     });
   </script>
   <script>impress().init();</script>
