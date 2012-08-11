@@ -10,6 +10,7 @@ h1 {font-size: 72px;}
 .author-supporting-info {margin-top: 10px;}
 .single-word {font-size: 5em;}
 .larger-font {font-size: 4em;}
+ul.larger-bullets li {line-height: 80px; font-size: 50px;}
 .big-question {font-size: 12em; text-align: center;}
 .center {text-align: center;}
 a, a:hover {text-decoration: underline; color: blue;}
