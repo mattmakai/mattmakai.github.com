@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all-en.atom.xml" rel="self"></link><id>http://www.mattmakai.com</id><updated>2012-07-28T11:39:39-04:00</updated><entry><title>Big Questions in Tech</title><link href="http://www.mattmakai.com/big-questions-in-tech.html" rel="alternate"></link><updated>2012-07-28T11:39:39-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/big-questions-in-tech.html</id><summary type="html">&lt;ol class="arabic simple"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all-en.atom.xml" rel="self"></link><id>http://www.mattmakai.com</id><updated>2012-08-13T00:00:00-04:00</updated><entry><title>A Fascinating Post on Curiousity's Software</title><link href="http://www.mattmakai.com/fascinating-post-curiositys-software.html" rel="alternate"></link><updated>2012-08-13T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/fascinating-post-curiositys-software.html</id><summary type="html">&lt;p&gt;I found this &lt;a class="reference external" href="http://jlouisramblings.blogspot.com/2012/08/getting-25-megalines-of-code-to-behave.html"&gt;blog post on Curiosity's hardware and software&lt;/a&gt; to
+be a fascinating read. The Curiosity rover has 2.5 million lines of C code
+running on custom radiation and extreme temperature hardened computer systems.
+The author presents his view as an Erlang programmer of how the systems are
+designed to be as fault-proof as possible.&lt;/p&gt;
+</summary></entry><entry><title>Big Questions in Tech</title><link href="http://www.mattmakai.com/big-questions-in-tech.html" rel="alternate"></link><updated>2012-07-28T11:39:39-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/big-questions-in-tech.html</id><summary type="html">&lt;ol class="arabic simple"&gt;
 &lt;li&gt;Mobile&lt;/li&gt;
 &lt;li&gt;SaaS&lt;/li&gt;
 &lt;li&gt;Client side frameworks&lt;/li&gt;
