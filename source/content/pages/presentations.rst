@@ -6,7 +6,6 @@ Presentations
 `Django: An Introduction </presentations/django-introduction.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Presented to Dgentle Django introduction on August 11, 2012. 
-(Work in progress.)
 
 ---------------------------
 
