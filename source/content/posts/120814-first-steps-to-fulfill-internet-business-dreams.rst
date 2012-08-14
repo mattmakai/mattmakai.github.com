@@ -54,8 +54,8 @@ solves their problem. That's not to say the idea isn't important, it just
 means the idea is important *in combination* with execution. Here's what 
 some of the best minds in technology have to say about 
 `idea versus execution <http://www.derekflanzraich.com/2010/08/idea-or-execution/>`_ 
-and another post about 
-`why your idea doesn't matter <http://www.inc.com/rob-adams/2010/06/ideas-commodity-but-execution-intelligence-matters.html>`_.
+and another post that takes the hard stand that
+`your idea doesn't matter <http://www.inc.com/rob-adams/2010/06/ideas-commodity-but-execution-intelligence-matters.html>`_.
 
 Third, what is it going to take to get you to the point where you can talk
 to potential customers? For non-developers, this means putting together
@@ -121,8 +121,8 @@ low-budget marketing efforts.
 Sales
 -----
 Sales is different from marketing. Marketing is getting potential customers 
-to know about your product and getting them to your site. Sales is moving that 
-potential customer into a paying customer.
+to know about your product and getting them to your site. Sales is moving a
+visitor to your site from a potential customer into a paying customer.
 
 Sales involves concepts such as `designing your sales page <http://www.contrast.ie/blog/designing-your-sign-up-page/>`_, performing A/B optimization testing,
 studying and `trying sales experiments <http://conversionxl.com/pricing-experiments-you-might-not-know-but-can-learn-from/>`_ to see if they convert more
