@@ -1,9 +1,9 @@
 The First Django Website Run On Python 3
 ========================================
 
-:category: blog
 :slug: first-django-website-run-python-3
 :date: 2012-08-15
+:category: blog
 
 The top post on `Hacker News <http://news.ycombinator.com/>`_ this morning 
 is about a `Django (1.5 development branch) site running on Python 3 <http://myks.org/django-python3/>`_. 
@@ -24,5 +24,6 @@ Python 3 is supported by Django through the
 interesting to see how many bugs in advanced Django features come up
 throughout the development cycle and whether Python 3 is officially supported
 (the current plan) or whether there is a backtrack to unofficial support
-for this release to prevent too much of a delay in releasing 1.5.
+for this release to prevent too much of a delay in 
+`releasing version 1.5 <https://docs.djangoproject.com/en/dev/releases/1.5/>`_.
 
