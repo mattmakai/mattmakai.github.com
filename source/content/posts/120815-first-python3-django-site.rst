@@ -25,3 +25,4 @@ interesting to see how many bugs in advanced Django features come up
 throughout the development cycle and whether Python 3 is officially supported
 (the current plan) or whether there is a backtrack to unofficial support
 for this release to prevent too much of a delay in releasing 1.5.
+
