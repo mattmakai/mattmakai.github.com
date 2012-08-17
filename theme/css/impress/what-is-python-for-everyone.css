@@ -29,7 +29,7 @@ ul.larger-bullets li {line-height: 80px; font-size: 44px; color: white; margin-l
 .big-question {font-size: 12em; text-align: center;}
 .center {text-align: center;}
 a, a:hover {text-decoration: underline; color: blue;}
-pre {font-size: 24px; font-family: Courier;}
+pre {font-size: 24px; font-family: Courier; margin-left: 0px;}
 .step {
     font-family: 'Open Sans', Arial, sans-serif;
 }
