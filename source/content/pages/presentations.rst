@@ -3,11 +3,19 @@ Presentations
 
 :category: presentations
 
+`Python Indoctrination: For Non-Believers </presentations/what-is-python-for-everyone.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Presented internally at `Excella Consulting <http://www.excella.com/>`_ on
+August 21, 2012. (Work in progress.)
+
+----
+
 `Django: An Introduction </presentations/django-introduction.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Presented to Dgentle Django introduction on August 11, 2012. 
+Presented to the `Dgentle Django <http://novapython.eventbrite.com/>`_ 
+introductory class on August 11, 2012. 
 
----------------------------
+----
 
 `Hello, Twitter Bootstrap! </presentations/twitter-bootstrap-overview.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
