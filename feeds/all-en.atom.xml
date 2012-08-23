@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all-en.atom.xml" rel="self"></link><id>http://www.mattmakai.com</id><updated>2012-08-15T00:00:00-04:00</updated><entry><title>The First Django Website Run On Python 3</title><link href="http://www.mattmakai.com/first-django-website-run-python-3.html" rel="alternate"></link><updated>2012-08-15T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/first-django-website-run-python-3.html</id><summary type="html">&lt;p&gt;The top post on &lt;a class="reference external" href="http://news.ycombinator.com/"&gt;Hacker News&lt;/a&gt; this morning
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all-en.atom.xml" rel="self"></link><id>http://www.mattmakai.com</id><updated>2012-08-22T00:00:00-04:00</updated><entry><title>Introduction to Python for Non-Developers Notes</title><link href="http://www.mattmakai.com/introduction-python-non-developers-notes.html" rel="alternate"></link><updated>2012-08-22T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/introduction-python-non-developers-notes.html</id><summary type="html">&lt;p&gt;Matt Camilli and I gave a
+&lt;a class="reference external" href="/presentations/what-is-python-for-everyone.html"&gt;talk Tuesday night&lt;/a&gt;
+introducing about 30 non-developers to the Python programming language's
+history, philosophy, and differences from other languages, as well as an
+industry analysis of companies using Python. Matt Camilli
+covered
+&lt;a class="reference external" href="/presentations/python101.pptx"&gt;how he learned Python and what great resources exist&lt;/a&gt; out on the web for anyone looking to learn more about the language.&lt;/p&gt;
+&lt;p&gt;The topics included the
+&lt;a class="reference external" href="http://www.python.org/dev/peps/pep-0020/"&gt;Zen of Python&lt;/a&gt;, the
+&lt;a class="reference external" href="http://www.python.org/psf/"&gt;Python Software Foundation&lt;/a&gt;, language
+comparison with Excella Consulting other two primarily languages, Java
+and .NET, and advantages of Python.&lt;/p&gt;
+&lt;p&gt;Paul Graham's &lt;a class="reference external" href="http://www.paulgraham.com/pypar.html"&gt;The Python Paradox&lt;/a&gt;
+essay was covered. Paul's
+&lt;a class="reference external" href="http://www.paulgraham.com/articles.html"&gt;other essays&lt;/a&gt; are also
+fantastic, especially
+&lt;a class="reference external" href="http://www.paulgraham.com/makersschedule.html"&gt;Maker's Schedule, Manager's Schedule&lt;/a&gt;, &lt;a class="reference external" href="http://www.paulgraham.com/javacover.html"&gt;Java's Cover&lt;/a&gt;, and
+&lt;a class="reference external" href="http://www.paulgraham.com/lies.html"&gt;Lies We Tell Kids&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I also covered what companies are using Python, such as &lt;a class="reference external" href="http://instagram-engineering.tumblr.com/post/13649370142/what-powers-instagram-hundreds-of-instances-dozens-of"&gt;Instagram&lt;/a&gt; and
+&lt;a class="reference external" href="http://techreport.com/discussions.x/16713"&gt;Google&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thanks again to everyone who came out to learn more about Python and also
+to my partner in crime, Matt Camilli.&lt;/p&gt;
+</summary></entry><entry><title>The First Django Website Run On Python 3</title><link href="http://www.mattmakai.com/first-django-website-run-python-3.html" rel="alternate"></link><updated>2012-08-15T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/first-django-website-run-python-3.html</id><summary type="html">&lt;p&gt;The top post on &lt;a class="reference external" href="http://news.ycombinator.com/"&gt;Hacker News&lt;/a&gt; this morning
 is about a &lt;a class="reference external" href="http://myks.org/django-python3/"&gt;Django (1.5 development branch) site running on Python 3&lt;/a&gt;.
 Why is a Django site running on Python 3 newsworthy? Because while Django
 1.5 is tested and supported against Python 2.6 and Python 2.7 (dropping
