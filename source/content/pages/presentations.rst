@@ -3,10 +3,16 @@ Presentations
 
 :category: presentations
 
+`Agile Software Development in the Federal Government </presentations/agile-software-development-in-federal-government.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Future presentation to the `2012 Project Management Symposium <http://www.pmiwdc.org/2012-project-management-symposium/2012-project-management-symposium-agenda/2012-project-management>`_ on September 28, 2012. (Work in progress.)
+
+----
+
 `Python Indoctrination: For Non-Believers </presentations/what-is-python-for-everyone.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Presented internally at `Excella Consulting <http://www.excella.com/>`_ on
-August 21, 2012. (Work in progress.)
+August 21, 2012.
 
 ----
 
