@@ -3,6 +3,17 @@ Learning Log
 
 :category: learning-log
 
+Tuesday, Sept 18, 2012
+----------------------
+In vim, use this setting to copy & paste into the window without screwing
+up the formatting:
+
+.. code-block:: vim-set-paste
+
+  :set paste 
+
+
+
 Monday, Sept 17, 2012
 ---------------------
 Github recommends including a 
