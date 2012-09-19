@@ -3,6 +3,13 @@ Learning Log
 
 :category: learning-log
 
+Wednesday, Sept 19, 2012
+------------------------
+`Puppet <https://github.com/puppetlabs/puppet>`_ can be used locally with
+the "puppet apply" command to set up a local system without a Puppet master
+running remotely.
+
+
 Tuesday, Sept 18, 2012
 ----------------------
 In vim, use this setting to copy & paste into the window without screwing
@@ -11,7 +18,6 @@ up the formatting:
 .. code-block:: vim-set-paste
 
   :set paste 
-
 
 
 Monday, Sept 17, 2012
