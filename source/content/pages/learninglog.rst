@@ -3,6 +3,12 @@ Learning Log
 
 :category: learning-log
 
+Thursday, Sept 20, 2012
+-----------------------
+* On Ubuntu, use "apt-get install puppetmaster" to install the Puppet master,
+  compared to "apt-get install puppet" to install Puppet as a client.
+
+
 Wednesday, Sept 19, 2012
 ------------------------
 * `Puppet <https://github.com/puppetlabs/puppet>`_ can be used locally with
