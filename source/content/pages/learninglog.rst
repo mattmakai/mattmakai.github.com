@@ -3,6 +3,14 @@ Learning Log
 
 :category: learning-log
 
+Friday, Sept 21, 2012
+---------------------
+* In d3.js, the `select function <https://github.com/mbostock/d3/wiki/Selections#wiki-d3_select>`_ 
+  returns only the first element that matches the selector string. When 
+  more than one element matches the selector string only the first element 
+  (in document traversal order) is returned. If no elements match the selector
+  string, then an empty selection is returned.
+
 Thursday, Sept 20, 2012
 -----------------------
 * On Ubuntu, use "apt-get install puppetmaster" to install the Puppet master,
