@@ -32,6 +32,7 @@ a, a:hover {text-decoration: underline; color: blue;}
 pre {font-size: 24px; font-family: Courier; margin-left: 0px;}
 .step {
     font-family: 'Open Sans', Arial, sans-serif;
+    color: white;
 }
 img {border: 2px solid #111;}
 .yellow {color: #ffd43b;}
