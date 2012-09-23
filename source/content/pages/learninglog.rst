@@ -3,6 +3,20 @@ Learning Log
 
 :category: learning-log
 
+Sunday, Sept 23, 2012
+---------------------
+* In d3.js, the `selection.attr function <https://github.com/mbostock/d3/wiki/Selections#wiki-attr>`_ sets an attribute of the selection to a given value.
+  If no value is specified and there is only one element in the selection then
+  the attribute value of that one element is returned.
+
+Saturday, Sept 22, 2012
+-----------------------
+* Web Server Gateway Interface (WSGI) is not a server, Python module, 
+  framework, or API. WSGI is an **interface specification** for communication
+  between a server and an application. WSGI is specified in 
+  `PEP 3333 <http://www.python.org/dev/peps/pep-3333/>`_, which is an updated
+  version of PEP 333.
+
 Friday, Sept 21, 2012
 ---------------------
 * In d3.js, the `select function <https://github.com/mbostock/d3/wiki/Selections#wiki-d3_select>`_ 
