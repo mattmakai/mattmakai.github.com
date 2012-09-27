@@ -3,6 +3,30 @@ Learning Log
 
 :category: learning-log
 
+Wednesday, Sept 26, 2012
+------------------------
+* Python supports a simple type of anonymous function with lambda functions.
+  The lambda function body must be an expression, unlike some other languages
+  such as JavaScript, which support anonymous functions in the same way as
+  named functions.
+
+Tuesday, Sept 25, 2012
+----------------------
+* Many `context managers <http://docs.fabfile.org/en/1.4.3/api/core/context_managers.html>`_ are available in `Fabric <http://fabfile.org>`_, including:
+
+    1. cd - change into a specific directory before running a command
+    2. hide - do not show one or more groups of output (i.e. stdout)
+    3. lcd - same as cd but only affects env.lcwd for local commands
+    4. path - append to the system PATH variable
+    5. prefix - prefix all sudo & run commands with a command plus '&&'
+    6. settings - temporarily override environment variables
+    7. show - opposite of hide, show one or more groups of output
+
+Monday, Sept 24, 2012
+---------------------
+* In d3.js, a `transition is a special type of selection <https://github.com/mbostock/d3/wiki/Transitions>`_ that occurs over time. Not all attributes are
+  available in transitions that are available for selections.
+
 Sunday, Sept 23, 2012
 ---------------------
 * In d3.js, the `selection.attr function <https://github.com/mbostock/d3/wiki/Selections#wiki-attr>`_ sets an attribute of the selection to a given value.
