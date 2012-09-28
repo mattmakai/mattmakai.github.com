@@ -10,6 +10,7 @@ body {
   font-family: sans-serif;
 }
 h1 {font-size: 72px;}
+h1.slightly-smaller {font-size: 68px;}
 .smaller-text {font-size: 32px;}
 .slide {
   background: #333;
@@ -39,3 +40,4 @@ img {border: 2px solid #111;}
 .yellow {color: yellow;}
 h2 {font-size: 56px;}
 .impress-enabled .step {opacity: 1;}
+.no-style-link {background: none; color: white; border: none;}
