@@ -3,6 +3,11 @@ Learning Log
 
 :category: learning-log
 
+Thursday, Sept 27, 2012
+-----------------------
+* `django-social-auth <http://django-social-auth.readthedocs.org/en/latest/index.html>`_ is a Django project for social sign ins (authorization and
+  authentication).
+
 Wednesday, Sept 26, 2012
 ------------------------
 * Python supports a simple type of anonymous function with lambda functions.
