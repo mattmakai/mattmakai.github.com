@@ -41,3 +41,4 @@ img {border: 2px solid #111;}
 h2 {font-size: 56px;}
 .impress-enabled .step {opacity: 1;}
 .no-style-link {background: none; color: white; border: none;}
+ul.spacing li {margin-top: 20px; background: none; color: white; border: none; font-size: 32px;}
