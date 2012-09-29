@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all-en.atom.xml" rel="self"></link><id>http://www.mattmakai.com</id><updated>2012-08-22T00:00:00-04:00</updated><entry><title>Introduction to Python for Non-Developers Notes</title><link href="http://www.mattmakai.com/introduction-python-non-developers-notes.html" rel="alternate"></link><updated>2012-08-22T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/introduction-python-non-developers-notes.html</id><summary type="html">&lt;p&gt;Matt Camilli and I gave a
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all-en.atom.xml" rel="self"></link><id>http://www.mattmakai.com</id><updated>2012-09-29T00:00:00-04:00</updated><entry><title>Agile in the Federal Government Presentation</title><link href="http://www.mattmakai.com/agile-in-federal-government-presentation.html" rel="alternate"></link><updated>2012-09-29T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/agile-in-federal-government-presentation.html</id><summary type="html">&lt;p&gt;Yesterday I presented at the &lt;a class="reference external" href="http://www.pmiwdc.org/2012/09/project-management-symposium"&gt;2012 PMI Project Management Symposium&lt;/a&gt; in at the Crystal City
+Hyatt in Arlington, Virginia. My &lt;a class="reference external" href="/presentations/agile-software-development-in-federal-government.html"&gt;slides for the talk&lt;/a&gt; are posted and the source code
+is &lt;a class="reference external" href="https://github.com/makaimc/mattmakai.github.com/blob/gh-pages/source/static-html/presentations/agile-software-development-in-federal-government.html"&gt;available on Github&lt;/a&gt;.
+It's a decent example of &lt;a class="reference external" href="http://bartaz.github.com/impress.js"&gt;impress.js&lt;/a&gt;
+although I still need to invest more time into the framework to put together
+a really impressive talk.&lt;/p&gt;
+&lt;p&gt;I'm thinking the combination of impress.js + d3.js could create a really
+amazing data visualization heavy presentation (with the right theme and
+content of course).&lt;/p&gt;
+&lt;p&gt;Thanks to everyone who came out to my talk. I'm not a project manager so
+it was somewhat intimidating talking to a large group of people who all
+had at least several more years of experience than me. I hope everyone
+who went got some value out of it and took away the key themes - there are
+certain actions (elaborated on in the presentation) that the best
+project managers do constantly that make projects much more likely to succeed.&lt;/p&gt;
+</summary></entry><entry><title>Introduction to Python for Non-Developers Notes</title><link href="http://www.mattmakai.com/introduction-python-non-developers-notes.html" rel="alternate"></link><updated>2012-08-22T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/introduction-python-non-developers-notes.html</id><summary type="html">&lt;p&gt;Matt Camilli and I gave a
 &lt;a class="reference external" href="/presentations/what-is-python-for-everyone.html"&gt;talk Tuesday night&lt;/a&gt;
 introducing about 30 non-developers to the Python programming language's
 history, philosophy, and differences from other languages, as well as an
