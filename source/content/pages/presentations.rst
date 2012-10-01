@@ -5,7 +5,7 @@ Presentations
 
 `Agile Software Development in the Federal Government </presentations/agile-software-development-in-federal-government.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Future presentation to the `2012 Project Management Symposium <http://www.pmiwdc.org/2012-project-management-symposium/2012-project-management-symposium-agenda/2012-project-management>`_ on September 28, 2012. (Work in progress.)
+Future presentation to the `2012 Project Management Symposium <http://www.pmiwdc.org/2012-project-management-symposium/2012-project-management-symposium-agenda/2012-project-management>`_ on September 28, 2012.
 
 ----
 

@@ -3,6 +3,37 @@ Learning Log
 
 :category: learning-log
 
+What is this?
+-------------
+I force myself to learn at least one new concept or relevant detail per day.
+This is where I keep track of what I learn so I can review it periodically.
+
+----
+
+Sunday, Sept 30, 2012
+---------------------
+* Use the `bisect <http://docs.python.org/library/bisect.html>`_ library
+  to search with the bisect.bisect function. For example, bisect([1,2,3,4],2)
+  returns 2.
+
+----
+
+Saturday, Sept 29, 2012
+-----------------------
+* Python 3.3 includes 
+  `unittest.mock <http://docs.python.org/dev/library/unittest.mock>`_, 
+  a mock object library. Mocks can be used to replace parts of system 
+  under test and assert conditions about calls made to the mock objects 
+  during unit tests.
+
+Friday, Sept 28, 2012
+---------------------
+* `Python Enhancement Proposal 405 <http://www.python.org/dev/peps/pep-0405/>`_ 
+  adds virtualenv support to core Python. The "lightweight" virtual 
+  environments are essentially their own isolated installations of 
+  Python which optionally do not use system-wide Python packages. PEP405 was
+  implemented in Python 3.3.
+
 Thursday, Sept 27, 2012
 -----------------------
 * `django-social-auth <http://django-social-auth.readthedocs.org/en/latest/index.html>`_ is a Django project for social sign ins (authorization and
@@ -37,6 +68,8 @@ Sunday, Sept 23, 2012
 * In d3.js, the `selection.attr function <https://github.com/mbostock/d3/wiki/Selections#wiki-attr>`_ sets an attribute of the selection to a given value.
   If no value is specified and there is only one element in the selection then
   the attribute value of that one element is returned.
+
+----
 
 Saturday, Sept 22, 2012
 -----------------------
