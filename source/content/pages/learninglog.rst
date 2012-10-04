@@ -10,11 +10,26 @@ This is where I keep track of what I learn so I can review it periodically.
 
 ----
 
+Tuesday, Oct 2, 2012
+--------------------
+* In Python 3, the range function always returns an iterator so it is
+  not necessary to use xrange to gain a memory efficiency advantage on 
+  generation of massive ranges. In Python 2, range generated the whole 
+  list at once while xrange generated each element successively.
+
+Monday, Oct 1, 2012
+-------------------
+* The Python 
+  `bisect.insort <http://docs.python.org/library/bisect.html#bisect.insort>`_
+  function inserts an element into a sort list. It essentially does the
+  next logical step after bisect.bisect where it inserts the element in
+  sorted order.
+
 Sunday, Sept 30, 2012
 ---------------------
-* Use the `bisect <http://docs.python.org/library/bisect.html>`_ library
-  to search with the bisect.bisect function. For example, bisect([1,2,3,4],2)
-  returns 2.
+* Use the Python `bisect <http://docs.python.org/library/bisect.html>`_ 
+  library to search with the bisect.bisect function. For example, 
+  bisect([1,2,3,4],2) returns 2.
 
 ----
 
