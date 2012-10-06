@@ -56,9 +56,71 @@
 <div class="section" id="what-is-this">
 <h2>What is this?</h2>
 <p>I force myself to learn at least one new concept or relevant detail per day.
-This is where I keep track of what I learn so I can review it periodically.</p>
+This is where I keep track of what I learn so I can review it periodically.
+Sometimes I put things down that I already know but often forget and I want
+to use the concepts more often.</p>
 </div>
 <hr class="docutils" />
+<div class="section" id="saturday-oct-6-2012">
+<h2>Saturday, Oct 6, 2012</h2>
+<ul class="simple">
+<li>Python's list.count method counts the number of times an object is
+contained within a list:</li>
+</ul>
+<div class="highlight"><pre>&gt;&gt;&gt; l = [1, 2, 3, 4, 5, 6, 6, 7, 8, 9, 10]
+&gt;&gt;&gt; l.count(6)
+2
+</pre></div>
+<!--  -->
+</div>
+<div class="section" id="friday-oct-5-2012">
+<h2>Friday, Oct 5, 2012</h2>
+<ul class="simple">
+<li>The Python <a class="reference external" href="http://docs.python.org/library/functions.html#abs">abs</a>
+function returns the absolute value of an integer or floating point number:</li>
+</ul>
+<div class="highlight"><pre>&gt;&gt;&gt; a, b = -5, -8.654
+&gt;&gt;&gt; abs(a)
+5
+&gt;&gt;&gt; abs(b)
+8.654
+</pre></div>
+<!--  -->
+</div>
+<div class="section" id="thursday-oct-4-2012">
+<h2>Thursday, Oct 4, 2012</h2>
+<ul class="simple">
+<li>The Python <a class="reference external" href="http://docs.python.org/library/functions.html#sum">sum</a>
+function works on an iterable object and adds its values together:</li>
+</ul>
+<div class="highlight"><pre>&gt;&gt;&gt; a = range(0, 5)
+&gt;&gt;&gt; a
+[0, 1, 2, 3, 4]
+&gt;&gt;&gt; sum(a)
+10
+</pre></div>
+<!--  -->
+</div>
+<div class="section" id="wednesday-oct-3-2012">
+<h2>Wednesday, Oct 3, 2012</h2>
+<ul class="simple">
+<li>You can have a default value for Python dictionary retrieval by using
+the get method:</li>
+</ul>
+<div class="highlight"><pre>&gt;&gt;&gt; d = {}
+&gt;&gt;&gt; val = d.get(&#39;hello&#39;, &#39;default value&#39;)
+&gt;&gt;&gt; print val
+default value
+&gt;&gt;&gt;
+</pre></div>
+<!--  -->
+<p>The default value is commonly useful with Django when working with
+GET and POST requests:</p>
+<div class="highlight"><pre># if no user_name in POST, set value to None
+username = request.POST.get(&#39;user_name&#39;, None)
+</pre></div>
+<!--  -->
+</div>
 <div class="section" id="tuesday-oct-2-2012">
 <h2>Tuesday, Oct 2, 2012</h2>
 <ul class="simple">

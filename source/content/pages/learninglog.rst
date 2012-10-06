@@ -7,8 +7,83 @@ What is this?
 -------------
 I force myself to learn at least one new concept or relevant detail per day.
 This is where I keep track of what I learn so I can review it periodically.
+Sometimes I put things down that I already know but often forget and I want
+to use the concepts more often.
 
 ----
+
+
+Saturday, Oct 6, 2012
+---------------------
+* Python's list.count method counts the number of times an object is 
+  contained within a list:
+
+.. code-block:: python-list-count
+
+  >>> l = [1, 2, 3, 4, 5, 6, 6, 7, 8, 9, 10]
+  >>> l.count(6)
+  2
+
+..
+
+
+Friday, Oct 5, 2012
+-------------------
+* The Python `abs <http://docs.python.org/library/functions.html#abs>`_ 
+  function returns the absolute value of an integer or floating point number:
+
+.. code-block:: python-abs-function
+
+  >>> a, b = -5, -8.654
+  >>> abs(a)
+  5
+  >>> abs(b)
+  8.654
+..
+
+
+Thursday, Oct 4, 2012
+---------------------
+* The Python `sum <http://docs.python.org/library/functions.html#sum>`_
+  function works on an iterable object and adds its values together:
+
+.. code-block:: python-sum-function
+
+  >>> a = range(0, 5)
+  >>> a
+  [0, 1, 2, 3, 4]
+  >>> sum(a)
+  10
+
+..
+
+
+Wednesday, Oct 3, 2012
+----------------------
+* You can have a default value for Python dictionary retrieval by using
+  the get method:
+
+.. code-block:: python-dictionary-get-default
+
+  >>> d = {}
+  >>> val = d.get('hello', 'default value')
+  >>> print val
+  default value
+  >>>
+
+..
+
+
+The default value is commonly useful with Django when working with
+GET and POST requests:
+
+.. code-block:: python-dictionary-get-default-django
+
+  # if no user_name in POST, set value to None
+  username = request.POST.get('user_name', None)
+
+..
+
 
 Tuesday, Oct 2, 2012
 --------------------
@@ -17,6 +92,7 @@ Tuesday, Oct 2, 2012
   generation of massive ranges. In Python 2, range generated the whole 
   list at once while xrange generated each element successively.
 
+
 Monday, Oct 1, 2012
 -------------------
 * The Python 
@@ -24,6 +100,7 @@ Monday, Oct 1, 2012
   function inserts an element into a sort list. It essentially does the
   next logical step after bisect.bisect where it inserts the element in
   sorted order.
+
 
 Sunday, Sept 30, 2012
 ---------------------
