@@ -810,7 +810,7 @@ pointer capability. Thanks to &lt;a class="reference external" href="https://git
 the pull request was merged and closed just a few hours later. So now
 presentation pointers work great with impress.js.&lt;/p&gt;
 </summary></entry><entry><title>New Blog</title><link href="http://www.mattmakai.com/new-blog.html" rel="alternate"></link><updated>2012-01-01T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/new-blog.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: &lt;strong&gt;This post is outdated&lt;/strong&gt; because I am
-&lt;a class="reference external" href="/matt-makai-dot-com-site-relaunch.html"&gt;already on a new blog platform&lt;/a&gt;.&lt;/p&gt;
+&lt;a class="reference external" href="../matt-makai-dot-com-site-relaunch.html"&gt;already on a new blog platform&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;To kick off 2012, I'm shifting my technical blog from Tumblr to my own platform.&lt;/p&gt;
 &lt;p&gt;I created this site with &lt;a class="reference external" href="http://python.org/"&gt;Python&lt;/a&gt;,
 &lt;a class="reference external" href="http://www.djangoproject.com/"&gt;Django&lt;/a&gt;,

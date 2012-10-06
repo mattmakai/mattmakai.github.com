@@ -7,7 +7,7 @@ New Blog
 :slug: new-blog
 
 *Note*: **This post is outdated** because I am 
-`already on a new blog platform </matt-makai-dot-com-site-relaunch.html>`_.
+`already on a new blog platform <../matt-makai-dot-com-site-relaunch.html>`_.
 
 To kick off 2012, I'm shifting my technical blog from Tumblr to my own platform.
 
