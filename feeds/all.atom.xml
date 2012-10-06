@@ -1,5 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all.atom.xml" rel="self"></link><id>http://www.mattmakai.com</id><updated>2012-09-29T00:00:00-04:00</updated><entry><title>Agile in the Federal Government Presentation</title><link href="http://www.mattmakai.com/agile-in-federal-government-presentation.html" rel="alternate"></link><updated>2012-09-29T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/agile-in-federal-government-presentation.html</id><summary type="html">&lt;p&gt;Yesterday I presented at the &lt;a class="reference external" href="http://www.pmiwdc.org/2012/09/project-management-symposium"&gt;2012 PMI Project Management Symposium&lt;/a&gt; in at the Crystal City
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all.atom.xml" rel="self"></link><id>http://www.mattmakai.com</id><updated>2012-10-06T00:00:00-04:00</updated><entry><title>The Journey to True Full-Stack Developer</title><link href="http://www.mattmakai.com/journey-to-true-full-stack-developer.html" rel="alternate"></link><updated>2012-10-06T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/journey-to-true-full-stack-developer.html</id><summary type="html">&lt;p&gt;There are several areas in which I need to improve to be a truly self-reliant
+full-stack software engineer. My full-stack focus is on web development, both
+traditional desktop and tablet browsers as well as constrained smartphone
+mobile browsers. This post describes those areas and what I'm doing through
+the next year to improve those deficiencies.&lt;/p&gt;
+&lt;p&gt;The technical areas I need to improve in are:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;strong&gt;Web design&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Server monitoring&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Data analysis &amp;amp; visualization&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I also want to get better at content creation, marketing, and working with
+end users to understand their needs better, but I won't cover those less
+technical topics in this post.&lt;/p&gt;
+&lt;div class="section" id="web-design"&gt;
+&lt;h2&gt;Web Design&lt;/h2&gt;
+&lt;p&gt;I'm fine with CSS, LESS, and JavaScript although there's always room to get
+better in those areas. What I really need to get better in is creating
+interesting graphics that aid users' understanding of the products I develop.
+A great example of this is
+&lt;a class="reference external" href="http://teamtreehouse.com/"&gt;Team Treehouse's current home page&lt;/a&gt; where
+the site asks &amp;quot;What do you want to learn today?&amp;quot; with intuitive icons for
+web design, web development, and iOS development. Creating simple icons
+like those and using them where appropriate goes a long way towards converting
+a ho-hum web design into both a more appealing aesthetic and easier for users.&lt;/p&gt;
+&lt;p&gt;Towards this end I will (finally) purchase a copy of Adobe Illustrator CS6,
+work on tutorials, and pick up tips from my web design friends. Retrofitting
+&lt;a class="reference external" href="https://www.proofdriven.com/"&gt;ProofDriven&lt;/a&gt; with new icons will likely be
+my first conversion project so I have a goal to work towards.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="server-monitoring"&gt;
+&lt;h2&gt;Server Monitoring&lt;/h2&gt;
+&lt;p&gt;Lately I have started using Heroku to deploy many of my side projects, but
+I still do a lot of DevOps for clients with Linux, Apache, nginx,
+mod_wsgi, Green Unicorn, MySQL, and PostgreSQL.&lt;/p&gt;
+&lt;p&gt;I am ashamed to admit I have very little insight into how well the servers
+I'm using are holding up under load. This situation really needs to be
+corrected by using a combination of Graphite &amp;amp; statsd, Raven &amp;amp; Sentry (I
+do already use these in many cases), New Relic, and some quick and dirty
+custom code with Python's cProfile and psutil.&lt;/p&gt;
+&lt;p&gt;Monitoring is a complicated subject and every application has a different
+server resource utilization profile. Once I collect the metrics, my next
+area for improvement will be important.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="data-analysis-and-visualization"&gt;
+&lt;h2&gt;Data analysis and visualization&lt;/h2&gt;
+&lt;p&gt;There's something about working with Python that makes data analysis
+appealing. Maybe it's the easy-to-use built-in data structures or the
+abundance of analysis libraries such as
+&lt;a class="reference external" href="http://pandas.pydata.org/"&gt;pandas&lt;/a&gt;, &lt;a class="reference external" href="http://numpy.scipy.org/"&gt;NumPy&lt;/a&gt;,
+and &lt;a class="reference external" href="http://www.scipy.org/"&gt;SciPy&lt;/a&gt;. Whatever the reason, I plan to study
+O'Reilly's excellent
+&lt;a class="reference external" href="http://shop.oreilly.com/product/0636920023784.do"&gt;Data Analysis with Python&lt;/a&gt;
+book to learn more, particularly about Pandas.&lt;/p&gt;
+&lt;p&gt;On the visualization side, d3.js is fantastic. I've already been using it to
+create simple visualizations such as
+&lt;a class="reference external" href="http://www.prgrmrlvlup.com/"&gt;prgrmrlvlup&lt;/a&gt; and some other internal Excella
+applications for business development. I'm a huge fan of using CSS to style
+the visualizations and the enter(), exit(), and data joins model. Overall
+d3.js will provide the foundation for visualizing the results of  interesting
+data sets processed on the server side with Python. I'll write blog posts and
+add many d3.js-related entries in my
+&lt;a class="reference external" href="../pages/learning-log.html"&gt;learning log&lt;/a&gt; over the next several months.&lt;/p&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>Agile in the Federal Government Presentation</title><link href="http://www.mattmakai.com/agile-in-federal-government-presentation.html" rel="alternate"></link><updated>2012-09-29T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/agile-in-federal-government-presentation.html</id><summary type="html">&lt;p&gt;Yesterday I presented at the &lt;a class="reference external" href="http://www.pmiwdc.org/2012/09/project-management-symposium"&gt;2012 PMI Project Management Symposium&lt;/a&gt; in at the Crystal City
 Hyatt in Arlington, Virginia. My &lt;a class="reference external" href="/presentations/agile-software-development-in-federal-government.html"&gt;slides for the talk&lt;/a&gt; are posted and the source code
 is &lt;a class="reference external" href="https://github.com/makaimc/mattmakai.github.com/blob/gh-pages/source/static-html/presentations/agile-software-development-in-federal-government.html"&gt;available on Github&lt;/a&gt;.
 It's a decent example of &lt;a class="reference external" href="http://bartaz.github.com/impress.js"&gt;impress.js&lt;/a&gt;

@@ -219,56 +219,76 @@
       </div>
       <div class="span8 well">
         
-  <h2>Recent Design Books</h2>
+  <h2>The Journey to True Full-Stack Developer</h2>
   
   
     <div class="blog-content">
-  <p>I recently purchased and read two design books,
-<a class="reference external" href="http://bootstrappingdesign.com/">Bootstrapping Design</a> by Jarrod Drysdale
-and
-<a class="reference external" href="http://sachagreif.com/ebook/">Step by Step UI Design</a> by Sacha Greif. Both
-books came out around the same time and were on the front page of Hacker News,
-so they are linked in my brain and probably many other people's minds. I felt
-I got a lot of value out of each book and for different reasons. If I
-had to do it over again, I would still purchase both.</p>
-<p><strong>Bootstrapping Design</strong></p>
-<p>Bootstrapping Design had a lot of specific advice for web application
-designers. In particular, the chapters on typography and color were fantastic.
-The typography advice on using a sans serif font for headlines and a serif
-font for block text really improved my designs (which need to be incorporated
-into this blog). The advice on choosing one color to start with and then
-using a second color sparingly really helped get me past that initial hurdle
-of uncertainty around picking color schemes.</p>
-<p>I've read the CRAP (Contrast, Repetition, Alignment, and Proximity) principles
-before, so I had a general understanding of how to use them in good design.
-Bootstrapping Design presented specific tips on how to handle each of these
-principles in practice, which is often lacking from other books.</p>
-<p>Overall there were only two areas I could see improvement in this book. First,
-incorporating a complete example (similar to how Step by Step UI Design
-is presented) at the end of the book that reinforces the tips presented.
-Second, the advice and tips presented were so useful I found myself saying,
-&quot;I really want more advice like this.&quot;</p>
-<p><strong>Step by Step UI Design</strong></p>
-<p>Step by Step UI Design presents a complete example from start to finish of
-a web application screen design. A Photoshop PSD is included in the deluxe
-package of the book (I purchased this deluxe version). I found the PSD
-useful while going through the book although I'm on the fence as to whether
-I would spend the extra money for it if I had to do it over again.</p>
-<p>What I really liked about this book was that it was very practical and
-focused on creating a single web application screen. The explanations
-behind why certain design decisions were made opened
-up the curtain as to what goes on in a designers' mind during the creation
-process. As a software developer but non-design expert, the logical,
-rational look at the process greatly appealed to my analytical method of
-thinking.</p>
-<p>I found the book short enough to read in a single sitting. It is worth
-several read-throughs simply because it is difficult to assimilate all the
-details at once. When Step by Step UI Design is combined with Sacha's recent
-<a class="reference external" href="http://sachagreif.com/the-toolbox-from-idea-to-launch-in-10-hours/">post on the 10 hours it took to create The Toolbox</a>  it provides a complete picture
-of how to both come up with an idea, design it, and execute it quickly.</p>
-<p>Overall I am very pleased I purchased both of these design books. I recommend
-them to fellow software developers who want to improve their design
-thinking and have a more comfortable grasp on the design process.</p>
+  <p>There are several areas in which I need to improve to be a truly self-reliant
+full-stack software engineer. My full-stack focus is on web development, both
+traditional desktop and tablet browsers as well as constrained smartphone
+mobile browsers. This post describes those areas and what I'm doing through
+the next year to improve those deficiencies.</p>
+<p>The technical areas I need to improve in are:</p>
+<blockquote>
+<ol class="arabic simple">
+<li><strong>Web design</strong></li>
+<li><strong>Server monitoring</strong></li>
+<li><strong>Data analysis &amp; visualization</strong></li>
+</ol>
+</blockquote>
+<p>I also want to get better at content creation, marketing, and working with
+end users to understand their needs better, but I won't cover those less
+technical topics in this post.</p>
+<div class="section" id="web-design">
+<h2>Web Design</h2>
+<p>I'm fine with CSS, LESS, and JavaScript although there's always room to get
+better in those areas. What I really need to get better in is creating
+interesting graphics that aid users' understanding of the products I develop.
+A great example of this is
+<a class="reference external" href="http://teamtreehouse.com/">Team Treehouse's current home page</a> where
+the site asks &quot;What do you want to learn today?&quot; with intuitive icons for
+web design, web development, and iOS development. Creating simple icons
+like those and using them where appropriate goes a long way towards converting
+a ho-hum web design into both a more appealing aesthetic and easier for users.</p>
+<p>Towards this end I will (finally) purchase a copy of Adobe Illustrator CS6,
+work on tutorials, and pick up tips from my web design friends. Retrofitting
+<a class="reference external" href="https://www.proofdriven.com/">ProofDriven</a> with new icons will likely be
+my first conversion project so I have a goal to work towards.</p>
+</div>
+<div class="section" id="server-monitoring">
+<h2>Server Monitoring</h2>
+<p>Lately I have started using Heroku to deploy many of my side projects, but
+I still do a lot of DevOps for clients with Linux, Apache, nginx,
+mod_wsgi, Green Unicorn, MySQL, and PostgreSQL.</p>
+<p>I am ashamed to admit I have very little insight into how well the servers
+I'm using are holding up under load. This situation really needs to be
+corrected by using a combination of Graphite &amp; statsd, Raven &amp; Sentry (I
+do already use these in many cases), New Relic, and some quick and dirty
+custom code with Python's cProfile and psutil.</p>
+<p>Monitoring is a complicated subject and every application has a different
+server resource utilization profile. Once I collect the metrics, my next
+area for improvement will be important.</p>
+</div>
+<div class="section" id="data-analysis-and-visualization">
+<h2>Data analysis and visualization</h2>
+<p>There's something about working with Python that makes data analysis
+appealing. Maybe it's the easy-to-use built-in data structures or the
+abundance of analysis libraries such as
+<a class="reference external" href="http://pandas.pydata.org/">pandas</a>, <a class="reference external" href="http://numpy.scipy.org/">NumPy</a>,
+and <a class="reference external" href="http://www.scipy.org/">SciPy</a>. Whatever the reason, I plan to study
+O'Reilly's excellent
+<a class="reference external" href="http://shop.oreilly.com/product/0636920023784.do">Data Analysis with Python</a>
+book to learn more, particularly about Pandas.</p>
+<p>On the visualization side, d3.js is fantastic. I've already been using it to
+create simple visualizations such as
+<a class="reference external" href="http://www.prgrmrlvlup.com/">prgrmrlvlup</a> and some other internal Excella
+applications for business development. I'm a huge fan of using CSS to style
+the visualizations and the enter(), exit(), and data joins model. Overall
+d3.js will provide the foundation for visualizing the results of  interesting
+data sets processed on the server side with Python. I'll write blog posts and
+add many d3.js-related entries in my
+<a class="reference external" href="pages/learning-log.html">learning log</a> over the next several months.</p>
+</div>
 
   <div class="follow-on-twitter">
     If you read this far then you should 
@@ -277,7 +297,7 @@ thinking and have a more comfortable grasp on the design process.</p>
 
   <div class="meta">
     Posted by Matt Makai 
-    on 05.22.2012.
+    on 10.06.2012.
   </div>
 </div>
 <hr/>
