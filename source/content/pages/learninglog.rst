@@ -12,6 +12,33 @@ to use the concepts more often.
 
 ----
 
+Monday, Oct 8, 2012
+-------------------
+* MediaWiki (and therefore also Wikipedia) has an API for retrieving data 
+  that matches text in the page title or content of the page. The data results
+  can be JSON or XML format. For example, to query Wikipedia's articles
+  for five results that contain Python in the page header or text go to
+  this URL:
+
+.. code-block:: query-wikipedia-for-python
+
+  http://en.wikipedia.org/w/api.php?format=json&action=query&list=search&srprop=wordcount&srwhat=text&srlimit=5&srsearch=python
+
+..
+
+
+Sunday, Oct 7, 2012
+-------------------
+* The PostgreSQL 
+  `Temporal extension <http://temporal.projects.postgresql.org/reference.html>`_
+  is for temporal data storage and representation. The temporal extension
+  allows the use of querying and operators such as before, after, and contains
+  for querying time-based data. However, there is not much publicly available
+  information on this extension. Temporal data looks like a good area for
+  an open source project that solves the really hard challenges around
+  temporal data.
+
+----
 
 Saturday, Oct 6, 2012
 ---------------------
