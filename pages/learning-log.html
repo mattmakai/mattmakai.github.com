@@ -61,6 +61,33 @@ Sometimes I put things down that I already know but often forget and I want
 to use the concepts more often.</p>
 </div>
 <hr class="docutils" />
+<div class="section" id="wednesday-oct-10-2012">
+<h2>Wednesday, Oct 10, 2012</h2>
+<ul class="simple">
+<li>The Python PEP8 guide says the <a class="reference external" href="http://www.python.org/dev/peps/pep-0008/#maximum-line-length">maximum line length</a>
+should be 79 characters for all lines. For long blocks of text such as
+docstrings and comments, a 72 character limit is recommended.</li>
+</ul>
+</div>
+<div class="section" id="tuesday-oct-9-2012">
+<h2>Tuesday, Oct 9, 2012</h2>
+<ul class="simple">
+<li>Python has <a class="reference external" href="http://docs.python.org/tutorial/stdlib.html#data-compression">data compression</a>
+built into stdlib. So for example you can use zlib to compress strings
+then uncompress them:</li>
+</ul>
+<div class="highlight"><pre>&gt;&gt;&gt; import zlib
+&gt;&gt;&gt; a = &quot;hello world this string doesn&#39;t need compression but another might&quot;
+&gt;&gt;&gt; c = zlib.compress(a)
+&gt;&gt;&gt; len(a)
+66
+&gt;&gt;&gt; len(c)
+63
+</pre></div>
+<!--  -->
+<p>On much larger blocks of text this savings could be more substantial and
+worth using for serialization over a network connection or saving to a file.</p>
+</div>
 <div class="section" id="monday-oct-8-2012">
 <h2>Monday, Oct 8, 2012</h2>
 <ul class="simple">

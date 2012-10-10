@@ -12,6 +12,33 @@ to use the concepts more often.
 
 ----
 
+Wednesday, Oct 10, 2012
+-----------------------
+* The Python PEP8 guide says the `maximum line length <http://www.python.org/dev/peps/pep-0008/#maximum-line-length>`_
+  should be 79 characters for all lines. For long blocks of text such as
+  docstrings and comments, a 72 character limit is recommended.
+
+Tuesday, Oct 9, 2012
+--------------------
+* Python has `data compression <http://docs.python.org/tutorial/stdlib.html#data-compression>`_
+  built into stdlib. So for example you can use zlib to compress strings
+  then uncompress them:
+
+.. code-block:: python-stdlib-compression-zlib
+
+  >>> import zlib
+  >>> a = "hello world this string doesn't need compression but another might"
+  >>> c = zlib.compress(a)
+  >>> len(a)
+  66
+  >>> len(c)
+  63
+
+..
+
+On much larger blocks of text this savings could be more substantial and
+worth using for serialization over a network connection or saving to a file.
+
 Monday, Oct 8, 2012
 -------------------
 * MediaWiki (and therefore also Wikipedia) has an API for retrieving data 
