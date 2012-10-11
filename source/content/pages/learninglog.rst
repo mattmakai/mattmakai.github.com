@@ -12,11 +12,20 @@ to use the concepts more often.
 
 ----
 
+Thursday, Oct 11, 2012
+----------------------
+* Python functions with multiple return values are returned as a tuple. In
+  fact functions with a single return value is returned as a tuple with a
+  single element. This makes sense because a return statement like 
+  *return a, b, c* has the syntax of returning a tuple.
+
+
 Wednesday, Oct 10, 2012
 -----------------------
 * The Python PEP8 guide says the `maximum line length <http://www.python.org/dev/peps/pep-0008/#maximum-line-length>`_
   should be 79 characters for all lines. For long blocks of text such as
   docstrings and comments, a 72 character limit is recommended.
+
 
 Tuesday, Oct 9, 2012
 --------------------
