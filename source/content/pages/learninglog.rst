@@ -12,6 +12,10 @@ to use the concepts more often.
 
 ----
 
+Friday, Oct 12, 2012
+--------------------
+* 
+
 Thursday, Oct 11, 2012
 ----------------------
 * Python functions with multiple return values are returned as a tuple. In
