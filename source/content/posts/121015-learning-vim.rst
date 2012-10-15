@@ -23,7 +23,7 @@ mode but I ended up switching back to straight Vim. So here are my
 recommendations for getting started.
 
 It takes awhile to learn VIM but it's amazing once you do. I took the 
-Vim cheatsheet (http://www.tuxfiles.org/linuxhelp/vimcheat.html) and 
+`Vim cheatsheet <http://www.tuxfiles.org/linuxhelp/vimcheat.html>`_ and 
 tried to learn a command each day. Just look for something that you either
 didn't know you could do, or try to do on a regular basis but aren't quite
 sure how. For example, I find/replace things all the times with regular
