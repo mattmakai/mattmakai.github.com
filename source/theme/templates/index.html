@@ -7,7 +7,7 @@
   {% if not articles %}
     No posts yet!
   {% endif %}
-  {% for article in dates|reverse %}
+  {% for article in dates %}
     {% if article.category == "blog" %}
       <div class="post">
         <h1 class="blog-title">

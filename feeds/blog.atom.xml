@@ -1,5 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/blog.atom.xml" rel="self"></link><id>http://www.mattmakai.com</id><updated>2012-10-06T00:00:00-04:00</updated><entry><title>The Journey to True Full-Stack Developer</title><link href="http://www.mattmakai.com/journey-to-true-full-stack-developer.html" rel="alternate"></link><updated>2012-10-06T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/journey-to-true-full-stack-developer.html</id><summary type="html">&lt;p&gt;There are several areas in which I need to improve to be a truly self-reliant
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/blog.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2012-10-15T00:00:00-04:00</updated><entry><title>Learning Vim - A Colleague's Question</title><link href="http://www.mattmakai.com/learning-vim-colleague-question.html" rel="alternate"></link><updated>2012-10-15T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-10-15:learning-vim-colleague-question.html</id><summary type="html">&lt;p&gt;I received the following email from my colleague this morning:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hey buddy, finally taking the plunge to learn VIM because it will make
+me a lot more productive when working with Puppet manifests.  Any
+helpful tips you've come across?  I already set up my client with
+pathogen to allow me to easily use new plugins and I pulled in things
+like tabular, syntastic and puppet syntax highlighting.  Love to hear
+anything else you'd recommend.&lt;/p&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I love Vim and I've been using it for about four years as my only editor
+when coding in Python, typing up blog posts, or learning new
+programming languages. I even tried switching to Sublime Text 2 with Vim
+mode but I ended up switching back to straight Vim. So here are my
+recommendations for getting started.&lt;/p&gt;
+&lt;p&gt;It takes awhile to learn VIM but it's amazing once you do. I took the
+Vim cheatsheet (&lt;a class="reference external" href="http://www.tuxfiles.org/linuxhelp/vimcheat.html"&gt;http://www.tuxfiles.org/linuxhelp/vimcheat.html&lt;/a&gt;) and
+tried to learn a command each day. Just look for something that you either
+didn't know you could do, or try to do on a regular basis but aren't quite
+sure how. For example, I find/replace things all the times with regular
+expressions. Here's how you can easy do that globally in a file:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;:%s/replace-this-text/replace-with-this-text/g
+&lt;/pre&gt;&lt;/div&gt;
+&lt;!--  --&gt;
+&lt;p&gt;The major logical leap is understanding that Vim is basically a language where you have a command and it can be prefixed by a number to execute it multiple times. For example,&lt;/p&gt;
+&lt;p&gt;dd &amp;lt;-- cut the line and move it into the &amp;quot;clipboard&amp;quot;&lt;/p&gt;
+&lt;p&gt;5dd &amp;lt;-- cut 5 lines and move them into the &amp;quot;clipboard&amp;quot;&lt;/p&gt;
+&lt;p&gt;Definitely start out by checking out some interesting web tutorials. Here are
+some resources that I have found helpful over the years:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://haridas.in/vim-as-your-ide.html"&gt;Vim as your IDE&lt;/a&gt;. Awesome
+article.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.moolenaar.net/habits.html"&gt;7 Habits of Effective Text Editing&lt;/a&gt;
+great article on how to effectively use Vim.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/scrooloose/syntastic"&gt;Syntastic&lt;/a&gt;. Plugins for
+Vim. Important for things like syntax checking and code completion.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://blog.sanctum.geek.nz/vim-koans/"&gt;Vim Koans&lt;/a&gt;. A bit
+tongue-and-cheek but you can learn a lot from them as well.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://vimuniversity.com/"&gt;Vim University&lt;/a&gt;. Some good introductory
+articles and screencasts.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A few random tips. I disabled the use of the arrow keys so I could get used
+to the &amp;quot;hlkj&amp;quot; movement. Do that with the following in your .vimrc file:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&amp;quot; disable arrow keys
+map &amp;lt;up&amp;gt; &amp;lt;nop&amp;gt;
+map &amp;lt;down&amp;gt; &amp;lt;nop&amp;gt;
+map &amp;lt;left&amp;gt; &amp;lt;nop&amp;gt;
+map &amp;lt;right&amp;gt; &amp;lt;nop&amp;gt;
+imap &amp;lt;up&amp;gt; &amp;lt;nop&amp;gt;
+imap &amp;lt;down&amp;gt; &amp;lt;nop&amp;gt;
+imap &amp;lt;left&amp;gt; &amp;lt;nop&amp;gt;
+imap &amp;lt;right&amp;gt; &amp;lt;nop&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;!--  --&gt;
+&lt;p&gt;Also if you prefer spaces to tabs just use &lt;em&gt;set tabexpand&lt;/em&gt; in your .vimrc.
+Shift width and tab spaces usually default to 8 spaces, so I change that
+to 4 spaces with:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;set ts=4
+set shiftwidth=4
+&lt;/pre&gt;&lt;/div&gt;
+&lt;!--  --&gt;
+&lt;p&gt;Vim takes awhile to get the hang of but once you get over that initial
+curve the editor feels like a natural extension of your thought process.
+The speed at which you can accomplish most tasks skyrockets after
+learning enough commands and embracing the philosophy of just using
+the keyboard for editing.&lt;/p&gt;
+</summary></entry><entry><title>The Journey to True Full-Stack Developer</title><link href="http://www.mattmakai.com/journey-to-true-full-stack-developer.html" rel="alternate"></link><updated>2012-10-06T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-10-06:journey-to-true-full-stack-developer.html</id><summary type="html">&lt;p&gt;There are several areas in which I need to improve to be a truly self-reliant
 full-stack software engineer. My full-stack focus is on web development, both
 traditional desktop and tablet browsers as well as constrained smartphone
 mobile browsers. This post describes those areas and what I'm doing through
@@ -65,7 +131,7 @@ data sets processed on the server side with Python. I'll write blog posts and
 add many d3.js-related entries in my
 &lt;a class="reference external" href="../pages/learning-log.html"&gt;learning log&lt;/a&gt; over the next several months.&lt;/p&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>Agile in the Federal Government Presentation</title><link href="http://www.mattmakai.com/agile-in-federal-government-presentation.html" rel="alternate"></link><updated>2012-09-29T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/agile-in-federal-government-presentation.html</id><summary type="html">&lt;p&gt;Yesterday I presented at the &lt;a class="reference external" href="http://www.pmiwdc.org/2012/09/project-management-symposium"&gt;2012 PMI Project Management Symposium&lt;/a&gt; in at the Crystal City
+</summary></entry><entry><title>Agile in the Federal Government Presentation</title><link href="http://www.mattmakai.com/agile-in-federal-government-presentation.html" rel="alternate"></link><updated>2012-09-29T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-09-29:agile-in-federal-government-presentation.html</id><summary type="html">&lt;p&gt;Yesterday I presented at the &lt;a class="reference external" href="http://www.pmiwdc.org/2012/09/project-management-symposium"&gt;2012 PMI Project Management Symposium&lt;/a&gt; in at the Crystal City
 Hyatt in Arlington, Virginia. My &lt;a class="reference external" href="/presentations/agile-software-development-in-federal-government.html"&gt;slides for the talk&lt;/a&gt; are posted and the source code
 is &lt;a class="reference external" href="https://github.com/makaimc/mattmakai.github.com/blob/gh-pages/source/static-html/presentations/agile-software-development-in-federal-government.html"&gt;available on Github&lt;/a&gt;.
 It's a decent example of &lt;a class="reference external" href="http://bartaz.github.com/impress.js"&gt;impress.js&lt;/a&gt;
@@ -80,7 +146,7 @@ had at least several more years of experience than me. I hope everyone
 who went got some value out of it and took away the key themes - there are
 certain actions (elaborated on in the presentation) that the best
 project managers do constantly that make projects much more likely to succeed.&lt;/p&gt;
-</summary></entry><entry><title>Introduction to Python for Non-Developers Notes</title><link href="http://www.mattmakai.com/introduction-python-non-developers-notes.html" rel="alternate"></link><updated>2012-08-22T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/introduction-python-non-developers-notes.html</id><summary type="html">&lt;p&gt;Matt Camilli and I gave a
+</summary></entry><entry><title>Introduction to Python for Non-Developers Notes</title><link href="http://www.mattmakai.com/introduction-python-non-developers-notes.html" rel="alternate"></link><updated>2012-08-22T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-08-22:introduction-python-non-developers-notes.html</id><summary type="html">&lt;p&gt;Matt Camilli and I gave a
 &lt;a class="reference external" href="/presentations/what-is-python-for-everyone.html"&gt;talk Tuesday night&lt;/a&gt;
 introducing about 30 non-developers to the Python programming language's
 history, philosophy, and differences from other languages, as well as an
@@ -102,7 +168,7 @@ fantastic, especially
 &lt;a class="reference external" href="http://techreport.com/discussions.x/16713"&gt;Google&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Thanks again to everyone who came out to learn more about Python and also
 to my partner in crime, Matt Camilli.&lt;/p&gt;
-</summary></entry><entry><title>The First Django Website Run On Python 3</title><link href="http://www.mattmakai.com/first-django-website-run-python-3.html" rel="alternate"></link><updated>2012-08-15T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/first-django-website-run-python-3.html</id><summary type="html">&lt;p&gt;The top post on &lt;a class="reference external" href="http://news.ycombinator.com/"&gt;Hacker News&lt;/a&gt; this morning
+</summary></entry><entry><title>The First Django Website Run On Python 3</title><link href="http://www.mattmakai.com/first-django-website-run-python-3.html" rel="alternate"></link><updated>2012-08-15T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-08-15:first-django-website-run-python-3.html</id><summary type="html">&lt;p&gt;The top post on &lt;a class="reference external" href="http://news.ycombinator.com/"&gt;Hacker News&lt;/a&gt; this morning
 is about a &lt;a class="reference external" href="http://myks.org/django-python3/"&gt;Django (1.5 development branch) site running on Python 3&lt;/a&gt;.
 Why is a Django site running on Python 3 newsworthy? Because while Django
 1.5 is tested and supported against Python 2.6 and Python 2.7 (dropping
@@ -121,7 +187,7 @@ throughout the development cycle and whether Python 3 is officially supported
 (the current plan) or whether there is a backtrack to unofficial support
 for this release to prevent too much of a delay in
 &lt;a class="reference external" href="https://docs.djangoproject.com/en/dev/releases/1.5/"&gt;releasing version 1.5&lt;/a&gt;.&lt;/p&gt;
-</summary></entry><entry><title>Steps for Non-Developers to Start an Internet Business</title><link href="http://www.mattmakai.com/steps-non-developers-start-internet-business.html" rel="alternate"></link><updated>2012-08-14T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/steps-non-developers-start-internet-business.html</id><summary type="html">&lt;p&gt;I am often asked by friends and colleagues about what first steps
+</summary></entry><entry><title>Steps for Non-Developers to Start an Internet Business</title><link href="http://www.mattmakai.com/steps-non-developers-start-internet-business.html" rel="alternate"></link><updated>2012-08-14T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-08-14:steps-non-developers-start-internet-business.html</id><summary type="html">&lt;p&gt;I am often asked by friends and colleagues about what first steps
 a non-technical person should take when they come up with ideas and want to
 do something with them. I always appreciate these requests since it
 provides recognition that I have some insight into software development
@@ -270,18 +336,18 @@ to know.&lt;/p&gt;
 what else needs to be added to this outline for non-developers as I also
 work on expanding each point into its own blog post.&lt;/p&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>A Fascinating Post on Curiousity's Software</title><link href="http://www.mattmakai.com/fascinating-post-curiositys-software.html" rel="alternate"></link><updated>2012-08-13T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/fascinating-post-curiositys-software.html</id><summary type="html">&lt;p&gt;I found this &lt;a class="reference external" href="http://jlouisramblings.blogspot.com/2012/08/getting-25-megalines-of-code-to-behave.html"&gt;blog post on Curiosity's hardware and software&lt;/a&gt; to
+</summary></entry><entry><title>A Fascinating Post on Curiousity's Software</title><link href="http://www.mattmakai.com/fascinating-post-curiositys-software.html" rel="alternate"></link><updated>2012-08-13T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-08-13:fascinating-post-curiositys-software.html</id><summary type="html">&lt;p&gt;I found this &lt;a class="reference external" href="http://jlouisramblings.blogspot.com/2012/08/getting-25-megalines-of-code-to-behave.html"&gt;blog post on Curiosity's hardware and software&lt;/a&gt; to
 be a fascinating read. The Curiosity rover has 2.5 million lines of C code
 running on custom radiation and extreme temperature hardened computer systems.
 The author presents his view as an Erlang programmer of how the systems are
 designed to be as fault-proof as possible.&lt;/p&gt;
-</summary></entry><entry><title>Spreadsheets As A Beachhead</title><link href="http://www.mattmakai.com/spreadsheets-as-beachhead.html" rel="alternate"></link><updated>2012-07-14T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/spreadsheets-as-beachhead.html</id><summary type="html">&lt;p&gt;Spreadsheets represent a need by the business to solve a data-related
+</summary></entry><entry><title>Spreadsheets As A Beachhead</title><link href="http://www.mattmakai.com/spreadsheets-as-beachhead.html" rel="alternate"></link><updated>2012-07-14T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-07-14:spreadsheets-as-beachhead.html</id><summary type="html">&lt;p&gt;Spreadsheets represent a need by the business to solve a data-related
 problem in a structured manner. Looking for spreadsheets that run
 business-critical operations is an opportunity to build a system that
 replaces an ad hoc bunch of columns with a normalized, scalable database.
 This opportunity holds regardless of whether you're an employee of that
 organization or a consultant.&lt;/p&gt;
-</summary></entry><entry><title>My Favorite Django Article Sources</title><link href="http://www.mattmakai.com/favorite-django-article-sources.html" rel="alternate"></link><updated>2012-06-22T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/favorite-django-article-sources.html</id><summary type="html">&lt;ul class="simple"&gt;
+</summary></entry><entry><title>My Favorite Django Article Sources</title><link href="http://www.mattmakai.com/favorite-django-article-sources.html" rel="alternate"></link><updated>2012-06-22T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-06-22:favorite-django-article-sources.html</id><summary type="html">&lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://tech.yipit.com/"&gt;yipit tech blog&lt;/a&gt;:
 Yipit is a tech start up in New York specializing in daily deals. Their
 platform is built on Python/Django and they write a lot of detailed
@@ -302,7 +368,7 @@ Daniel Greenfield (PyDanny) is an influential developer and blogger in
 the Python world. He writes on general Python subjects as well as specific
 Django topics of interest.&lt;/li&gt;
 &lt;/ul&gt;
-</summary></entry><entry><title>Fabric Function For Rebuilding a Django MySQL Database</title><link href="http://www.mattmakai.com/fabfile-function-rebuilding-django-mysql-database.html" rel="alternate"></link><updated>2012-06-12T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/fabfile-function-rebuilding-django-mysql-database.html</id><summary type="html">&lt;p&gt;This is a very specific blog post on what my Fabric fabfile.py looks
+</summary></entry><entry><title>Fabric Function For Rebuilding a Django MySQL Database</title><link href="http://www.mattmakai.com/fabfile-function-rebuilding-django-mysql-database.html" rel="alternate"></link><updated>2012-06-12T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-06-12:fabfile-function-rebuilding-django-mysql-database.html</id><summary type="html">&lt;p&gt;This is a very specific blog post on what my Fabric fabfile.py looks
 like for rebuilding my database. This is particularly useful early in
 a project lifecycle before I start using South for database migrations
 and instead I am building new tables and columns at a fast clip.&lt;/p&gt;
@@ -323,7 +389,7 @@ env.deploy_dir in your fabfile before calling this function.&lt;/li&gt;
 &lt;li&gt;I put my main test.json fixture under a &amp;quot;core&amp;quot; app directory. Parameterize
 these settings if your project structure differs.&lt;/li&gt;
 &lt;/ul&gt;
-</summary></entry><entry><title>Recent Python Posts</title><link href="http://www.mattmakai.com/recent-python-posts.html" rel="alternate"></link><updated>2012-05-27T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/recent-python-posts.html</id><summary type="html">&lt;p&gt;I recently read and enjoyed the following Python blog posts (in no
+</summary></entry><entry><title>Recent Python Posts</title><link href="http://www.mattmakai.com/recent-python-posts.html" rel="alternate"></link><updated>2012-05-27T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-05-27:recent-python-posts.html</id><summary type="html">&lt;p&gt;I recently read and enjoyed the following Python blog posts (in no
 particular order).&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://me.veekun.com/blog/2012/05/23/python-faq-descriptors/"&gt;Python FAQ: Descriptors&lt;/a&gt;&lt;/li&gt;
@@ -332,7 +398,7 @@ particular order).&lt;/p&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://satyajit.ranjeev.in/2012/05/17/python-a-few-things-to-remember.html"&gt;A Few Things to Remember While Coding in Python&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://lukeplant.me.uk/blog/posts/some-quick-django-optimisation-lessons/"&gt;Some quick Django optimisation lessons&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</summary></entry><entry><title>RFP Bullshit</title><link href="http://www.mattmakai.com/government-rfp-bullshit.html" rel="alternate"></link><updated>2012-05-25T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/government-rfp-bullshit.html</id><summary type="html">&lt;p&gt;Request For Proposals (RFPs) in the government are so heavily tilted towards
+</summary></entry><entry><title>RFP Bullshit</title><link href="http://www.mattmakai.com/government-rfp-bullshit.html" rel="alternate"></link><updated>2012-05-25T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-05-25:government-rfp-bullshit.html</id><summary type="html">&lt;p&gt;Request For Proposals (RFPs) in the government are so heavily tilted towards
 &lt;a class="reference external" href="http://www.boozallen.com/"&gt;big&lt;/a&gt;
 &lt;a class="reference external" href="http://www.lockheedmartin.com/"&gt;lumbering&lt;/a&gt;
 &lt;a class="reference external" href="http://www.saic.com/"&gt;companies&lt;/a&gt;* that government uses a
@@ -352,7 +418,7 @@ but it seems like stating your failures with the successes in the RFP
 would be a nice change to the process.&lt;/p&gt;
 &lt;p&gt;* These are just a sample of the massive corporations I'm talking about.
 Also I used to work for Booz Allen so I am not exempt from this rant.&lt;/p&gt;
-</summary></entry><entry><title>wget and Proxy Servers</title><link href="http://www.mattmakai.com/wget-proxy-servers.html" rel="alternate"></link><updated>2012-05-24T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/wget-proxy-servers.html</id><summary type="html">&lt;p&gt;Short answer: before you use wget, specify
+</summary></entry><entry><title>wget and Proxy Servers</title><link href="http://www.mattmakai.com/wget-proxy-servers.html" rel="alternate"></link><updated>2012-05-24T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-05-24:wget-proxy-servers.html</id><summary type="html">&lt;p&gt;Short answer: before you use wget, specify
 'export http_proxy=my.proxy.server:port' then wget will use the proxy.&lt;/p&gt;
 &lt;p&gt;I needed to grab some files with wget while working on a Linux server I was
 setting up for a Django deployment. Unfortunately, I was behind a firewall
@@ -366,7 +432,7 @@ proxy. No such luck.&lt;/p&gt;
 specify a proxy server to use with wget. I also found
 &lt;a class="reference external" href="http://www.gnu.org/software/wget/manual/html_node/Proxies.html"&gt;this proxies link&lt;/a&gt;
 useful as well.&lt;/p&gt;
-</summary></entry><entry><title>Recent Design Books</title><link href="http://www.mattmakai.com/recent-design-books.html" rel="alternate"></link><updated>2012-05-22T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/recent-design-books.html</id><summary type="html">&lt;p&gt;I recently purchased and read two design books,
+</summary></entry><entry><title>Recent Design Books</title><link href="http://www.mattmakai.com/recent-design-books.html" rel="alternate"></link><updated>2012-05-22T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-05-22:recent-design-books.html</id><summary type="html">&lt;p&gt;I recently purchased and read two design books,
 &lt;a class="reference external" href="http://bootstrappingdesign.com/"&gt;Bootstrapping Design&lt;/a&gt; by Jarrod Drysdale
 and
 &lt;a class="reference external" href="http://sachagreif.com/ebook/"&gt;Step by Step UI Design&lt;/a&gt; by Sacha Greif. Both
@@ -412,7 +478,7 @@ of how to both come up with an idea, design it, and execute it quickly.&lt;/p&gt
 &lt;p&gt;Overall I am very pleased I purchased both of these design books. I recommend
 them to fellow software developers who want to improve their design
 thinking and have a more comfortable grasp on the design process.&lt;/p&gt;
-</summary></entry><entry><title>Advice to College Graduates</title><link href="http://www.mattmakai.com/advice-college-graduates.html" rel="alternate"></link><updated>2012-05-17T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/advice-college-graduates.html</id><summary type="html">&lt;p&gt;A couple of weekends ago, I watched my little brother Luke graduate from
+</summary></entry><entry><title>Advice to College Graduates</title><link href="http://www.mattmakai.com/advice-college-graduates.html" rel="alternate"></link><updated>2012-05-17T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-05-17:advice-college-graduates.html</id><summary type="html">&lt;p&gt;A couple of weekends ago, I watched my little brother Luke graduate from
 &lt;a class="reference external" href="http://www.jmu.edu/"&gt;JMU&lt;/a&gt;. Dr. Rose, the outgoing President of JMU gave
 the commencement address. I've attended &lt;a class="reference external" href="http://www.jmu.edu/"&gt;enough&lt;/a&gt;
 &lt;a class="reference external" href="http://www.vt.edu/"&gt;graduation&lt;/a&gt; &lt;a class="reference external" href="http://www.virginia.edu/"&gt;ceremonies&lt;/a&gt;
@@ -463,12 +529,12 @@ professional life.&lt;/p&gt;
 college grad who wants to succeed and be happy in the real world. That isn't
 &lt;em&gt;everything&lt;/em&gt; you need to know, but it will ultimately lead you in the
 right professional direction.&lt;/p&gt;
-</summary></entry><entry><title>Stanford's CS183 Class Notes</title><link href="http://www.mattmakai.com/stanford-cs-183-class-notes.html" rel="alternate"></link><updated>2012-05-09T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/stanford-cs-183-class-notes.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://blakemasters.tumblr.com/peter-thiels-cs183-startup"&gt;Stanford's CS183 class with Peter Thiel&lt;/a&gt; is simply amazing. A &lt;em&gt;huge&lt;/em&gt; thank you to Blake Masters
+</summary></entry><entry><title>Stanford's CS183 Class Notes</title><link href="http://www.mattmakai.com/stanford-cs-183-class-notes.html" rel="alternate"></link><updated>2012-05-09T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-05-09:stanford-cs-183-class-notes.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://blakemasters.tumblr.com/peter-thiels-cs183-startup"&gt;Stanford's CS183 class with Peter Thiel&lt;/a&gt; is simply amazing. A &lt;em&gt;huge&lt;/em&gt; thank you to Blake Masters
 for writing up summaries of each class. Every class notes post I have read
 has been amazingly insightful. I highly recommend checking it out if you
 are interested in how technology is shaping the world and learning about
 entrepreneurship from some of the major Silicon Valley investors.&lt;/p&gt;
-</summary></entry><entry><title>Big Data Presentation</title><link href="http://www.mattmakai.com/big-data-presentation.html" rel="alternate"></link><updated>2012-05-07T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/big-data-presentation.html</id><summary type="html">&lt;p&gt;Over the weekend I finished up the
+</summary></entry><entry><title>Big Data Presentation</title><link href="http://www.mattmakai.com/big-data-presentation.html" rel="alternate"></link><updated>2012-05-07T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-05-07:big-data-presentation.html</id><summary type="html">&lt;p&gt;Over the weekend I finished up the
 &lt;a class="reference external" href="/presentations/what-is-big-data.html"&gt;big data presentation&lt;/a&gt; that I am
 presenting to Excella's Business Intelligence Center of Excellence this
 evening at 530pm.&lt;/p&gt;
@@ -477,7 +543,7 @@ to my talk (instead of reading from the slides). Therefore it may be hard
 to follow unless you actually hear the talk. Nevertheless, the slides are
 there and present one view of this whole &amp;quot;big data&amp;quot; concept that seems to
 be hyped up everywhere now.&lt;/p&gt;
-</summary></entry><entry><title>Screencasting on Mac OS X</title><link href="http://www.mattmakai.com/screencasting-software-for-mac-os-x.html" rel="alternate"></link><updated>2012-05-04T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/screencasting-software-for-mac-os-x.html</id><summary type="html">&lt;p&gt;I recently took a look at the range of screencasting software available
+</summary></entry><entry><title>Screencasting on Mac OS X</title><link href="http://www.mattmakai.com/screencasting-software-for-mac-os-x.html" rel="alternate"></link><updated>2012-05-04T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-05-04:screencasting-software-for-mac-os-x.html</id><summary type="html">&lt;p&gt;I recently took a look at the range of screencasting software available
 on Mac OS X for a couple of reasons. First, I want to have an easy way
 of demoing software and uploading videos to Vimeo. Second, short
 screencasts like the ones provided by
@@ -534,7 +600,7 @@ purchased from there. This may be becasue the software is new to the App
 Store and it will get better. But do your due diligence to make sure you
 do not end up with a neutered product due to the API limitations placed
 on apps in the Mac OS X App Store.&lt;/p&gt;
-</summary></entry><entry><title>Can't &amp;quot;Find&amp;quot; Developers? Increase Your Offer</title><link href="http://www.mattmakai.com/pay-for-developers.html" rel="alternate"></link><updated>2012-05-03T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/pay-for-developers.html</id><summary type="html">&lt;p&gt;This little
+</summary></entry><entry><title>Can't "Find" Developers? Increase Your Offer</title><link href="http://www.mattmakai.com/pay-for-developers.html" rel="alternate"></link><updated>2012-05-03T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-05-03:pay-for-developers.html</id><summary type="html">&lt;p&gt;This little
 &lt;a class="reference external" href="http://www.irrlicht3d.org/pivot/entry.php?id=1295"&gt;rant about paying developers what the market demands instead of complaining you can't find them&lt;/a&gt;
 climbed its way up to the top of the
 &lt;a class="reference external" href="http://news.ycombinator.com/"&gt;Hacker News&lt;/a&gt; charts this morning and for
@@ -553,7 +619,7 @@ either the salary is high enough that they feel they are adequately
 paid or compensated with a mix of salary, equity, and benefits. If you're
 not able to &amp;quot;find&amp;quot; developers, increase your offer in salary, vacation
 days, or some other compensation, such as 20% time for side projects.&lt;/p&gt;
-</summary></entry><entry><title>MongoDB, node.js, and Backbone.js</title><link href="http://www.mattmakai.com/mongodb-nodejs-backbonejs.html" rel="alternate"></link><updated>2012-05-02T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/mongodb-nodejs-backbonejs.html</id><summary type="html">&lt;p&gt;The concept of an all-JavaScript stack on both the client and server is
+</summary></entry><entry><title>MongoDB, node.js, and Backbone.js</title><link href="http://www.mattmakai.com/mongodb-nodejs-backbonejs.html" rel="alternate"></link><updated>2012-05-02T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-05-02:mongodb-nodejs-backbonejs.html</id><summary type="html">&lt;p&gt;The concept of an all-JavaScript stack on both the client and server is
 hardly new, but I'm finding the idea more appealing now that the projects
 have matured. I see notifications like this
 &lt;a class="reference external" href="http://www.marketwatch.com/story/10gen-committed-to-making-mongodb-de-facto-data-store-for-nodejs-applications-2012-04-25"&gt;press release by 10gen&lt;/a&gt;
@@ -589,20 +655,20 @@ difficult it was to write a web application in Struts. So will writing a
 web application in node.js with a NoSQL MongoDB backend and a client-side
 MVC framework be fun? I just don't know until I write a project with these
 technologies.&lt;/p&gt;
-</summary></entry><entry><title>Django Officially On Github</title><link href="http://www.mattmakai.com/django-on-github.html" rel="alternate"></link><updated>2012-04-28T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/django-on-github.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://www.djangoproject.com/"&gt;Django&lt;/a&gt;, the web application framework
+</summary></entry><entry><title>Django Officially On Github</title><link href="http://www.mattmakai.com/django-on-github.html" rel="alternate"></link><updated>2012-04-28T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-04-28:django-on-github.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://www.djangoproject.com/"&gt;Django&lt;/a&gt;, the web application framework
 for perfectionists with deadlines, is now
 &lt;a class="reference external" href="https://groups.google.com/forum/?fromgroups#!topic/django-developers/9--P57ezyBs"&gt;officially on Github&lt;/a&gt;. Welcome Django, it's about time you migrated
 over!&lt;/p&gt;
 &lt;p&gt;The code and documentation can now be found in the
 &lt;a class="reference external" href="https://github.com/django/django"&gt;official repository&lt;/a&gt;.&lt;/p&gt;
-</summary></entry><entry><title>Database Backups</title><link href="http://www.mattmakai.com/database-backups.html" rel="alternate"></link><updated>2012-04-27T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/database-backups.html</id><summary type="html">&lt;p&gt;Backing up your databases on a daily, or more preferrably, hourly basis is
+</summary></entry><entry><title>Database Backups</title><link href="http://www.mattmakai.com/database-backups.html" rel="alternate"></link><updated>2012-04-27T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-04-27:database-backups.html</id><summary type="html">&lt;p&gt;Backing up your databases on a daily, or more preferrably, hourly basis is
 IMPORTANT. Do not skimp on preserving your data.&lt;/p&gt;
 &lt;p&gt;You never know when an errant &amp;quot;drop database ...&amp;quot; will screw up your afternoon.
 Even the fantastic developers at
 &lt;a class="reference external" href="https://github.com/blog/744-today-s-outage"&gt;Github are not immune&lt;/a&gt; to making
 costly mistakes.&lt;/p&gt;
 &lt;p&gt;Don't tempt fate. Back up your database frequently.&lt;/p&gt;
-</summary></entry><entry><title>Python &amp;amp; MongoDB News</title><link href="http://www.mattmakai.com/python-mongodb-news.html" rel="alternate"></link><updated>2012-04-24T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/python-mongodb-news.html</id><summary type="html">&lt;p&gt;Yesterday had a couple of interesting Python &amp;amp; MongoDB related posts on
+</summary></entry><entry><title>Python &amp; MongoDB News</title><link href="http://www.mattmakai.com/python-mongodb-news.html" rel="alternate"></link><updated>2012-04-24T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-04-24:python-mongodb-news.html</id><summary type="html">&lt;p&gt;Yesterday had a couple of interesting Python &amp;amp; MongoDB related posts on
 &lt;a class="reference external" href="http://news.ycombinator.com/"&gt;Hacker News&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The first post was on
 &lt;a class="reference external" href="http://isbullsh.it/2012/04/Web-crawling-with-scrapy/"&gt;scrapping websites with scrapy and storing the data in MongoDB&lt;/a&gt;. The post walks through establishing
@@ -615,7 +681,7 @@ admin interface was a significant hurdle. It's great to see community projects
 that break down these barriers.&lt;/p&gt;
 &lt;p&gt;Hopefully future Django releases can incorporate some of this work to
 make it easier to work with non-relational databases when necessary.&lt;/p&gt;
-</summary></entry><entry><title>Consolidation in the Python Hosting Industry</title><link href="http://www.mattmakai.com/consolidation-python-hosting-industry.html" rel="alternate"></link><updated>2012-04-19T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/consolidation-python-hosting-industry.html</id><summary type="html">&lt;p&gt;The announcement yesterday about
+</summary></entry><entry><title>Consolidation in the Python Hosting Industry</title><link href="http://www.mattmakai.com/consolidation-python-hosting-industry.html" rel="alternate"></link><updated>2012-04-19T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-04-19:consolidation-python-hosting-industry.html</id><summary type="html">&lt;p&gt;The announcement yesterday about
 &lt;a class="reference external" href="https://www.ep.io/blog/epio-closing-down/"&gt;Epio closing down&lt;/a&gt;
 got me thinking about the Python PaaS industry. I did not have any personal
 experience with Epio, but from the
@@ -661,11 +727,11 @@ Still, it's great to have options. For prototyping apps, Gondor and Heroku
 make great choices (as long as you don't immediately need a lot of database
 storage and performance). For production apps though, I still lean towards a
 mix of AWS and virtual private servers.&lt;/p&gt;
-</summary></entry><entry><title>Repository Structure and Python</title><link href="http://www.mattmakai.com/repository-structure-and-python.html" rel="alternate"></link><updated>2012-04-18T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/repository-structure-and-python.html</id><summary type="html">&lt;p&gt;Kenneth Reitz has another great post on how to
+</summary></entry><entry><title>Repository Structure and Python</title><link href="http://www.mattmakai.com/repository-structure-and-python.html" rel="alternate"></link><updated>2012-04-18T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-04-18:repository-structure-and-python.html</id><summary type="html">&lt;p&gt;Kenneth Reitz has another great post on how to
 &lt;a class="reference external" href="http://kennethreitz.com/repository-structure-and-python.html"&gt;structure repositories for Python projects&lt;/a&gt;. Repository structure is one of those topics
 that everyone seems to come up with a slightly different way of doing so
 it's great to see some direction from a leader in the Python field.&lt;/p&gt;
-</summary></entry><entry><title>Django Nudge (django-nudge)</title><link href="http://www.mattmakai.com/django-nudge.html" rel="alternate"></link><updated>2012-04-17T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/django-nudge.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://github.com/cfpb/django-nudge"&gt;Django Nudge&lt;/a&gt; (nudge) is an open
+</summary></entry><entry><title>Django Nudge (django-nudge)</title><link href="http://www.mattmakai.com/django-nudge.html" rel="alternate"></link><updated>2012-04-17T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-04-17:django-nudge.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://github.com/cfpb/django-nudge"&gt;Django Nudge&lt;/a&gt; (nudge) is an open
 source Django application written by developers at the Consumer Financial
 Protection Bureau. Nudge is designed to be the Django equivalent to Ramp
 for WordPress.&lt;/p&gt;
@@ -688,7 +754,7 @@ that their project will never go to production or be open sourced.&lt;/p&gt;
 and &lt;a class="reference external" href="http://radar.oreilly.com/2012/04/open-source-government-cfpb.html"&gt;recognition&lt;/a&gt; that CFPB received for being a forward-thinking government agency.&lt;/p&gt;
 &lt;p&gt;We need more of this great work coming from the government. Let's hope
 other agencies take note.&lt;/p&gt;
-</summary></entry><entry><title>Django in Production</title><link href="http://www.mattmakai.com/django-in-production.html" rel="alternate"></link><updated>2012-04-16T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/django-in-production.html</id><summary type="html">&lt;p&gt;Django is easy to get started with, especially if you already have a
+</summary></entry><entry><title>Django in Production</title><link href="http://www.mattmakai.com/django-in-production.html" rel="alternate"></link><updated>2012-04-16T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-04-16:django-in-production.html</id><summary type="html">&lt;p&gt;Django is easy to get started with, especially if you already have a
 programming background in a &amp;quot;heavier&amp;quot; language like Java. When I first
 started creating websites with Django 0.96, I was programming Java systems
 during the day and relaxed in the evenings by using Python/Django. I found
@@ -711,7 +777,7 @@ learn what the &amp;quot;big boys&amp;quot; in the Django space were using in pr
 &lt;p&gt;Those are the best articles I've come across recently that I wish I had when
 I first started deploying Django projects (to be fair, those links didn't
 yet exist nor did many of the technologies that are now commonplace).&lt;/p&gt;
-</summary></entry><entry><title>Site Relaunch</title><link href="http://www.mattmakai.com/matt-makai-dot-com-site-relaunch.html" rel="alternate"></link><updated>2012-03-10T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/matt-makai-dot-com-site-relaunch.html</id><summary type="html">&lt;p&gt;I recreated mattmakai.com earlier this year with a new theme on top of
+</summary></entry><entry><title>Site Relaunch</title><link href="http://www.mattmakai.com/matt-makai-dot-com-site-relaunch.html" rel="alternate"></link><updated>2012-03-10T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-03-10:matt-makai-dot-com-site-relaunch.html</id><summary type="html">&lt;p&gt;I recreated mattmakai.com earlier this year with a new theme on top of
 a custom Python/Django stack I wrote. Although I liked some of the
 work I did, I just
 was not satisfied with the overall result. So I'm relaunching the blog
@@ -722,8 +788,8 @@ generate the static HTML pages.&lt;/p&gt;
 &lt;a class="reference external" href="http://www.github.com/makaimc/matt-makai-static-blog"&gt;open sourcing&lt;/a&gt;
 the code and content for anyone else interested in creating their
 own Pelican-driven blog.&lt;/p&gt;
-</summary></entry><entry><title>&amp;quot;DevOps is Ruining My Craft&amp;quot;</title><link href="http://www.mattmakai.com/devops-ruining-my-craft.html" rel="alternate"></link><updated>2012-02-23T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/devops-ruining-my-craft.html</id><summary type="html">&lt;p&gt;This &lt;a class="reference external" href="http://tatiyants.com/devops-is-ruining-my-craft/"&gt;DevOps blog post&lt;/a&gt; is a great satirical take on the automation and DevOps movement. The post is written as an &amp;quot;interview&amp;quot; with a current sysadmin and it's definitely worth the quick read.&lt;/p&gt;
-</summary></entry><entry><title>Python Context Managers</title><link href="http://www.mattmakai.com/python-context-managers.html" rel="alternate"></link><updated>2012-02-22T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/python-context-managers.html</id><summary type="html">&lt;p&gt;During my talk to django-district last night, I explained that Django
+</summary></entry><entry><title>"DevOps is Ruining My Craft"</title><link href="http://www.mattmakai.com/devops-ruining-my-craft.html" rel="alternate"></link><updated>2012-02-23T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-02-23:devops-ruining-my-craft.html</id><summary type="html">&lt;p&gt;This &lt;a class="reference external" href="http://tatiyants.com/devops-is-ruining-my-craft/"&gt;DevOps blog post&lt;/a&gt; is a great satirical take on the automation and DevOps movement. The post is written as an &amp;quot;interview&amp;quot; with a current sysadmin and it's definitely worth the quick read.&lt;/p&gt;
+</summary></entry><entry><title>Python Context Managers</title><link href="http://www.mattmakai.com/python-context-managers.html" rel="alternate"></link><updated>2012-02-22T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-02-22:python-context-managers.html</id><summary type="html">&lt;p&gt;During my talk to django-district last night, I explained that Django
 1.4 drops support for Python 2.4 because the core committers wanted to
 use Python's context managers. Python 2.4 would not suffice because
 context managers are a &lt;a class="reference external" href="http://www.python.org/dev/peps/pep-0343/"&gt;Python 2.5+ feature&lt;/a&gt;.&lt;/p&gt;
@@ -752,16 +818,16 @@ manager runs through.&lt;/p&gt;
 &lt;p&gt;[2] &lt;a class="reference external" href="http://effbot.org/zone/python-with-statement.htm"&gt;http://effbot.org/zone/python-with-statement.htm&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>Django 1.4 Beta Released</title><link href="http://www.mattmakai.com/django-1-4-beta-released.html" rel="alternate"></link><updated>2012-02-16T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/django-1-4-beta-released.html</id><summary type="html">&lt;p&gt;The Django 1.4 beta release is &lt;a class="reference external" href="https://www.djangoproject.com/weblog/2012/feb/15/14-beta-1/"&gt;now available&lt;/a&gt; for testing.&lt;/p&gt;
+</summary></entry><entry><title>Django 1.4 Beta Released</title><link href="http://www.mattmakai.com/django-1-4-beta-released.html" rel="alternate"></link><updated>2012-02-16T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-02-16:django-1-4-beta-released.html</id><summary type="html">&lt;p&gt;The Django 1.4 beta release is &lt;a class="reference external" href="https://www.djangoproject.com/weblog/2012/feb/15/14-beta-1/"&gt;now available&lt;/a&gt; for testing.&lt;/p&gt;
 &lt;p&gt;Although the 1.4 beta can be &lt;a class="reference external" href="https://www.djangoproject.com/download/"&gt;downloaded as a package&lt;/a&gt;, it's probably best to get it from the SVN development branch (also mirrored on github) so you can update and take advantage of bug fixes as they are incorporated into the code base.&lt;/p&gt;
 &lt;p&gt;For more information on the new features coming in 1.4, come see &lt;a class="reference external" href="http://www.mattmakai.com/blog/django-district-feb-meetup-lightning-talk/"&gt;my talk on Tuesday night's Django District meetup in DC&lt;/a&gt;.&lt;/p&gt;
-</summary></entry><entry><title>Django District February Meetup Lightning Talk</title><link href="http://www.mattmakai.com/django-district-feb-meetup-lightning-talk.html" rel="alternate"></link><updated>2012-02-15T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/django-district-feb-meetup-lightning-talk.html</id><summary type="html">&lt;p&gt;I'll be giving a 10 minute lightning talk on updates and incompatibilities in
+</summary></entry><entry><title>Django District February Meetup Lightning Talk</title><link href="http://www.mattmakai.com/django-district-feb-meetup-lightning-talk.html" rel="alternate"></link><updated>2012-02-15T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-02-15:django-district-feb-meetup-lightning-talk.html</id><summary type="html">&lt;p&gt;I'll be giving a 10 minute lightning talk on updates and incompatibilities in
 the upcoming &lt;a class="reference external" href="https://docs.djangoproject.com/en/dev/releases/1.4/"&gt;Django 1.4 release&lt;/a&gt;. If you're interested in Python/Django and want to hear more,
 &lt;a class="reference external" href="http://www.django-district.org/events/48873672/"&gt;RSVP on meetup.com&lt;/a&gt;.
 There will be some other great talks as well on EC2 + github integration,
 monitoring your apps with Graphite and Sentry, and Django chartit.&lt;/p&gt;
 &lt;p&gt;My impress.js slides for the talk will be posted on this site over the weekend.&lt;/p&gt;
-</summary></entry><entry><title>Django 1.4 Requires Python 2.5+</title><link href="http://www.mattmakai.com/django-1-4-requires-python-2-5.html" rel="alternate"></link><updated>2012-01-25T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/django-1-4-requires-python-2-5.html</id><summary type="html">&lt;p&gt;Django 1.4 is the first Django release to
+</summary></entry><entry><title>Django 1.4 Requires Python 2.5+</title><link href="http://www.mattmakai.com/django-1-4-requires-python-2-5.html" rel="alternate"></link><updated>2012-01-25T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-01-25:django-1-4-requires-python-2-5.html</id><summary type="html">&lt;p&gt;Django 1.4 is the first Django release to
 &lt;a class="reference external" href="https://docs.djangoproject.com/en/dev/releases/1.4/#backwards-incompatible-changes-in-1-4"&gt;remove support for Python 2.4&lt;/a&gt;. This change is an expected
 for two reasons. First, beginning with Django 1.2, Python 2.3 support
 was dropped and the community was notified that Django 1.4 would again
@@ -771,7 +837,7 @@ developers need &lt;a class="reference external" href="http://mmakai.com/post/87
 yet support Python 3.x. Although progress has been made porting Django
 to Python 3.x, it is not fully tested or ready for release as specified
 in Django's release process.&lt;/p&gt;
-</summary></entry><entry><title>What the Django's ORM Author Hates About It</title><link href="http://www.mattmakai.com/what-author-django-orm-hates-about-it.html" rel="alternate"></link><updated>2012-01-20T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/what-author-django-orm-hates-about-it.html</id><summary type="html">&lt;p&gt;Alex Gaynor, a Django core committer and author of much of the
+</summary></entry><entry><title>What the Django's ORM Author Hates About It</title><link href="http://www.mattmakai.com/what-author-django-orm-hates-about-it.html" rel="alternate"></link><updated>2012-01-20T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-01-20:what-author-django-orm-hates-about-it.html</id><summary type="html">&lt;p&gt;Alex Gaynor, a Django core committer and author of much of the
 object-relational mapping (ORM) code,
 &lt;a class="reference external" href="http://speakerdeck.com/u/alex/p/why-i-hate-the-django-orm"&gt;gave a presentation&lt;/a&gt; on what he hates about the mapping layer. Every ORM layer in
 existence has issues, especially for edge cases, but Django's has
@@ -791,7 +857,7 @@ show why they need to be fixed in future Django releases, and move the
 Django ORM from an &amp;quot;80/20&amp;quot; solution closer to a &amp;quot;90/10&amp;quot; solution that
 is easier to apply across a broader set of use cases.&lt;/p&gt;
 &lt;p&gt;Slides: &lt;a class="reference external" href="http://speakerdeck.com/u/alex/p/why-i-hate-the-django-orm"&gt;Why I hate the Django ORM&lt;/a&gt; (Speaker Deck)&lt;/p&gt;
-</summary></entry><entry><title>The Seven Steps</title><link href="http://www.mattmakai.com/the-seven-steps.html" rel="alternate"></link><updated>2012-01-18T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/the-seven-steps.html</id><summary type="html">&lt;p&gt;There are at least seven distinct steps towards Internet entrepreneurship.
+</summary></entry><entry><title>The Seven Steps</title><link href="http://www.mattmakai.com/the-seven-steps.html" rel="alternate"></link><updated>2012-01-18T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-01-18:the-seven-steps.html</id><summary type="html">&lt;p&gt;There are at least seven distinct steps towards Internet entrepreneurship.
 I'll begin with the caveat that these seven steps only apply in the
 Internet space and not other avenues such as starting a bakery.
 From my (limited) experience, everyone goes through these steps in
@@ -832,7 +898,7 @@ reasonable design I was okay starting with that I knew I could
 improve as I grow more comfortable in this step. Eventually I
 can look ahead to the next step in the path towards Internet
 entrepreneurship.&lt;/p&gt;
-</summary></entry><entry><title>Specify the HTML File for PhoneGap and iOS</title><link href="http://www.mattmakai.com/specify-html-file-phonegap-ios.html" rel="alternate"></link><updated>2012-01-05T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/specify-html-file-phonegap-ios.html</id><summary type="html">&lt;p&gt;When working with iOS applications and using PhoneGap, you'll often want to use a different
+</summary></entry><entry><title>Specify the HTML File for PhoneGap and iOS</title><link href="http://www.mattmakai.com/specify-html-file-phonegap-ios.html" rel="alternate"></link><updated>2012-01-05T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-01-05:specify-html-file-phonegap-ios.html</id><summary type="html">&lt;p&gt;When working with iOS applications and using PhoneGap, you'll often want to use a different
 file name than &amp;quot;index.html&amp;quot; for your first page. This can be tricky for first time
 PhoneGap/iOS developers because there is no stub function or properties file for
 specifying the file like there is in Android and BlackBerry projects.&lt;/p&gt;
@@ -846,7 +912,7 @@ HTML file you want to use.&lt;/p&gt;
 &lt;p&gt;Bonus: you can also use this to specify a different path than www. For example, if
 you have a combined Android and iOS project where Android requires the assets directory,
 specify &amp;quot;../assets/www/yourfile.html&amp;quot; as the return value.&lt;/p&gt;
-</summary></entry><entry><title>Heroku on Ubuntu 10.04</title><link href="http://www.mattmakai.com/heroku-ubuntu-10-04.html" rel="alternate"></link><updated>2012-01-03T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/heroku-ubuntu-10-04.html</id><summary type="html">&lt;p&gt;A couple of guys from Heroku gave a talk tonight at DC Python and it looked like a good
+</summary></entry><entry><title>Heroku on Ubuntu 10.04</title><link href="http://www.mattmakai.com/heroku-ubuntu-10-04.html" rel="alternate"></link><updated>2012-01-03T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-01-03:heroku-ubuntu-10-04.html</id><summary type="html">&lt;p&gt;A couple of guys from Heroku gave a talk tonight at DC Python and it looked like a good
 solution for running small sites. However, I was disappointed that set up was more
 difficult on Ubuntu 10.04 than turn key installers on Windows and Mac OS X. The set
 up &lt;a class="reference external" href="http://toolbelt.herokuapp.com/linux/readme"&gt;instructions&lt;/a&gt; required a few
@@ -862,7 +928,7 @@ sudo apt-get install libreadline-ruby
 &lt;p&gt;Sources:&lt;/p&gt;
 &lt;p&gt;[1] &lt;a class="reference external" href="http://wmilesn.com/2011/10/code/avoiding-pitfalls-when-setting-up-heroku-for-node-js-on-ubuntu/"&gt;http://wmilesn.com/2011/10/code/avoiding-pitfalls-when-setting-up-heroku-for-node-js-on-ubuntu/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;[2] &lt;a class="reference external" href="http://rukuro-blog.heroku.com/2011/05/11/ruby-readline-loaderror"&gt;http://rukuro-blog.heroku.com/2011/05/11/ruby-readline-loaderror&lt;/a&gt;&lt;/p&gt;
-</summary></entry><entry><title>Impress.js: Now Works With Presentation Pointers</title><link href="http://www.mattmakai.com/impress-js-works-with-presentation-pointers.html" rel="alternate"></link><updated>2012-01-02T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/impress-js-works-with-presentation-pointers.html</id><summary type="html">&lt;p&gt;I saw &lt;a class="reference external" href="https://github.com/bartaz/impress.js"&gt;impress.js&lt;/a&gt;, a really cool CSS3
+</summary></entry><entry><title>Impress.js: Now Works With Presentation Pointers</title><link href="http://www.mattmakai.com/impress-js-works-with-presentation-pointers.html" rel="alternate"></link><updated>2012-01-02T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-01-02:impress-js-works-with-presentation-pointers.html</id><summary type="html">&lt;p&gt;I saw &lt;a class="reference external" href="https://github.com/bartaz/impress.js"&gt;impress.js&lt;/a&gt;, a really cool CSS3
 transformation-based presentation Javascript library on Hacker News yesterday.
 The &lt;a class="reference external" href="http://bartaz.github.com/impress.js/"&gt;demo&lt;/a&gt; is flashy - similar to Prezi
 but without Flash, plus new 3D effects. The only downside compared to an
@@ -875,7 +941,7 @@ library, updated the code, and issued a
 pointer capability. Thanks to &lt;a class="reference external" href="https://github.com/bartaz"&gt;Bartek&lt;/a&gt;'s quick response,
 the pull request was merged and closed just a few hours later. So now
 presentation pointers work great with impress.js.&lt;/p&gt;
-</summary></entry><entry><title>New Blog</title><link href="http://www.mattmakai.com/new-blog.html" rel="alternate"></link><updated>2012-01-01T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/new-blog.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: &lt;strong&gt;This post is outdated&lt;/strong&gt; because I am
+</summary></entry><entry><title>New Blog</title><link href="http://www.mattmakai.com/new-blog.html" rel="alternate"></link><updated>2012-01-01T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-01-01:new-blog.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: &lt;strong&gt;This post is outdated&lt;/strong&gt; because I am
 &lt;a class="reference external" href="../matt-makai-dot-com-site-relaunch.html"&gt;already on a new blog platform&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;To kick off 2012, I'm shifting my technical blog from Tumblr to my own platform.&lt;/p&gt;
 &lt;p&gt;I created this site with &lt;a class="reference external" href="http://python.org/"&gt;Python&lt;/a&gt;,
@@ -886,7 +952,7 @@ presentation pointers work great with impress.js.&lt;/p&gt;
 on &lt;a class="reference external" href="http://nginx.org/"&gt;nginx&lt;/a&gt; and
 &lt;a class="reference external" href="http://gunicorn.org/"&gt;Green Unicorn&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Once 2012 kicks off, I will add my presentations and (potentially) screencasts on technical content.&lt;/p&gt;
-</summary></entry><entry><title>Older Blog Posts</title><link href="http://www.mattmakai.com/older-blog-posts.html" rel="alternate"></link><updated>2012-01-01T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>http://www.mattmakai.com/older-blog-posts.html</id><summary type="html">&lt;p&gt;My blog posts from the last couple of years can still be access at
+</summary></entry><entry><title>Older Blog Posts</title><link href="http://www.mattmakai.com/older-blog-posts.html" rel="alternate"></link><updated>2012-01-01T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-01-01:older-blog-posts.html</id><summary type="html">&lt;p&gt;My blog posts from the last couple of years can still be access at
 &lt;a class="reference external" href="http://mmakai.com/"&gt;http://mmakai.com/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Eventually I'll transfer the posts' content to this site and redirect the URLs to
 their new locations, but for now I'm leaving the old posts on Tumblr.
