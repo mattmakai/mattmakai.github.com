@@ -61,11 +61,65 @@ Sometimes I put things down that I already know but often forget and I want
 to use the concepts more often.</p>
 </div>
 <hr class="docutils" />
+<div class="section" id="tuesday-oct-16-2012">
+<h2>Tuesday, Oct 16, 2012</h2>
+<ul class="simple">
+<li>D3's built in <a class="reference external" href="https://github.com/mbostock/d3/wiki/Scales">scales</a>
+transform data from a domain to a range. For example, if you have
+data with values from 1-10000 and want to display the data on a histogram
+with bars that range from 10-100, you can use a linear scale to map
+to a range of [10,100]. There are two types of scales: quantitative,
+for continuous domains like numbers, and ordinal scales like names
+or categories.</li>
+</ul>
+</div>
+<div class="section" id="monday-oct-15-2012">
+<h2>Monday, Oct 15, 2012</h2>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/clips/pattern">Pattern</a> is a Python library
+for web mining that combines many tools for data extraction, natural
+language processing, analysis, and visualization together under a single
+project. The <a class="reference external" href="https://github.com/clips/pattern/tree/master/examples/01-web">provided examples</a>
+show how easy it is to get started with the library.</li>
+</ul>
+</div>
+<div class="section" id="sunday-oct-14-2012">
+<h2>Sunday, Oct 14, 2012</h2>
+<ul class="simple">
+<li>D3 <a class="reference external" href="https://github.com/mbostock/d3/wiki/Layouts">layouts</a> are predefined
+ways of displaying data in various common grouping patterns for easier
+visualization. For example, the
+<a class="reference external" href="https://github.com/mbostock/d3/wiki/Histogram-Layout">Histogram layout</a>
+groups discrete data points into bins. The styling, transitions, and
+interactions are still specified by the developer.</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="saturday-oct-13-2012">
+<h2>Saturday, Oct 13, 2012</h2>
+<ul class="simple">
+<li>D3's <a class="reference external" href="https://github.com/mbostock/d3/wiki/Selections#wiki-classed">classed</a>
+selection operator is a convenience function for setting a class attribute
+instead of using the attr(&quot;class&quot;, &quot;useThisClass&quot;) function. The classed
+function works on a selection. Classed can optionally specify a value which
+returns true if the first element in the selection has the class and false
+otherwise (it does not check any elements after the first one).</li>
+</ul>
+</div>
 <div class="section" id="friday-oct-12-2012">
 <h2>Friday, Oct 12, 2012</h2>
 <ul class="simple">
-<li></li>
+<li>A central concept in <a class="reference external" href="http://d3js.org/">d3.js</a> is the
+<a class="reference external" href="http://bost.ocks.org/mike/join/">data-join</a>. A data join instructs
+D3 that a selection should correspond to data and describes how to get
+to the desired goal. For example:</li>
 </ul>
+<div class="highlight"><pre>svg.selectAll(&quot;text&quot;)
+   .data(data)
+   .enter().append(&quot;text&quot;)
+   .attr(&quot;desired text&quot;);
+</pre></div>
+<!--  -->
 </div>
 <div class="section" id="thursday-oct-11-2012">
 <h2>Thursday, Oct 11, 2012</h2>

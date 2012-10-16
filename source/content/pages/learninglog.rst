@@ -12,9 +12,61 @@ to use the concepts more often.
 
 ----
 
+Tuesday, Oct 16, 2012
+---------------------
+* D3's built in `scales <https://github.com/mbostock/d3/wiki/Scales>`_
+  transform data from a domain to a range. For example, if you have
+  data with values from 1-10000 and want to display the data on a histogram
+  with bars that range from 10-100, you can use a linear scale to map
+  to a range of [10,100]. There are two types of scales: quantitative, 
+  for continuous domains like numbers, and ordinal scales like names
+  or categories.
+
+Monday, Oct 15, 2012
+--------------------
+* `Pattern <https://github.com/clips/pattern>`_ is a Python library
+  for web mining that combines many tools for data extraction, natural
+  language processing, analysis, and visualization together under a single
+  project. The `provided examples <https://github.com/clips/pattern/tree/master/examples/01-web>`_
+  show how easy it is to get started with the library.
+
+Sunday, Oct 14, 2012
+--------------------
+* D3 `layouts <https://github.com/mbostock/d3/wiki/Layouts>`_ are predefined
+  ways of displaying data in various common grouping patterns for easier
+  visualization. For example, the 
+  `Histogram layout <https://github.com/mbostock/d3/wiki/Histogram-Layout>`_
+  groups discrete data points into bins. The styling, transitions, and 
+  interactions are still specified by the developer.
+
+----
+
+Saturday, Oct 13, 2012
+----------------------
+* D3's `classed <https://github.com/mbostock/d3/wiki/Selections#wiki-classed>`_
+  selection operator is a convenience function for setting a class attribute
+  instead of using the attr("class", "useThisClass") function. The classed
+  function works on a selection. Classed can optionally specify a value which
+  returns true if the first element in the selection has the class and false
+  otherwise (it does not check any elements after the first one).
+
+
 Friday, Oct 12, 2012
 --------------------
-* 
+* A central concept in `d3.js <http://d3js.org/>`_ is the 
+  `data-join <http://bost.ocks.org/mike/join/>`_. A data join instructs 
+  D3 that a selection should correspond to data and describes how to get
+  to the desired goal. For example:
+
+.. code-block:: d3-data-join-example
+  
+  svg.selectAll("text")
+     .data(data)
+     .enter().append("text")
+     .attr("desired text");
+
+..
+
 
 Thursday, Oct 11, 2012
 ----------------------
