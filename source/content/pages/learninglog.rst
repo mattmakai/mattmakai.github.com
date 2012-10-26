@@ -12,6 +12,90 @@ to use the concepts more often.
 
 ----
 
+Friday, Oct 26, 2012
+--------------------
+* Adobe Illustrator has a Pathfinder panel with an Intersect function that
+  can be used to keep the intersection of two shapes and cut out the
+  remainder. So for example you can draw an oval and a rectangle then keep
+  just the bottom curve of the oval to create an interesting shape. Awesome
+  related tutorial on `creating an RSS icon <http://blog.spoongraphics.co.uk/tutorials/beginner-illustrator-tutorial-create-a-vector-rss-icon>`_.
+
+Thursday, Oct 25, 2012
+----------------------
+* 
+
+Tuesday, Oct 23, 2012
+---------------------
+* Python's built-in 
+  `map function <http://docs.python.org/library/functions.html#map>`_
+  applies a function to every item in an iterable object. Lambda functions
+  are particularly useful in conjuction with map. For example:
+
+.. code-block:: python-map-example
+
+  >>> result = map(lambda x: x * 2, [1, 2, 3])
+  >>> result
+  [2, 4, 6]
+
+..
+
+Monday, Oct 22, 2012
+--------------------
+* 
+
+Sunday, Oct 21, 2012
+--------------------
+* 
+
+----
+
+Saturday, Oct 20, 2012
+----------------------
+* `Druid <http://metamarkets.com/druid/>`_ is an open source data store
+  built by Metamarkets to query billions of rows. It uses a combination
+  of in-memory storage, distribution with horizontal scaling, and partial
+  aggregates to achieve high performance in certain query scenarios.
+  One trade off of Druid is that past events are immutable since they are
+  considered to "have happened" and cannot be changed. In addition, as
+  the data set grows over time, older data is stored as aggregates. 
+
+
+Friday, Oct 19, 2012
+--------------------
+* In MySQL use this command with the InnoDB engine to remove
+  the foreign key constraints that prevent dropping tables.
+
+.. code-block:: mysql-foreign-key-constraint
+
+  set foreign_key_constraint = 0
+
+..
+
+Thursday, Oct 18, 2012
+----------------------
+* To install ZeroMQ on 10.04, use these commands:
+
+.. code-block:: install-zeromq-ubuntu-1004
+
+  sudo add-apt-repository ppa:chris-lea/zeromq
+  sudo apt-get update
+  sudo apt-get install zeromq-bin libzmq-dbg libzmq-dev libzmq0
+
+..
+
+Wednesday, Oct 17, 2012
+-----------------------
+* D3's 
+  `extent <https://github.com/mbostock/d3/wiki/Arrays#wiki-d3_extent>`
+  is a convenience function that is equivalent to calling the d3.min 
+  and d3.max functions simultaneously. Given an array of values, d3.extent
+  returns an array with two elements: min and max. An optional accessor
+  function can be specified as the second parameter. Example:
+
+.. code-block:: d3-extent-function
+
+  d3.extent([1, 2, 3, 4, 5]);  // returns [1, 5]
+
 Tuesday, Oct 16, 2012
 ---------------------
 * D3's built in `scales <https://github.com/mbostock/d3/wiki/Scales>`_
