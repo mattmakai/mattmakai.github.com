@@ -64,8 +64,21 @@ to use the concepts more often.</p>
 <div class="section" id="saturday-oct-27-2012">
 <h2>Saturday, Oct 27, 2012</h2>
 <ul class="simple">
-<li>The <em>git tag</em> command lists all tags</li>
+<li>The <em>git tag</em> command lists all tags in all branches in alphabetical
+order. The -l flag is for searching for strings in tag names, for example:</li>
 </ul>
+<div class="highlight"><pre>$ git tag
+tag1
+tag2
+tag3
+
+$ git tag -l &quot;3&quot;
+$ git tag -l &quot;\*3&quot;
+tag3
+</pre></div>
+<!--  -->
+<p>I would probably just pipe the git tag output to grep though - it just
+seems easier to remember.</p>
 </div>
 <div class="section" id="friday-oct-26-2012">
 <h2>Friday, Oct 26, 2012</h2>

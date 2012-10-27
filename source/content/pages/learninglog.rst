@@ -14,7 +14,25 @@ to use the concepts more often.
 
 Saturday, Oct 27, 2012
 ----------------------
-* The *git tag* command lists all tags
+* The *git tag* command lists all tags in all branches in alphabetical 
+  order. The -l flag is for searching for strings in tag names, for example:
+
+.. code-block:: git-tag-search-string
+
+  $ git tag
+  tag1
+  tag2
+  tag3
+
+  $ git tag -l "3"
+  $ git tag -l "\*3"
+  tag3
+
+..
+
+I would probably just pipe the git tag output to grep though - it just 
+seems easier to remember.
+
 
 Friday, Oct 26, 2012
 --------------------
