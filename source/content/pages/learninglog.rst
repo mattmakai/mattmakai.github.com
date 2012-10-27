@@ -12,6 +12,10 @@ to use the concepts more often.
 
 ----
 
+Saturday, Oct 27, 2012
+----------------------
+* The *git tag* command lists all tags
+
 Friday, Oct 26, 2012
 --------------------
 * Adobe Illustrator has a Pathfinder panel with an Intersect function that
@@ -20,9 +24,19 @@ Friday, Oct 26, 2012
   just the bottom curve of the oval to create an interesting shape. Awesome
   related tutorial on `creating an RSS icon <http://blog.spoongraphics.co.uk/tutorials/beginner-illustrator-tutorial-create-a-vector-rss-icon>`_.
 
+
 Thursday, Oct 25, 2012
 ----------------------
-* 
+* The *git fetch* command pulls all data from a remote repository to the
+  local repository. *git pull* can also be used when the local repository
+  is set to track a remote repository (for example when pushing to a
+  new repository on github with the *git push -u origin master* command.
+
+Wednesday, Oct 24, 2012
+-----------------------
+* The -v flag on *git remote* describes the URLs for all remote 
+  repositories.
+  
 
 Tuesday, Oct 23, 2012
 ---------------------
@@ -41,11 +55,14 @@ Tuesday, Oct 23, 2012
 
 Monday, Oct 22, 2012
 --------------------
-* 
+* Use the *git reset HEAD [filename]* command to remove a staged file
+  from the staging area before it is committed.
 
 Sunday, Oct 21, 2012
 --------------------
-* 
+* By default, *git log* lists the git commit history in reverse 
+  chronological order. The --grep option allows for searching on specific
+  strings.
 
 ----
 
