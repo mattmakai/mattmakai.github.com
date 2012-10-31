@@ -60,6 +60,49 @@ This is where I keep track of what I learn so I can review it periodically.
 Sometimes I put things down that I already know but often forget and I want
 to use the concepts more often.</p>
 </div>
+<div class="section" id="wednesday-oct-31-2012">
+<h2>Wednesday, Oct 31, 2012</h2>
+<ul class="simple">
+<li><a class="reference external" href="http://scrapy.org/">Scrapy</a> is an open source web screen scraping and
+web crawling framework written in Python. Scrapy allows you to crawl
+websites and extract text through implementing spiders on top of the
+Scrapy library.</li>
+</ul>
+</div>
+<div class="section" id="tuesday-oct-30-2012">
+<h2>Tuesday, Oct 30, 2012</h2>
+<ul class="simple">
+<li>Redis uses <em>set [key value]</em> to put an entry into the database and
+<em>get [key]</em> to retrieve it. For example:</li>
+</ul>
+<div class="highlight"><pre>redis 127.0.0.1:6379&gt; set user:55:username mattmakai
+OK
+redis 127.0.0.1:6379&gt; get user:55:username
+&quot;mattmakai&quot;
+</pre></div>
+<!--  -->
+</div>
+<div class="section" id="monday-oct-29-2012">
+<h2>Monday, Oct 29, 2012</h2>
+<ul class="simple">
+<li>The <em>git push</em> command does not transfer tags to remote repositories.
+You can explicitly push a created tag to a server by using the tag name,
+for example:</li>
+</ul>
+<div class="highlight"><pre>git tag v1.5
+git push origin v1.5
+</pre></div>
+<!--  -->
+<p>Also, the <em>git push origin --tags*</em> flag will push all tags.</p>
+</div>
+<div class="section" id="sunday-oct-28-2012">
+<h2>Sunday, Oct 28, 2012</h2>
+<ul class="simple">
+<li>The -s flag on the <em>git tag</em> command uses your private key to
+sign the tag with your unique signature. The <em>git show</em> command on
+the signed tag shows the signature.</li>
+</ul>
+</div>
 <hr class="docutils" />
 <div class="section" id="saturday-oct-27-2012">
 <h2>Saturday, Oct 27, 2012</h2>
@@ -154,7 +197,7 @@ the data set grows over time, older data is stored as aggregates.</li>
 <li>In MySQL use this command with the InnoDB engine to remove
 the foreign key constraints that prevent dropping tables.</li>
 </ul>
-<div class="highlight"><pre>set foreign_key_constraint = 0
+<div class="highlight"><pre>set foreign_key_checks = 0
 </pre></div>
 <!--  -->
 </div>

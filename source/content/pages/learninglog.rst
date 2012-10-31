@@ -10,6 +10,50 @@ This is where I keep track of what I learn so I can review it periodically.
 Sometimes I put things down that I already know but often forget and I want
 to use the concepts more often.
 
+Wednesday, Oct 31, 2012
+-----------------------
+* `Scrapy <http://scrapy.org/>`_ is an open source web screen scraping and
+  web crawling framework written in Python. Scrapy allows you to crawl
+  websites and extract text through implementing spiders on top of the
+  Scrapy library.
+
+Tuesday, Oct 30, 2012
+---------------------
+* Redis uses *set [key value]* to put an entry into the database and
+  *get [key]* to retrieve it. For example:
+
+.. code-block:: redis-set-get
+
+  redis 127.0.0.1:6379> set user:55:username mattmakai
+  OK
+  redis 127.0.0.1:6379> get user:55:username
+  "mattmakai"
+
+..
+
+
+Monday, Oct 29, 2012
+---------------------
+* The *git push* command does not transfer tags to remote repositories.
+  You can explicitly push a created tag to a server by using the tag name,
+  for example:
+
+.. code-block:: git-tag-push-remote
+
+  git tag v1.5
+  git push origin v1.5
+
+..
+
+Also, the *git push origin --tags** flag will push all tags.
+
+
+Sunday, Oct 28, 2012
+--------------------
+* The -s flag on the *git tag* command uses your private key to
+  sign the tag with your unique signature. The *git show* command on
+  the signed tag shows the signature.
+
 ----
 
 Saturday, Oct 27, 2012
@@ -100,9 +144,9 @@ Friday, Oct 19, 2012
 * In MySQL use this command with the InnoDB engine to remove
   the foreign key constraints that prevent dropping tables.
 
-.. code-block:: mysql-foreign-key-constraint
+.. code-block:: mysql-foreign-key-checks
 
-  set foreign_key_constraint = 0
+  set foreign_key_checks = 0
 
 ..
 
