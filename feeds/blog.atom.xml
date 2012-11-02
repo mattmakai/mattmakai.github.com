@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/blog.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2012-10-15T00:00:00-04:00</updated><entry><title>Learning Vim - A Colleague's Question</title><link href="http://www.mattmakai.com/learning-vim-colleague-question.html" rel="alternate"></link><updated>2012-10-15T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-10-15:learning-vim-colleague-question.html</id><summary type="html">&lt;p&gt;I received the following email from my colleague this morning:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/blog.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2012-11-02T00:00:00-04:00</updated><entry><title>Wise Words From Elon Musk</title><link href="http://www.mattmakai.com/wise-words-from-elon-musk.html" rel="alternate"></link><updated>2012-11-02T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-11-02:wise-words-from-elon-musk.html</id><summary type="html">&lt;p&gt;Wise words from Elon Musk. While process can sometimes allow for a
+repeatable way to perform an action, it is also often a substitute for
+thinking creatively. That type of situation leads to an innovation vacuum
+where workers do a task in the same way &amp;quot;it's always been done&amp;quot; without
+determining whether the task actually adds value to the organization. Musk's
+original quote:&lt;/p&gt;
+&lt;blockquote&gt;
+The problem is that at a lot of big companies, process becomes a
+substitute for thinking. You’re encouraged to behave like a little
+gear in a complex machine. Frankly, it allows you to keep people who
+aren’t that smart, who aren’t that creative.&lt;/blockquote&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.wired.com/wiredscience/2012/10/ff-elon-musk-qa/all/"&gt;Awesome interview with Elon Musk on Wired.com&lt;/a&gt;.&lt;/p&gt;
+</summary></entry><entry><title>Learning Vim - A Colleague's Question</title><link href="http://www.mattmakai.com/learning-vim-colleague-question.html" rel="alternate"></link><updated>2012-10-15T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-10-15:learning-vim-colleague-question.html</id><summary type="html">&lt;p&gt;I received the following email from my colleague this morning:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Hey buddy, finally taking the plunge to learn VIM because it will make
 me a lot more productive when working with Puppet manifests.  Any

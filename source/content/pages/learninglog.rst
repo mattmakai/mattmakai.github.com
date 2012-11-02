@@ -10,6 +10,10 @@ This is where I keep track of what I learn so I can review it periodically.
 Sometimes I put things down that I already know but often forget and I want
 to use the concepts more often.
 
+Thursday, Nov 1, 2012
+---------------------
+* 
+
 Wednesday, Oct 31, 2012
 -----------------------
 * `Scrapy <http://scrapy.org/>`_ is an open source web screen scraping and
