@@ -10,9 +10,27 @@ This is where I keep track of what I learn so I can review it periodically.
 Sometimes I put things down that I already know but often forget and I want
 to use the concepts more often.
 
+Friday, Nov 2, 2012
+-------------------
+* 
+
 Thursday, Nov 1, 2012
 ---------------------
-* 
+* In MySQL, you can filter show tables by using the LIKE keyword. For
+  example:
+
+.. code-block:: mysql-show-tables-like
+
+  mysql> show tables like 'vizport_%';
+  +-----------------------------------------+
+  | Tables_in_your_database (vizport_%)     |
+  +-----------------------------------------+
+  | vizport_model1                          |
+  | vizport_users                           |
+  | vizport_moredata                        |
+  +-----------------------------------------+
+
+..
 
 Wednesday, Oct 31, 2012
 -----------------------
