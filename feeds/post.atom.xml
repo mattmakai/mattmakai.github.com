@@ -1,68 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/post.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2012-10-15T00:00:00-04:00</updated><entry><title>Learning Vim - A Colleague's Question</title><link href="http://www.mattmakai.com/learning-vim-colleague-question.html" rel="alternate"></link><updated>2012-10-15T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-10-15:learning-vim-colleague-question.html</id><summary type="html">&lt;p&gt;I received the following email from my colleague this morning:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Hey buddy, finally taking the plunge to learn VIM because it will make
-me a lot more productive when working with Puppet manifests.  Any
-helpful tips you've come across?  I already set up my client with
-pathogen to allow me to easily use new plugins and I pulled in things
-like tabular, syntastic and puppet syntax highlighting.  Love to hear
-anything else you'd recommend.&lt;/p&gt;
-&lt;p&gt;Thanks!&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;I love Vim and I've been using it for about four years as my only editor
-when coding in Python, typing up blog posts, or learning new
-programming languages. I even tried switching to Sublime Text 2 with Vim
-mode but I ended up switching back to straight Vim. So here are my
-recommendations for getting started.&lt;/p&gt;
-&lt;p&gt;It takes awhile to learn VIM but it's amazing once you do. I took the
-Vim cheatsheet (&lt;a class="reference external" href="http://www.tuxfiles.org/linuxhelp/vimcheat.html"&gt;http://www.tuxfiles.org/linuxhelp/vimcheat.html&lt;/a&gt;) and
-tried to learn a command each day. Just look for something that you either
-didn't know you could do, or try to do on a regular basis but aren't quite
-sure how. For example, I find/replace things all the times with regular
-expressions. Here's how you can easy do that globally in a file:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;:%s/replace-this-text/replace-with-this-text/g
-&lt;/pre&gt;&lt;/div&gt;
-&lt;!--  --&gt;
-&lt;p&gt;The major logical leap is understanding that Vim is basically a language where you have a command and it can be prefixed by a number to execute it multiple times. For example,&lt;/p&gt;
-&lt;p&gt;dd &amp;lt;-- cut the line and move it into the &amp;quot;clipboard&amp;quot;&lt;/p&gt;
-&lt;p&gt;5dd &amp;lt;-- cut 5 lines and move them into the &amp;quot;clipboard&amp;quot;&lt;/p&gt;
-&lt;p&gt;Definitely start out by checking out some interesting web tutorials. Here are
-some resources that I have found helpful over the years:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/post.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2012-11-14T00:00:00-05:00</updated><entry><title>Learning Python</title><link href="http://www.mattmakai.com/learning-python-for-non-developers.html" rel="alternate"></link><updated>2012-11-14T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-11-14:learning-python-for-non-developers.html</id><summary type="html">&lt;p&gt;I am often asked by friends and colleagues that are not currently
+developers how they should go about learning Python. The interest in
+learning to program usually stems from interest in one or more of the
+following goals:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://haridas.in/vim-as-your-ide.html"&gt;Vim as your IDE&lt;/a&gt;. Awesome
-article.&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://www.moolenaar.net/habits.html"&gt;7 Habits of Effective Text Editing&lt;/a&gt;
-great article on how to effectively use Vim.&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://github.com/scrooloose/syntastic"&gt;Syntastic&lt;/a&gt;. Plugins for
-Vim. Important for things like syntax checking and code completion.&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://blog.sanctum.geek.nz/vim-koans/"&gt;Vim Koans&lt;/a&gt;. A bit
-tongue-and-cheek but you can learn a lot from them as well.&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://vimuniversity.com/"&gt;Vim University&lt;/a&gt;. Some good introductory
-articles and screencasts.&lt;/li&gt;
+&lt;li&gt;Prototype an Internet-based business idea&lt;/li&gt;
+&lt;li&gt;Build a new skill set to become a developer&lt;/li&gt;
+&lt;li&gt;Work better with developers through a greater understanding of their work&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;A few random tips. I disabled the use of the arrow keys so I could get used
-to the &amp;quot;hlkj&amp;quot; movement. Do that with the following in your .vimrc file:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&amp;quot; disable arrow keys
-map &amp;lt;up&amp;gt; &amp;lt;nop&amp;gt;
-map &amp;lt;down&amp;gt; &amp;lt;nop&amp;gt;
-map &amp;lt;left&amp;gt; &amp;lt;nop&amp;gt;
-map &amp;lt;right&amp;gt; &amp;lt;nop&amp;gt;
-imap &amp;lt;up&amp;gt; &amp;lt;nop&amp;gt;
-imap &amp;lt;down&amp;gt; &amp;lt;nop&amp;gt;
-imap &amp;lt;left&amp;gt; &amp;lt;nop&amp;gt;
-imap &amp;lt;right&amp;gt; &amp;lt;nop&amp;gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;!--  --&gt;
-&lt;p&gt;Also if you prefer spaces to tabs just use &lt;em&gt;set tabexpand&lt;/em&gt; in your .vimrc.
-Shift width and tab spaces usually default to 8 spaces, so I change that
-to 4 spaces with:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;set ts=4
-set shiftwidth=4
-&lt;/pre&gt;&lt;/div&gt;
-&lt;!--  --&gt;
-&lt;p&gt;Vim takes awhile to get the hang of but once you get over that initial
-curve the editor feels like a natural extension of your thought process.
-The speed at which you can accomplish most tasks skyrockets after
-learning enough commands and embracing the philosophy of just using
-the keyboard for editing.&lt;/p&gt;
+&lt;p&gt;This post summarizes the many discussions I've previously so the information
+can be consumed by a wider audience. I love teaching programming to
+non-developers so don't hesistant to &lt;a class="reference external" href="../pages/about.html"&gt;contact me&lt;/a&gt;
+with further questions.&lt;/p&gt;
+&lt;div class="section" id="where-to-start"&gt;
+&lt;h2&gt;Where to Start&lt;/h2&gt;
+&lt;p&gt;There's an overwhelming number of resources out there. I use the adjective
+&amp;quot;overwhelming&amp;quot; because it's incredibly difficult to know where to begin
+when you have not done development work before.&lt;/p&gt;
+&lt;p&gt;My recommendation is to get to a point where you can do &amp;quot;cool stuff&amp;quot; -
+projects that interest you and will make you want to learn more. The
+faster you go from forcing yourself to learn to thirsting for knowledge,
+the higher your chances of achieving your goals.&lt;/p&gt;
+&lt;p&gt;First, get your feet wet. Spend a few hours going through
+&lt;a class="reference external" href="http://codeacademy.com/"&gt;Code Academy's Python tutorials&lt;/a&gt;. The great part about using a
+service like Code Academy is that it's free, structured, and will teach
+you some basic concepts.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="local-installation"&gt;
+&lt;h2&gt;Local Installation&lt;/h2&gt;
+&lt;p&gt;When I say &amp;quot;local&amp;quot; I mean you want to have Python installed on your
+computer instead of interacting with it in the browser. This will allow
+you to start creating website projects.&lt;/p&gt;
+&lt;p&gt;Next, get Python on your system. Depending on your operating system, you may
+already have Python installed. Mac OS X and Linux are good to go. If you're
+using Windows, head over to
+&lt;cite&gt;Python.org's download page &amp;lt;http://www.python.org/&amp;gt;&lt;/cite&gt; and get Python 2.7.
+Ignore Python 3+ for now - you can learn it later.&lt;/p&gt;
+&lt;p&gt;Now go to the command line - on Windows go to Run -&amp;gt; &amp;quot;cmd&amp;quot; and then go
+to C:Python27then type 'python'. You'll get the interpreter you're used
+to seeing on Code Academy.&lt;/p&gt;
+&lt;p&gt;On Mac OS X or Linux go to the Terminal and type 'python'. You'll
+get the interpreter. Again this is great for learning more and running
+Python on your own system.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="creating-a-project"&gt;
+&lt;h2&gt;Creating a Project&lt;/h2&gt;
+&lt;p&gt;Now that you have Python installed locally you'll want to create a
+project with .py files so you don't have to type everything into the
+interpreter.&lt;/p&gt;
+&lt;p&gt;At this point you'll want to create a subdirectory under your home
+directory or like C:develon Windows. Just create some place that you'll
+remember and can store your files under. Then create subdirectories, such as
+/Users/johnsmith/devel/blog/ or C:develblogfor a blog project. Inside
+that folder you can store your .py (Python) files.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="flask-or-django"&gt;
+&lt;h2&gt;Flask or Django&lt;/h2&gt;
+&lt;p&gt;What are Flask and &lt;a class="reference external" href="http://www.djangoproject.com/"&gt;Django&lt;/a&gt;? They are
+web application frameworks. A framework
+is just code that other developers have written to perform common tasks
+associated with a given domain. So a &amp;quot;web application&amp;quot; framework is designed
+to handle all of the common tasks a web application (also known as a website)
+needs to do, such as:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Authenticating users so they can log in and log out of your site&lt;/li&gt;
+&lt;li&gt;Storing passwords in a secure way&lt;/li&gt;
+&lt;li&gt;Accessing the database and then passing that data to the browser&lt;/li&gt;
+&lt;li&gt;Creating URLs so you can access information at different parts of your
+website, such as &lt;a class="reference external" href="http://www.mywebsite.com/users/"&gt;http://www.mywebsite.com/users/&lt;/a&gt; &amp;lt;-- handle /users/&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There's a myriad of other things a web framework handles so that you don't
+have to write that code yourself. Different frameworks such as Flask and
+Django have different approaches to solving these problems and have
+varying degrees of difficulty in their associated learning curves.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="how-do-i-learn-more-advanced-stuff"&gt;
+&lt;h2&gt;How Do I Learn More Advanced Stuff?&lt;/h2&gt;
+&lt;p&gt;By far one of the best resources you can use is &lt;a class="reference external" href="http://github.com/"&gt;Github&lt;/a&gt;.
+You'll be able to see other people's open source code and learn from it.
+Reading other people's work is very important because you'll learn what
+makes sense and what can be confusing. Python places a lot of emphasis on
+language readability and maintainability. You want to continue that
+philosophy in the code you write.&lt;/p&gt;
+&lt;p&gt;Another interesting resource I created is a
+&lt;a class="reference external" href="http://www.visualizationportfolio.com/python-topics-tree/"&gt;Python topics tree&lt;/a&gt;. It gives you a dependency tree for ordering what topics you'll
+want to learn and in what order for the base Python language. If you
+find it useful I can create more for topics such as Flask, Django,
+and other Python libraries.&lt;/p&gt;
+&lt;p&gt;Next up is a list of resources for keeping you learning. These resources
+range from general advice on generally learning programming to specific
+tutorials on web application frameworks such as Django and Flask.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="resources"&gt;
+&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;/div&gt;
 </summary></entry></feed>

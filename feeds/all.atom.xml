@@ -1,5 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2012-11-02T00:00:00-04:00</updated><entry><title>Wise Words From Elon Musk</title><link href="http://www.mattmakai.com/wise-words-from-elon-musk.html" rel="alternate"></link><updated>2012-11-02T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-11-02:wise-words-from-elon-musk.html</id><summary type="html">&lt;p&gt;Wise words from Elon Musk. While process can sometimes allow for a
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2012-11-14T00:00:00-05:00</updated><entry><title>Learning Python</title><link href="http://www.mattmakai.com/learning-python-for-non-developers.html" rel="alternate"></link><updated>2012-11-14T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-11-14:learning-python-for-non-developers.html</id><summary type="html">&lt;p&gt;I am often asked by friends and colleagues that are not currently
+developers how they should go about learning Python. It's not an easy
+question - the answer is often highly dependent upon the individual's
+immediate technical aptitude. I do however believe anyone can learn how to
+program just as anyone can learn about history or business. The interest in
+learning to program usually stems from wanting to achieve in one or more
+of the following goals:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="../steps-non-developers-start-internet-business.html"&gt;Prototype an Internet-based business idea&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Build a new skill set to become a developer&lt;/li&gt;
+&lt;li&gt;Work better with developers through a greater understanding of their work&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This post summarizes the many discussions I've previously so the information
+can be consumed by a wider audience. I love teaching programming to
+non-developers so don't hesistant to &lt;a class="reference external" href="../pages/about.html"&gt;contact me&lt;/a&gt;
+with further questions.&lt;/p&gt;
+&lt;div class="section" id="where-to-start"&gt;
+&lt;h2&gt;Where to Start&lt;/h2&gt;
+&lt;p&gt;There's an overwhelming number of resources out there. I use the adjective
+&amp;quot;overwhelming&amp;quot; because it's incredibly difficult to know where to begin
+when you have not done development work before.&lt;/p&gt;
+&lt;p&gt;My recommendation is to get to a point where you can do &amp;quot;cool stuff&amp;quot; -
+projects that interest you and will make you want to learn more. The
+faster you go from forcing yourself to learn to thirsting for knowledge,
+the higher your chances of achieving your goals.&lt;/p&gt;
+&lt;p&gt;First, get your feet wet. Spend a few hours going through
+&lt;a class="reference external" href="http://www.codecademy.com/tracks/python"&gt;Code Academy's Python tutorials&lt;/a&gt;.
+The great part about using a service like Code Academy is that it's free,
+structured, has a low barrier to entry, and will teach you some basic
+concepts that are important in Python.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="local-installation"&gt;
+&lt;h2&gt;Local Installation&lt;/h2&gt;
+&lt;p&gt;When I say &amp;quot;local&amp;quot; I mean you want to have Python installed on your
+computer instead of interacting with it in the browser. This will allow
+you to start creating website projects.&lt;/p&gt;
+&lt;p&gt;Get Python on your system. Depending on your operating system, you may
+already have Python installed. Mac OS X and Linux are good to go. If you're
+using Windows, head over to
+&lt;a class="reference external" href="http://www.python.org/download/"&gt;Python.org's download page&lt;/a&gt; and get
+Python 2.7. Ignore Python 3+ for now - you can learn it later.&lt;/p&gt;
+&lt;p&gt;Now go to the command line - on Windows go to Run -&amp;gt; &amp;quot;cmd&amp;quot; and then change
+directory to C:\Python27\ then type 'python'. You'll get the interpreter
+you're used to seeing on Code Academy.&lt;/p&gt;
+&lt;p&gt;On Mac OS X or Linux go to the Terminal and type 'python'. You'll
+get the interpreter. Again this is great for learning more and running
+Python on your own system.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="creating-a-project"&gt;
+&lt;h2&gt;Creating a Project&lt;/h2&gt;
+&lt;p&gt;Now that you have Python installed locally you'll want to create a
+project with .py files so you don't have to type everything into the
+interpreter.&lt;/p&gt;
+&lt;p&gt;At this point you'll want to create a subdirectory under your home
+directory or like C:\devel\ on Windows. Just create some place that you'll
+remember and can store your files under. Then create subdirectories, such as
+/Users/johnsmith/devel/blog/ or C:\devel\blog\ for a blog project. Inside
+that folder you can store your .py (Python) files.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="flask-or-django"&gt;
+&lt;h2&gt;Flask or Django&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://flask.pocoo.org/"&gt;Flask&lt;/a&gt; and
+&lt;a class="reference external" href="http://www.djangoproject.com/"&gt;Django&lt;/a&gt; are
+web application frameworks. A framework
+is just code that other developers have written to perform common tasks
+associated with a given domain. So a &amp;quot;web application&amp;quot; framework is designed
+to handle all of the common tasks a web application (also known as a website)
+needs to do, such as:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Authenticating users so they can log in and log out of your site&lt;/li&gt;
+&lt;li&gt;Storing passwords in a secure way&lt;/li&gt;
+&lt;li&gt;Accessing the database and then passing that data to the browser&lt;/li&gt;
+&lt;li&gt;Creating URLs so you can access information at different parts of your
+website, such as &lt;a class="reference external" href="http://www.mywebsite.com/users/"&gt;http://www.mywebsite.com/users/&lt;/a&gt; to handle /users/ url&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There's a myriad of other things a web framework handles so that you don't
+have to write that code yourself. Different frameworks such as Flask and
+Django have different approaches to solving these problems and have
+varying degrees of difficulty in their associated learning curves.&lt;/p&gt;
+&lt;p&gt;Once you learn how to use Flask or Django with Python you'll be able to
+build simple websites. Then you can add complexity and implement the ideas
+that have been floating around in your head. Eventually you'll reach an
+&amp;quot;a-ha!&amp;quot; moment where things will click and your productivity will take off.
+That's when programming goes from being a struggle to actually being fun.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="how-do-i-learn-more-advanced-topics"&gt;
+&lt;h2&gt;How Do I Learn More Advanced Topics?&lt;/h2&gt;
+&lt;p&gt;By far one of the best resources is &lt;a class="reference external" href="http://github.com/"&gt;Github&lt;/a&gt;.
+Github allows you to read other people's open source code to learn from it.
+Reading other people's work is very important because you'll learn what
+makes sense and what can be confusing. Python places a lot of emphasis on
+language readability and maintainability. You want to embrace that
+philosophy in the code you write.&lt;/p&gt;
+&lt;p&gt;An interesting resource I created is a
+&lt;a class="reference external" href="http://www.visualizationportfolio.com/python-topics-tree/"&gt;Python topics tree&lt;/a&gt;. It gives you a dependency tree for ordering what topics you'll
+want to learn and in what order for the base Python language. If you
+find it useful I can create more for topics such as Flask, Django,
+and other Python libraries.&lt;/p&gt;
+&lt;p&gt;Next up is a list of resources for keeping you learning. These resources
+range from general advice on generally learning programming to specific
+tutorials on web application frameworks such as Django and Flask.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="resources"&gt;
+&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.pythontutor.com/"&gt;Python Tutor&lt;/a&gt;. Learn by visual code
+execution.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://tech.yipit.com/2012/08/21/how-i-taught-myself-to-code-in-8-weeks/"&gt;How I Taught Myself to Code in 8 Weeks&lt;/a&gt;. Weekends, really.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://docs.python-guide.org/en/latest/"&gt;Hitchhiker's Guide to Python&lt;/a&gt;.
+Awesome wide-ranging resource to give you direction on how to learn and
+use Python the right way.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://ontwik.com/python/introduction-to-python/"&gt;Introduction to Python video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://orangethirty.blogspot.com/2012/08/teaching-my-10-yeard-old-niece-how-to.html"&gt;Teaching a 10 Year Old to Code in Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://pythonbooks.revolunet.com/"&gt;Best Free Python Books on the Web&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.pythonweekly.com/"&gt;Python Weekly&lt;/a&gt;. Newsletter with weekly
+Python and related project updates.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/nryoung/algorithms"&gt;Common computer science algorithms in Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.amazon.com/gp/product/144933072X/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=390957&amp;amp;creativeASIN=144933072X&amp;amp;linkCode=as2&amp;amp;tag=minimneeds-20"&gt;Think Python&lt;/a&gt;. Complete beginner's introduction to computer science and Python.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://elweb.co/programacion/want-to-learn-django-start-here/"&gt;Want to Learn Django? Start Here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.mattmakai.com/favorite-django-article-sources.html"&gt;My Favorite Django Article Sources&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://tech.yipit.com/2012/02/28/learn-django/"&gt;15 Key Resources to Learn Django&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>Wise Words From Elon Musk</title><link href="http://www.mattmakai.com/wise-words-from-elon-musk.html" rel="alternate"></link><updated>2012-11-02T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-11-02:wise-words-from-elon-musk.html</id><summary type="html">&lt;p&gt;Wise words from Elon Musk. While process can sometimes allow for a
 repeatable way to perform an action, it is also often a substitute for
 thinking creatively. That type of situation leads to an innovation vacuum
 where workers do a task in the same way &amp;quot;it's always been done&amp;quot; without
