@@ -26,14 +26,14 @@ with further questions.
 
 Where to Start
 --------------
-There's an overwhelming number of resources out there. I use the adjective
-"overwhelming" because it's incredibly difficult to know where to begin
-when you have not done development work before.
+There's an overwhelming number of resources out there - it's incredibly 
+difficult to know where to begin when you have not done development 
+work before.
 
 My recommendation is to get to a point where you can do "cool stuff" -
 projects that interest you and will make you want to learn more. The
-faster you go from forcing yourself to learn to thirsting for knowledge,
-the higher your chances of achieving your goals.
+faster you go from forcing yourself to learn to having goals for implementing
+new interesting ideas, the higher your chances of achieving your goals.
 
 First, get your feet wet. Spend a few hours going through 
 `Code Academy's Python tutorials <http://www.codecademy.com/tracks/python>`_. 
