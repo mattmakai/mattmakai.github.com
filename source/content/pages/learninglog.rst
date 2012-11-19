@@ -10,9 +10,40 @@ This is where I keep track of what I learn so I can review it periodically.
 Sometimes I put things down that I already know but often forget and I want
 to use the concepts more often.
 
-Friday, Nov 2, 2012
+Monday, Nov 5, 2012
 -------------------
 * 
+
+Sunday, Nov 4, 2012
+-------------------
+* Redis is `single threaded <http://redis.io/topics/faq>`_ because it is 
+  most likely to be network or memory bound. Having multiple Redis instances
+  on a single machine is one way around the single threaded design constraint.
+
+----
+
+Saturday, Nov 3, 2012
+---------------------
+* The Python `hex built-in function <http://docs.python.org/2/library/functions.html#hex>`_ converts an integer to a hexidecimal string. For example:
+
+.. code-block:: python-hex-function
+
+  >>> hex(79)
+  '0x4f'
+
+..
+
+
+Friday, Nov 2, 2012
+-------------------
+* The Python `bin built-in function <http://docs.python.org/2/library/functions.html#bin>`_ converts an integer to a string. For example:
+
+.. code-block:: python-bin-function
+
+  >>> bin(56)
+  '0b111000'
+
+..
 
 Thursday, Nov 1, 2012
 ---------------------
@@ -187,7 +218,7 @@ Thursday, Oct 18, 2012
 Wednesday, Oct 17, 2012
 -----------------------
 * D3's 
-  `extent <https://github.com/mbostock/d3/wiki/Arrays#wiki-d3_extent>`
+  `extent <https://github.com/mbostock/d3/wiki/Arrays#wiki-d3_extent>`_
   is a convenience function that is equivalent to calling the d3.min 
   and d3.max functions simultaneously. Given an array of values, d3.extent
   returns an array with two elements: min and max. An optional accessor
