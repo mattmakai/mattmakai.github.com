@@ -10,9 +10,16 @@ This is where I keep track of what I learn so I can review it periodically.
 Sometimes I put things down that I already know but often forget and I want
 to use the concepts more often.
 
+Tuesday, Nov 6, 2012
+--------------------
+* `statsmodels <http://statsmodels.sourceforge.net/devel/>`_ is a Python
+  module for performing statistical analysis.
+
+
 Monday, Nov 5, 2012
 -------------------
-* 
+* Redis stands for `REmote DIctionary Server <http://redis.io/topics/faq>`_.
+
 
 Sunday, Nov 4, 2012
 -------------------
