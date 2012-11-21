@@ -29,26 +29,24 @@ Presented to my client the
 `Consumer Financial Protection Bureau <http://www.consumerfinance.gov/>`_ on
 May 18, 2012.
 
-----------------------------
+----
 
 `What is Big Data? </presentations/what-is-big-data.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Presented to Excella's Business Intelligence Center of Excellence on 
-May 7, 2012.
+Presented to Excella's `Business Intelligence Center of Excellence <http://excella.com/services/business-intelligence-center-of-excellence.aspx>`_ 
+on May 7, 2012.
 
------------------------------
+----
 
 `Push Notifications With Python and Urban Airship </presentations/python-wrapper-urban-airship-dc-python.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Presented to DC Python on April 3, 2012.
+Presented to `DC Python <http://meetup.dcpython.org/>`_ on 
+`April 3, 2012 <http://meetup.dcpython.org/events/23832651/>`_ and 
+Excella Consulting's 
+`Java COE <http://excella.com/services/java-center-of-excellence.aspx>`_ 
+on March 12, 2012.
 
------------------------------
-
-`Push Notifications With A Python Wrapper for Urban Airship </presentations/python-wrapper-urban-airship.html>`_
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Presented to Excella's Java Center of Excellence on March 12, 2012.
-
------------------------------
+----
 
 `What's Coming in Django 1.4 </presentations/whats-coming-django-1-4.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
