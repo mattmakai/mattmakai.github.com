@@ -61,6 +61,43 @@ This is where I keep track of what I learn so I can review it periodically.
 Sometimes I put things down that I already know but often forget and I want
 to use the concepts more often.</p>
 </div>
+<div class="section" id="wednesday-nov-21-2012">
+<h2>Wednesday, Nov 21, 2012</h2>
+<ul class="simple">
+<li>3 ways to scale databases in order of ease: 1. vertically (bigger
+server), 2. app partitions (each app gets its own database), for example,
+accounting and operations have two separate databases, 3. horizontal
+sharding</li>
+<li>Horizontal sharding requires a sharding key</li>
+<li>It's best to stick to vertical scaling of database servers for as long as
+possible because app partitions and horizontal scaling require foreign
+key relationship maintenance to be done in the app layer</li>
+<li>You know you have a bad horizontal scaling sharding key when you have
+to query all shared to find data and data is disproportionally distributed</li>
+<li>Also South support for multi-database is limited</li>
+</ul>
+</div>
+<div class="section" id="friday-nov-9-2012">
+<h2>Friday, Nov 9, 2012</h2>
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+<div class="section" id="thursday-nov-8-2012">
+<h2>Thursday, Nov 8, 2012</h2>
+<ul class="simple">
+<li>One use case for <a class="reference external" href="http://redis.io">Redis</a> is as single point for
+globally unique primary key incrementer for sharded databases.</li>
+</ul>
+</div>
+<div class="section" id="wednesday-nov-7-2012">
+<h2>Wednesday, Nov 7, 2012</h2>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/kennethreitz/dj-database-url">dj-database-url</a> is
+a library for managing Django databases by URL instead of by a routing
+dictionary.</li>
+</ul>
+</div>
 <div class="section" id="tuesday-nov-6-2012">
 <h2>Tuesday, Nov 6, 2012</h2>
 <ul class="simple">

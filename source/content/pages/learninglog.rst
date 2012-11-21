@@ -10,6 +10,40 @@ This is where I keep track of what I learn so I can review it periodically.
 Sometimes I put things down that I already know but often forget and I want
 to use the concepts more often.
 
+
+Wednesday, Nov 21, 2012
+-----------------------
+* 3 ways to scale databases in order of ease: 1. vertically (bigger 
+  server), 2. app partitions (each app gets its own database), for example,
+  accounting and operations have two separate databases, 3. horizontal
+  sharding
+
+* Horizontal sharding requires a sharding key
+
+* It's best to stick to vertical scaling of database servers for as long as
+  possible because app partitions and horizontal scaling require foreign
+  key relationship maintenance to be done in the app layer
+
+* You know you have a bad horizontal scaling sharding key when you have
+  to query all shared to find data and data is disproportionally distributed
+
+* Also South support for multi-database is limited
+
+Friday, Nov 9, 2012
+-------------------
+*
+
+Thursday, Nov 8, 2012
+---------------------
+* One use case for `Redis <http://redis.io>`_ is as single point for 
+  globally unique primary key incrementer for sharded databases.
+
+Wednesday, Nov 7, 2012
+----------------------
+* `dj-database-url <https://github.com/kennethreitz/dj-database-url>`_ is
+  a library for managing Django databases by URL instead of by a routing 
+  dictionary.
+
 Tuesday, Nov 6, 2012
 --------------------
 * `statsmodels <http://statsmodels.sourceforge.net/devel/>`_ is a Python

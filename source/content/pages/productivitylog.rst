@@ -18,6 +18,7 @@ life. If not, I'll cut it.
 
 Wednesday, Nov 21, 2012
 -----------------------
+* Watched `Horizontally Scaling Your Database with Django <http://pyvideo.org/video/1576/horizontally-scaling-your-database-with-django>`_.
 * Updated several pages on my website.
 * Wrote a new `Coding Across America <http://www.codingacrossamerica.com/research.html>`_ blog post.
 * Deployed new functionality to test environments for primary client.
