@@ -27,11 +27,24 @@ Wednesday, Nov 21, 2012
 * You know you have a bad horizontal scaling sharding key when you have
   to query all shared to find data and data is disproportionally distributed
 
-* Also South support for multi-database is limited
+* South support for multi-database is limited
+
+
+Sunday, Nov 11, 2012
+--------------------
+* 
+
+----
+
+Saturday, Nov 10, 2012
+----------------------
+* 
 
 Friday, Nov 9, 2012
 -------------------
-*
+* `Cube <http://square.github.com/cube/>`_ is an open source time series
+  data analysis project built on MongoDB. Cube collects data in MongoDB
+  then provides facilities for deriving metrics from collected data.
 
 Thursday, Nov 8, 2012
 ---------------------

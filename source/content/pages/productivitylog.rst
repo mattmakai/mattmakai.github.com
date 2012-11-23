@@ -16,6 +16,20 @@ life. If not, I'll cut it.
 
 ----
 
+Friday, Nov 23, 2012
+--------------------
+* Deployed two projects to production for my primary client.
+
+
+Thursday, Nov 22, 2012
+----------------------
+* Created a simple project with `scrapy <http://scrapy.org/>`_.
+* Read `Tastypie <http://django-tastypie.readthedocs.org/en/latest/>`_
+  documentation, several chapters in 
+  `The Lean Startup <http://theleanstartup.com/>`_, and a chapter in
+  `The Bad Data Handbook <http://shop.oreilly.com/product/0636920024422.do>`_.
+
+
 Wednesday, Nov 21, 2012
 -----------------------
 * Watched `Horizontally Scaling Your Database with Django <http://pyvideo.org/video/1576/horizontally-scaling-your-database-with-django>`_.
