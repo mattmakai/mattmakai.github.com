@@ -11,6 +11,15 @@ Sometimes I put things down that I already know but often forget and I want
 to use the concepts more often.
 
 
+
+Sunday, Nov 25, 2012
+--------------------
+* People don't buy what you do - `they buy why you do it <http://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action.html>`_
+
+* What you do simply serves as the *proof* of what you believe
+
+
+
 Wednesday, Nov 21, 2012
 -----------------------
 * 3 ways to scale databases in order of ease: 1. vertically (bigger 
@@ -30,15 +39,61 @@ Wednesday, Nov 21, 2012
 * South support for multi-database is limited
 
 
+Sunday, Nov 17, 2012
+--------------------
+* The Django `ifchanged template tag <https://docs.djangoproject.com/en/1.4/ref/templates/builtins/#ifchanged>`_ is an interesting conditional that must
+  be used within a loop. The tag will only render the enclosed output if
+  the content has changed. There is also an optional 'else' conditional
+  statement that can be used with the ifchanged tag.
+
+
+----
+
+Saturday, Nov 16, 2012
+----------------------
+* The Django `debug template tag <https://docs.djangoproject.com/en/1.4/ref/templates/builtins/#debug>`_ outputs debugging information in the webpage being
+  rendered.
+
+
+Friday, Nov 15, 2012
+--------------------
+* In Vim, /pattern searches a file for a pattern, 'n' gets the next search
+  match in the same direction. 'N' gets the next search match in the opposite
+  direction.
+
+
+Thursday, Nov 14, 2012
+----------------------
+* 'L' goes to the last line of the screen in Vim.
+
+
+Wednesday, Nov 14, 2012
+-----------------------
+* 'H' goes to the first line of the screen in Vim.
+
+
+Tuesday, Nov 13, 2012
+---------------------
+* 'M' goes to the middle line of the screen in Vim.
+
+
+Monday, Nov 12, 2012
+--------------------
+* 'B' in Vim will move to the beginning of a whitespace-delimited word. This
+  is really handy when dealing with code or writing that commonly uses 
+  hyphens.
+
+
 Sunday, Nov 11, 2012
 --------------------
-* 
+* 'e' in Vim will move to the end of a word.
 
 ----
 
 Saturday, Nov 10, 2012
 ----------------------
-* 
+* In Vim, using :x will write any changes to disk and exit. If there are
+  no changes, Vim will just exit.
 
 Friday, Nov 9, 2012
 -------------------
