@@ -18,6 +18,9 @@ Sunday, Nov 25, 2012
 
 * What you do simply serves as the *proof* of what you believe
 
+Thursday, Nov 22, 2012
+----------------------
+* 
 
 
 Wednesday, Nov 21, 2012
@@ -39,7 +42,23 @@ Wednesday, Nov 21, 2012
 * South support for multi-database is limited
 
 
-Sunday, Nov 17, 2012
+Tuesday, Nov 20, 2012
+---------------------
+* The Django `ssi template tag <https://docs.djangoproject.com/en/1.4/ref/templates/builtins/#ssi>`_ renders the contents of a file into the webpage. The
+  file must be specified with an absolute path. The optional 'parsed' argument
+  after the absolute filename specifies whether or not the file contents
+  should be parsed as if they are template code. Also the 
+  ALLOWED_INCLUDE_ROOTS must be set in the Django settings to make the ssi
+  template tag work.
+
+
+Monday, Nov 19, 2012
+--------------------
+* The Django `now template tag <https://docs.djangoproject.com/en/1.4/ref/templates/builtins/#now>`_ renders the current date and time as it is set on
+  the server.
+
+
+Sunday, Nov 18, 2012
 --------------------
 * The Django `ifchanged template tag <https://docs.djangoproject.com/en/1.4/ref/templates/builtins/#ifchanged>`_ is an interesting conditional that must
   be used within a loop. The tag will only render the enclosed output if
@@ -49,20 +68,20 @@ Sunday, Nov 17, 2012
 
 ----
 
-Saturday, Nov 16, 2012
+Saturday, Nov 17, 2012
 ----------------------
 * The Django `debug template tag <https://docs.djangoproject.com/en/1.4/ref/templates/builtins/#debug>`_ outputs debugging information in the webpage being
   rendered.
 
 
-Friday, Nov 15, 2012
+Friday, Nov 16, 2012
 --------------------
 * In Vim, /pattern searches a file for a pattern, 'n' gets the next search
   match in the same direction. 'N' gets the next search match in the opposite
   direction.
 
 
-Thursday, Nov 14, 2012
+Thursday, Nov 15, 2012
 ----------------------
 * 'L' goes to the last line of the screen in Vim.
 
