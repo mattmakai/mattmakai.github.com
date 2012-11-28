@@ -16,6 +16,24 @@ life. If not, I'll cut it.
 
 ----
 
+Monday, Nov 26, 2012
+--------------------
+* Deployed code to test and production environments for my primary client.
+* Worked on my potential side project - going to codename it 'spire' for
+  the moment until I launch it. It's a Django, deck.js, & d3.js webapp.
+* Referred a potential developer to my consulting firm.
+
+
+Sunday, Nov 25, 2012
+--------------------
+* Read a few interesting d3.js links but mostly unproductive.
+
+
+Saturday, Nov 24, 2012
+----------------------
+* Created an initial locally-hosted prototype of a possible side project
+  I may deploy to Heroku in the future.
+
 Friday, Nov 23, 2012
 --------------------
 * Deployed two projects to production for my primary client.

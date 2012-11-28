@@ -18,9 +18,22 @@ Sunday, Nov 25, 2012
 
 * What you do simply serves as the *proof* of what you believe
 
-Thursday, Nov 22, 2012
+
+----
+
+Saturday, Nov 24, 2012
 ----------------------
 * 
+
+Friday, Nov 23, 2012
+--------------------
+* 
+
+Thursday, Nov 22, 2012
+----------------------
+* Visualization is a process of *mapping data* to visuals. Data is 
+  interpreted and the values are expressed as visual properties. (From
+  `Interactive Data Visualization for the Web <http://shop.oreilly.com/product/0636920026938.do>`_
 
 
 Wednesday, Nov 21, 2012
