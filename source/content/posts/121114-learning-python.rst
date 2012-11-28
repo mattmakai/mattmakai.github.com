@@ -113,7 +113,7 @@ language readability and maintainability. You want to embrace that
 philosophy in the code you write.
 
 An interesting resource I created is a 
-`Python topics tree <http://www.visualizationportfolio.com/visualizations/python-topics-tree/>`_. It gives you a dependency tree for ordering what topics you'll
+`Python topics tree <http://www.visualizationportfolio.com/visualization/python-topics-tree/>`_. It gives you a dependency tree for ordering what topics you'll
 want to learn and in what order for the base Python language. If you
 find it useful I can create more for topics such as Flask, Django,
 and other Python libraries.
