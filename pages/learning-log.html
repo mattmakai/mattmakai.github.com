@@ -25,7 +25,7 @@
             <li ><a href="/pages/presentations.html">Presentations</a></li>
             <li ><a href="/pages/work.html">Work</a></li>
             <li class="active"><a href="/pages/learning-log.html">Learning Log</a></li>
-            <li ><a href="/pages/productivity-log.html">Productivity Log</a></li>
+            <!-- <li ><a href="/pages/productivity-log.html">Productivity Log</a></li> -->
             <li ><a href="/pages/about.html">About</a></li>
             <li><a href="http://twitter.com/makaimc/">Twitter &raquo;</a></li>
             <li><a href="https://github.com/makaimc/">Code (github.com) &raquo;</a></li>
@@ -61,6 +61,65 @@ This is where I keep track of what I learn so I can review it periodically.
 Sometimes I put things down that I already know but often forget and I want
 to use the concepts more often.</p>
 </div>
+<div class="section" id="wednesday-dec-5-2012">
+<h2>Wednesday, Dec 5, 2012</h2>
+<ul class="simple">
+<li><a class="reference external" href="https://docs.djangoproject.com/en/dev/releases/1.5/">Django 1.5</a>
+allows a configurable User model. This is in contrast to having to
+use a ForeignKey from a custom model to add new fields to a User
+model in &gt;1.4. The configurable User model is specified by creating
+a model class called User and setting the AUTH_USER_MODEL variable in
+settings.py.</li>
+</ul>
+</div>
+<div class="section" id="tuesday-dec-4-2012">
+<h2>Tuesday, Dec 4, 2012</h2>
+<ul class="simple">
+<li>Django 1.5 allows saving only a <a class="reference external" href="http://procrastinatingdev.com/django/most-important-changes-in-django-1-5/">subset of model fields</a> by supplying
+an update_fields argument to the save function. For example:</li>
+</ul>
+<div class="highlight"><pre>MyObject.save(update_fields=[&#39;name&#39;])
+</pre></div>
+<!--  -->
+</div>
+<div class="section" id="monday-dec-3-2012">
+<h2>Monday, Dec 3, 2012</h2>
+<ul class="simple">
+<li>Django 1.5 deprecates the AUTH_PROFILE_MODULE setting and the
+.get_profile() function. These deprecations will be removed in Django 1.7.</li>
+</ul>
+</div>
+<div class="section" id="sunday-dec-2-2012">
+<h2>Sunday, Dec 2, 2012</h2>
+<ul class="simple">
+<li>A network proxy for Git can be specified globally with:</li>
+</ul>
+<div class="highlight"><pre>git config --global https.proxy https://proxy.url.here:port
+</pre></div>
+<!--  -->
+</div>
+<hr class="docutils" />
+<div class="section" id="saturday-dec-1-2012">
+<h2>Saturday, Dec 1, 2012</h2>
+<ul class="simple">
+<li>All deleted files in a Git repository can be listed by using:</li>
+</ul>
+<div class="highlight"><pre>git log --diff-filter=D --summary
+</pre></div>
+<!--  -->
+</div>
+<div class="section" id="friday-nov-30-2012">
+<h2>Friday, Nov 30, 2012</h2>
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+<div class="section" id="thursday-nov-29-2012">
+<h2>Thursday, Nov 29, 2012</h2>
+<ul class="simple">
+<li></li>
+</ul>
+</div>
 <div class="section" id="sunday-nov-25-2012">
 <h2>Sunday, Nov 25, 2012</h2>
 <ul class="simple">
@@ -72,13 +131,16 @@ to use the concepts more often.</p>
 <div class="section" id="saturday-nov-24-2012">
 <h2>Saturday, Nov 24, 2012</h2>
 <ul class="simple">
-<li></li>
+<li><a class="reference external" href="http://flask.pocoo.org/">Flask</a> is a Python microframework for building
+web applications with Werkzeug and Jinja 2.</li>
 </ul>
 </div>
 <div class="section" id="friday-nov-23-2012">
 <h2>Friday, Nov 23, 2012</h2>
 <ul class="simple">
-<li></li>
+<li>Django's <a class="reference external" href="https://docs.djangoproject.com/en/1.4/topics/class-based-views/">class-based views</a> live in the django.views.generic package. Class-based
+views are an attempt to mitigate some of the repetitive nature of working
+with standard CRUD tasks in views.</li>
 </ul>
 </div>
 <div class="section" id="thursday-nov-22-2012">

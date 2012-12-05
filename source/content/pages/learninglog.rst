@@ -10,6 +10,66 @@ This is where I keep track of what I learn so I can review it periodically.
 Sometimes I put things down that I already know but often forget and I want
 to use the concepts more often.
 
+Wednesday, Dec 5, 2012
+----------------------
+* `Django 1.5 <https://docs.djangoproject.com/en/dev/releases/1.5/>`_ 
+  allows a configurable User model. This is in contrast to having to
+  use a ForeignKey from a custom model to add new fields to a User
+  model in >1.4. The configurable User model is specified by creating
+  a model class called User and setting the AUTH_USER_MODEL variable in
+  settings.py.
+
+
+Tuesday, Dec 4, 2012
+--------------------
+* Django 1.5 allows saving only a `subset of model fields <http://procrastinatingdev.com/django/most-important-changes-in-django-1-5/>`_ by supplying
+  an update_fields argument to the save function. For example:
+
+.. code-block:: django-1-5-model-subset-save
+
+  MyObject.save(update_fields=['name'])
+
+..
+
+
+Monday, Dec 3, 2012
+-------------------
+* Django 1.5 deprecates the AUTH_PROFILE_MODULE setting and the 
+  .get_profile() function. These deprecations will be removed in Django 1.7.
+
+
+Sunday, Dec 2, 2012
+-------------------
+* A network proxy for Git can be specified globally with:
+
+.. code-block:: git-network-proxy
+
+  git config --global https.proxy https://proxy.url.here:port
+
+..
+
+
+----
+
+Saturday, Dec 1, 2012
+---------------------
+* All deleted files in a Git repository can be listed by using:
+
+.. code-block:: git-deleted-files-list-all
+
+  git log --diff-filter=D --summary
+
+..
+
+
+Friday, Nov 30, 2012
+--------------------
+* 
+
+
+Thursday, Nov 29, 2012
+----------------------
+* 
 
 
 Sunday, Nov 25, 2012
@@ -23,11 +83,15 @@ Sunday, Nov 25, 2012
 
 Saturday, Nov 24, 2012
 ----------------------
-* 
+* `Flask <http://flask.pocoo.org/>`_ is a Python microframework for building
+  web applications with Werkzeug and Jinja 2.
 
 Friday, Nov 23, 2012
 --------------------
-* 
+* Django's `class-based views <https://docs.djangoproject.com/en/1.4/topics/class-based-views/>`_ live in the django.views.generic package. Class-based
+  views are an attempt to mitigate some of the repetitive nature of working
+  with standard CRUD tasks in views.
+
 
 Thursday, Nov 22, 2012
 ----------------------
