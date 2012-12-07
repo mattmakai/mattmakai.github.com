@@ -61,6 +61,27 @@ This is where I keep track of what I learn so I can review it periodically.
 Sometimes I put things down that I already know but often forget and I want
 to use the concepts more often.</p>
 </div>
+<div class="section" id="thursday-dec-6-2012">
+<h2>Thursday, Dec 6, 2012</h2>
+<ul class="simple">
+<li>Ubuntu 10.04 only install Puppet version 0.25.4 with the default
+installation repository. To upgrade to the latest version of Puppet
+by adding PuppetLabs' official repository, run this on puppet clients:</li>
+</ul>
+<div class="highlight"><pre>sudo su -
+
+echo -e &quot;deb http://apt.puppetlabs.com/ lucid main\ndeb-src http://apt.puppetlabs.com/ lucid main&quot; &gt;&gt; /etc/apt/sources.list.d/puppet.list
+
+apt-key adv --keyserver keyserver.ubuntu.com --recv 4BD6EC30
+
+apt-get update
+
+apt-get install -y puppet
+</pre></div>
+<!--  -->
+<p>On the puppet master run <em>apt-get install -y puppetmaster</em> instead of
+the last command. Found on <a class="reference external" href="http://projects.puppetlabs.com/projects/1/wiki/Puppet_Ubuntu">the Puppet Ubuntu wiki</a>.</p>
+</div>
 <div class="section" id="wednesday-dec-5-2012">
 <h2>Wednesday, Dec 5, 2012</h2>
 <ul class="simple">
@@ -116,6 +137,12 @@ an update_fields argument to the save function. For example:</li>
 </div>
 <div class="section" id="thursday-nov-29-2012">
 <h2>Thursday, Nov 29, 2012</h2>
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+<div class="section" id="monday-nov-26-2012">
+<h2>Monday, Nov 26, 2012</h2>
 <ul class="simple">
 <li></li>
 </ul>

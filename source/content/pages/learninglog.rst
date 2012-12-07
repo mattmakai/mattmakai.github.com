@@ -10,6 +10,28 @@ This is where I keep track of what I learn so I can review it periodically.
 Sometimes I put things down that I already know but often forget and I want
 to use the concepts more often.
 
+Thursday, Dec 6, 2012
+---------------------
+* Ubuntu 10.04 only install Puppet version 0.25.4 with the default 
+  installation repository. To upgrade to the latest version of Puppet 
+  by adding PuppetLabs' official repository, run this on puppet clients:
+
+.. code-block:: add-ubuntu-puppetlabs-repository
+
+    sudo su -
+
+    echo -e "deb http://apt.puppetlabs.com/ lucid main\ndeb-src http://apt.puppetlabs.com/ lucid main" >> /etc/apt/sources.list.d/puppet.list
+
+    apt-key adv --keyserver keyserver.ubuntu.com --recv 4BD6EC30
+
+    apt-get update
+
+    apt-get install -y puppet
+..
+
+On the puppet master run *apt-get install -y puppetmaster* instead of 
+the last command. Found on `the Puppet Ubuntu wiki <http://projects.puppetlabs.com/projects/1/wiki/Puppet_Ubuntu>`_.
+
 Wednesday, Dec 5, 2012
 ----------------------
 * `Django 1.5 <https://docs.djangoproject.com/en/dev/releases/1.5/>`_ 
@@ -69,6 +91,11 @@ Friday, Nov 30, 2012
 
 Thursday, Nov 29, 2012
 ----------------------
+* 
+
+
+Monday, Nov 26, 2012
+--------------------
 * 
 
 
