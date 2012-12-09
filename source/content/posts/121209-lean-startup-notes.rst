@@ -5,8 +5,8 @@ The Lean Startup by Eric Ries
 :slug: lean-startup-notes
 :category: blog
 
-I recently finished reading `The Lean Startup <http://www.amazon.com/gp/product/0307887898/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0307887898&linkCode=as2&tag=minimneeds-20>`_ by Eric Ries. These are my
-thoughts on the book.
+I recently finished reading `The Lean Startup <http://www.amazon.com/gp/product/0307887898/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0307887898&linkCode=as2&tag=minimneeds-20>`_ by Eric Ries. This blog post contains
+some brief notes on the book. I'll have more to say at a later time.
 
 Primary concepts
 ----------------
