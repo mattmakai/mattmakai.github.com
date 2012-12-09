@@ -1,0 +1,52 @@
+The Lean Startup by Eric Ries
+=============================
+
+:date: 2012-12-09
+:slug: lean-startup-notes
+:category: blog
+
+I recently finished reading `The Lean Startup <http://www.amazon.com/gp/product/0307887898/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0307887898&linkCode=as2&tag=minimneeds-20>`_ by Eric Ries. These are my
+thoughts on the book.
+
+Primary concepts
+----------------
+
+1. Neither the traditional management approach nor the "just do it" without
+   a plan school of thought are effective ways of successfully creating a
+   new venture
+
+2. Small batch sizes reduce waste by minimizing effort spent creating
+   unwanted features. Small batches are also crucial to obtaining 
+   constant feedback by customers
+
+3. Learning should be the initial measure of progress for highly 
+   uncertain ventures such as new start up companies
+
+4. Minimum Viable Products (MVPs) drive the Build-Measure-Learn feedback 
+   loop through constant iterations based partially on customer feedback 
+   and driven by the founder's vision
+
+
+Other thoughts I picked up along the way are below.
+
+Validated Learning
+------------------
+The Eric Ries' proposed model is based on explicitly declaring hypotheses
+that underlie a potential business model and then determining what 
+measurements prove or disprove each hypothesis. Eric discusses how this
+process called *validated learning* should work to avoid subjective arguments 
+that are superficially supported by *vanity metrics*.
+
+Cross-functional teams and MVPs
+-------------------------------
+Cross-functional teams are necessary (as opposed to organization by 
+traditional functional departments) for MVPs because feedback cycle times' 
+speed is dependent upon the team working together in multiple roles. 
+Communication overhead and bureaucracy are minimized in cross-functional 
+teams that work well together. Some people are not suited for this type of 
+work, for example someone that just wants to work on a single aspect of 
+work (such as programming) 100% of the time.
+
+There's more to this but these are just some of my initial thoughts as I
+dive deeper into the Lean Startup and Customer Development philosophies.
+

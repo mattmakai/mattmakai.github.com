@@ -1,5 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2012-11-14T00:00:00-05:00</updated><entry><title>Learning Python</title><link href="http://www.mattmakai.com/learning-python-for-non-developers.html" rel="alternate"></link><updated>2012-11-14T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-11-14:learning-python-for-non-developers.html</id><summary type="html">&lt;p&gt;I am often asked by friends and colleagues that are not currently
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2012-12-09T00:00:00-05:00</updated><entry><title>The Lean Startup by Eric Ries</title><link href="http://www.mattmakai.com/lean-startup-notes.html" rel="alternate"></link><updated>2012-12-09T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-12-09:lean-startup-notes.html</id><summary type="html">&lt;p&gt;I recently finished reading &lt;a class="reference external" href="http://www.amazon.com/gp/product/0307887898/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=390957&amp;amp;creativeASIN=0307887898&amp;amp;linkCode=as2&amp;amp;tag=minimneeds-20"&gt;The Lean Startup&lt;/a&gt; by Eric Ries. These are my
+thoughts on the book.&lt;/p&gt;
+&lt;div class="section" id="primary-concepts"&gt;
+&lt;h2&gt;Primary concepts&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Neither the traditional management approach nor the &amp;quot;just do it&amp;quot; without
+a plan school of thought are effective ways of successfully creating a
+new venture&lt;/li&gt;
+&lt;li&gt;Small batch sizes reduce waste by minimizing effort spent creating
+unwanted features. Small batches are also crucial to obtaining
+constant feedback by customers&lt;/li&gt;
+&lt;li&gt;Learning should be the initial measure of progress for highly
+uncertain ventures such as new start up companies&lt;/li&gt;
+&lt;li&gt;Minimum Viable Products (MVPs) drive the Build-Measure-Learn feedback
+loop through constant iterations based partially on customer feedback
+and driven by the founder's vision&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Other thoughts I picked up along the way are below.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="validated-learning"&gt;
+&lt;h2&gt;Validated Learning&lt;/h2&gt;
+&lt;p&gt;The Eric Ries' proposed model is based on explicitly declaring hypotheses
+that underlie a potential business model and then determining what
+measurements prove or disprove each hypothesis. Eric discusses how this
+process called &lt;em&gt;validated learning&lt;/em&gt; should work to avoid subjective arguments
+that are superficially supported by &lt;em&gt;vanity metrics&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="cross-functional-teams-and-mvps"&gt;
+&lt;h2&gt;Cross-functional teams and MVPs&lt;/h2&gt;
+&lt;p&gt;Cross-functional teams are necessary (as opposed to organization by
+traditional functional departments) for MVPs because feedback cycle times'
+speed is dependent upon the team working together in multiple roles.
+Communication overhead and bureaucracy are minimized in cross-functional
+teams that work well together. Some people are not suited for this type of
+work, for example someone that just wants to work on a single aspect of
+work (such as programming) 100% of the time.&lt;/p&gt;
+&lt;p&gt;There's more to this but these are just some of my initial thoughts as I
+dive deeper into the Lean Startup and Customer Development philosophies.&lt;/p&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>How I Feel While Reading Open Source Projects</title><link href="http://www.mattmakai.com/how-i-feel-reading-python-projects.html" rel="alternate"></link><updated>2012-12-08T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-12-08:how-i-feel-reading-python-projects.html</id><summary type="html">&lt;p&gt;My New Year's resolution for 2013 is to read code from
+&lt;a class="reference external" href="http://flask.pocoo.org/"&gt;awesome&lt;/a&gt;
+&lt;a class="reference external" href="http://docs.python-requests.org/en/latest/"&gt;open&lt;/a&gt;
+&lt;a class="reference external" href="http://gunicorn.org/"&gt;source&lt;/a&gt;
+projects each day. I don't like waiting for New Year's Day to start a
+good idea so I've already begun reading Flask's source code.&lt;/p&gt;
+&lt;p&gt;It's enlightening to read great code although the &amp;quot;downside&amp;quot; (due to my
+lack of free time) is that it is
+motivating me to figure out something I can write to give back to the
+community. On the lighter side,
+&lt;a class="reference external" href="http://i.qkme.me/3s3myj.jpg"&gt;this is how I feel&lt;/a&gt; while I am reading
+all the great open source Python projects out there.&lt;/p&gt;
+</summary></entry><entry><title>Learning Python</title><link href="http://www.mattmakai.com/learning-python-for-non-developers.html" rel="alternate"></link><updated>2012-11-14T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-11-14:learning-python-for-non-developers.html</id><summary type="html">&lt;p&gt;I am often asked by friends and colleagues that are not currently
 developers how they should go about learning Python. It's not an easy
 question - the answer is often highly dependent upon the individual's
 immediate technical aptitude. I do however believe anyone can learn how to
