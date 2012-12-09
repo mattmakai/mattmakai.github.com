@@ -12,8 +12,8 @@ Primary concepts
 ----------------
 
 1. Neither the traditional management approach nor the "just do it" without
-   a plan school of thought are effective ways of successfully creating a
-   new venture
+   a plan school of thought are effective ways of maximizing the chances for
+   success in creating a new venture
 
 2. Small batch sizes reduce waste by minimizing effort spent creating
    unwanted features. Small batches are also crucial to obtaining 
@@ -25,7 +25,6 @@ Primary concepts
 4. Minimum Viable Products (MVPs) drive the Build-Measure-Learn feedback 
    loop through constant iterations based partially on customer feedback 
    and driven by the founder's vision
-
 
 Other thoughts I picked up along the way are below.
 
