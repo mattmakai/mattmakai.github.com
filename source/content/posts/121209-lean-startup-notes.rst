@@ -31,11 +31,20 @@ Other thoughts I picked up along the way are below.
 
 Validated Learning
 ------------------
+Validated learning is "the process of demonstrating empirically that a
+team has discovered valuable truths about a startup's present and
+future business prospects." Part of the motivation behind measuring progress
+with validated learning is to get away from the idea that following a
+predefined plan will work. Predefined plans do not work because they
+do not take embed customers' feedback as a critical driver of the development
+process for a new product or service.
+
 The Eric Ries' proposed model is based on explicitly declaring hypotheses
 that underlie a potential business model and then determining what 
 measurements prove or disprove each hypothesis. Eric discusses how this
 process called *validated learning* should work to avoid subjective arguments 
 that are superficially supported by *vanity metrics*.
+
 
 Cross-functional teams and MVPs
 -------------------------------
@@ -50,3 +59,9 @@ work (such as programming) 100% of the time.
 There's more to this but these are just some of my initial thoughts as I
 dive deeper into the Lean Startup and Customer Development philosophies.
 
+Startup Definition
+------------------
+Eric defines a startup as "a human institution designed to create a new
+product or service under conditions of extreme uncertainty." I like this
+definition although "extreme" sounds vague to me, but at the current time
+I'm not sure exactly how I would improve upon the definition.

@@ -20,6 +20,13 @@ and driven by the founder's vision&lt;/li&gt;
 &lt;/div&gt;
 &lt;div class="section" id="validated-learning"&gt;
 &lt;h2&gt;Validated Learning&lt;/h2&gt;
+&lt;p&gt;Validated learning is &amp;quot;the process of demonstrating empirically that a
+team has discovered valuable truths about a startup's present and
+future business prospects.&amp;quot; Part of the motivation behind measuring progress
+with validated learning is to get away from the idea that following a
+predefined plan will work. Predefined plans do not work because they
+do not take embed customers' feedback as a critical driver of the development
+process for a new product or service.&lt;/p&gt;
 &lt;p&gt;The Eric Ries' proposed model is based on explicitly declaring hypotheses
 that underlie a potential business model and then determining what
 measurements prove or disprove each hypothesis. Eric discusses how this
@@ -37,6 +44,13 @@ work, for example someone that just wants to work on a single aspect of
 work (such as programming) 100% of the time.&lt;/p&gt;
 &lt;p&gt;There's more to this but these are just some of my initial thoughts as I
 dive deeper into the Lean Startup and Customer Development philosophies.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="startup-definition"&gt;
+&lt;h2&gt;Startup Definition&lt;/h2&gt;
+&lt;p&gt;Eric defines a startup as &amp;quot;a human institution designed to create a new
+product or service under conditions of extreme uncertainty.&amp;quot; I like this
+definition although &amp;quot;extreme&amp;quot; sounds vague to me, but at the current time
+I'm not sure exactly how I would improve upon the definition.&lt;/p&gt;
 &lt;/div&gt;
 </summary></entry><entry><title>How I Feel While Reading Open Source Projects</title><link href="http://www.mattmakai.com/how-i-feel-reading-python-projects.html" rel="alternate"></link><updated>2012-12-08T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-12-08:how-i-feel-reading-python-projects.html</id><summary type="html">&lt;p&gt;My New Year's resolution for 2013 is to read code from
 &lt;a class="reference external" href="http://flask.pocoo.org/"&gt;awesome&lt;/a&gt;
