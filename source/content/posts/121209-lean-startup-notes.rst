@@ -64,3 +64,11 @@ Eric defines a startup as "a human institution designed to create a new
 product or service under conditions of extreme uncertainty." I like this
 definition although "extreme" sounds vague to me, but at the current time
 I'm not sure exactly how I would improve upon the definition.
+
+SXSW 2012 Video
+---------------
+In `this video of Eric Ries at SXSW <http://www.udemy.com/lean-startup-sxsw-2012-videos-and-presentations/>`_ he discusses that Lean Startup is a process
+for helping execute a founders' vision - it does not tell you what to build
+but instead helps you get feedback so your vision creates a product that
+provides value to customers.
+
