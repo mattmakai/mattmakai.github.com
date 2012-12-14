@@ -72,3 +72,27 @@ for helping execute a founders' vision - it does not tell you what to build
 but instead helps you get feedback so your vision creates a product that
 provides value to customers.
 
+Lean Startup's Relationship to Customer Development
+---------------------------------------------------
+The Lean Startup and Customer Development (as taught by Steve Blank)
+are intertwined. Steve Blank's condition for investing in IMVU when it
+was founded by Eric Ries and Will Harvey was that both founders had to
+audit Steve's Customer Development course. Eric Ries explicitly mentioned
+using the Customer Development methodology while running IMVU. Steve
+Blank writes in `The Startup Owner's Manual <http://www.amazon.com/gp/product/0984999302/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0984999302&linkCode=as2&tag=minimneeds-20>`_  
+that Lean Startup is Customer Development combined with the Agile 
+software development methodology.
+
+Lean Startup as a combination of Customer Development plus Agile methodology
+makes sense because Customer Develoment is intended as a general approach
+to searching for a business model. Lean Startup also espouses certain 
+practices that make the most sense in the context of the software development 
+world including continuous deployment and delivery.
+
+Steve Blank actually writes about the relationship in 
+`What's a Startup? First Principles <http://steveblank.com/2010/01/25/whats-a-startup-first-principles/>`_. Customer Development is how a founder
+iterates and tests each element of their business model. Agile development
+is how startups iterate the product as they learn from their customers and
+combine that learning with the founders' vision. Lean Startup is the
+intersection of Customer Development and Agile development.
+

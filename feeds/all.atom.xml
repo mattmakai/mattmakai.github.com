@@ -1,5 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2012-12-09T00:00:00-05:00</updated><entry><title>The Lean Startup by Eric Ries</title><link href="http://www.mattmakai.com/lean-startup-notes.html" rel="alternate"></link><updated>2012-12-09T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-12-09:lean-startup-notes.html</id><summary type="html">&lt;p&gt;I recently finished reading &lt;a class="reference external" href="http://www.amazon.com/gp/product/0307887898/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=390957&amp;amp;creativeASIN=0307887898&amp;amp;linkCode=as2&amp;amp;tag=minimneeds-20"&gt;The Lean Startup&lt;/a&gt; by Eric Ries. This blog post contains
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2012-12-15T00:00:00-05:00</updated><entry><title>2012 Development Year in Review</title><link href="http://www.mattmakai.com/2012-development-year-in-review.html" rel="alternate"></link><updated>2012-12-15T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-12-15:2012-development-year-in-review.html</id><summary type="html">&lt;p&gt;I have never before been done a retrospective on what I learned in software
+development over an entire year. But here goes.&lt;/p&gt;
+&lt;p&gt;2012&lt;/p&gt;
+&lt;div class="section" id="languages"&gt;
+&lt;h2&gt;Languages&lt;/h2&gt;
+&lt;p&gt;I spent most of the year programming in Python and JavaScript, with a touch
+of Objective-C, Java, and Clojure.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="projects"&gt;
+&lt;h2&gt;Projects&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class="section" id="blogging"&gt;
+&lt;h2&gt;Blogging&lt;/h2&gt;
+&lt;p&gt;I moved from my &lt;a class="reference external" href="http://www.mmakai.com/"&gt;original Tumblr blog&lt;/a&gt; to a
+statically generated &lt;a class="reference external" href="http://docs.getpelican.com/en/3.1.1/"&gt;Pelican&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>The Startup Owner's Manual Strategy Guide</title><link href="http://www.mattmakai.com/startup-owners-manual-strategy-guide.html" rel="alternate"></link><updated>2012-12-14T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-12-14:startup-owners-manual-strategy-guide.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://www.amazon.com/gp/product/B009UMTMKS/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=390957&amp;amp;creativeASIN=B009UMTMKS&amp;amp;linkCode=as2&amp;amp;tag=minimneeds-20"&gt;The Startup Owner's Manual Strategy Guide&lt;/a&gt;
+by Steve Blank and Bob Dorf describes the Customer Development methodology
+that can be used by startups to search for a business model. The
+Customer Development model was developed because existing tools and
+strategies for established companies are designed for measuring
+execution of an &lt;em&gt;existing&lt;/em&gt; business model but are wasteful when
+attempting to measure the search process for an unknown business model.&lt;/p&gt;
+&lt;div class="section" id="customer-development-versus-product-development"&gt;
+&lt;h2&gt;Customer Development Versus Product Development&lt;/h2&gt;
+&lt;p&gt;Traditional product development in an established company follows a
+predictable waterfall process because the customers are already known.
+However, a startup is defined as &amp;quot;a temporary organization in search of a
+scalable, repeatable, profitable business model&amp;quot; and therefore does not
+yet know who its customers are.&lt;/p&gt;
+&lt;p&gt;Therefore startups must search for their business model and customers
+through the Customer Development process. Traditional product development
+models are not suited to finding and obtaining customer feedback because
+&lt;em&gt;there is no existing product on which customers can base their feedback&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Therefore at first a quick low-fidelity minimum viable product must be
+created to obtain initial customer feedback. Customer feedback is used
+by the founders to validate hypotheses in their business model. Later,
+a high-fidelity minimum viable product is used for customer validation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="nine-mistakes-about-new-product-introductions"&gt;
+&lt;h2&gt;Nine Mistakes About New Product Introductions&lt;/h2&gt;
+&lt;p&gt;The authors outline nine common flawed assumptions about product introduction
+when both the customer and business model are unknown.&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&amp;quot;I Know What the Customer Wants&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;quot;I Know What Features to Build&amp;quot;&lt;/li&gt;
+&lt;li&gt;Focus on Launch Date&lt;/li&gt;
+&lt;li&gt;Emphasis on Execution Instead of Learning and Iteration&lt;/li&gt;
+&lt;li&gt;Presuming No Trial and No Errors&lt;/li&gt;
+&lt;li&gt;Traditional Job Titles&lt;/li&gt;
+&lt;li&gt;Sales and Marketing Execute to a Plan&lt;/li&gt;
+&lt;li&gt;Premature Scaling on Presumption of Success&lt;/li&gt;
+&lt;li&gt;Management by Crisis&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Examples of each and analysis of where these go wrong in a startup are
+given. The gist is, you don't know your customers until you get out of the
+building (the authors use this term frequently) and start showing them
+something tangible.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="customer-development"&gt;
+&lt;h2&gt;Customer Development&lt;/h2&gt;
+&lt;p&gt;Customer development is the process used by a startup to &lt;em&gt;search&lt;/em&gt; for a
+repeatable business model. An important quote from the book:&lt;/p&gt;
+&lt;blockquote&gt;
+Search versus execution is what differentiates a new venture from an
+existing business unit.&lt;/blockquote&gt;
+&lt;p&gt;Agile development combines with customer development in a software-based
+business to organize and implement the business model search process.&lt;/p&gt;
+&lt;p&gt;The first step in customer development is &lt;em&gt;customer discovery&lt;/em&gt;. Customer
+discovery is the process for transforming founders' vision into
+a series of the most important testable business model hypotheses.&lt;/p&gt;
+&lt;p&gt;The second step in customer development is &lt;em&gt;customer validation&lt;/em&gt;. Customer
+validation tests whether the business model is repeatable and scalable.&lt;/p&gt;
+&lt;p&gt;A primary feature of the customer development process is that there are
+&lt;strong&gt;no&lt;/strong&gt; functional departments until the business model is proven and moves
+into execution mode. Everything done during customer development is done
+by a cross-functional team working together to search for the business model.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="customer-creation-and-company-building"&gt;
+&lt;h2&gt;Customer Creation and Company-Building&lt;/h2&gt;
+&lt;p&gt;Once customer discovery and customer validation are proven, the company
+moves into execution mode (&lt;em&gt;customer creation&lt;/em&gt;) then &lt;em&gt;company-building&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Customer discovery and customer validation are explained with great
+detail by the authors. I will elaborate further in a later post that
+crosses lessons learned from both
+&lt;a class="reference external" href="../lean-startup-notes.html"&gt;The Lean Startup&lt;/a&gt; and The Startup Owner's
+Manual Strategy Guide.&lt;/p&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>The Lean Startup by Eric Ries</title><link href="http://www.mattmakai.com/lean-startup-notes.html" rel="alternate"></link><updated>2012-12-09T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-12-09:lean-startup-notes.html</id><summary type="html">&lt;p&gt;I recently finished reading &lt;a class="reference external" href="http://www.amazon.com/gp/product/0307887898/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=390957&amp;amp;creativeASIN=0307887898&amp;amp;linkCode=as2&amp;amp;tag=minimneeds-20"&gt;The Lean Startup&lt;/a&gt; by Eric Ries. This blog post contains
 some brief notes on the book. I'll have more to say at a later time.&lt;/p&gt;
 &lt;div class="section" id="primary-concepts"&gt;
 &lt;h2&gt;Primary concepts&lt;/h2&gt;
@@ -58,6 +146,28 @@ I'm not sure exactly how I would improve upon the definition.&lt;/p&gt;
 for helping execute a founders' vision - it does not tell you what to build
 but instead helps you get feedback so your vision creates a product that
 provides value to customers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="lean-startup-s-relationship-to-customer-development"&gt;
+&lt;h2&gt;Lean Startup's Relationship to Customer Development&lt;/h2&gt;
+&lt;p&gt;The Lean Startup and Customer Development (as taught by Steve Blank)
+are intertwined. Steve Blank's condition for investing in IMVU when it
+was founded by Eric Ries and Will Harvey was that both founders had to
+audit Steve's Customer Development course. Eric Ries explicitly mentioned
+using the Customer Development methodology while running IMVU. Steve
+Blank writes in &lt;a class="reference external" href="http://www.amazon.com/gp/product/0984999302/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=390957&amp;amp;creativeASIN=0984999302&amp;amp;linkCode=as2&amp;amp;tag=minimneeds-20"&gt;The Startup Owner's Manual&lt;/a&gt;
+that Lean Startup is Customer Development combined with the Agile
+software development methodology.&lt;/p&gt;
+&lt;p&gt;Lean Startup as a combination of Customer Development plus Agile methodology
+makes sense because Customer Develoment is intended as a general approach
+to searching for a business model. Lean Startup also espouses certain
+practices that make the most sense in the context of the software development
+world including continuous deployment and delivery.&lt;/p&gt;
+&lt;p&gt;Steve Blank actually writes about the relationship in
+&lt;a class="reference external" href="http://steveblank.com/2010/01/25/whats-a-startup-first-principles/"&gt;What's a Startup? First Principles&lt;/a&gt;. Customer Development is how a founder
+iterates and tests each element of their business model. Agile development
+is how startups iterate the product as they learn from their customers and
+combine that learning with the founders' vision. Lean Startup is the
+intersection of Customer Development and Agile development.&lt;/p&gt;
 &lt;/div&gt;
 </summary></entry><entry><title>How I Feel While Reading Open Source Projects</title><link href="http://www.mattmakai.com/how-i-feel-reading-python-projects.html" rel="alternate"></link><updated>2012-12-08T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-12-08:how-i-feel-reading-python-projects.html</id><summary type="html">&lt;p&gt;My New Year's resolution for 2013 is to read code from
 &lt;a class="reference external" href="http://flask.pocoo.org/"&gt;awesome&lt;/a&gt;
