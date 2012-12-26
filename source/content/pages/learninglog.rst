@@ -10,6 +10,27 @@ This is where I keep track of what I learn so I can review it periodically.
 Sometimes I put things down that I already know but often forget and I want
 to use the concepts more often.
 
+Monday, Dec 24, 2012
+--------------------
+* `D3.js's 3.0 release <https://github.com/mbostock/d3/wiki/3.0>`_ contains
+  better support for geographic projections, binds transition events to
+  the DOM for reselection (and manipulation), and has better support
+  for asynchronous calls through d3.xhr function.
+
+
+
+----
+
+Saturday, Dec 8, 2012
+---------------------
+* 
+
+
+Friday, Dec 7, 2012
+-------------------
+* 
+
+
 Thursday, Dec 6, 2012
 ---------------------
 * Ubuntu 10.04 only install Puppet version 0.25.4 with the default 
@@ -31,6 +52,7 @@ Thursday, Dec 6, 2012
 
 On the puppet master run *apt-get install -y puppetmaster* instead of 
 the last command. Found on `the Puppet Ubuntu wiki <http://projects.puppetlabs.com/projects/1/wiki/Puppet_Ubuntu>`_.
+
 
 Wednesday, Dec 5, 2012
 ----------------------
@@ -86,17 +108,35 @@ Saturday, Dec 1, 2012
 
 Friday, Nov 30, 2012
 --------------------
-* 
+* `Werkzeug <http://werkzeug.pocoo.org/>`_ is a WSGI Python library that
+  implements common functions for web applications such as request/response
+  objects, HTTP headers, file upload handling, and URL routing.
+  `Flask <http://flask.pocoo.org/>`_ uses Werkzeug under the covers.
 
 
 Thursday, Nov 29, 2012
 ----------------------
-* 
+* The recommended way of importing modules in Python is to use
+  **import modulename** then calling it with 
+  **import modulename.functionname**. Makes sense in practice and confirmed
+  by reading `Hitchhiker's Guide to Python <http://docs.python-guide.org/en/latest/writing/structure/#modules>`_.
 
+Wednesday, Nov 28, 2012
+-----------------------
+* `Hipster Ipsum <http://hipsteripsum.me/>`_ provides filler text. I bet
+  you've never heard of it.
+
+Tuesday, Nov 27, 2012
+---------------------
+* To stage (and then be able to commit) deleted files in git, use the -u 
+  argument on git add.
 
 Monday, Nov 26, 2012
 --------------------
-* 
+* `django-profiler <https://github.com/char0n/django-profiler>`_ contains
+  a decorator (@profile(stats=True)) that performance profiles the decorated 
+  view function including database queries. Also see further reading on 
+  `Django performance tuning <http://www.servercobra.com/django-performance-tuning/>`_.
 
 
 Sunday, Nov 25, 2012

@@ -12,7 +12,7 @@ Primary concepts
 ----------------
 
 1. Neither the traditional management approach nor the "just do it" without
-   a plan school of thought are effective ways of maximizing the chances for
+   a plan schools of thought are effective ways of maximizing the chances for
    success in creating a new venture
 
 2. Small batch sizes reduce waste by minimizing effort spent creating

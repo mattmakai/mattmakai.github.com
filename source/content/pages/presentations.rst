@@ -3,9 +3,29 @@ Presentations
 
 :category: presentations
 
+2013 Presentations
+------------------
+
+TBD
+~~~
+Upcoming presentation to `Memphis Python <http://mempy.org/>`_ on 
+March 25, 2013.
+
+----
+
+TBD
+~~~
+Upcoming presentation to `JMU's ACM group <http://acm.cs.jmu.edu/>`_ on
+January 23, 2013.
+
+----
+
+2012 Presentations
+------------------
+
 `Agile Software Development in the Federal Government </presentations/agile-software-development-in-federal-government.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Future presentation to the `2012 Project Management Symposium <http://www.pmiwdc.org/2012-project-management-symposium/2012-project-management-symposium-agenda/2012-project-management>`_ on September 28, 2012.
+Presented to the `2012 Project Management Symposium <http://www.pmiwdc.org/2012-project-management-symposium/2012-project-management-symposium-agenda/2012-project-management>`_ on September 28, 2012.
 
 ----
 
