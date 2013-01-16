@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/post.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2012-12-09T00:00:00-05:00</updated><entry><title>The Lean Startup by Eric Ries</title><link href="http://www.mattmakai.com/lean-startup-notes.html" rel="alternate"></link><updated>2012-12-09T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-12-09:lean-startup-notes.html</id><summary type="html">&lt;p&gt;I recently finished reading &lt;a class="reference external" href="http://www.amazon.com/gp/product/0307887898/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=390957&amp;amp;creativeASIN=0307887898&amp;amp;linkCode=as2&amp;amp;tag=minimneeds-20"&gt;The Lean Startup&lt;/a&gt; by Eric Ries. These are my
-thoughts on the book.&lt;/p&gt;
-&lt;p&gt;Primary concepts I took away:&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;The power of small batch sizes reduces waste by minimizing the building
-of unwanted features. Also enables constant feedback by customers&lt;/li&gt;
-&lt;li&gt;Use learning as a measure of progress for highly uncertain ventures such
-as new start up companies&lt;/li&gt;
-&lt;li&gt;Follow a Build-Measure-Learn feedback loop driven by
-Minimum Viable Product (MVP) and continual small iterations&lt;/li&gt;
-&lt;/ol&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/post.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2012-12-27T00:00:00-05:00</updated><entry><title>Getting to Plan B</title><link href="http://www.mattmakai.com/getting-to-plan-b.html" rel="alternate"></link><updated>2012-12-27T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-12-27:getting-to-plan-b.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://www.amazon.com/gp/product/B004OC07HQ/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=minimneeds-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=390957&amp;amp;creativeASIN=B004OC07HQ"&gt;Getting to Plan B&lt;/a&gt;
+by John Mullins and Randy Komisar is a book about transitioning from an
+initial idea into a subsequent idea with a better product/market fit.&lt;/p&gt;
+&lt;p&gt;The book introduces several key terms, including &lt;em&gt;analogs&lt;/em&gt;, &lt;em&gt;antilogs&lt;/em&gt;,
+&lt;em&gt;leaps of faith&lt;/em&gt;. The use of &lt;em&gt;dashboards&lt;/em&gt; is also a key concept and many
+examples throughout the book are used to demonstrate their value.&lt;/p&gt;
+&lt;p&gt;Analogs are examples of companies, in the same industry you seek to do
+business or a different industry, that have key similarities between how
+they do business and your prospective business model. Antilogs are the
+opposite - what you do not want to replicate. The mixture of analogs and
+antilogs helps to define your business model.&lt;/p&gt;
+&lt;p&gt;Analogs and antilogs are intended to produce a basic level of evidence
+that the way you plan to execute your business has already been proven by
+other currently operating businesses.&lt;/p&gt;
+&lt;p&gt;Aspects of a business that are not &amp;quot;proven&amp;quot; by analogs and antilogs are
+leaps of faith. Leaps of faith are hypotheses that must be proven if the
+business is to work properly. Dashboards are used to constantly monitor
+the leaps of faith. Leaps of faith change from high-level to granular
+through multiple iterations of dashboarding and modifying the business
+based on the results achieved (or not achieved).&lt;/p&gt;
 </summary></entry></feed>

@@ -3,7 +3,7 @@ My 2012 Software Development Year in Review
 
 :slug: 2012-development-year-in-review
 :category: blog
-:date: 2012-12-15
+:date: 2012-12-26
 
 Ever since I was a little kid I knew that I wanted to develop software.
 From what I hear that clarity of purpose is rare. It wasn't until college

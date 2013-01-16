@@ -13,8 +13,16 @@ March 25, 2013.
 
 ----
 
-TBD
-~~~
+Heroku Deployment Workflows for Django Projects
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Upcoming presentation to `django-district <http://www.django-district.org/>`_ 
+on February 12, 2013.
+
+----
+
+
+`Everything I Wish I Knew About Web Development as JMU Computer Science Undergrad </presentations/jmu-everything-i-wish-i-knew.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Upcoming presentation to `JMU's ACM group <http://acm.cs.jmu.edu/>`_ on
 January 23, 2013.
 
