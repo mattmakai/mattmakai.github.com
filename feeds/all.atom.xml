@@ -3,23 +3,65 @@
 by John Mullins and Randy Komisar is a book about transitioning from an
 initial idea, your &amp;quot;Plan A&amp;quot;, to a subsequent idea, &amp;quot;Plan B through Z&amp;quot;,
 with a better product/market fit.&lt;/p&gt;
-&lt;p&gt;The book introduces several key terms, including &lt;em&gt;analogs&lt;/em&gt;, &lt;em&gt;antilogs&lt;/em&gt;,
-&lt;em&gt;leaps of faith&lt;/em&gt;. The use of &lt;em&gt;dashboards&lt;/em&gt; is also a key concept and many
-examples throughout the book are used to demonstrate their value.&lt;/p&gt;
+&lt;p&gt;The authors introduce several key terms that are used throughout the book,
+including &lt;em&gt;analogs&lt;/em&gt;, &lt;em&gt;antilogs&lt;/em&gt;, &lt;em&gt;leaps of faith&lt;/em&gt;. The use of
+&lt;em&gt;dashboards&lt;/em&gt; is also a key concept and many examples in each chapter
+are used to demonstrate their value.&lt;/p&gt;
+&lt;div class="section" id="analogs-and-antilogs"&gt;
+&lt;h2&gt;Analogs and Antilogs&lt;/h2&gt;
 &lt;p&gt;Analogs are examples of companies, in the same industry you seek to do
 business or a different industry, that have key similarities between how
 they do business and your prospective business model. Antilogs are the
-opposite - what you do not want to replicate. The mixture of analogs and
-antilogs helps to define your business model.&lt;/p&gt;
+opposite - what you do not want to replicate from other organizations. The
+mixture of analogs and antilogs helps to define your business model.&lt;/p&gt;
 &lt;p&gt;Analogs and antilogs are intended to produce a basic level of evidence
 that the way you plan to execute your business has already been proven by
 other currently operating businesses.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="leaps-of-faith-and-dashboards"&gt;
+&lt;h2&gt;Leaps of Faith and Dashboards&lt;/h2&gt;
 &lt;p&gt;Aspects of a business that are not &amp;quot;proven&amp;quot; by analogs and antilogs are
 leaps of faith. Leaps of faith are hypotheses that must be proven if the
 business is to work properly. Dashboards are used to constantly monitor
 the leaps of faith. Leaps of faith change from high-level to granular
 through multiple iterations of dashboarding and modifying the business
 based on the results achieved (or not achieved).&lt;/p&gt;
+&lt;p&gt;One of the major concepts hammered home by the book is to test and dashboard
+the most fundamental hypotheses about your business model first. If you and
+your co-founders are wrong about a key hypothesis in your business model
+then smaller assumptions will not matter. Test the biggest questions first,
+prove them out, then evolve your dashboard to cover the more granular
+assumptions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="business-model"&gt;
+&lt;h2&gt;Business Model&lt;/h2&gt;
+&lt;p&gt;Six chapters are devoted to understanding your business model in pieces
+and then how they fit together. Figuring out if there is a way to run
+your business differently than industry incumbents can lead to a sustainable
+competitive advantage because it is usually difficult for existing
+businesses to change parts of their established business model. The five
+models that Getting to Plan B covers are:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Revenue&lt;/li&gt;
+&lt;li&gt;Gross margin&lt;/li&gt;
+&lt;li&gt;Operating&lt;/li&gt;
+&lt;li&gt;Working capital&lt;/li&gt;
+&lt;li&gt;Investment&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class="section" id="takeaway"&gt;
+&lt;h2&gt;Takeaway&lt;/h2&gt;
+&lt;p&gt;The book provides a solid bridge between entrepreneurship and &amp;quot;traditional&amp;quot;
+business concepts that would be taught in an MBA program. The examples were
+interesting and drove home each of the concepts. It would have been a good
+idea to include examples of business model failures. For example, where
+did changing the gross margin model in an established industry turn out to
+be a really bad idea and why?&lt;/p&gt;
+&lt;p&gt;Overall Getting to Plan B is a good supplement to books like the
+&lt;a class="reference external" href="../lean-startup-notes.html"&gt;Lean Startup&lt;/a&gt; and
+&lt;a class="reference external" href="../startup-owners-manual-strategy-guide.html"&gt;The Startup Owner's Manual Strategy Guide&lt;/a&gt;. This book provides a different perspective that is not
+seen in those two books or similar Lean Startup resources.&lt;/p&gt;
+&lt;/div&gt;
 </summary></entry><entry><title>My 2012 Software Development Year in Review</title><link href="http://www.mattmakai.com/2012-development-year-in-review.html" rel="alternate"></link><updated>2012-12-26T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-12-26:2012-development-year-in-review.html</id><summary type="html">&lt;p&gt;Ever since I was a little kid I knew that I wanted to develop software.
 From what I hear that clarity of purpose is rare. It wasn't until college
 that I really felt I &amp;quot;got serious&amp;quot; about constantly improving on what I
