@@ -10,26 +10,17 @@ This is where I keep track of what I learn so I can review it periodically.
 Sometimes I put things down that I already know but often forget and I want
 to use the concepts more often.
 
-Monday, Dec 24, 2012
---------------------
+Dec - Jan
+---------
+* Taking a brief hiatus to figure out if this is worthwhile or if I should
+  change the format.
+
+Friday, Dec 7, 2012
+-------------------
 * `D3.js's 3.0 release <https://github.com/mbostock/d3/wiki/3.0>`_ contains
   better support for geographic projections, binds transition events to
   the DOM for reselection (and manipulation), and has better support
   for asynchronous calls through d3.xhr function.
-
-
-
-----
-
-Saturday, Dec 8, 2012
----------------------
-* 
-
-
-Friday, Dec 7, 2012
--------------------
-* 
-
 
 Thursday, Dec 6, 2012
 ---------------------

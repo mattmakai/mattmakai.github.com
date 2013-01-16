@@ -21,7 +21,7 @@ on February 12, 2013.
 ----
 
 
-`Everything I Wish I Knew About Web Development as JMU Computer Science Undergrad </presentations/jmu-everything-i-wish-i-knew.html>`_
+`Everything I Wish I Knew as JMU Computer Science Undergrad </presentations/jmu-everything-i-wish-i-knew.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Upcoming presentation to `JMU's ACM group <http://acm.cs.jmu.edu/>`_ on
 January 23, 2013.
