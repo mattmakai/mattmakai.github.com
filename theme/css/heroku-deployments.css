@@ -1,7 +1,7 @@
 .deck-container {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-size: 1.75em;
-  color: #aaa;
+  color: #29264d;
   background: #fff;
   background-image:url('/img/presentations/heroku-deployments/paper_fibers.png');
 }
@@ -9,13 +9,13 @@
   background-image:url('/img/presentations/heroku-deployments/paper_fibers.png');
 }
 .deck-container .slide h1 {
-  color: #0af;
+  color: #29264d;
   font-weight: bold;
   font-weight: 100;
-  text-shadow: 0 0 50px #0af, 0 0 3px #fff;
+  text-shadow: -2px -2px 10px #29264d, 0 0 3px #fff;
 }
 .deck-container .slide h2 {
-  color: #333;
+  color: #29264d;
   border-bottom-color: #ccc;
   font-weight: normal;
   font-weight: 100;
@@ -101,26 +101,26 @@
   color: #fff;
 }
 .deck-container.deck-menu .slide {
-  background: #333;
+  background: #fff;
 }
 .deck-container.deck-menu .deck-current {
-  background: #444;
+  background: #fff;
 }
 .boxshadow .deck-container.deck-menu .deck-current {
-  background: #000;
+  background: #fff;
   -webkit-box-shadow: 0 0 20px #f0a, 0 0 5px #fff;
   -moz-box-shadow: 0 0 20px #f0a, 0 0 5px #fff;
   box-shadow: 0 0 20px #f0a, 0 0 5px #fff;
 }
 .no-touch .deck-container.deck-menu .slide:hover {
-  background: #444;
+  background: #fff;
 }
 .no-touch.boxshadow .deck-container.deck-menu .slide:hover {
-  background: #000;
+  background: #fff;
   -webkit-box-shadow: 0 0 20px #f0a, 0 0 5px #fff;
   -moz-box-shadow: 0 0 20px #f0a, 0 0 5px #fff;
   box-shadow: 0 0 20px #f0a, 0 0 5px #fff;
 }
 .bigger {
-    color: #333;
+    color: #29264d;
 }
