@@ -13,8 +13,8 @@ March 25, 2013.
 
 ----
 
-Heroku Deployment Workflows for Django Projects
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`Heroku Deployment Workflows for Django Projects </presentations/django-district-heroku-deployments.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Upcoming presentation to `django-district <http://www.django-district.org/>`_ 
 on February 12, 2013.
 
@@ -23,8 +23,7 @@ on February 12, 2013.
 
 `Everything I Wish I Knew as JMU Computer Science Undergrad </presentations/jmu-everything-i-wish-i-knew.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Upcoming presentation to `JMU's ACM group <http://acm.cs.jmu.edu/>`_ on
-January 23, 2013.
+Presented to `JMU's ACM group <http://acm.cs.jmu.edu/>`_ on January 23, 2013.
 
 ----
 
