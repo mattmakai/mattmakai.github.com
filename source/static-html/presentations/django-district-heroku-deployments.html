@@ -109,6 +109,9 @@
         <h1><img src="/img/presentations/heroku-deployments/heroku-pricing.png"/></h1>
     </section>
 
+    <section class="slide">
+        <h1><a href="http://www.visualizationportfolio.com/">Visualization Portfolio</a></h1>
+    </section>
 
     <section class="slide">
         <h1>Deployment Demo</h1>
@@ -132,7 +135,33 @@
         <h2>Heroku Local -> Github and CI</h2>
         <img src="/img/presentations/heroku-deployments/local-to-github.jpg" class="img-border"/>
     </section>
+    
+    <section class="slide">
+        <h2>Jenkins Build Configuration</h2>
+        <img src="/img/presentations/heroku-deployments/jenkins-configuration.png"/>
+    </section>
 
+    <section class="slide">
+        <h2>Jenkins Build Commands</h2>
+        <pre>
+    #!/bin/bash -ex
+    cd $WORKSPACE
+    virtualenv -q ve
+    source ./ve/bin/activate
+    pip install --upgrade distribute
+    pip install -r requirements.txt
+    python manage.py jenkins
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>From there...</h2>
+        <ul class="bigger">
+            <li class="slide">Post build commands</li>
+            <li class="slide">Fabric</li>
+            <li class="slide"><a href="https://circleci.com/">Circle CI</a></li>
+        </ul>
+    </section>
 
     <section class="slide">
         <h2>Resources</h2>
