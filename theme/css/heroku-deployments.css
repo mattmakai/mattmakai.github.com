@@ -124,3 +124,8 @@
 .bigger {
     color: #29264d;
 }
+.img-border {
+  -webkit-box-shadow: 0 0 20px #29264d, 0 0 5px #fff;
+  -moz-box-shadow: 0 0 20px #29264d, 0 0 5px #fff;
+  box-shadow: 0 0 20px #29264d, 0 0 5px #fff;
+}
