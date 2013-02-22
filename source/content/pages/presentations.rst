@@ -11,11 +11,20 @@ TBD
 Upcoming presentation to `Memphis Python <http://mempy.org/>`_ on 
 March 25, 2013.
 
+
 ----
+
+Beyond Hello World: Python in Industry and Academia
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Upcoming presentation to the 
+`George Washington University Computer Science <http://www.cs.gwu.edu/>`_ department on March 1, 2013.
+
+----
+
 
 `Heroku Deployment Workflows for Django Projects </presentations/django-district-heroku-deployments.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Upcoming presentation to `django-district <http://www.django-district.org/>`_ 
+Presented to `django-district <http://www.django-district.org/>`_ 
 on February 12, 2013.
 
 ----
