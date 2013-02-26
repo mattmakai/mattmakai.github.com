@@ -1,5 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all-en.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2013-02-22T00:00:00-05:00</updated><entry><title>Coding Across America</title><link href="http://www.mattmakai.com/coding-across-america.html" rel="alternate"></link><updated>2013-02-22T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-02-22:coding-across-america.html</id><summary type="html">&lt;p&gt;In two weeks I get on the road to begin my primary 2013 project:
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all-en.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2013-02-26T00:00:00-05:00</updated><entry><title>Developer Interview Questions</title><link href="http://www.mattmakai.com/developer-interview-questions.html" rel="alternate"></link><updated>2013-02-26T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-02-26:developer-interview-questions.html</id><summary type="html">&lt;p&gt;One of my clients was interviewing web developers and asked me about how
+I go about performing technical interviews. I have interviewed 15
+developers of all experience levels for
+&lt;a class="reference external" href="http://www.excella.com/"&gt;Excella Consulting&lt;/a&gt; in the past year. My style
+and questions are still developing. This morning when I read
+&lt;a class="reference external" href="https://medium.com/on-startups/4c0197625f69"&gt;Facebook Lost A Great Engineer&lt;/a&gt;
+I felt like it might help my learning process if I synthesized my thoughts
+with a blog post.&lt;/p&gt;
+&lt;p&gt;There are different interviewing philosophies so this is my opinionated
+perspective.&lt;/p&gt;
+&lt;div class="section" id="open-source"&gt;
+&lt;h2&gt;Open Source&lt;/h2&gt;
+&lt;p&gt;Before an interview I always check out if a person has open
+source projects on &lt;a class="reference external" href="https://github.com/"&gt;Github&lt;/a&gt; or
+&lt;a class="reference external" href="https://bitbucket.org/"&gt;Bitbucket&lt;/a&gt;. If they don't, that's a huge
+black mark to me. I do know some really great engineers who do not use Git
+and do not have open source work to their name. In general though I am
+very leary of anyone who does not have some sort of public project or website.
+I need time to peruse their code outside that one hour interview. That process
+helps me understand how someone approaches problems.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="behavioral-questions"&gt;
+&lt;h2&gt;Behavioral Questions&lt;/h2&gt;
+&lt;p&gt;Once the interview begins I start by asking a mix of behavioral questions to
+determine what roles a person has performed on a team. The behavioral
+questions also help to discover what a candidate's strengths and
+weaknesses may be. For example, &amp;quot;Tell me a time you were developing
+software with a team.&amp;quot; They give a bit of background then I ask simple
+followup questions. &amp;quot;What went right about the project?&amp;quot; &amp;quot;What could have
+been improved?&amp;quot; &amp;quot;What was the most difficult technical challenge you faced
+and how did you overcome it?&amp;quot;&lt;/p&gt;
+&lt;p&gt;Simple questions of that nature to help the candidate get loosened up a
+little bit - there's no &amp;quot;wrong&amp;quot; answers because it draws on their own
+experiences. I watch out for people that pass a lot of blame around -
+&amp;quot;so and so didn't do their job, I had to fix everything&amp;quot; - even if that
+truly happened, it's a sign of team dysfunction.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="technical-questions"&gt;
+&lt;h2&gt;Technical Questions&lt;/h2&gt;
+&lt;p&gt;That's pretty standard stuff so far. Once we get past some initial
+questions which allow me to determine if they can communicate,
+whether they work well with a team, what their general technical
+interests are, I ask some blanket, open-ended technical questions. Here
+are some examples:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&amp;quot;Explain to me what happens when a user enters a URL into a browser to
+go to a website.&amp;quot; - web developers should understand the HTTP
+request/response cycle, a bit about browser rendering (WebKit, Mozilla,
+IE, etc), what happens in what order, and something about how the
+server does the processing. This is a great question because the
+candidate can give an overview and then go into further detail to
+show their level of competency. They can talk about domain name
+resolution, TCP/IP/HTTP networking stack, etc.&lt;/li&gt;
+&lt;li&gt;&amp;quot;Describe the parts of your ideal web application stack. Tell me what
+goes into your thought process in picking out which pieces to use on
+projects.&amp;quot; This is in line with the website I created at
+&lt;a class="reference external" href="http://www.fullstackpython.com/"&gt;Full Stack Python&lt;/a&gt;. If a candidate
+can tell me about MySQL, Redis, some web frameworks and WHY they make
+sense in some situations and not others that's good. I try to filter
+out &amp;quot;well this is what I've used in the past so that's what I'm going to
+pick.&amp;quot; I want to work with developers that really think about why they
+use various pieces in the stack puzzle. It also allows me to find out if
+a candidate is using interesting new tools on side projects outside their
+day job.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-i-do-not-do"&gt;
+&lt;h2&gt;What I Do Not Do&lt;/h2&gt;
+&lt;p&gt;I never ask &amp;quot;teaser&amp;quot; or puzzle questions like they do at Facebook.
+I don't feel like puzzle questions are highly correlated enough with
+filtering out if a person is going to be a &amp;quot;gets stuff done&amp;quot; type of
+developer. Facebook and Google probably have better luck with those
+questions since it fits their culture. To me most puzzles are a waste of
+time. I would rather be solving real client and customer business problems
+by using technology. This is my philosophy - not judgment on
+the cultures where puzzle interviews are prevalent. If that works for them
+that's great. I just would not fit in well in that culture.&lt;/p&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>Coding Across America</title><link href="http://www.mattmakai.com/coding-across-america.html" rel="alternate"></link><updated>2013-02-22T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-02-22:coding-across-america.html</id><summary type="html">&lt;p&gt;In two weeks I get on the road to begin my primary 2013 project:
 &lt;a class="reference external" href="http://www.codingacrossamerica.com/"&gt;Coding Across America&lt;/a&gt;. This is
 a large undertaking. I travel for five months from March until August to
 thirty cities across the United States.&lt;/p&gt;

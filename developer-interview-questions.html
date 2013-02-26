@@ -260,16 +260,88 @@
       </div>
       <div class="span8 well">
         
-  <h2>Django District February Meetup Lightning Talk</h2>
+  <h2>Developer Interview Questions</h2>
   
   
     <div class="blog-content">
-  <p>I'll be giving a 10 minute lightning talk on updates and incompatibilities in
-the upcoming <a class="reference external" href="https://docs.djangoproject.com/en/dev/releases/1.4/">Django 1.4 release</a>. If you're interested in Python/Django and want to hear more,
-<a class="reference external" href="http://www.django-district.org/events/48873672/">RSVP on meetup.com</a>.
-There will be some other great talks as well on EC2 + github integration,
-monitoring your apps with Graphite and Sentry, and Django chartit.</p>
-<p>My impress.js slides for the talk will be posted on this site over the weekend.</p>
+  <p>One of my clients was interviewing web developers and asked me about how
+I go about performing technical interviews. I have interviewed 15
+developers of all experience levels for
+<a class="reference external" href="http://www.excella.com/">Excella Consulting</a> in the past year. My style
+and questions are still developing. This morning when I read
+<a class="reference external" href="https://medium.com/on-startups/4c0197625f69">Facebook Lost A Great Engineer</a>
+I felt like it might help my learning process if I synthesized my thoughts
+with a blog post.</p>
+<p>There are different interviewing philosophies so this is my opinionated
+perspective.</p>
+<div class="section" id="open-source">
+<h2>Open Source</h2>
+<p>Before an interview I always check out if a person has open
+source projects on <a class="reference external" href="https://github.com/">Github</a> or
+<a class="reference external" href="https://bitbucket.org/">Bitbucket</a>. If they don't, that's a huge
+black mark to me. I do know some really great engineers who do not use Git
+and do not have open source work to their name. In general though I am
+very leary of anyone who does not have some sort of public project or website.
+I need time to peruse their code outside that one hour interview. That process
+helps me understand how someone approaches problems.</p>
+</div>
+<div class="section" id="behavioral-questions">
+<h2>Behavioral Questions</h2>
+<p>Once the interview begins I start by asking a mix of behavioral questions to
+determine what roles a person has performed on a team. The behavioral
+questions also help to discover what a candidate's strengths and
+weaknesses may be. For example, &quot;Tell me a time you were developing
+software with a team.&quot; They give a bit of background then I ask simple
+followup questions. &quot;What went right about the project?&quot; &quot;What could have
+been improved?&quot; &quot;What was the most difficult technical challenge you faced
+and how did you overcome it?&quot;</p>
+<p>Simple questions of that nature to help the candidate get loosened up a
+little bit - there's no &quot;wrong&quot; answers because it draws on their own
+experiences. I watch out for people that pass a lot of blame around -
+&quot;so and so didn't do their job, I had to fix everything&quot; - even if that
+truly happened, it's a sign of team dysfunction.</p>
+</div>
+<div class="section" id="technical-questions">
+<h2>Technical Questions</h2>
+<p>That's pretty standard stuff so far. Once we get past some initial
+questions which allow me to determine if they can communicate,
+whether they work well with a team, what their general technical
+interests are, I ask some blanket, open-ended technical questions. Here
+are some examples:</p>
+<ul class="simple">
+<li>&quot;Explain to me what happens when a user enters a URL into a browser to
+go to a website.&quot; - web developers should understand the HTTP
+request/response cycle, a bit about browser rendering (WebKit, Mozilla,
+IE, etc), what happens in what order, and something about how the
+server does the processing. This is a great question because the
+candidate can give an overview and then go into further detail to
+show their level of competency. They can talk about domain name
+resolution, TCP/IP/HTTP networking stack, etc.</li>
+<li>&quot;Describe the parts of your ideal web application stack. Tell me what
+goes into your thought process in picking out which pieces to use on
+projects.&quot; This is in line with the website I created at
+<a class="reference external" href="http://www.fullstackpython.com/">Full Stack Python</a>. If a candidate
+can tell me about MySQL, Redis, some web frameworks and WHY they make
+sense in some situations and not others that's good. I try to filter
+out &quot;well this is what I've used in the past so that's what I'm going to
+pick.&quot; I want to work with developers that really think about why they
+use various pieces in the stack puzzle. It also allows me to find out if
+a candidate is using interesting new tools on side projects outside their
+day job.</li>
+</ul>
+</div>
+<div class="section" id="what-i-do-not-do">
+<h2>What I Do Not Do</h2>
+<p>I never ask &quot;teaser&quot; or puzzle questions like they do at Facebook.
+I don't feel like puzzle questions are highly correlated enough with
+filtering out if a person is going to be a &quot;gets stuff done&quot; type of
+developer. Facebook and Google probably have better luck with those
+questions since it fits their culture. To me most puzzles are a waste of
+time. I would rather be solving real client and customer business problems
+by using technology. This is my philosophy - not judgment on
+the cultures where puzzle interviews are prevalent. If that works for them
+that's great. I just would not fit in well in that culture.</p>
+</div>
 
   <div class="follow-on-twitter">
     If you read this far then you should 
@@ -278,7 +350,7 @@ monitoring your apps with Graphite and Sentry, and Django chartit.</p>
 
   <div class="meta">
     Posted by Matt Makai 
-    on 02.15.2012.
+    on 02.26.2013.
   </div>
 </div>
 <hr/>
