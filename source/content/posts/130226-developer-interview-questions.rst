@@ -83,9 +83,12 @@ I never ask "teaser" or puzzle questions like they do at Facebook.
 I don't feel like puzzle questions are highly correlated enough with 
 filtering out if a person is going to be a "gets stuff done" type of 
 developer. Facebook and Google probably have better luck with those 
-questions since it fits their culture. To me most puzzles are a waste of 
-time. I would rather be solving real client and customer business problems 
-by using technology. This is my philosophy - not judgment on
-the cultures where puzzle interviews are prevalent. If that works for them
-that's great. I just would not fit in well in that culture.
+questions since it fits their culture. 
+
+To me most puzzles are a waste of time. I would rather be solving real 
+client and customer business problems by using technology. This is my 
+philosophy - not judgment on the cultures where puzzle interviews 
+are prevalent. If that works for them that's great. I just would not 
+fit in well in that culture. It's likely that the people I want on my
+development teams would feel the same way so that's the path I take.
 
