@@ -14,10 +14,11 @@ March 25, 2013.
 
 ----
 
-Beyond Hello World: Python in Industry and Academia
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`Beyond Hello World: Python in Industry and Academia </presentations/gwu-real-world-python.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Upcoming presentation to the 
-`George Washington University Computer Science <http://www.cs.gwu.edu/>`_ department on March 1, 2013.
+`George Washington University Computer Science <http://www.cs.gwu.edu/>`_ 
+department on March 1, 2013.
 
 ----
 

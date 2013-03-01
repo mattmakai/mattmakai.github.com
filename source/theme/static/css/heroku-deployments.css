@@ -1,12 +1,13 @@
 .deck-container {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-size: 1.75em;
-  color: #29264d;
-  background: #fff;
+  color: #fff;
+  background: #000;
   background-image:url('/img/presentations/heroku-deployments/paper_fibers.png');
 }
 .deck-container .slide {
   background-image:url('/img/presentations/heroku-deployments/paper_fibers.png');
+  background: #000;
 }
 .deck-container .slide h1 {
   color: #29264d;
