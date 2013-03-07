@@ -6,8 +6,8 @@ Presentations
 2013 Presentations
 ------------------
 
-TBD
-~~~
+Git and Github Workflows
+~~~~~~~~~~~~~~~~~~~~~~~~
 Upcoming presentation to `Memphis Python <http://mempy.org/>`_ on 
 March 25, 2013.
 

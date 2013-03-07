@@ -10,6 +10,32 @@ This is where I keep track of what I learn so I can review it periodically.
 Sometimes I put things down that I already know but often forget and I want
 to use the concepts more often.
 
+Thursday, March 7, 2013
+-----------------------
+* In vim, ":set spell" enables the spellchecker.
+
+Tuesday, March 5, 2013
+----------------------
+* Pinax recommends creating a 
+  `startup.run() method <http://eldarion.com/blog/2013/02/14/entry-point-hook-django-projects/>`_
+  in the manage.py and wsgi.py files to ensure any code that must be run on
+  initialization of a project will be executed first.
+
+* InDesign CS6 has 
+  `liquid layouts <https://helpx.adobe.com/creative-cloud/tutorials/video/productivity-enhancements.html>`_ 
+  to produce multiple orientations for projects.
+
+* A 
+  `folio <https://helpx.adobe.com/creative-cloud/tutorials/video/getting-started-dps-single-edition.html>`_ 
+  is a publication that is built in Adobe InDesign. An article is part of
+  the folio.
+
+* DPS App Builder is a separate Adobe Creative Cloud app for building
+  an app for iPad and prepare it for submission to Apple.
+
+* Adobe Content Viewer is an app for the iPad to preview content before it
+  is built and submitted to the app store.
+
 Dec - Jan
 ---------
 * Taking a brief hiatus to figure out if this is worthwhile or if I should
