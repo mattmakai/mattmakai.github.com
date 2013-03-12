@@ -6,13 +6,29 @@ Presentations
 2013 Presentations
 ------------------
 
+TBD
+~~~
+Upcoming presentation to 
+`Boston Django <http://www.meetup.com/djangoboston/>`_ in July.
+
+----
+
+
+`Coding Across America at PyCon </presentations/pycon-andrew-baker.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Upcoming lightning talk presentation at `PyCon <https://us.pycon.org/>`_ 
+that will be given by my colleague Andrew Baker in my absence.
+
+----
+
+
 Git and Github Workflows
 ~~~~~~~~~~~~~~~~~~~~~~~~
 Upcoming presentation to `Memphis Python <http://mempy.org/>`_ on 
 March 25, 2013.
 
-
 ----
+
 
 `Beyond Hello World: Python in Industry and Academia </presentations/gwu-real-world-python.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
