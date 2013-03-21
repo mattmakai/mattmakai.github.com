@@ -10,6 +10,17 @@ This is where I keep track of what I learn so I can review it periodically.
 Sometimes I put things down that I already know but often forget and I want
 to use the concepts more often.
 
+Thursday, March 14, 2013
+------------------------
+* Nathan Berry recommends adding "blank-slate screens" to applications to
+  improve the user experience. For example, in a photo sharing application,
+  if you have not uploaded any photos, the black slate screen should show
+  a tutorial or communicate a message to the user on *what to do*. Use
+  arrows to point to what to do!
+
+* Building an audience first is like 
+  `creating your very own market segment <http://www.quicksprout.com/2013/02/25/dont-acquire-customers-manufacture-them/>`_.
+
 Thursday, March 7, 2013
 -----------------------
 * In vim, ":set spell" enables the spellchecker.

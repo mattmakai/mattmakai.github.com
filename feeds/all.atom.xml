@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2013-02-26T00:00:00-05:00</updated><entry><title>Developer Interview Questions</title><link href="http://www.mattmakai.com/developer-interview-questions.html" rel="alternate"></link><updated>2013-02-26T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-02-26:developer-interview-questions.html</id><summary type="html">&lt;p&gt;One of my clients was interviewing web developers and asked me about how
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2013-03-20T00:00:00-04:00</updated><entry><title>Google Car Insurance</title><link href="http://www.mattmakai.com/google-car-insurance.html" rel="alternate"></link><updated>2013-03-20T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-03-20:google-car-insurance.html</id><summary type="html"></summary></entry><entry><title>Developer Interview Questions</title><link href="http://www.mattmakai.com/developer-interview-questions.html" rel="alternate"></link><updated>2013-02-26T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-02-26:developer-interview-questions.html</id><summary type="html">&lt;p&gt;One of my clients was interviewing web developers and asked me about how
 I go about performing technical interviews. I have interviewed 15
 developers of all experience levels for
 &lt;a class="reference external" href="http://www.excella.com/"&gt;Excella Consulting&lt;/a&gt; in the past year. My style
@@ -590,12 +590,12 @@ substitute for thinking. You’re encouraged to behave like a little
 gear in a complex machine. Frankly, it allows you to keep people who
 aren’t that smart, who aren’t that creative.&lt;/blockquote&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://www.wired.com/wiredscience/2012/10/ff-elon-musk-qa/all/"&gt;Awesome interview with Elon Musk on Wired.com&lt;/a&gt;.&lt;/p&gt;
-</summary></entry><entry><title>Big Questions in Tech</title><link href="http://www.mattmakai.com/big-questions-in-tech.html" rel="alternate"></link><updated>2012-10-27T11:16:24-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-10-27:big-questions-in-tech.html</id><summary type="html">&lt;ol class="arabic simple"&gt;
+</summary></entry><entry><title>Big Questions in Tech</title><link href="http://www.mattmakai.com/big-questions-in-tech.html" rel="alternate"></link><updated>2012-10-27T10:16:24-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-10-27:big-questions-in-tech.html</id><summary type="html">&lt;ol class="arabic simple"&gt;
 &lt;li&gt;Mobile&lt;/li&gt;
 &lt;li&gt;SaaS&lt;/li&gt;
 &lt;li&gt;Client side frameworks&lt;/li&gt;
 &lt;/ol&gt;
-</summary></entry><entry><title>The Seven Most Important Principles I've Learned About Design</title><link href="http://www.mattmakai.com/the-seven-most-important-principles-ive-learned-about-design.html" rel="alternate"></link><updated>2012-10-27T11:16:24-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-10-27:the-seven-most-important-principles-ive-learned-about-design.html</id><summary type="html">&lt;ol class="arabic simple"&gt;
+</summary></entry><entry><title>The Seven Most Important Principles I've Learned About Design</title><link href="http://www.mattmakai.com/the-seven-most-important-principles-ive-learned-about-design.html" rel="alternate"></link><updated>2012-10-27T10:16:24-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-10-27:the-seven-most-important-principles-ive-learned-about-design.html</id><summary type="html">&lt;ol class="arabic simple"&gt;
 &lt;li&gt;CRAP (Contrast, Repetition, Alignment, and Proximity) Matters&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;2. Use similar style serif and sans serif fonts together

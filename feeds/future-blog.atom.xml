@@ -1,18 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/future-blog.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2012-12-15T00:00:00-05:00</updated><entry><title>2012 Development Year in Review</title><link href="http://www.mattmakai.com/2012-development-year-in-review.html" rel="alternate"></link><updated>2012-12-15T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-12-15:2012-development-year-in-review.html</id><summary type="html">&lt;p&gt;I have never before been done a retrospective on what I learned in software
-development over an entire year. But here goes.&lt;/p&gt;
-&lt;p&gt;2012&lt;/p&gt;
-&lt;div class="section" id="languages"&gt;
-&lt;h2&gt;Languages&lt;/h2&gt;
-&lt;p&gt;I spent most of the year programming in Python and JavaScript, with a touch
-of Objective-C, Java, and Clojure.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="projects"&gt;
-&lt;h2&gt;Projects&lt;/h2&gt;
-&lt;/div&gt;
-&lt;div class="section" id="blogging"&gt;
-&lt;h2&gt;Blogging&lt;/h2&gt;
-&lt;p&gt;I moved from my &lt;a class="reference external" href="http://www.mmakai.com/"&gt;original Tumblr blog&lt;/a&gt; to a
-statically generated &lt;a class="reference external" href="http://docs.getpelican.com/en/3.1.1/"&gt;Pelican&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-</summary></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/future-blog.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2013-03-20T00:00:00-04:00</updated><entry><title>Google Car Insurance</title><link href="http://www.mattmakai.com/google-car-insurance.html" rel="alternate"></link><updated>2013-03-20T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-03-20:google-car-insurance.html</id><summary type="html"></summary></entry></feed>

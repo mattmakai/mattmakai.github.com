@@ -22,8 +22,8 @@ that will be given by my colleague Andrew Baker in my absence.
 ----
 
 
-Git and Github Workflows
-~~~~~~~~~~~~~~~~~~~~~~~~
+`Git and Github Workflows </presentations/memphis-python-github-workflows.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Upcoming presentation to `Memphis Python <http://mempy.org/>`_ on 
 March 25, 2013.
 
