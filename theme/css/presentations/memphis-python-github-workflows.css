@@ -1,7 +1,7 @@
 .deck-container {
   font-family: "Verdana";
   font-size: 1.5em;
-  color: #fff;
+  color: #333;
   background: #fff;
   background-image:url('/img/presentations/memphis-python-github-workflows/gray.jpg');
 }
@@ -13,10 +13,10 @@
   color: #333;
   font-weight: bold;
   font-weight: 100;
-  text-shadow: -2px -2px 10px #29264d, 0 0 3px #fff;
+  text-shadow: -2px -2px 10px #999, 0 0 3px #fff;
 }
 .deck-container .slide h2 {
-  color: #29264d;
+  color: #333;
   border-bottom-color: #ccc;
   font-weight: normal;
   font-weight: 100;
@@ -126,7 +126,7 @@
     color: #29264d;
 }
 .img-border {
-  -webkit-box-shadow: 0 0 20px #29264d, 0 0 5px #fff;
-  -moz-box-shadow: 0 0 20px #29264d, 0 0 5px #fff;
-  box-shadow: 0 0 20px #29264d, 0 0 5px #fff;
+  -webkit-box-shadow: 0 0 20px #000, 0 0 5px #fff;
+  -moz-box-shadow: 0 0 20px #000, 0 0 5px #fff;
+  box-shadow: 0 0 20px #000, 0 0 5px #fff;
 }
