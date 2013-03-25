@@ -28,6 +28,12 @@
   font-weight: 100;
   text-shadow: 0 0 10px #fff, 0 0 2px #fff;
 }
+.deck-container .slide h4 {
+  color: #333;
+  font-weight: 100;
+  text-shadow: -2px -2px 10px #999, 0 0 3px #fff;
+}
+.deck-container .slide h2 {
 .deck-container .slide pre {
   border-color: #333;
 }
