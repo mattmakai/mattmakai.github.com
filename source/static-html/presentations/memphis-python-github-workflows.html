@@ -22,6 +22,11 @@
         ul.bigger li {font-size: 1.8em; margin-bottom: .25em;}
         .deck-container .slide a, .deck-container .slide a:hover, .deck-container .slide a:focus, .deck-container .slide a:active, .deck-container .slide a:visited {
         color: #0060B6; text-decoration: underline;
+      }
+        .img-border {
+          -webkit-box-shadow: 0 0 20px #000, 0 0 5px #fff;
+          -moz-box-shadow: 0 0 20px #000, 0 0 5px #fff;
+          box-shadow: 0 0 20px #000, 0 0 5px #fff;
         }
     </style>
 	<!-- Required Modernizr file -->
@@ -85,6 +90,7 @@
             <li>Git &amp; Github</li>
             <li>Development Practices</li>
             <li>Commit Workflows</li>
+            <li>Branching Workflows</li>
             <li>Deployment Workflows</li>
             <li>Resources</li>
         </ul>
@@ -108,7 +114,7 @@
     
     <section class="slide">
         <h1>
-            <span style="text-weight: normal; font-size: .75em;">Other alternatives?</span>
+            <span style="text-weight: normal; font-size: .75em;">Other Ahlternatives?</span>
         </h1>
     </section>
 
@@ -132,12 +138,12 @@
 
     <section class="slide">
         <h2>Single Remote Repo</h2>
-        <img src="/img/presentations/memphis-python-github-workflows/github-one-remote-repo.jpg" />
+        <img src="/img/presentations/memphis-python-github-workflows/github-one-remote-repo.jpg" class="img-border" />
     </section>
     
     <section class="slide">
         <h2>Multiple Remote Repo</h2>
-        <img src="/img/presentations/memphis-python-github-workflows/github-individual-repos.jpg" />
+        <img src="/img/presentations/memphis-python-github-workflows/github-individual-repos.jpg" class="img-border" />
     </section>
     
     <section class="slide">
@@ -146,17 +152,36 @@
 
     <section class="slide">
         <h2>Local to Production</h2>
-        <img src="/img/presentations/memphis-python-github-workflows/local-to-heroku.jpg" />
+        <img src="/img/presentations/memphis-python-github-workflows/local-to-heroku.jpg" class="img-border" />
     </section>
 
     <section class="slide">
         <h2>Local to Github and Production</h2>
-        <img src="/img/presentations/memphis-python-github-workflows/local-to-remote-repos.jpg" />
+        <img src="/img/presentations/memphis-python-github-workflows/local-to-github.jpg" class="img-border" />
     </section>
     
     <section class="slide">
         <h2>Continuous Integration Hook</h2>
-        <img src="/img/presentations/memphis-python-github-workflows/local-to-github.jpg" />
+        <img src="/img/presentations/memphis-python-github-workflows/local-to-github.jpg" class="img-border" />
+    </section>
+    
+    <section class="slide">
+        <h1>Branching Workflows</h1>
+    </section>
+    
+    <section class="slide">
+        <h2>master to test and prod</h2>
+        <img src="/img/presentations/memphis-python-github-workflows/dev-to-master-to-test-prod.jpg" class="img-border" />
+    </section>
+
+    <section class="slide">
+        <h2>master out of sync</h2>
+        <img src="/img/presentations/memphis-python-github-workflows/dev-to-master-out-of-sync.jpg" class="img-border" />
+    </section>
+
+    <section class="slide">
+        <h2>master to test, production to prod</h2>
+        <img src="/img/presentations/memphis-python-github-workflows/dev-to-master-to-prod.jpg" class="img-border" />
     </section>
 
     <section class="slide">
