@@ -13,10 +13,11 @@ Upcoming presentation to
 
 ----
 
-Coding Across America Lessons for EvoComm Entrepreneurs
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Upcoming talk on April 26 at EvoComm in San Diego for current incubator 
-entrepreneurs.
+Coding Across America Lessons for Evo Nexus Entrepreneurs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Upcoming talk on April 26 at 
+`Evo Nexus <http://www.commnexus.org/incubator/>`_ in San Diego for 
+current incubator entrepreneurs.
 
 ----
 
