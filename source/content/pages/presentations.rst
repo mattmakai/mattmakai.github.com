@@ -13,11 +13,18 @@ Upcoming presentation to
 
 ----
 
+Coding Across America Lessons for EvoComm Entrepreneurs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Upcoming talk on April 26 at EvoComm in San Diego for current incubator 
+entrepreneurs.
+
+----
+
 
 `Coding Across America at PyCon </presentations/pycon-andrew-baker.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Upcoming lightning talk presentation at `PyCon <https://us.pycon.org/>`_ 
-that will be given by my colleague Andrew Baker in my absence.
+Lightning talk presentation at `PyCon <https://us.pycon.org/>`_ 
+given by my colleague Andrew Baker in my absence.
 
 ----
 
