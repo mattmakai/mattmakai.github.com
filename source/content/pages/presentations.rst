@@ -13,10 +13,10 @@ Upcoming presentation to
 
 ----
 
-Coding Across America Lessons for Evo Nexus Entrepreneurs
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Coding Across America Lessons for EvoNexus Entrepreneurs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Upcoming talk on April 26 at 
-`Evo Nexus <http://www.commnexus.org/incubator/>`_ in San Diego for 
+`EvoNexus <http://www.commnexus.org/incubator/>`_ in San Diego for 
 current incubator entrepreneurs.
 
 ----
