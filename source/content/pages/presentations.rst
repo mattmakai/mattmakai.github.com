@@ -15,8 +15,7 @@ Upcoming presentation to
 
 `Coding Across America Lessons for EvoNexus Entrepreneurs </presentations/san-diego-evonexus-startups.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Upcoming talk on April 26 at 
-`EvoNexus <http://www.commnexus.org/incubator/>`_ in San Diego for 
+Talk on April 26 given at `EvoNexus <http://www.commnexus.org/incubator/>`_ in San Diego for 
 current incubator entrepreneurs.
 
 ----
@@ -32,16 +31,14 @@ given by my colleague Andrew Baker in my absence.
 
 `Git and Github Workflows </presentations/memphis-python-github-workflows.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Upcoming presentation to `Memphis Python <http://mempy.org/>`_ on 
-March 25, 2013.
+Presentation to `Memphis Python <http://mempy.org/>`_ on March 25, 2013.
 
 ----
 
 
 `Beyond Hello World: Python in Industry and Academia </presentations/gwu-real-world-python.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Upcoming presentation to the 
-`George Washington University Computer Science <http://www.cs.gwu.edu/>`_ 
+Presentation to the `George Washington University Computer Science <http://www.cs.gwu.edu/>`_ 
 department on March 1, 2013.
 
 ----
