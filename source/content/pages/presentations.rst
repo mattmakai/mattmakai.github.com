@@ -9,7 +9,14 @@ Presentations
 TBD
 ~~~
 Upcoming presentation to 
-`Boston Django <http://www.meetup.com/djangoboston/>`_ in July.
+`Boston Django <http://www.meetup.com/djangoboston/>`_ at the end of July.
+
+----
+
+Making Your City's Developer Community Awesome
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Upcoming presentation to 
+`Omaha Python <http://www.omahapython.org/blog/>`_ on July 1st.
 
 ----
 
