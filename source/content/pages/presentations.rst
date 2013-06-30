@@ -6,46 +6,80 @@ Presentations
 2013 Presentations
 ------------------
 
-TBD
-~~~
+Staying Sane While Taking Over An Existing Django Codebase 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+How do you quickly get up to speed on an existing Django project codebase? 
+You're eventually going to run into a large unfamiliar codebase whether 
+you're the new developer on a team with an established codebase 
+or just working with code you wrote awhile back. This talk covers steps you 
+absolutely must take to identify and triage existing issues, stablize the 
+codebase, and gently guide the project towards "this is amazing!" status.
+
 Upcoming presentation to 
 `Boston Django <http://www.meetup.com/djangoboston/>`_ at the end of July.
 
 ----
 
-Making Your City's Developer Community Awesome
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+`Making Your City's Developer Community Awesome </presentations/omaha-python-july-2013.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+What differentiates tech communities in cities across the United States? 
+How do you make your community rally around a programming language's 
+ecosystem and spur genuine excitement every time your group meets? This 
+talk will show you what the best tech communities do right (hint: it's not 
+city size that matters), what mistakes they need to correct, and how Omaha 
+can continue building momentum for its developer community.
+
 Upcoming presentation to 
 `Omaha Python <http://www.omahapython.org/blog/>`_ on July 1st.
 
 ----
 
+
 `Coding Across America Lessons for EvoNexus Entrepreneurs </presentations/san-diego-evonexus-startups.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Talk on April 26 given at `EvoNexus <http://www.commnexus.org/incubator/>`_ in San Diego for 
-current incubator entrepreneurs.
+What can EvoNexus startups learn from other startups and ecosystems across 
+the country? This talk will focus on what Matt Makai has seen from the 
+previous ten cities in his Coding Across America road trip. The format will 
+be an open discussion based on the San Diego startup community's most 
+pressing concerns and questions.
 
-----
-
-
-`Coding Across America at PyCon </presentations/pycon-andrew-baker.html>`_
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lightning talk presentation at `PyCon <https://us.pycon.org/>`_ 
-given by my colleague Andrew Baker in my absence.
+Talk on April 26 given at `EvoNexus <http://www.commnexus.org/incubator/>`_ 
+in San Diego for current incubator entrepreneurs.
 
 ----
 
 
 `Git and Github Workflows </presentations/memphis-python-github-workflows.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Presentation to `Memphis Python <http://mempy.org/>`_ on March 25, 2013.
+What are the strengths and weaknesses of using Github for varying 
+development team configurations? This talk will cover topics such as 
+creating a canonical repository to have development team members fork 
+from, handling code reviews through pull requests, and creating separate 
+branches for testing and production deployments. This programming 
+language-agnostic talk draws upon work with both co-located and 
+geographically dispersed teams at the Consumer Financial Protection 
+Bureau, the George Washington University, and Motley Fool, some of which 
+was recently covered in this 
+`article by Wired <http://www.wired.com/wiredenterprise/2013/01/hack-the-government/>`_.
+
+Presented at `Memphis Python <http://mempy.org/>`_ on March 25, 2013.
+
+----
+
+
+`Coding Across America at PyCon </presentations/pycon-andrew-baker.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lightning talk presented at `PyCon <https://us.pycon.org/>`_ 
+given by my colleague Andrew Baker in my absence.
 
 ----
 
 
 `Beyond Hello World: Python in Industry and Academia </presentations/gwu-real-world-python.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Presentation to the `George Washington University Computer Science <http://www.cs.gwu.edu/>`_ 
+Presented to the 
+`George Washington University Computer Science <http://www.cs.gwu.edu/>`_ 
 department on March 1, 2013.
 
 ----
@@ -53,8 +87,15 @@ department on March 1, 2013.
 
 `Heroku Deployment Workflows for Django Projects </presentations/django-district-heroku-deployments.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Heroku provides a well tested platform for quick Django deployments through 
+Git. This presentation will present a quick overview of Heroku's Cedar stack, 
+how you deploy a Django project to Heroku, and Fabric code to automate the 
+deployment process from your local environment or through continuous 
+delivery with Jenkins.
+
 Presented to `django-district <http://www.django-district.org/>`_ 
-on February 12, 2013.
+on February 12, 2013. There's a 
+`video available <http://www.youtube.com/watch?v=yQo44SYI8bw>`_ for this talk.
 
 ----
 
