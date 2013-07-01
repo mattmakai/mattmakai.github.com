@@ -19,6 +19,27 @@
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="/lib/css/zenburn.css">
+        <style>
+            .total-miles-tooltip {
+                color: #222;
+                background: #eee;
+                border: 1px solid #222;
+                padding: 3px;
+                -webkit-border-radius:3px;
+                -moz-border-radius:3px;
+                border-radius:3px;
+            }
+
+            .miles-driven-tooltip {
+                color: #eee;
+                background: #406BB4;
+                border: 1px solid #222;
+                padding: 3px;
+                -webkit-border-radius:3px;
+                -moz-border-radius:3px;
+                border-radius:3px;
+            }
+        </style>
 
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
@@ -76,7 +97,12 @@
 
                 <section>
                     <h2>March 9 - August 9</h2>
-                    <img src="/img/presentations/omaha-python-dev-communities/coding-across-america-map.jpg" style="border: 1px solid; box-shadow: none; background: none;" />
+                    <img src="/img/presentations/omaha-python-dev-communities/coding-across-america-map.jpg" style="border: 1px solid; box-shadow: none; background: none;" id="caa-map" />
+                </section>
+
+                <section data-state="show-miles-driven">
+                    <h2>Miles driven</h2>
+                    <div id="miles-driven-chart" style="height: 500px;"></div>
                 </section>
 				
                 <section>
@@ -116,7 +142,7 @@
                         <li>Organized groups</li>
                         <li>PyLadies</li>
                         <li>Teaching</li>
-                        <li>Media &amp; science investment</li>
+                        <li>Media, government, &amp; science investment</li>
                     </ul>
                </section>
                <section>
@@ -154,11 +180,40 @@
                     <h2>Ideas</h2>
                     <ul>
                         <li>Introduction classes (programming, data, web)</li>
+                        <li>Hacking events</li>
                         <li>National organizations (NumFOCUS, PSF)</li>
                         <li>Hacker houses</li>
                         <li>Visiting speakers</li>
-                        <li>Event spaces</li>
+                        <li>Various event spaces</li>
                     </ul>
+                </section>
+
+                <section>
+                    <h2>Introduction classes</h2>
+                    <img src="/img/presentations/omaha-python-dev-communities/dgentle-django.png" />
+                </section>
+                
+                <section>
+                    <h2>Hacking events</h2>
+                    <img src="/img/presentations/omaha-python-dev-communities/group_hacking_2.jpg" />
+                </section>
+                
+                <section>
+                    <h2>National organizations</h2>
+                    <img src="/img/presentations/omaha-python-dev-communities/kauffman-foundation.jpg" />
+                </section>
+                
+                <section>
+                    <h2>Hacker houses</h2>
+                    <img src="/img/presentations/omaha-python-dev-communities/hacker-house.jpg" />
+                </section>
+                
+                <section>
+                    <h2>Visiting speakers</h2>
+                </section>
+                
+                <section>
+                    <h2>Various event spaces</h2>
                 </section>
 
                 <!-- talk section #3 -->
@@ -169,8 +224,9 @@
                 <section>
                     <h2>Focus</h2>
                     <ul>
-                        <li>Picking a cause to rally around</li>
-                        <li>Organizations that can help</li>
+                        <li>What will provide the most value to the community?</li>
+                        <li>Pick a cause to rally around</li>
+                        <li>Organizations that can help with time and/or money</li>
                     </ul>
                     <aside class="notes">
                         Potential organizations are companies, non-profits,
@@ -223,10 +279,58 @@
                 </section>
 		</div>
 
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/d3.min.js" charset="utf-8"></script>
 		<script src="/lib/js/head.min.js"></script>
 		<script src="/js/reveal.min.js"></script>
 
 		<script>
+
+$(document).ready(function() {
+/* MILES DRIVEN chart */
+var milesDrivenContainerWidth = 900, /*$("#miles-driven-chart").width(),*/
+    milesDrivenContainerHeight = 500; /*$("#caa-map").height();*/
+
+var margin = {top: 5, right: 5, bottom: 5, left: 5},
+    milesDrivenWidth = milesDrivenContainerWidth,
+    milesDrivenHeight = milesDrivenContainerHeight;
+
+var maxDays = 155, maxMiles = 11000,
+    lineWidth = milesDrivenWidth / maxDays;
+
+var x = d3.scale.linear()
+    .domain([0, maxDays])
+    .range([0, milesDrivenWidth]);
+
+var y = d3.scale.linear()
+    .domain([0, maxMiles])
+    .range([milesDrivenHeight, 0]);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+
+var svg = d3.select("#miles-driven-chart").append("svg")
+        .attr("width", milesDrivenWidth + margin.left + margin.right)
+        .attr("height", milesDrivenHeight + margin.top + margin.bottom)
+    .append("g")
+        .attr("transform", "translate(" + margin.left + "," + 
+            margin.top + ")");
+
+svg.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + milesDrivenHeight + ")")
+    .call(xAxis);
+
+svg.append("g")
+    .attr("class", "y axis")
+    .call(yAxis);
+
+
 
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
@@ -251,6 +355,96 @@
 					// { src: '/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
+
+function drawChart(data) {
+    var totalTooltip = d3.select("body")
+        .append("div")
+            .style("position", "absolute")
+            .style("z-index", "10")
+            .style("visibility", "hidden")
+            .attr("class", "total-miles-tooltip")
+            .text(function(d) {return "";});
+    
+    var byDayTooltip = d3.select("body")
+        .append("div")
+            .style("position", "absolute")
+            .style("z-index", "10")
+            .style("visibility", "hidden")
+            .attr("class", "miles-driven-tooltip")
+            .text(function(d) {return "";});
+
+    var total_bars = svg.selectAll("rect.total-miles")
+        .data(data.driving)
+            .enter()
+        .append("rect")
+            .attr("x", function(d) {return x(d.day) - lineWidth;})
+            .attr("y", function(d) {return milesDrivenHeight;})
+            .attr("width",lineWidth)
+            .attr("class", "total-miles")
+            .attr("height", function(d) {return 0;})
+            .attr("title", function(d) {return d.date;})
+            .style("stroke","#fff")
+            .style("fill","#F9A31A")
+            .on("mouseover", function(d, i) {
+                var tipMsg = "Day " + d.day + ": " + d.total + " total miles driven";
+                return totalTooltip.style("visibility", "visible")
+                    .text(tipMsg);
+            })
+            .on("mousemove", function(d, i) {
+                return totalTooltip.style("top", 
+                    (event.pageY-10)+"px").style("left",
+                    (event.pageX+10)+"px");
+            })
+            .on("mouseout", function(d, i) {
+                return totalTooltip.style("visibility", "hidden");
+            })
+        .transition()
+            .attr("y", function(d) {return y(d.total);})
+            .attr("height", function(d) {
+                    return milesDrivenHeight - y(d.total);
+                })
+            .delay(function(d, i) {return (i * 50) + 100;})
+            .duration(1200);
+
+    var bars = svg.selectAll("rect.daily-miles")
+        .data(data.driving)
+            .enter()
+        .append("rect")
+            .attr("x", function(d) {return x(d.day) - lineWidth;})
+            .attr("y", function(d) {return milesDrivenHeight;})
+            .attr("class", "daily-miles")
+            .attr("width",lineWidth)
+            .attr("height", function(d) {return 0;})
+            .style("stroke","#fff")
+            .style("fill","#406BB4")
+            .on("mouseover", function(d, i) {
+                var tipMsg = "Day " + d.day + ": " + d.miles + " daily miles";
+                return byDayTooltip.style("visibility", "visible")
+                    .text(tipMsg);
+            })
+            .on("mousemove", function(d, i) {
+                return byDayTooltip.style("top", 
+                    (event.pageY-10)+"px").style("left",
+                    (event.pageX+10)+"px");
+            })
+            .on("mouseout", function(d, i) {
+                return byDayTooltip.style("visibility", "hidden");
+            })
+        .transition()
+            .attr("y", function(d) {return y(d.miles);})
+            .attr("height", function(d) {
+                    return milesDrivenHeight - y(d.miles);
+                })
+            .delay(function(d, i) {return (i * 50) + 100;})
+            .duration(1200);
+
+}
+
+
+            Reveal.addEventListener( 'show-miles-driven', function() {
+                d3.json('/static/data/driving.json', drawChart);
+            } );
+});
 
 		</script>
 
