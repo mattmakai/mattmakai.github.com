@@ -3,8 +3,8 @@ Presentations
 
 :category: presentations
 
-2013 Presentations
-------------------
+2013 Talk
+---------
 
 Staying Sane While Taking Over An Existing Django Codebase 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -106,8 +106,8 @@ Presented to `JMU's ACM group <http://acm.cs.jmu.edu/>`_ on January 23, 2013.
 
 ----
 
-2012 Presentations
-------------------
+2012 Talks
+----------
 
 `Agile Software Development in the Federal Government </presentations/agile-software-development-in-federal-government.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
