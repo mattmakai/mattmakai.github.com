@@ -3,8 +3,8 @@ Presentations
 
 :category: presentations
 
-2013 Talk
----------
+2013 Talks
+----------
 
 Staying Sane While Taking Over An Existing Django Codebase 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
