@@ -78,6 +78,13 @@ given by my colleague Andrew Baker in my absence.
 
 `Beyond Hello World: Python in Industry and Academia </presentations/gwu-real-world-python.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Beyond "Hello World": Real Python Use in Industry and Academia. What is 
+Python used for throughout industry and academia? How can you learn parts 
+of the Python ecosystem to create a skill set appealing to employers? What 
+do experienced Python developers look for when hiring new developers for 
+their teams? This talk will cover these questions and give you a great 
+list of Python resources to learn more after the talk.
+
 Presented to the 
 `George Washington University Computer Science <http://www.cs.gwu.edu/>`_ 
 department on March 1, 2013.
@@ -102,6 +109,17 @@ on February 12, 2013. There's a
 
 `Everything I Wish I Knew as JMU Computer Science Undergrad </presentations/jmu-everything-i-wish-i-knew.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+You majored in computer science to learn how to program awesome projects. 
+Instead you're stuck in class trying to figure out the difference between 
+little endian and big endian ordering on Windows versus Linux. This talk 
+will break you free from those minute details and provide an overview of 
+what you need to develop awesome web applications with Python and Django. 
+You'll get an overview of the full Python web application stack and find 
+out where you can learn more about each component. At the end of the talk 
+you'll have a checklist of exactly what you need to do to build a 
+comprehensive Python skill set while you're still in school and land the 
+best jobs out of school.
+
 Presented to `JMU's ACM group <http://acm.cs.jmu.edu/>`_ on January 23, 2013.
 
 ----
@@ -111,6 +129,13 @@ Presented to `JMU's ACM group <http://acm.cs.jmu.edu/>`_ on January 23, 2013.
 
 `Agile Software Development in the Federal Government </presentations/agile-software-development-in-federal-government.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+With the latest executive mandates for IT reform, more and more agencies are 
+adopting agile methods. But the devil is in the details. How can you achieve 
+real governance with lightweight methods? How can you adjust scope on fixed 
+contracts? Is collaboration even possible with competing contractors? This 
+interactive session will offer actionable strategies to navigate the unique 
+constraints for implementing agile in a federal environment.
+
 Presented to the `2012 Project Management Symposium <http://www.pmiwdc.org/2012-project-management-symposium/2012-project-management-symposium-agenda/2012-project-management>`_ on September 28, 2012.
 
 ----
