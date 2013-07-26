@@ -6,8 +6,8 @@ Presentations
 2013 Talks
 ----------
 
-Staying Sane While Taking Over An Existing Django Codebase 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`Staying Sane While Taking Over An Existing Django Codebase </presentations/django-boston-july-2013.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 How do you quickly get up to speed on an existing Django project codebase? 
 You're eventually going to run into a large unfamiliar codebase whether 
 you're the new developer on a team with an established codebase 
@@ -16,7 +16,7 @@ absolutely must take to identify and triage existing issues, stablize the
 codebase, and gently guide the project towards "this is amazing!" status.
 
 Upcoming presentation to 
-`Boston Django <http://www.meetup.com/djangoboston/>`_ at the end of July.
+`Boston Django <http://www.meetup.com/djangoboston/events/100266532/>`_ on July 31st.
 
 ----
 
@@ -30,7 +30,7 @@ talk will show you what the best tech communities do right (hint: it's not
 city size that matters), what mistakes they need to correct, and how Omaha 
 can continue building momentum for its developer community.
 
-Upcoming presentation to 
+Talk given at  
 `Omaha Python <http://www.omahapython.org/blog/>`_ on July 1st.
 
 ----
