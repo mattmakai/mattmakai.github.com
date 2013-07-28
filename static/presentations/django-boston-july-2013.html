@@ -120,6 +120,11 @@
                     <h2>Coding</h2>
                     <img src="/img/presentations/django-boston-july-2013/chicago-coding-outside.jpg"/>
                 </section>
+                
+                <section>
+                    <h2>Getting out of the building</h2>
+                    <img src="/img/presentations/django-boston-july-2013/hiking.jpg"/>
+                </section>
 
                 <section data-state="show-miles-driven">
                     <h2>Miles driven</h2>
@@ -153,6 +158,17 @@
                     </ul>
                 </section>
                 
+                <section>
+                    <h2>Approach</h2>
+                    <ul class="bigger">
+                        <li><strong>Codebase</strong></li>
+                        <li>Deployment</li>
+                        <li>Infrastructure</li>
+                        <li>Services</li>
+                        <li></strong>Resources</strong></li>
+                    </ul>
+                </section>
+                
                 <!-- talk section #1 -->
                 <section style="text-align: center;">
                     <h1 style="margin-top: 1.6em;">Codebase</h1>
@@ -163,6 +179,7 @@
                     <ul class="bigger">
                         <li>Obtain code</li>
                         <li>Requirements pegged?</li>
+                        <li>Project structure</li>
                         <li>Settings.py configuration</li>
                         <li>Tests?</li>
                     </ul>
@@ -185,22 +202,65 @@
                     <img src="/img/presentations/django-boston-july-2013/pd-clone.png" />
                 </section>
                 
-
                 <section>
-                    <h2>Let's get up and running</h2>
-                    <ul class="bigger">
-                        <li>manage.py</li>
-                        <li>syncdb / migrate</li>
-                        <li>test</li>
-                        <li>runserver</li>
-                    </ul>
+                    <h2>Project structure: 1.3-</h2>
+                    <br/>
+                    <pre style="font-size: 28px; color: #222;">
+
+    project_root
+     |- settings.py
+     |- urls.py
+     |- wsgi.py
+     |- manage.py
+     |- requirements.txt
+     |- app1/
+     |- app2/
+     |- app3/
+                        </pre>
                 </section>
                 
+                <section>
+                    <h2>Project structure: 1.4+</h2>
+                    <br/>
+                    <pre style="font-size: 28px; color: #222;">
+
+    project_root
+     |- project_name/
+         |- settings.py
+         |- urls.py
+         |- wsgi.py
+     |- manage.py
+     |- requirements.txt
+     |- app1/
+     |- app2/
+     |- app3/
+                        </pre>
+                </section>
+                
+                <section>
+                    <h2>Project structure: custom</h2>
+                    <br/>
+                    <pre style="font-size: 28px; color: #222;">
+
+    project_root
+     |- settings.py
+     |- urls.py
+     |- wsgi.py
+     |- manage.py (modified)
+     |- env/
+         |- requirements.txt
+     |- apps/
+         |- app1/
+         |- app2/
+         |- app3/
+                        </pre>
+                </section>
+
                 <section>
                     <h2>Settings configuration</h2>
                     <ul class="bigger">
                         <li>settings.py</li>
-                        <li>local_settings.py</li>
+                        <li>local_settings.py.template</li>
                         <li>environment variables</li>
                         <li>manage.py mangling?</li>
                     </ul>
@@ -218,6 +278,35 @@
                 
                 <section style="text-align: center;">
                     <h1 style="margin-top: 1.6em;">Why peg?</h1>
+                </section>
+                
+                <section>
+                    <h2>Let's get up and running</h2>
+                    <ul class="bigger">
+                        <li>manage.py</li>
+                        <li>syncdb / migrate</li>
+                        <li>test</li>
+                        <li>runserver</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Data</h2>
+                    <ul class="bigger">
+                        <li>fixtures (.json)</li>
+                        <li>database dump (.sql)</li>
+                        <li>data generation scripts (.py?)</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>grep -r fixtures.json *.py</h2>
+                    <img src="/img/presentations/django-boston-july-2013/grep-fixtures.png" />
+                </section>
+
+                <section>
+                    <h2>find . -name '*.json'
+                    <img src="/img/presentations/django-boston-july-2013/find-json-files.png" />
                 </section>
 
                 <!-- talk section #2 -->
