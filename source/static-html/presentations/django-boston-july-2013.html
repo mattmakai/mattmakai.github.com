@@ -47,6 +47,9 @@
                line-height: 1.1em;
                margin-left: 10px;
             }
+            ol.bigger li {
+                margin-left: 1em;
+            }
         </style>
 
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
@@ -178,6 +181,7 @@
                     <h2>Determine</h2>
                     <ul class="bigger">
                         <li>Obtain code</li>
+                        <li>README</li>
                         <li>Project structure</li>
                         <li>Requirements pegged?</li>
                         <li>Settings.py configuration</li>
@@ -203,7 +207,20 @@
                 </section>
                 
                 <section>
-                    <h2>cd pd; ls -ltra</h2>
+                    <h2>README</h2>
+                    <p></p>
+                    <ol class="bigger">
+                        <li>Purpose, goals</li>
+                        <li>Important links - wiki, prod, staging sites</li>
+                        <li>Getting started (Vagrant, virtualenv)</li>
+                        <li>Special instructions (Solr, db replication)</li>
+                        <li>Deployment</li>
+                    </ol>
+                </section>
+                
+                <section>
+                    <h2>Project structure</h2>
+                    <p>cd pd; ls -ltra</p>
                     <img src="/img/presentations/django-boston-july-2013/ls-ltra.jpg" />
                 </section>
 
@@ -285,6 +302,15 @@
                     </ul>
                 </section>
                 
+                <section>
+                    <h2>Environment variables</h2>
+                    <img src="/img/presentations/django-boston-july-2013/env-variables-settings.jpg" />
+                </section>
+                
+                <section>
+                    <h2>Local env variable setting</h2>
+                    <img src="/img/presentations/django-boston-july-2013/settings-set-envs.jpg" />
+                </section>
                 
                 <section>
                     <h2>Let's get up and running</h2>
@@ -299,9 +325,10 @@
                 <section>
                     <h2>Data</h2>
                     <ul class="bigger">
+                        <li>data generation scripts (.py?)</li>
                         <li>fixtures (.json)</li>
                         <li>database dump (.sql)</li>
-                        <li>data generation scripts (.py?)</li>
+                        <li>production database replication scripts</li>
                     </ul>
                 </section>
                 
@@ -315,6 +342,17 @@
                     <img src="/img/presentations/django-boston-july-2013/find-json-files.png" />
                 </section>
                 
+                <section>
+                    <h2>Tests</h2>
+                    <ul class="bigger">
+                        <li>No tests</li>
+                        <li>Simple tests</li>
+                        <li>Multiple test suites</li>
+                        <li>Custom test runners</li>
+                        <li>Coverage reports and test checks</li>
+                    </ul>
+                </section>
+
                 <section>
                     <h2>One tests file</h2>
                     <br/>
@@ -358,6 +396,18 @@
                         <li>Custom test runner</li>
                     </ul>
                 </section>
+
+                <section>
+                    <h2>Testing philosophy</h2>
+                    <ul class="bigger">
+                        <li>Get tests running</li>
+                        <li>Add coverage.py, if necessary</li>
+                        <li>Figure out code coverage</li>
+                        <li>Add tests while exploring code</li>
+                        <li>Review increased coverage w/client or team</li>
+                    </ul>
+                </section>
+
 
 
                 <!-- talk section #2 -->
