@@ -1,5 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2013-03-20T00:00:00-04:00</updated><entry><title>Google Car Insurance</title><link href="http://www.mattmakai.com/google-car-insurance.html" rel="alternate"></link><updated>2013-03-20T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-03-20:google-car-insurance.html</id><summary type="html"></summary></entry><entry><title>Developer Interview Questions</title><link href="http://www.mattmakai.com/developer-interview-questions.html" rel="alternate"></link><updated>2013-02-26T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-02-26:developer-interview-questions.html</id><summary type="html">&lt;p&gt;One of my clients was interviewing web developers and asked me about how
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2013-07-31T00:00:00-04:00</updated><entry><title>Django Project Checklist</title><link href="http://www.mattmakai.com/django-project-checklist.html" rel="alternate"></link><updated>2013-07-31T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-07-31:django-project-checklist.html</id><summary type="html">&lt;p&gt;Lately I've consulted for several clients where I was asked to drop into
+an existing large Django project code base to triage issues and build
+enhancements. Working on an established code base is common whether you're
+a new developer on a team or like me working on consulting projects.&lt;/p&gt;
+&lt;p&gt;There are many attributes of an existing project: the code (and
+documentation), infrastructure, deployment procedures, and third-party
+services. While reviewing each one of these areas I get either a good feeling
+I'll be able to accomplish my work quickly, or a terrible feeling that
+the pre-work to triage issues will dwarf the scope of the work requested
+by the client.&lt;/p&gt;
+&lt;p&gt;Here is the checklist I now use (and add to when I uncover something new)
+after having gone through this process of evaluating established projects
+many times.&lt;/p&gt;
+&lt;div class="section" id="code-base"&gt;
+&lt;h2&gt;Code base&lt;/h2&gt;
+&lt;p&gt;The code repository is where most developers will dive in and try to
+understand the project. A README file that screams &amp;quot;start here!&amp;quot; is a must.&lt;/p&gt;
+&lt;div class="section" id="readme"&gt;
+&lt;h3&gt;README&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;A brief (one paragraph or bullet points) explanation of what the project
+is, its purpose, and goals to provide context for developers&lt;/li&gt;
+&lt;li&gt;Important links to development wikis, testing, staging, and production
+servers&lt;/li&gt;
+&lt;li&gt;Contact information for anyone critical to the project.&lt;/li&gt;
+&lt;li&gt;&amp;quot;Getting Started&amp;quot; section that bootstraps developers from a blank
+slate to a functional development environment. Included even if you're
+using Vagrant (to show a new developer how to use Vagrant)&lt;/li&gt;
+&lt;li&gt;Instructions for special software required for a fully-functioanl site.
+For example, how to set up Solr and build the search indexes, or how to
+locally replicate the database from a test or production environment&lt;/li&gt;
+&lt;li&gt;Basic deployment information and/or a link to detailed deployment
+instructions (even if this is just how to use the included Fabric or
+Capistrano scripts)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="project-structure"&gt;
+&lt;h3&gt;Project Structure&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Is this a flat 1.3 (and previous versions) Django project structure?&lt;/li&gt;
+&lt;li&gt;Is this a standard Django 1.4+ project structure with urls.py, wsgi.py,
+and settings.py in a subdirectory under the project's root directory?&lt;/li&gt;
+&lt;li&gt;Does this project use a custom layout with a mangled manage.py?
+For example, do the individual app directories live in the project's root
+directory or are they found in a subdirectory such as &amp;quot;apps&amp;quot;?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="dependencies"&gt;
+&lt;h3&gt;Dependencies&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Is the requirements.txt located in the project's root folder or under
+a subdirectory such as env?&lt;/li&gt;
+&lt;li&gt;Does the requirements.txt file itself point to another text file such
+as production.txt located in a subdirectory?&lt;/li&gt;
+&lt;li&gt;Are all the requirements pegged to specific version numbers? If not,
+how fast can you run away from this project?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="configuration"&gt;
+&lt;h3&gt;Configuration&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Is the settings.py file located in the root directory or under the
+project name's subdirectory as standard in Django 1.4+?&lt;/li&gt;
+&lt;li&gt;Is there a local_settings.py template file?&lt;/li&gt;
+&lt;li&gt;Are environment variables required? What's the proper way to set those
+variables?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="data"&gt;
+&lt;h3&gt;Data&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Which database is the project tested to run with? MySQL, PostgreSQL?&lt;/li&gt;
+&lt;li&gt;Are there custom SQL scripts that can only be used with a specific
+database? For example, if the project is designed to run on MySQL are
+there SQL primary keys with autoincrement that would be confusing to
+translate to PostgreSQL?&lt;/li&gt;
+&lt;li&gt;Does this project have test data? Is the test data per app, or loaded
+for the entire project?&lt;/li&gt;
+&lt;li&gt;How is test data loaded? Data data generation scripts, fixtures, database
+dump SQL scripts, or a database replication scheme?&lt;/li&gt;
+&lt;li&gt;If by fixtures or unsure, use &amp;quot;grep -r fixtures.json *.py&amp;quot; and
+&amp;quot;find . -name '*.json'&amp;quot; to find one or more JSON fixture files.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tests"&gt;
+&lt;h3&gt;Tests&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Are there any tests? If so, do the tests.py files contain anything more
+than the boilerplate 1+1=2 example test function?&lt;/li&gt;
+&lt;li&gt;Is there a custom test runner? Is django-nose or django-jenkins used to
+run the tests?&lt;/li&gt;
+&lt;li&gt;Are tests grouped into a single tests.py file or are they under a tests/
+subdirectory under each app?&lt;/li&gt;
+&lt;li&gt;Are there coverage reports generated for the existing code?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="infrastructure"&gt;
+&lt;h2&gt;Infrastructure&lt;/h2&gt;
+&lt;p&gt;Infrastructure is the actual physical or virtualized hardware, or
+platform-as-a-service, that the project is deployed to. Production, staging,
+testing, and development servers not on an individual developer's machine
+are included in this category.&lt;/p&gt;
+&lt;p&gt;Note that there are certain things I'm leaving out here. I firmly believe
+there is little to no value to &amp;quot;enterprise architecture&amp;quot; type diagrams that
+are not generated dynamically. The amount of man hours I've witnessed
+ivory tower architects waste on drawing UML diagrams makes my blood boil.&lt;/p&gt;
+&lt;div class="section" id="environments"&gt;
+&lt;h3&gt;Environments&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Is there a master &amp;quot;environments document&amp;quot; that is autogenerated with
+information on the infrastructure?&lt;/li&gt;
+&lt;li&gt;What environment is the project designed to run in?&lt;/li&gt;
+&lt;li&gt;Linux? What distribution and version? What packages need to be installed?&lt;/li&gt;
+&lt;li&gt;Is this project meant to run on a platform-as-a-service? Which one? Heroku?&lt;/li&gt;
+&lt;li&gt;Is there a content delivery network necessary for static and media files?
+How are the files synced when there is a static files change during
+deployment?&lt;/li&gt;
+&lt;li&gt;Are there separate servers for the database and web? Are there separate
+caching servers? (Obviously this question can scale to many other questions
+depending on the infrastructure size.)&lt;/li&gt;
+&lt;li&gt;What are the IP addresses of existing servers?&lt;/li&gt;
+&lt;li&gt;Are the testing, staging, and production environments in sync? How do you
+know if they go out of sync?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="access-rights"&gt;
+&lt;h3&gt;Access Rights&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Are the environemnts accessible with a username and password?&lt;/li&gt;
+&lt;li&gt;Is a public encryption key in the authorized_keys file needed to login?
+Who already has access to add a new key or is there a general key?&lt;/li&gt;
+&lt;li&gt;Is root access to a box by SSH denied (as it should be)?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="deployment"&gt;
+&lt;h3&gt;Deployment&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Generally speaking, how is a deployment done?&lt;/li&gt;
+&lt;li&gt;Are Fabric, Capistrano (railsless-deploy), or shell scripts used?&lt;/li&gt;
+&lt;li&gt;Is Ansible, Salt Stack, Puppet, or Chef used?&lt;/li&gt;
+&lt;li&gt;What are the purposes of various users? For example, if there is a
+deployment user as well as another general purpose user, which one
+should be used for debugging?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="third-party-services"&gt;
+&lt;h2&gt;Third-party services&lt;/h2&gt;
+&lt;p&gt;Most Django projects combine custom apps with third party services,
+such as Twilio, Stripe, New Relic, and Intercom.io, to create a complete
+product. Which ones are used in the project, do they fail gracefully when
+their APIs are down or inaccessible, and who has admin access rights to
+the services?&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;What third party services are used with this project?&lt;/li&gt;
+&lt;li&gt;How are the third party services tested locally?&lt;/li&gt;
+&lt;li&gt;What are the usernames and passwords for the services?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>Developer Interview Questions</title><link href="http://www.mattmakai.com/developer-interview-questions.html" rel="alternate"></link><updated>2013-02-26T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-02-26:developer-interview-questions.html</id><summary type="html">&lt;p&gt;One of my clients was interviewing web developers and asked me about how
 I go about performing technical interviews. I have interviewed 15
 developers of all experience levels for
 &lt;a class="reference external" href="http://www.excella.com/"&gt;Excella Consulting&lt;/a&gt; in the past year. My style
