@@ -63,7 +63,10 @@ Bureau, the George Washington University, and Motley Fool, some of which
 was recently covered in this 
 `article by Wired <http://www.wired.com/wiredenterprise/2013/01/hack-the-government/>`_.
 
-Presented at `Memphis Python <http://mempy.org/>`_ on March 25, 2013.
+Presented at `Memphis Python <http://mempy.org/>`_ on March 25, 2013. 
+`Pictures <http://www.codingacrossamerica.com/memphis-mempy-talk.html>`_ 
+from the presentation.
+
 
 ----
 
