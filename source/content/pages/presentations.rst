@@ -6,6 +6,23 @@ Presentations
 2013 Talks
 ----------
 
+DevOps Deployments-as-a-Service
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+What are the best software-as-a-service platforms for building and deploying 
+your code? How can they help you quickly get a project off the ground and 
+sustain best practices as your codebase continues to scale? This talk 
+answers these questions and more by introducing you to services such as 
+Circle CI, Travis CI, factor.io, Code Climate, and many others, which take 
+the burden off setting up the infrastructure yourself. The talk will 
+balance out the discussion with the downsides to these platforms and 
+ways to avoid being locked in to declining providers.
+
+Upcoming presentation to 
+`DC Continuous Integration, Delivery, & Deployment <http://www.meetup.com/DC-continuous-integration/>`_ on September 25th.
+
+----
+
+
 `Staying Sane While Taking Over An Existing Django Codebase </presentations/django-boston-july-2013.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 How do you quickly get up to speed on an existing Django project codebase? 
@@ -15,8 +32,14 @@ or just working with code you wrote awhile back. This talk covers steps you
 absolutely must take to identify and triage existing issues, stablize the 
 codebase, and gently guide the project towards "this is amazing!" status.
 
-Upcoming presentation to 
-`Boston Django <http://www.meetup.com/djangoboston/events/100266532/>`_ on July 31st.
+Talk given at 
+`Boston Django <http://www.meetup.com/djangoboston/events/100266532/>`_ 
+on July 31st. There is a 
+`video <http://www.youtube.com/watch?v=psCVC9BdgsA>`_ 
+available for this talk, a 
+`summary with pictures <http://www.codingacrossamerica.com/django-boston-talk.html>`_ 
+on my Coding Across America website, and a 
+`detailed blog post on the topic <../django-project-checklist.html>`_.
 
 ----
 
@@ -104,7 +127,7 @@ deployment process from your local environment or through continuous
 delivery with Jenkins.
 
 Presented to `django-district <http://www.django-district.org/>`_ 
-on February 12, 2013. There's a 
+on February 12, 2013. There is a 
 `video available <http://www.youtube.com/watch?v=yQo44SYI8bw>`_ for this talk.
 
 ----
