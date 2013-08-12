@@ -23,7 +23,7 @@ There are several things off the top of my head that I finished in large
 part because of a sustained daily effort (other than the miles driven chart
 above):
 
-* My Virginia Tech Master's thesis
+* My Virginia Tech Computer Science Master's thesis
 
 * My six month `learning log <../pages/learning-log.html>`_
 
