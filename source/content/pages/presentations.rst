@@ -18,7 +18,22 @@ balance out the discussion with the downsides to these platforms and
 ways to avoid being locked in to declining providers.
 
 Upcoming presentation to 
-`DC Continuous Integration, Delivery, & Deployment <http://www.meetup.com/DC-continuous-integration/>`_ on September 25th.
+`DC Continuous Integration, Delivery, & Deployment <http://www.meetup.com/DC-continuous-integration/>`_ on September 25th in Arlington, VA.
+
+----
+
+
+Making Django Play Nice With Third Party Services
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Modern Django projects combine custom apps with third party services, 
+such as Twilio and Stripe, to create a complete product. Choosing the 
+right services for your application can make or break its usefulness to 
+users as well as your sanity during maintenance. This talk will show you 
+how to properly evaluate, integrate, and maximize what you get out of 
+SaaS products in your Django projects.
+
+Upcoming talk at `DjangoCon US <http://www.djangocon.us/schedule/>`_ on 
+September 5th in Chicago, IL.
 
 ----
 
