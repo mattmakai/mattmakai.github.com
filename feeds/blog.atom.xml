@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/blog.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2013-07-31T00:00:00-04:00</updated><entry><title>Checklist for Evaluating Existing Django Projects</title><link href="http://www.mattmakai.com/django-project-checklist.html" rel="alternate"></link><updated>2013-07-31T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-07-31:django-project-checklist.html</id><summary type="html">&lt;p&gt;Lately I've consulted for several clients where I was asked to drop into
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/blog.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2013-08-12T00:00:00-04:00</updated><entry><title>One Additon Per Day</title><link href="http://www.mattmakai.com/one-addition-per-day.html" rel="alternate"></link><updated>2013-08-12T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-08-12:one-addition-per-day.html</id><summary type="html">&lt;p&gt;I'm a huge believer in the power of results that accumulate by working on
+something every single day. This idea obviously isn't new.
+&lt;a class="reference external" href="http://nathanbarry.com/authority/"&gt;Nathan Barry's new book Authority&lt;/a&gt; is
+one of the most recent examples that explains the power of writing each day.&lt;/p&gt;
+&lt;p&gt;My favorite personal data visualization to show the power that results from
+accumulation every day is my
+&lt;a class="reference external" href="http://www.codingacrossamerica.com/#miles-driven-viz"&gt;miles driven per day&lt;/a&gt;
+graph from my Coding Across America project. At the very beginning of my trip
+a large drive could double my total mileage, for example going 720 miles
+from Charlotte, NC to New Orleans, LA. But a 700 mile drive from Colorado
+to Des Moines looks miniscule compared to the approximately 10,000 total
+miles 2/3 of the way through my trip.&lt;/p&gt;
+&lt;p&gt;There are several things off the top of my head that I finished in large
+part because of a sustained daily effort (other than the miles driven chart
+above):&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;My Virginia Tech Master's thesis&lt;/li&gt;
+&lt;li&gt;My six month &lt;a class="reference external" href="../pages/learning-log.html"&gt;learning log&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Working out and/or running - I almost never miss a day&lt;/li&gt;
+&lt;li&gt;Numerous &lt;a class="reference external" href="../pages/presentations.html"&gt;presentations&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Next up will be taking my very rough but well received (judging from the
+number of stars on Github so far)
+&lt;a class="reference external" href="http://www.fullstackpython.com/"&gt;Full Stack Python&lt;/a&gt; and fleshing out
+each section. Within the next week it won't be complete, but after a few
+weeks of sustained effort it will become a much more comprehensive resource.&lt;/p&gt;
+</summary></entry><entry><title>Checklist for Evaluating Existing Django Projects</title><link href="http://www.mattmakai.com/django-project-checklist.html" rel="alternate"></link><updated>2013-07-31T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-07-31:django-project-checklist.html</id><summary type="html">&lt;p&gt;Lately I've consulted for several clients where I was asked to drop into
 an existing large Django project code base to triage issues and build
 enhancements. Working on an established code base is common whether you're
 a new developer on a team or like me working on consulting projects.&lt;/p&gt;
