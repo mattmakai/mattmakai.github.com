@@ -73,12 +73,18 @@ a service I have not used in awhile:
 * `Ducksboard Services Integration <https://ducksboard.com/services-integrations/>`_
 * `New Relic Platform Partners <http://newrelic.com/platform>`_
 
+The great part about identifying these services is that the knowledge 
+translates to other frameworks, such as Flask or Pyramid, and other languages
+such as Ruby and Clojure. Although in my next blog post I'll describe why 
+you should be evaluating these services from a language and framework
+perspective before committing to them.
 
 If you're going to DjangoCon this year, come see my talk on 
 `Making Django Play Nice With Third Party Services <http://www.djangocon.us/schedule/presentation/47/>`_ 
 on September 5 at 10am.
 
 If you enjoyed this post you should read 
-`my checklist for evaluating existing Django codebases </django-project-checklist.html>`_
+`my checklist for evaluating existing Django projects <../django-project-checklist.html>`_
 and check out my `Coding Across America <http://www.codingacrossamerica.com/>`_
 project.
+

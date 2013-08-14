@@ -60,12 +60,16 @@ a service I have not used in awhile:&lt;/p&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://ducksboard.com/services-integrations/"&gt;Ducksboard Services Integration&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://newrelic.com/platform"&gt;New Relic Platform Partners&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr class="docutils" /&gt;
+&lt;p&gt;The great part about identifying these services is that the knowledge
+translates to other frameworks, such as Flask or Pyramid, and other languages
+such as Ruby and Clojure. Although in my next blog post I'll describe why
+you should be evaluating these services from a language and framework
+perspective before committing to them.&lt;/p&gt;
 &lt;p&gt;If you're going to DjangoCon this year, come see my talk on
 &lt;a class="reference external" href="http://www.djangocon.us/schedule/presentation/47/"&gt;Making Django Play Nice With Third Party Services&lt;/a&gt;
 on September 5 at 10am.&lt;/p&gt;
 &lt;p&gt;If you enjoyed this post you should read
-&lt;a class="reference external" href="/django-project-checklist.html"&gt;my checklist for evaluating existing Django codebases&lt;/a&gt;
+&lt;a class="reference external" href="../django-project-checklist.html"&gt;my checklist for evaluating existing Django projects&lt;/a&gt;
 and check out my &lt;a class="reference external" href="http://www.codingacrossamerica.com/"&gt;Coding Across America&lt;/a&gt;
 project.&lt;/p&gt;
 &lt;/div&gt;
