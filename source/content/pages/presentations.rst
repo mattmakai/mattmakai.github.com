@@ -37,6 +37,21 @@ September 5th in Chicago, IL.
 
 ----
 
+`Making Django Play Nice With Third Party Services </presentations/django-district-august-27-2013.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Modern Django projects combine custom apps with third party services, 
+such as Twilio and Stripe, to create a complete product. Choosing the 
+right services for your application can make or break its usefulness to 
+users as well as your sanity during maintenance. This talk will show you 
+how to properly evaluate, integrate, and maximize what you get out of 
+SaaS products in your Django projects.
+
+Upcoming trial run of my DjangoCon talk at 
+`Django District <http://www.meetup.com/django-district/events/131235942/>`_
+on August 27th in Washington, D.C.
+
+----
+
 
 `Staying Sane While Taking Over An Existing Django Codebase </presentations/django-boston-july-2013.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
