@@ -84,7 +84,8 @@ city size that matters), what mistakes they need to correct, and how Omaha
 can continue building momentum for its developer community.
 
 Talk given at  
-`Omaha Python <http://www.omahapython.org/blog/>`_ on July 1st.
+`Omaha Python <http://www.omahapython.org/blog/>`_ on July 1st. Unfortunately,
+the audio did not come out well so the video was not published.
 
 ----
 

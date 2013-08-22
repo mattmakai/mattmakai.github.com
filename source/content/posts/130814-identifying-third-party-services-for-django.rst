@@ -1,4 +1,4 @@
-Identifying Third Party Services for Django Projects
+Discovering Third Party Services for Django Projects
 ====================================================
 
 :category: blog
@@ -18,7 +18,7 @@ For example:
 * Intercom.io for user engagement
 
 A major part of being a knowledgeable developer in 2013 is knowing what
-services are out there. This post provides resources for identifying third
+services are out there. This post provides resources for discovering third
 party services you can use in your Django web application. How to evaluate 
 known services is a separate topic that will come in a later post.
 

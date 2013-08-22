@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/blog.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2013-08-14T00:00:00-04:00</updated><entry><title>Identifying Third Party Services for Django Projects</title><link href="http://www.mattmakai.com/identifying-third-party-services-for-django.html" rel="alternate"></link><updated>2013-08-14T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-08-14:identifying-third-party-services-for-django.html</id><summary type="html">&lt;p&gt;Every non-trivial modern Django project combines externally hosted third
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/blog.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2013-08-14T00:00:00-04:00</updated><entry><title>Discovering Third Party Services for Django Projects</title><link href="http://www.mattmakai.com/identifying-third-party-services-for-django.html" rel="alternate"></link><updated>2013-08-14T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-08-14:identifying-third-party-services-for-django.html</id><summary type="html">&lt;p&gt;Every non-trivial modern Django project combines externally hosted third
 party services with custom code to create a complete web application.&lt;/p&gt;
 &lt;p&gt;For example:&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -11,7 +11,7 @@ party services with custom code to create a complete web application.&lt;/p&gt;
 &lt;li&gt;Intercom.io for user engagement&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;A major part of being a knowledgeable developer in 2013 is knowing what
-services are out there. This post provides resources for identifying third
+services are out there. This post provides resources for discovering third
 party services you can use in your Django web application. How to evaluate
 known services is a separate topic that will come in a later post.&lt;/p&gt;
 &lt;p&gt;Some of these services, such as Google Analytics, are easy to drop into
