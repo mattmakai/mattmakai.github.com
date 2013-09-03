@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/blog.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2013-08-14T00:00:00-04:00</updated><entry><title>Discovering Third Party Services for Django Projects</title><link href="http://www.mattmakai.com/identifying-third-party-services-for-django.html" rel="alternate"></link><updated>2013-08-14T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-08-14:identifying-third-party-services-for-django.html</id><summary type="html">&lt;p&gt;Every non-trivial modern Django project combines externally hosted third
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/blog.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2013-08-14T00:00:00-04:00</updated><entry><title>Evaluating Third Party Services for Django Projects</title><link href="http://www.mattmakai.com/evaluating-third-party-services-for-django.html" rel="alternate"></link><updated>2013-08-14T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-08-14:evaluating-third-party-services-for-django.html</id><summary type="html">&lt;p&gt;Every non-trivial modern Django project combines externally hosted third
+party services with custom code to create a complete web application. The
+art of discovering, evaluating, integrating, and maintaining these third
+party services is an important capability for any Django developer. This
+is the second of four blog posts, following my
+&lt;a class="reference external" href="/identifying-third-party-services-for-django.html"&gt;discovering third party services post&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you're going to DjangoCon this year, come see my talk on
+&lt;a class="reference external" href="http://www.djangocon.us/schedule/presentation/47/"&gt;Making Django Play Nice With Third Party Services&lt;/a&gt;
+on September 5 at 10am.&lt;/p&gt;
+&lt;p&gt;If you enjoyed this post you should read
+&lt;a class="reference external" href="../django-project-checklist.html"&gt;my checklist for evaluating existing Django projects&lt;/a&gt;
+and check out my &lt;a class="reference external" href="http://www.codingacrossamerica.com/"&gt;Coding Across America&lt;/a&gt;
+project.&lt;/p&gt;
+</summary></entry><entry><title>Discovering Third Party Services for Django Projects</title><link href="http://www.mattmakai.com/identifying-third-party-services-for-django.html" rel="alternate"></link><updated>2013-08-14T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-08-14:identifying-third-party-services-for-django.html</id><summary type="html">&lt;p&gt;Every non-trivial modern Django project combines externally hosted third
 party services with custom code to create a complete web application.&lt;/p&gt;
 &lt;p&gt;For example:&lt;/p&gt;
 &lt;ul class="simple"&gt;
