@@ -2,9 +2,82 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2013-08-14T00:00:00-04:00</updated><entry><title>Evaluating Third Party Services for Django Projects</title><link href="http://www.mattmakai.com/evaluating-third-party-services-for-django.html" rel="alternate"></link><updated>2013-08-14T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-08-14:evaluating-third-party-services-for-django.html</id><summary type="html">&lt;p&gt;Every non-trivial modern Django project combines externally hosted third
 party services with custom code to create a complete web application. The
 art of discovering, evaluating, integrating, and maintaining these third
-party services is an important capability for any Django developer. This
-is the second of four blog posts, following my
+party services is an important capability for any post-entry-level Django
+developer. I'm writing these posts as a framework for how to broadly think
+about working with third party services.&lt;/p&gt;
+&lt;p&gt;This is the second of four blog posts, following my
 &lt;a class="reference external" href="/identifying-third-party-services-for-django.html"&gt;discovering third party services post&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="section" id="company-evaluation-criteria"&gt;
+&lt;h2&gt;Company Evaluation Criteria&lt;/h2&gt;
+&lt;p&gt;I start by evaluating the third party service company itself. Several
+questions immediately come to mind when looking at a newly discovered
+service:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Which languages and frameworks are shown in their tutorials?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I ask this question because it's common for newer services built on Rails to
+only show Rails tutorials. In that case I know I may potentially spend a
+significant amount of time figuring out how to connect to their service. I
+may also have to build a third party Python binding or fork an existing but
+not well-maintained binding.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol class="arabic simple" start="2"&gt;
+&lt;li&gt;What ecosystem is their platform built on?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What happens if you end up reliant upon the third party service and begin
+to encounter edge cases? If they only have Ruby or PHP developers in their
+company, you're going to have to figure it out on your own. On the other hand
+if their platform is built on the Python ecosystem, they'll likely have
+developers passionate and interested in helping you solve the problems you
+encounter while building and maintaining your Django app.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol class="arabic simple" start="3"&gt;
+&lt;li&gt;Does the company have one or more developer evangelists?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This question has two parts. First, developer evangelists are great for
+answering technical questions that come up while you're trying out a service.
+Second, I'm wondering &amp;quot;does this company care about developers or are they
+a sales outfit&amp;quot;? Some services launch to great fanfare but flame out quickly.
+For example, look at
+&lt;a class="reference external" href="http://www.crunchbase.com/company/simplegeo"&gt;SimpleGeo&lt;/a&gt;. If your Django
+project is built on a service that's about to shut down that will shift your
+focus from new development to ripping out an existing part of your project
+and replacing it with a home-grown solution or another third party service.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol class="arabic simple" start="4"&gt;
+&lt;li&gt;What's the service's &amp;quot;data gravity&amp;quot;?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://twitter.com/acdha"&gt;Chris Adams&lt;/a&gt; gave me the &amp;quot;data gravity&amp;quot; term
+while I was presenting the initial rough cut of my
+&lt;a class="reference external" href="http://www.mattmakai.com/static/presentations/djangocon-2013.html"&gt;DjangoCon talk&lt;/a&gt;
+at
+&lt;a class="reference external" href="http://www.meetup.com/django-district/events/131235942/"&gt;Django District&lt;/a&gt;.
+&amp;quot;Data gravity&amp;quot; struck me as an awesome concept for thinking about an
+increasingly valuable asset to any business: its data. The more data gravity
+a service potentially holds over my Django project, the more careful
+consideration that needs to happen about testing, abstracting, and backing
+up our project's data that could be compromised or lost on that service.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol class="arabic simple" start="5"&gt;
+&lt;li&gt;StackExchange or forum discussions&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Are people asking questions about a third party service? If so, that's a good
+sign you're not alone in uncharted territory. StackExchange is the defacto
+community for asking technical questions nowadays. Don't neglect blog posts
+and other forums though. Sometimes companies have official forums for their
+services. They are a great way to find out there's either an active, engaged
+group of developers on the service's side ready to help you out. Or a broken
+cesspool of empty promises and unanswered questions (for an example, see
+&lt;a class="reference external" href="http://developer.linkedin.com/forum"&gt;LinkedIn's atrocious developer forums&lt;/a&gt;).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="an-example"&gt;
+&lt;h2&gt;An Example&lt;/h2&gt;
 &lt;p&gt;If you're going to DjangoCon this year, come see my talk on
 &lt;a class="reference external" href="http://www.djangocon.us/schedule/presentation/47/"&gt;Making Django Play Nice With Third Party Services&lt;/a&gt;
 on September 5 at 10am.&lt;/p&gt;
@@ -12,6 +85,7 @@ on September 5 at 10am.&lt;/p&gt;
 &lt;a class="reference external" href="../django-project-checklist.html"&gt;my checklist for evaluating existing Django projects&lt;/a&gt;
 and check out my &lt;a class="reference external" href="http://www.codingacrossamerica.com/"&gt;Coding Across America&lt;/a&gt;
 project.&lt;/p&gt;
+&lt;/div&gt;
 </summary></entry><entry><title>Discovering Third Party Services for Django Projects</title><link href="http://www.mattmakai.com/identifying-third-party-services-for-django.html" rel="alternate"></link><updated>2013-08-14T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-08-14:identifying-third-party-services-for-django.html</id><summary type="html">&lt;p&gt;Every non-trivial modern Django project combines externally hosted third
 party services with custom code to create a complete web application.&lt;/p&gt;
 &lt;p&gt;For example:&lt;/p&gt;
