@@ -74,6 +74,7 @@ group of developers on the service's side ready to help you out. Or a broken
 cesspool of empty promises and unanswered questions (for an example, see 
 `LinkedIn's atrocious developer forums <http://developer.linkedin.com/forum>`_).
 
+----
 
 If you're going to DjangoCon this year, come see my talk on 
 `Making Django Play Nice With Third Party Services <http://www.djangocon.us/schedule/presentation/47/>`_ 
