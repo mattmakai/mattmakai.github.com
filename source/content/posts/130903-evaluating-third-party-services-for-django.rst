@@ -13,7 +13,7 @@ developer. I'm writing these posts as a framework for how to broadly think
 about working with third party services.
 
 This is the second of four blog posts, following my
-`discovering third party services post </identifying-third-party-services-for-django.html>`_.
+`discovering third party services post <../identifying-third-party-services-for-django.html>`_.
 
 Company Evaluation Criteria
 ---------------------------

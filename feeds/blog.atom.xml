@@ -6,7 +6,7 @@ party services is an important capability for any post-entry-level Django
 developer. I'm writing these posts as a framework for how to broadly think
 about working with third party services.&lt;/p&gt;
 &lt;p&gt;This is the second of four blog posts, following my
-&lt;a class="reference external" href="/identifying-third-party-services-for-django.html"&gt;discovering third party services post&lt;/a&gt;.&lt;/p&gt;
+&lt;a class="reference external" href="../identifying-third-party-services-for-django.html"&gt;discovering third party services post&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="section" id="company-evaluation-criteria"&gt;
 &lt;h2&gt;Company Evaluation Criteria&lt;/h2&gt;
 &lt;p&gt;I start by evaluating the third party service company itself. Several
@@ -75,9 +75,6 @@ services. They are a great way to find out there's either an active, engaged
 group of developers on the service's side ready to help you out. Or a broken
 cesspool of empty promises and unanswered questions (for an example, see
 &lt;a class="reference external" href="http://developer.linkedin.com/forum"&gt;LinkedIn's atrocious developer forums&lt;/a&gt;).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="an-example"&gt;
-&lt;h2&gt;An Example&lt;/h2&gt;
 &lt;p&gt;If you're going to DjangoCon this year, come see my talk on
 &lt;a class="reference external" href="http://www.djangocon.us/schedule/presentation/47/"&gt;Making Django Play Nice With Third Party Services&lt;/a&gt;
 on September 5 at 10am.&lt;/p&gt;
