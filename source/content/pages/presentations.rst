@@ -33,9 +33,21 @@ how to properly evaluate, integrate, and maximize what you get out of
 SaaS products in your Django projects.
 
 Upcoming talk at `DjangoCon US <http://www.djangocon.us/schedule/>`_ on 
-September 5th in Chicago, IL.
+September 5th at 10am in Chicago, IL.
 
 ----
+
+
+`DjangoCon 2013: Python Lessons Learned From Roadtripping the US </presentations/djangocon-2013-lightning-talk.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lightning talk at DjangoCon with lessons learned for the Python community 
+from my adventures roadtripping the US for 5 months to 30 cities. 
+
+Upcoming lightning talk at `DjangoCon <http://www.djangocon.us/schedule/>`_ 
+in the morning session on September 5th in Chicago, IL.
+
+----
+
 
 `Making Django Play Nice With Third Party Services </presentations/django-district-august-27-2013.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
