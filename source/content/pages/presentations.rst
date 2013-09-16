@@ -6,8 +6,8 @@ Presentations
 2013 Talks
 ----------
 
-DevOps Deployments-as-a-Service
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`DevOps Deployments-as-a-Service </presentations/dc-cont-intg-delivery-devops-service.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 What are the best software-as-a-service platforms for building and deploying 
 your code? How can they help you quickly get a project off the ground and 
 sustain best practices as your codebase continues to scale? This talk 
@@ -32,7 +32,7 @@ users as well as your sanity during maintenance. This talk will show you
 how to properly evaluate, integrate, and maximize what you get out of 
 SaaS products in your Django projects.
 
-Upcoming talk at `DjangoCon US <http://www.djangocon.us/schedule/>`_ on 
+Talk given at `DjangoCon US <http://www.djangocon.us/schedule/>`_ on 
 September 5th at 10am in Chicago, IL.
 
 ----
@@ -40,10 +40,10 @@ September 5th at 10am in Chicago, IL.
 
 `DjangoCon 2013: Python Lessons Learned From Roadtripping the US </presentations/djangocon-2013-lightning-talk.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lightning talk at DjangoCon with lessons learned for the Python community 
-from my adventures roadtripping the US for 5 months to 30 cities. 
+DjangoCon 2013 lightning talk with lessons learned for the Python community 
+from my adventures road tripping the US for 5 months to 30 cities. 
 
-Upcoming lightning talk at `DjangoCon <http://www.djangocon.us/schedule/>`_ 
+Lightning talk given at `DjangoCon <http://www.djangocon.us/schedule/>`_ 
 in the morning session on September 5th in Chicago, IL.
 
 ----
