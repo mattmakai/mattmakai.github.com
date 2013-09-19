@@ -59,12 +59,13 @@ body {
   transition: color .15s ease; }
 
 .reveal a:not(.image):hover {
-  color: #0000f1;
+  color: #FFFF70;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
+  text-decoration: underline;
   background: #00003f; }
 
 /*********************************************
