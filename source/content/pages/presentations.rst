@@ -18,7 +18,7 @@ balance out the discussion with the downsides to these platforms and
 ways to avoid being locked in to declining providers.
 
 Upcoming presentation to 
-`DC Continuous Integration, Delivery, & Deployment <http://www.meetup.com/DC-continuous-integration/>`_ on September 25th in Arlington, VA.
+`DC Continuous Integration, Delivery, & Deployment <http://www.meetup.com/DC-continuous-integration/events/127362992/>`_ on September 25th in Arlington, VA.
 
 ----
 
@@ -33,7 +33,9 @@ how to properly evaluate, integrate, and maximize what you get out of
 SaaS products in your Django projects.
 
 Talk given at `DjangoCon US <http://www.djangocon.us/schedule/>`_ on 
-September 5th at 10am in Chicago, IL.
+September 5th at 10am in Chicago, IL. There are 
+`pictures of several DjangoCon speakers <http://www.codingacrossamerica.com/djangocon-2013-pictures.html>`_ 
+including myself in this blog post.
 
 ----
 
