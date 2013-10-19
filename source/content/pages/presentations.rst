@@ -6,6 +6,22 @@ Presentations
 2013 Talks
 ----------
 
+`An Introduction to Sending SMS Texts with Twilio </presentations/dc-python-intro-send-text-msgs-twilio.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Text messages are one of the best communication methods for sending time
+sensitive information and alerting users to take immediate action. Twilio 
+makes sending Short Message Service (SMS) messages easy with a few lines of 
+code. This talk walks through the Twilio service, sign up process, API,
+Python library, and how to easily integrate sending text messages into a new
+or existing Python application.
+
+Upcoming 45 minute talk to 
+`DC Python on October 22 <http://www.meetup.com/dcpython/events/140875652/>`_ 
+at `Canvas.co <http://canvas.co/work>`_ in Washington, D.C.
+
+----
+
+
 `DevOps Deployments-as-a-Service </presentations/dc-cont-intg-delivery-devops-service.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 What are the best software-as-a-service platforms for building and deploying 
@@ -17,8 +33,8 @@ the burden off setting up the infrastructure yourself. The talk will
 balance out the discussion with the downsides to these platforms and 
 ways to avoid being locked in to declining providers.
 
-Upcoming presentation to 
-`DC Continuous Integration, Delivery, & Deployment <http://www.meetup.com/DC-continuous-integration/events/127362992/>`_ on September 25th in Arlington, VA.
+Presented to 
+`DC Continuous Delivery <http://www.meetup.com/DC-continuous-integration/events/127362992/>`_ on September 25th in Arlington, VA.
 
 ----
 
