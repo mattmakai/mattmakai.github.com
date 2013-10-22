@@ -63,7 +63,7 @@
                     <ul class="bigger">
                         <li>Quick overview of SMS and Twilio</li>
                         <li>Tutorial</li>
-                        <li>Use cases</li>
+                        <li>Example Apps</li>
                         <li>Resources</li>
                     </ul>
                 </section>
@@ -206,24 +206,61 @@
                     <img src="/img/presentations/dc-python-twilio-sms-intro/twilio-helper-library.jpg" />
                 </section>
 
-
                 <section>
                     <h2>Let's send an SMS message</h2>
                     <img src="/img/presentations/dc-python-twilio-sms-intro/twilio-send-text.jpg" />
-                    
                 </section>
 
                 <section>
-                    <h2>Integration routes</h2>
+                    <h2>Environment variables</h2>
+                    <ul class="bigger">
+                        <li>TwilioRestClient looks for TWILIO_ACCOUNT_SID and
+                            TWILIO_AUTH_TOKEN</li>
+                        <li>Otherwise pass them into TwilioRestClient 
+                            at construction</li>
+                        <li>But don't do that. Use environment variables.</li>
+                    </ul>
+                </section>
 
+                <section>
+                    <h2>Integration Paths</h2>
+                    <ul class="bigger">
+                        <li>First- or third-party binding</li>
+                        <li>Libsaas</li>
+                        <li>Requests</li>
+                    </ul>
                 </section>
                 
+                <section>
+                    <h2>Libsaas</h2>
+                    <img src="/img/presentations/django-district-aug-27-2013/libsaas.jpg"/>
+                </section>
+
+                <section>
+                    <h2>More code</h2>
+                    <ul class="bigger">
+                        <li>twilio-python Messages code</li>
+                        <li>Picture messages (with URL)</li>
+                        <li>Retrieving list of sent messages</li>
+                        <li>Filtering sent messages list</li>
+                    </ul>
+                </section>
                 
+                <section>
+                    <h2>Message class</h2>
+                    <img src="/img/presentations/dc-python-twilio-sms-intro/twilio-messages-code.jpg"/>
+                </section>
+
                 <!-- potential use cases -->
                 <section style="text-align: center;">
-					<h1 style="margin-top: 1.6em;">Use Cases</h1>
+					<h1 style="margin-top: 1.6em;">Example Apps</h1>
 				</section>
                 
+                <section>
+                    <h2>Txt 2 React</h2>
+                    <img src="/img/presentations/dc-python-twilio-sms-intro/txt2react.jpg"/>
+                </section>
+
                 <!-- wrap up -->
                 <section style="text-align: center;">
                     <h1 style="margin-top: 1.6em;">Resources</h1>
@@ -234,6 +271,7 @@
                     <ul>
                         <li><a href="https://www.twilio.com/sms">Twilio SMS API overview documentation</a></li>
                         <li><a href="https://twilio-python.readthedocs.org/en/latest/">twilio-python library documentation</a></li>
+                        <li><a href="http://docs.libsaas.net/en/latest/generated/twilio/">Libsass Twilio integration docs</a></li>
                     </ul>
                 </section>
 
