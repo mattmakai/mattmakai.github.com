@@ -6,6 +6,10 @@ Presentations
 2013 Talks
 ----------
 
+.. this is an empty comment
+
+
+
 `An Introduction to Sending SMS Texts with Twilio </presentations/dc-python-intro-send-text-msgs-twilio.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Text messages are one of the best communication methods for sending time
@@ -15,7 +19,7 @@ code. This talk walks through the Twilio service, sign up process, API,
 Python library, and how to easily integrate sending text messages into a new
 or existing Python application.
 
-Upcoming 45 minute talk to 
+45 minute talk presented to 
 `DC Python on October 22 <http://www.meetup.com/dcpython/events/140875652/>`_ 
 at `Canvas.co <http://canvas.co/work>`_ in Washington, D.C.
 
