@@ -1,7 +1,7 @@
 Getting Started With Pelican and GitHub Pages
 =============================================
 
-:category: future-blog
+:category: blog
 :date: 2013-11-06
 :slug: introduction-to-pelican
 

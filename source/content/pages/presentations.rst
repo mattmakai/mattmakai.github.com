@@ -6,17 +6,19 @@ Presentations
 2013 Talks
 ----------
 
-.. `Static Sites With Pelican </presentations/pelican-static-sites.html>`_
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Pelican is a Python-powered static website generator that combines
-    a markup language such a ReStructuredText or Markdown with Jinja2 
-    templates to output HTML pages. Those pages combined with CSS, images, 
-    JavaScript, and third party services can be hosted for free or low cost
-    on services such as GitHub Pages or Amazon S3 with CloudFront. This talk
-    goes over what Pelican does and how it can help you instantly scale
-    a static website to virtually unlimited traffic for free.
-    15 minute tech talk presented at Twilio on November 8 in San Francisco, CA.
-    ----
+`Static Sites With Pelican </presentations/pelican-static-sites.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pelican is a Python-powered static website generator that combines
+a markup language such a ReStructuredText or Markdown with Jinja2 
+templates to output HTML pages. Those pages combined with CSS, images, 
+JavaScript, and third party services can be hosted for free or low cost
+on services such as GitHub Pages or Amazon S3 with CloudFront. This talk
+goes over what Pelican does and how it can help you instantly scale
+a static website to virtually unlimited traffic for free.
+
+15 minute tech talk presented at Twilio on November 8 in San Francisco, CA.
+
+----
 
 
 `An Introduction to Sending SMS Texts with Twilio </presentations/dc-python-intro-send-text-msgs-twilio.html>`_
