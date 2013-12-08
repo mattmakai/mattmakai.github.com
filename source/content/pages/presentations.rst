@@ -3,6 +3,37 @@ Presentations
 
 :category: presentations
 
+2014 Talks
+----------
+
+Txt2React: Immediate Presentation Feedback From Audience Text Messages
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`Txt2React <https://github.com/makaimc/txt2react>`_ is an open source web 
+application I built to facilitate immediate feedback from an audience 
+during a presentation. The app is written in Django and easily deployable to
+virtual private servers by using Ansible. Txt2React uses the Twilio platform 
+to provision phone numbers for feedback collection through the audience's
+text messages.
+
+Upcoming talk and demo on January 15 at Twilio headquarters in San Francisco.
+
+----
+
+Fully Automated Django Deployments with Ansible
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This talk will show how to fully automated Linux, Nginx, 
+Gunicorn, and Python/Django stack deployments with Ansible (and a little 
+bit of Fabric for ad hoc tasks). This talk will dive into an open source 
+Django project and show how to use Ansible Playbooks with tasks, 
+handlers, and templates to go from a bare Linux installation to a 
+running Django web application.
+
+Upcoming tech talk for San Francisco Django on Tuesday, January 14 hosted 
+at Yelp headquarters.
+
+----
+
+
 2013 Talks
 ----------
 
@@ -16,7 +47,8 @@ on services such as GitHub Pages or Amazon S3 with CloudFront. This talk
 goes over what Pelican does and how it can help you instantly scale
 a static website to virtually unlimited traffic for free.
 
-15 minute tech talk presented at Twilio on November 8 in San Francisco, CA.
+15 minute tech talk presented at `Twilio <https://www.twilio.com/>`_ on 
+November 8 in San Francisco, CA.
 
 ----
 
