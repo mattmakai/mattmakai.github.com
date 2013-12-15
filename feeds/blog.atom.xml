@@ -1,5 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/blog.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2013-11-06T00:00:00-05:00</updated><entry><title>Getting Started With Pelican and GitHub Pages</title><link href="http://www.mattmakai.com/introduction-to-pelican.html" rel="alternate"></link><updated>2013-11-06T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-11-06:introduction-to-pelican.html</id><summary type="html">&lt;p&gt;Pelican is an open source static website generator. While Pelican is written
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/blog.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2013-12-12T00:00:00-05:00</updated><entry><title>My 2013 Software Development Year in Review</title><link href="http://www.mattmakai.com/2013-development-year-in-review.html" rel="alternate"></link><updated>2013-12-12T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-12-12:2013-development-year-in-review.html</id><summary type="html">&lt;p&gt;2013 was an incredible and fortunate year for me. The quick highlights:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;traveled the US for 5 months talking to tech startups and software
+developers&lt;/li&gt;
+&lt;li&gt;developed numerous client and open source software projects while traveling&lt;/li&gt;
+&lt;li&gt;wrote dozens of blog posts on Coding Across America and this blog&lt;/li&gt;
+&lt;li&gt;gave technical talks in D.C., Memphis, San Diego, San Francisco, Omaha,
+Chicago, and Boston&lt;/li&gt;
+&lt;li&gt;built out Full Stack Python which I originally started in December 2012&lt;/li&gt;
+&lt;li&gt;accepted an offer to join Twilio as their D.C.-based Developer Evangelist&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="section" id="coding-across-america"&gt;
+&lt;h2&gt;Coding Across America&lt;/h2&gt;
+&lt;p&gt;As I anticipated in my
+&lt;a class="reference external" href="../coding-across-america.html"&gt;Coding Across America blog post&lt;/a&gt;, much of
+2013 was dominated by my road trip. I'm now a firm believer in the power of
+self-defined projects that motivate yourself to learn and grow. I am happy
+with how my &lt;a class="reference external" href="http://www.codingacrossamerica.com/"&gt;Coding Across America&lt;/a&gt;
+website is coming along and I look forward to adding even more great content
+in 2014.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="languages"&gt;
+&lt;h2&gt;Languages&lt;/h2&gt;
+&lt;p&gt;Here's what I wrote last year about which languages I worked with:&lt;/p&gt;
+&lt;blockquote&gt;
+I spent most of the year programming in Python and JavaScript, with a
+touch of Objective-C, Java, and Clojure. An approximate breakdown
+would be something like 90% Python &amp;amp; JavaScript (hard to separate them
+since I work with both on the same projects), 5% Objective-C, 5% Java
+&amp;amp; Clojure. If anything, my time with Python and JavaScript might be
+higher.&lt;/blockquote&gt;
+&lt;p&gt;Ditto for this year, minus the Objective-C and Java. My focus was on Python
+with emphasis on learning Ansible, (railsless) Capistrano, and d3.js. I also
+handled a lot of server and application operations. New Relic along with
+decent Django application logging was a lifesaver on several production
+projects I worked on.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="technical-talks"&gt;
+&lt;h2&gt;Technical Talks&lt;/h2&gt;
+&lt;p&gt;I wouldn't have believed someone if they told me at the end of 2012 that in
+2013 I'd have the opportunity to give technical talks all over the US.
+Fortunately all that came to fruition. My first talk outside of Washington,
+D.C. was at MemPy in March.&lt;/p&gt;
+&lt;p&gt;My favorite talks this year were
+&lt;a class="reference external" href="http://www.youtube.com/watch?v=iGP8DQIqxXs"&gt;Making Django Play Nice with Third Party Services&lt;/a&gt;
+at &lt;a class="reference external" href="http://www.djangocon.us/schedule/presentation/47/"&gt;DjangoCon 2013&lt;/a&gt;
+in Chicago,
+&lt;a class="reference external" href="http://www.youtube.com/watch?v=psCVC9BdgsA"&gt;Staying Sane While Taking Over An Existing Django Codebase&lt;/a&gt;
+at &lt;a class="reference external" href="http://www.meetup.com/djangoboston/events/100266532/"&gt;Django Boston&lt;/a&gt;,
+and &lt;a class="reference external" href="http://www.mattmakai.com/static/presentations/jmu-everything-i-wish-i-knew.html"&gt;Everything I Wish I Knew as JMU Computer Science Undergrad&lt;/a&gt;
+to
+&lt;a class="reference external" href="http://acm.cs.jmu.edu/"&gt;JMU's Association for Computing Machinery (ACM) group&lt;/a&gt; (where I studied computer science for undergrad). I really enjoyed
+giving all my talks, those were just the ones that stick out in my mind the
+most.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="open-source"&gt;
+&lt;h2&gt;Open Source&lt;/h2&gt;
+&lt;p&gt;Most of my open source contributions were just additions to this blog,
+Coding Across America, and Full Stack Python (all of which are open
+repositories on GitHub). Each site is powered by Pelican, a Python-based
+static website generator. I wrote a
+&lt;a class="reference external" href="../introduction-to-pelican.html"&gt;Pelican quickstart post&lt;/a&gt; in November due
+to the number of questions I received this year about how to get started
+with Pelican.&lt;/p&gt;
+&lt;img alt="My 2013 GitHub contributions through Dec 13, 2013" src="../img/github-contributions-2013.jpg" style="width: 100%;" /&gt;
+&lt;p&gt;My GitHub contributions through December 13 of 2013.&lt;/p&gt;
+&lt;p&gt;I'm working on open sourcing my Ansible scripts for deploying Django websites.
+The repository is called
+&lt;a class="reference external" href="https://github.com/makaimc/deploy-django-with-ansible"&gt;deploy-django-with-ansible&lt;/a&gt;
+and it will use the MIT open source license.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="twilio"&gt;
+&lt;h2&gt;Twilio&lt;/h2&gt;
+&lt;p&gt;I am starting a new gig on Jan 6 as Twilio's new Developer Evangelist. I'll
+be based in D.C. and will travel quite a bit to tech events around the US.
+It's an exciting opportunity and I'm sure I'll have more to say once I get
+started in a few weeks.&lt;/p&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>Getting Started With Pelican and GitHub Pages</title><link href="http://www.mattmakai.com/introduction-to-pelican.html" rel="alternate"></link><updated>2013-11-06T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-11-06:introduction-to-pelican.html</id><summary type="html">&lt;p&gt;Pelican is an open source static website generator. While Pelican is written
 in Python, you don't have to know much about that programming language to get
 started. In this post, I'll walk through the steps to getting your first
 Pelican website up and running, including a deployment to GitHub Pages for
