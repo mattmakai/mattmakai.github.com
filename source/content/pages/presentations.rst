@@ -28,8 +28,10 @@ Django project and show how to use Ansible Playbooks with tasks,
 handlers, and templates to go from a bare Linux installation to a 
 running Django web application.
 
-Upcoming tech talk for San Francisco Django on Tuesday, January 14 hosted 
-at Yelp headquarters.
+Upcoming tech talk for 
+`San Francisco Django <http://www.meetup.com/The-San-Francisco-Django-Meetup-Group/events/151920512/>`_ 
+on Tuesday, January 14 hosted at `Yelp <http://www.yelp.com/about>`_ 
+headquarters.
 
 ----
 
