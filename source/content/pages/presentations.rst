@@ -19,8 +19,8 @@ Upcoming talk and demo on January 15 at Twilio headquarters in San Francisco.
 
 ----
 
-Fully Automated Django Deployments with Ansible
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`Fully Automated Django Deployments with Ansible </presentations/2014-san-fran-django-ansible.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This talk will show how to fully automated Linux, Nginx, 
 Gunicorn, and Python/Django stack deployments with Ansible (and a little 
 bit of Fabric for ad hoc tasks). This talk will dive into an open source 
