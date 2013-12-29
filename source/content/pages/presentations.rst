@@ -6,6 +6,16 @@ Presentations
 2014 Talks
 ----------
 
+Making DevOps Work in the Federal Government
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Upcoming talk on January 22 to the 
+`Financial Industry Regulatory Authority <http://www.finra.org/>`_
+(FINRA) on January 22.
+
+----
+
+
 Txt2React: Immediate Presentation Feedback From Audience Text Messages
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 `Txt2React <https://github.com/makaimc/txt2react>`_ is an open source web 
@@ -15,9 +25,11 @@ virtual private servers by using Ansible. Txt2React uses the Twilio platform
 to provision phone numbers for feedback collection through the audience's
 text messages.
 
-Upcoming talk and demo on January 15 at Twilio headquarters in San Francisco.
+Upcoming talk and demo on January 15 at `Twilio <https://www.twilio.com/>`_ 
+headquarters in San Francisco.
 
 ----
+
 
 `Fully Automated Django Deployments with Ansible </presentations/2014-san-fran-django-ansible.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
