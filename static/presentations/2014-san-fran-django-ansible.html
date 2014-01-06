@@ -54,10 +54,16 @@
 					<p><small>
                         <a href="http://www.mattmakai.com">Matt Makai</a> | 
                         <a href="http://twitter.com/mattmakai">@mattmakai</a> |
+                        <a href="https://github.com/makaimc">makaimc</a> 
+                        on GitHub |
                         <a href="https://www.twilio.com">Twilio</a> 
                         Developer Evangelist
                     </small></p>
 				</section>
+                
+                <section style="text-align: center;">
+                    <h1 style="margin-top: 1.6em;">Feedback number</h1>
+                </section>
                 
                 <section style="text-align: center;">
                     <h1 style="margin-top: 1.6em;">#!/bin/bash</h1>
@@ -66,7 +72,7 @@
                 <section>
                     <h2>Shell scripts</h2>
                     <img src="/img/presentations/2014-san-fran-django-ansible/meteor-heading-to-earth.jpg" style="border: 1px solid; box-shadow: none; background: none;" />
-                    <a href="http://www.redorbit.com/media/uploads/2013/02/shutterstock_71231404-617x416.jpg">Original picture reference</a>
+                    <small><a href="http://www.redorbit.com/media/uploads/2013/02/shutterstock_71231404-617x416.jpg">Original picture reference</a></small>
                 </section>
                 
                 <section style="text-align: center;">
@@ -86,12 +92,12 @@
                 <section>
                     <h2>Deployment Tasks</h2>
                     <ul class="bigger">
-                        <li class="fragment">Initial server configuration</li>
-                        <li class="fragment">Code deployment</li>
-                        <li class="fragment">Server maintenance</li>
-                        <li class="fragment">Database schema migrations</li>
-                        <li class="fragment">Data migrations</li>
-                        <li class="fragment">Ad hoc tasks</li>
+                        <li class="fragment">Configure servers</li>
+                        <li class="fragment">Deploy code</li>
+                        <li class="fragment">Set up Python environment</li>
+                        <li class="fragment">Migrate database schema &amp; data</li>
+                        <li class="fragment">Maintain servers</li>
+                        <li class="fragment">Perform ad hoc tasks</li>
                     </ul>
                 </section>
                 
@@ -100,15 +106,61 @@
                 </section>
                 
                 <section>
-                    <h2>Ansible</h2>
+                    <h2>What is Ansible?</h2>
                     <ul class="bigger">
-                        <li class="fragment"></li>
+                        <li class="fragment">Multinode orchestration framework</li>
+                        <li class="fragment">Configuration management</li>
+                        <li class="fragment">Application deployment</li>
+                        <li class="fragment">Ad hoc tasks</li>
+                    </ul>
+                </section>
+               
+                <section>
+                    <h2>Ansible technical pieces</h2>
+                    <ul class="bigger">
+                        <li class="fragment">YAML syntax</li>
+                        <li class="fragment">Jinja2 templates</li>
+                        <li class="fragment">No remote agents, only SSH</li>
+                        <li class="fragment">GNU v3 license</li>
+                        <li class="fragment">Django manage.py commands built in</li>
                     </ul>
                 </section>
 
                 <section>
+                    <h2>Modules</h2>
+                </section>
+                
+                <section>
+                    <h2>Playbooks</h2>
+                </section>
+                
+                <section>
+                    <h2>Playbook on GitHub</h2>
+                </section>
+                
+                <section>
+                    <h2>YAML syntax</h2>
+                </section>
+                
+                <section>
+                    <h2>Roles</h2>
+                </section>
+                
+                <section>
+                    <h2>Variables</h2>
+                </section>
+                
+                <section>
+                    <h2>Templates</h2>
+                </section>
+                
+                <section>
                     <h2>Demo</h2>
                     <img src="/img/presentations/pelican-static-sites/console.png" style="border: 1px solid; box-shadow: none; background: none;" />
+                </section>
+
+                <section>
+                    <h2>Configure servers</h2>
                 </section>
                 
                 <section style="text-align: center;">
@@ -126,6 +178,26 @@
                 <section>
                     <h2>Underwear</h2>
                     <img src="/img/presentations/2014-san-fran-django-ansible/underwear-github.jpg" style="border: 1px solid; box-shadow: none; background: none;" />
+                </section>
+                
+                <section>
+                    <h2>Underwear</h2>
+                    <ul class="bigger">
+                        <li class="fragment">pip install underwear</li>
+                        <li class="fragment">
+                            INSTALLED_APPS += 'underwear'
+                        </li>
+                        <li class="fragment">wget underwear.yml</li>
+                        <li class="fragment">wget hosts</li>
+                        <li class="fragment">vim deploy/underwear.yml</li>
+                        <li class="fragment">vim underwear/hosts</li>
+                        <li class="fragment">python manage.py deploy</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Underwear Repository</h2>
+                    <p>https://github.com/makaimc/underwear</p>
                 </section>
 
                 <section>
