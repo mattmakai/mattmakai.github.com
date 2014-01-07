@@ -16,21 +16,6 @@ Upcoming talk on January 22 to the
 ----
 
 
-`Txt2React: Immediate Presentation Feedback From Audience Text Messages </presentations/2014-txt2react-twilio-app.html>`_
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-`Txt2React <https://github.com/makaimc/txt2react>`_ is an open source web 
-application I built to facilitate immediate feedback from an audience 
-during a presentation. The app is written in Django and easily deployable to
-virtual private servers by using Ansible. Txt2React uses the Twilio platform 
-to provision phone numbers for feedback collection through the audience's
-text messages.
-
-Upcoming talk and demo on January 15 at `Twilio <https://www.twilio.com/>`_ 
-headquarters in San Francisco.
-
-----
-
-
 `Fully Automated Django Deployments with Ansible </presentations/2014-san-fran-django-ansible.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This talk will show how to fully automated Linux, Nginx, 
@@ -46,6 +31,22 @@ on Tuesday, January 14 hosted at `Yelp <http://www.yelp.com/about>`_
 headquarters.
 
 ----
+
+
+`Txt2React: Immediate Presentation Feedback From Audience Text Messages </presentations/2014-txt2react-twilio-app.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`Txt2React <https://github.com/makaimc/txt2react>`_ is an open source web 
+application I built to facilitate immediate feedback from an audience 
+during a presentation. The app is written in Django and easily deployable to
+virtual private servers by using Ansible. Txt2React uses the Twilio platform 
+to provision phone numbers for feedback collection through the audience's
+text messages.
+
+Upcoming talk and demo on January 8 at `Twilio <https://www.twilio.com/>`_ 
+headquarters in San Francisco.
+
+----
+
 
 
 2013 Talks
