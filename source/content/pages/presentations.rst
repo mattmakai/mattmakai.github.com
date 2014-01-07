@@ -16,8 +16,8 @@ Upcoming talk on January 22 to the
 ----
 
 
-Txt2React: Immediate Presentation Feedback From Audience Text Messages
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`Txt2React: Immediate Presentation Feedback From Audience Text Messages </presentations/2014-txt2react-twilio-app.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 `Txt2React <https://github.com/makaimc/txt2react>`_ is an open source web 
 application I built to facilitate immediate feedback from an audience 
 during a presentation. The app is written in Django and easily deployable to
