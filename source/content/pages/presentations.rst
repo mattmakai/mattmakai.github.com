@@ -33,12 +33,12 @@ headquarters.
 ----
 
 
-`Txt2React: Immediate Presentation Feedback From Audience Text Messages </presentations/2014-txt2react-twilio-app.html>`_
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-`Txt2React <https://github.com/makaimc/txt2react>`_ is an open source web 
+`Txt 2 React: Immediate Presentation Feedback From Audience Text Messages </presentations/2014-txt2react-twilio-app.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`Txt 2 React <https://github.com/makaimc/txt2react>`_ is an open source web 
 application I built to facilitate immediate feedback from an audience 
 during a presentation. The app is written in Django and easily deployable to
-virtual private servers by using Ansible. Txt2React uses the Twilio platform 
+virtual private servers by using Ansible. Txt 2 React uses the Twilio platform 
 to provision phone numbers for feedback collection through the audience's
 text messages.
 
