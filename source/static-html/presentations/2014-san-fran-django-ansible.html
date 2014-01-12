@@ -70,13 +70,13 @@
                 </section>
                 
                 <section>
-                    <h2>Bash deployment</h2>
+                    <h2>What starts as this...</h2>
                     <img src="/img/presentations/2014-san-fran-django-ansible/bash-deploy-script.jpg" style="border: 1px solid; box-shadow: none; background: none;" />
                     <small><a href="http://blog.umanoapp.com/post/35685965949/writing-a-simple-deployment-script-for-your-ec2-servers">Original script reference</a></small>
                 </section>
 
                 <section>
-                    <h2>Eventually...</h2>
+                    <h2>...usually ends like this</h2>
                     <img src="/img/presentations/2014-san-fran-django-ansible/meteor-heading-to-earth.jpg" style="border: 1px solid; box-shadow: none; background: none;" />
                     <small><a href="http://www.redorbit.com/media/uploads/2013/02/shutterstock_71231404-617x416.jpg">Original picture reference</a></small>
                 </section>
@@ -138,11 +138,18 @@
 
                 <section>
                     <h2>Modules</h2>
-                    Put a picture here of a bunch of the modules
+                    <img src="/img/presentations/2014-san-fran-django-ansible/ansible-modules-list.jpg" style="border: 1px solid; box-shadow: none; background: none;" />
+                </section>
+                
+                <section>
+                    <h2>user module</h2>
+                    <img src="/img/presentations/2014-san-fran-django-ansible/ansible-user-module.jpg" style="border: 1px solid; box-shadow: none; background: none;" />
                 </section>
                 
                 <section>
                     <h2>Ad hoc commands</h2>
+                    <br/>
+                    <code>$ ansible all -m user -a "name=sanfran state=present uid=1040 group=meetup" -u deployer</code>
                 </section>
                 
                 <section>
