@@ -68,9 +68,15 @@
                 <section style="text-align: center;">
                     <h1 style="margin-top: 1.6em;">#!/bin/bash</h1>
                 </section>
+                
+                <section>
+                    <h2>Bash deployment</h2>
+                    <img src="/img/presentations/2014-san-fran-django-ansible/bash-deploy-script.jpg" style="border: 1px solid; box-shadow: none; background: none;" />
+                    <small><a href="http://blog.umanoapp.com/post/35685965949/writing-a-simple-deployment-script-for-your-ec2-servers">Original script reference</a></small>
+                </section>
 
                 <section>
-                    <h2>Shell scripts</h2>
+                    <h2>Eventually...</h2>
                     <img src="/img/presentations/2014-san-fran-django-ansible/meteor-heading-to-earth.jpg" style="border: 1px solid; box-shadow: none; background: none;" />
                     <small><a href="http://www.redorbit.com/media/uploads/2013/02/shutterstock_71231404-617x416.jpg">Original picture reference</a></small>
                 </section>
@@ -93,8 +99,8 @@
                     <h2>Deployment Tasks</h2>
                     <ul class="bigger">
                         <li class="fragment">Configure servers</li>
+                        <li class="fragment">Set up [Python] environment</li>
                         <li class="fragment">Deploy code</li>
-                        <li class="fragment">Set up Python environment</li>
                         <li class="fragment">Migrate database schema &amp; data</li>
                         <li class="fragment">Maintain servers</li>
                         <li class="fragment">Perform ad hoc tasks</li>
@@ -108,7 +114,9 @@
                 <section>
                     <h2>What is Ansible?</h2>
                     <ul class="bigger">
-                        <li class="fragment">Multinode orchestration framework</li>
+                        <li class="fragment">
+                            Multinode orchestration framework
+                        </li>
                         <li class="fragment">Configuration management</li>
                         <li class="fragment">Application deployment</li>
                         <li class="fragment">Ad hoc tasks</li>
@@ -116,18 +124,25 @@
                 </section>
                
                 <section>
-                    <h2>Ansible technical pieces</h2>
+                    <h2>Ansible technology</h2>
                     <ul class="bigger">
                         <li class="fragment">YAML syntax</li>
                         <li class="fragment">Jinja2 templates</li>
-                        <li class="fragment">No remote agents, only SSH</li>
-                        <li class="fragment">GNU v3 license</li>
-                        <li class="fragment">Django manage.py commands built in</li>
+                        <li class="fragment">SSH (no remote agents)</li>
+                        <li class="fragment">Ansible module library</li>
+                        <li class="fragment">
+                            Django manage.py commands module
+                        </li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>Modules</h2>
+                    Put a picture here of a bunch of the modules
+                </section>
+                
+                <section>
+                    <h2>Ad hoc commands</h2>
                 </section>
                 
                 <section>
@@ -136,18 +151,16 @@
                 
                 <section>
                     <h2>Playbook on GitHub</h2>
-                </section>
-                
-                <section>
-                    <h2>YAML syntax</h2>
-                </section>
-                
-                <section>
-                    <h2>Roles</h2>
+                    <h4>https://github.com/makaimc/sf-django</h4>
+                    <img src="/img/presentations/2014-san-fran-django-ansible/deploy-with-ansible-repo.jpg" style="border: 1px solid; box-shadow: none; background: none;" />
                 </section>
                 
                 <section>
                     <h2>Variables</h2>
+                </section>
+                
+                <section>
+                    <h2>Roles</h2>
                 </section>
                 
                 <section>
@@ -161,6 +174,15 @@
 
                 <section>
                     <h2>Configure servers</h2>
+                </section>
+                
+                <section>
+                    <h2>Ansible downsides</h2>
+                    <ul class="bigger">
+                        <li class="fragment">No Windows support</li>
+                        <li class="fragment">Lack of testing tools</li>
+                        <li class="fragment"></li>
+                    </ul>
                 </section>
                 
                 <section style="text-align: center;">
