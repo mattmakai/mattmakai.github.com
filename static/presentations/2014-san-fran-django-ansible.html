@@ -149,11 +149,25 @@
                 <section>
                     <h2>Ad hoc commands</h2>
                     <br/>
-                    <code>$ ansible all -m user -a "name=sanfran state=present uid=1040 group=meetup" -u deployer</code>
+                    <pre style="font-size: 1em;">
+
+$ ansible webservers -m user -a \
+  "name=sanfran state=present \
+  uid=1040 group=meetup" -u deployer
+
+                    </pre>
                 </section>
                 
                 <section>
                     <h2>Playbooks</h2>
+                    <br/>
+                    <pre style="font-size: 1em;">
+
+- name: ensure user "sanfran" exists
+  user: name=sanfran state=present 
+        uid=1040 group=meetup
+
+                    </pre>
                 </section>
                 
                 <section>
