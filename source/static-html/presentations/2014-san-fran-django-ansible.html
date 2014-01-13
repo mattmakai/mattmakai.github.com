@@ -151,8 +151,8 @@
                     <br/>
                     <pre style="font-size: 1em;">
 
-$ ansible webservers -m user -a \
-  "name=sanfran state=present \
+$ ansible webservers -m user -a   \
+  "name=sanfran state=present     \
   uid=1040 group=meetup" -u deployer
 
                     </pre>
@@ -172,7 +172,9 @@ $ ansible webservers -m user -a \
                 
                 <section>
                     <h2>Playbook on GitHub</h2>
-                    <h4>https://github.com/makaimc/sf-django</h4>
+                    <h4>
+                        <a href="https://github.com/makaimc/sf-django">https://github.com/makaimc/sf-django</a>
+                    </h4>
                     <img src="/img/presentations/2014-san-fran-django-ansible/deploy-with-ansible-repo.jpg" style="border: 1px solid; box-shadow: none; background: none;" />
                 </section>
                 
@@ -189,8 +191,23 @@ $ ansible webservers -m user -a \
                 </section>
                 
                 <section>
-                    <h2>Demo</h2>
-                    <img src="/img/presentations/pelican-static-sites/console.png" style="border: 1px solid; box-shadow: none; background: none;" />
+                    <h2>Organization</h2>
+                    <pre style="font-size: .9em;">
+deploy
+  |---- deploy.yml
+  |---- hosts
+  |---- group_vars/
+          |---- all
+          |---- dbservers
+          |---- webservers
+  |---- roles/
+          |---- all
+          |---- db
+              |---- handlers
+              |---- tasks
+              |---- templates
+          |---- web
+                    </pre>
                 </section>
 
                 <section>
@@ -202,12 +219,12 @@ $ ansible webservers -m user -a \
                     <ul class="bigger">
                         <li class="fragment">No Windows support</li>
                         <li class="fragment">Lack of testing tools</li>
-                        <li class="fragment"></li>
+                        <li class="fragment">Reuse ambiguity</li>
                     </ul>
                 </section>
                 
                 <section style="text-align: center;">
-                    <h2>Drop-in deployment tool</h2>
+                    <h2>Django deployment dreams</h2>
                     <ul class="bigger">
                         <li class="fragment">pip install deploy-tool</li>
                         <li class="fragment">
