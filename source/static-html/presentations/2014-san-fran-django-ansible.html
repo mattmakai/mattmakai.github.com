@@ -309,9 +309,21 @@ deploy
                 </section>
                 
                 <section>
-                    <h2>Migrate database schema &amp; data</h2>
+                    <h2>Migrate schema &amp; data</h2>
                     <pre style="font-size: .9em;">
+- name: Django syncdb
+  django_manage: command=syncdb
+                 app_path={{app_code_dir}}
+                 virtualenv={{venv_dir}}
+  environment: django_env_vars
 
+
+- name: Django migrate
+  django_manage: command=migrate
+                 app_path={{app_code_dir}}
+                 virtualenv={{venv_dir}}
+  environment: django_env_vars
+  when: django_use_south
                     </pre>
                 </section>
                 
@@ -323,10 +335,20 @@ deploy
                 <section>
                     <h2>Perform ad hoc tasks</h2>
                     <pre style="font-size: .9em;">
+# playbook
+- name: Django collectstatic
+  django_manage: command=collectstatic 
+                 app_path={{app_code_dir}}
+                 virtualenv={{venv_dir}}
+  environment: django_env_vars
 
+# command line
+$ ansible-playbook django-stack.yml --step \
+  --start-at-task="Django collectstatic"   \
+  -u deployer -K
                     </pre>
                 </section>
-                
+
                 <section>
                     <h2>Ansible downsides</h2>
                     <ul class="bigger">
