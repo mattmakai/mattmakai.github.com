@@ -117,7 +117,6 @@
                         <li class="fragment">Set up [Python] environment</li>
                         <li class="fragment">Deploy code</li>
                         <li class="fragment">Migrate database schema &amp; data</li>
-                        <li class="fragment">Maintain servers</li>
                         <li class="fragment">Perform ad hoc tasks</li>
                     </ul>
                 </section>
@@ -194,18 +193,6 @@ $ ansible webservers -m user -a   \
                 </section>
                 
                 <section>
-                    <h2>Variables</h2>
-                </section>
-                
-                <section>
-                    <h2>Roles</h2>
-                </section>
-                
-                <section>
-                    <h2>Templates</h2>
-                </section>
-                
-                <section>
                     <h2>Organization</h2>
                     <pre style="font-size: .9em;">
 deploy
@@ -226,17 +213,35 @@ deploy
                 </section>
                 
                 <section>
+                    <h2>Variables</h2>
+                    <ul class="bigger">
+                        <li class="fragment">Letters, numbers, underscores are valid names</li>
+                        <li class="fragment">Always start with a letter</li>
+                        <li class="fragment">Valid: port_number</li>
+                        <li class="fragment">{{ ansible_env }} pulls from environment</li>
+                        <li class="fragment">Precedence rules exist</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Roles</h2>
+                    <ul class="bigger">
+                        <li class="fragment">Allow multinode orchestration</li>
+                        <li class="fragment">Define behavior for server type</li>
+                        <li class="fragment">Enable reuse and organization</li>
+                    </ul>
+                </section>
+                
+                <section>
                     <h2>Deployment Tasks</h2>
                     <ul class="bigger">
                         <li>Configure servers</li>
                         <li>Set up [Python] environment</li>
                         <li>Deploy code</li>
                         <li>Migrate database schema &amp; data</li>
-                        <li>Maintain servers</li>
                         <li>Perform ad hoc tasks</li>
                     </ul>
                 </section>
-               
                 
                 <section>
                     <h2>Configure servers</h2>
@@ -245,8 +250,83 @@ deploy
                 
                 <section>
                     <h2>Configure servers</h2>
-                </section>
+                    <pre style="font-size: .9em;">
+- name: install latest version of Apache
+  yum: name=httpd state=latest
 
+- name: check if apache conf.d dir exists
+  stat: path=/etc/httpd/conf.d/
+  register: apache_dir
+
+- debug: msg="conf.d exists and is dir"
+  when: apache_dir.stat.isdir is defined 
+        and apache_dir.stat.isdir
+                    </pre>
+                </section>
+                
+                <section>
+                    <h2>Set up Python environment</h2>
+                    <img src="/img/presentations/2014-san-fran-django-ansible/configure-servers.jpg" style="border: 1px solid; box-shadow: none; background: none;" />
+                </section>
+                
+                <section>
+                    <h2>Set up Python environment</h2>
+                    <pre style="font-size: .9em;">
+- name: check if virtualenv already exists
+  stat: path={{virtualenv_dir}}
+  register: venv_dir
+
+- name: create virtualenv for Django web app
+  shell: virtualenv {{virtualenv_dir}}
+  when: venv_dir.stat.isdir is not defined
+
+- name: install web application dependencies
+  pip: requirements={{app_dir}}/reqs.txt
+       virtualenv={{virtualenv_dir}}
+                    </pre>
+                </section>
+                
+                <section>
+                    <h2>Deploy code</h2>
+                    <img src="/img/presentations/2014-san-fran-django-ansible/configure-servers.jpg" style="border: 1px solid; box-shadow: none; background: none;" />
+                </section>
+                
+                <section>
+                    <h2>Deploy code</h2>
+                    <pre style="font-size: .9em;">
+- name: install known_hosts file for GitHub
+  copy: src={{ ssh_dir }}/known_hosts 
+        dest=/home/{{ deploy_user }}/.ssh
+
+- name: checkout latest web app code
+  git: repo={{code_repo}} dest={{app_dir}}
+                    </pre>
+                </section>
+                
+                <section>
+                    <h2>Migrate database schema &amp; data</h2>
+                    <img src="/img/presentations/2014-san-fran-django-ansible/configure-servers.jpg" style="border: 1px solid; box-shadow: none; background: none;" />
+                </section>
+                
+                <section>
+                    <h2>Migrate database schema &amp; data</h2>
+                    <pre style="font-size: .9em;">
+
+                    </pre>
+                </section>
+                
+                <section>
+                    <h2>Perform ad hoc tasks</h2>
+                    <img src="/img/presentations/2014-san-fran-django-ansible/configure-servers.jpg" style="border: 1px solid; box-shadow: none; background: none;" />
+                </section>
+                        
+                <section>
+                    <h2>Perform ad hoc tasks</h2>
+                    <pre style="font-size: .9em;">
+
+                    </pre>
+                </section>
+                
                 <section>
                     <h2>Ansible downsides</h2>
                     <ul class="bigger">
