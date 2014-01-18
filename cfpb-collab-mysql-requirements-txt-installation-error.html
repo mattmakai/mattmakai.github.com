@@ -291,33 +291,59 @@
       </div>
       <div class="span8 well">
         
-  <h2>Django in Production</h2>
+  <h2>CFPB Collab MySQL requirements.txt Installation Error</h2>
   
   
     <div class="blog-content">
-  <p>Django is easy to get started with, especially if you already have a
-programming background in a &quot;heavier&quot; language like Java. When I first
-started creating websites with Django 0.96, I was programming Java systems
-during the day and relaxed in the evenings by using Python/Django. I found
-the speed at which I could create sites allowed me to feel like I was
-accomplishing something even though I did not have full days to focus on
-side project development.</p>
-<p>One of the hurdles I found with Django was just figuring out how to deploy
-the projects to a production server. &quot;python manage.py runserver&quot; wasn't
-going to cut it. In addition, once I got the sites live, I was not sure
-of how to properly monitor them. The following links helped me a lot to
-learn what the &quot;big boys&quot; in the Django space were using in production:</p>
-<ol class="arabic simple">
-<li><a class="reference external" href="http://f.souza.cc/2011/11/setting-up-a-django-production-environment-compiling-and-configuring-nginx/">Setting up a Production Django Environment</a></li>
-<li><a class="reference external" href="http://instagram-engineering.tumblr.com/post/20541814340/keeping-instagram-up-with-over-a-million-new-users-in">Instagram Production Engineering</a></li>
-<li><a class="reference external" href="http://tech.yipit.com/2011/12/15/introducing-xenia-smart-monitoring-of-custom-application-level-metrics/">Yipit Monitoring Key Metrics</a></li>
-<li><a class="reference external" href="http://www.robgolding.com/blog/2011/11/12/django-in-production-part-1---the-stack/">Django in Production - Part 1</a></li>
-<li><a class="reference external" href="http://www.sparklewise.com/django-settings-for-production-and-development-best-practices/">Django Settings for Production and Development</a></li>
-<li><a class="reference external" href="http://adrian.org.ar/python/automatic-setup-of-django-nginx-and-gunicorn-on-ec2">Automatic Set Up of Django With nginx &amp; gunicorn</a></li>
-</ol>
-<p>Those are the best articles I've come across recently that I wish I had when
-I first started deploying Django projects (to be fair, those links didn't
-yet exist nor did many of the technologies that are now commonplace).</p>
+  <p>In case you're trying to get <a class="reference external" href="https://github.com/cfpb/collab">CFPB collab</a>
+working in your environment, there's a few errors you might run into. This is
+a quick post to highlight solutions to the issues I came across.</p>
+<p>Collab currently requires MySQL for the backend. I do not believe MySQL is a
+hard requirement, but that's what we had installed on our Linux servers at
+the time I was working on it while consulting for the agency. If you run into
+the following error:</p>
+<pre class="literal-block">
+Downloading/unpacking MySQL-python (from -r requirements.txt (line 11))
+  Downloading MySQL-python-1.2.5.zip (108kB): 108kB downloaded
+  Running setup.py egg_info for package MySQL-python
+    sh: 1: mysql_config: not found
+    Traceback (most recent call last):
+      File &quot;&lt;string&gt;&quot;, line 16, in &lt;module&gt;
+      File &quot;/home/matt/Envs/collab/build/MySQL-python/setup.py&quot;, line 17, in &lt;module&gt;
+        metadata, options = get_config()
+      File &quot;setup_posix.py&quot;, line 43, in get_config
+        libs = mysql_config(&quot;libs_r&quot;)
+      File &quot;setup_posix.py&quot;, line 25, in mysql_config
+        raise EnvironmentError(&quot;%s not found&quot; % (mysql_config.path,))
+    EnvironmentError: mysql_config not found
+    Complete output from command python setup.py egg_info:
+    sh: 1: mysql_config: not found
+
+Traceback (most recent call last):
+
+  File &quot;&lt;string&gt;&quot;, line 16, in &lt;module&gt;
+
+  File &quot;/home/matt/Envs/collab/build/MySQL-python/setup.py&quot;, line 17, in &lt;module&gt;
+
+    metadata, options = get_config()
+
+  File &quot;setup_posix.py&quot;, line 43, in get_config
+
+    libs = mysql_config(&quot;libs_r&quot;)
+
+  File &quot;setup_posix.py&quot;, line 25, in mysql_config
+
+    raise EnvironmentError(&quot;%s not found&quot; % (mysql_config.path,))
+
+EnvironmentError: mysql_config not found
+
+----------------------------------------
+</pre>
+<p>Make sure you have the MySQL server package and the client development
+library installed. On Ubuntu you can accomplish this by running:</p>
+<pre class="literal-block">
+sudo apt-get install mysql-server libmysqlclient-dev
+</pre>
 
   <div class="follow-on-twitter">
     If you read this far then you should 
@@ -326,7 +352,7 @@ yet exist nor did many of the technologies that are now commonplace).</p>
 
   <div class="meta">
     Posted by Matt Makai 
-    on 04.16.2012.
+    on 01.17.2014.
   </div>
 </div>
 <hr/>

@@ -1,5 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/blog.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2013-12-12T00:00:00-05:00</updated><entry><title>My 2013 Software Development Year in Review</title><link href="http://www.mattmakai.com/2013-development-year-in-review.html" rel="alternate"></link><updated>2013-12-12T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-12-12:2013-development-year-in-review.html</id><summary type="html">&lt;p&gt;2013 was an incredible and fortunate year for me. The quick highlights:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/blog.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2014-01-17T00:00:00-05:00</updated><entry><title>CFPB Collab MySQL requirements.txt Installation Error</title><link href="http://www.mattmakai.com/cfpb-collab-mysql-requirements-txt-installation-error.html" rel="alternate"></link><updated>2014-01-17T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2014-01-17:cfpb-collab-mysql-requirements-txt-installation-error.html</id><summary type="html">&lt;p&gt;In case you're trying to get &lt;a class="reference external" href="https://github.com/cfpb/collab"&gt;CFPB collab&lt;/a&gt;
+working in your environment, there's a few errors you might run into. This is
+a quick post to highlight solutions to the issues I came across.&lt;/p&gt;
+&lt;p&gt;Collab currently requires MySQL for the backend. I do not believe MySQL is a
+hard requirement, but that's what we had installed on our Linux servers at
+the time I was working on it while consulting for the agency. If you run into
+the following error:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+Downloading/unpacking MySQL-python (from -r requirements.txt (line 11))
+  Downloading MySQL-python-1.2.5.zip (108kB): 108kB downloaded
+  Running setup.py egg_info for package MySQL-python
+    sh: 1: mysql_config: not found
+    Traceback (most recent call last):
+      File &amp;quot;&amp;lt;string&amp;gt;&amp;quot;, line 16, in &amp;lt;module&amp;gt;
+      File &amp;quot;/home/matt/Envs/collab/build/MySQL-python/setup.py&amp;quot;, line 17, in &amp;lt;module&amp;gt;
+        metadata, options = get_config()
+      File &amp;quot;setup_posix.py&amp;quot;, line 43, in get_config
+        libs = mysql_config(&amp;quot;libs_r&amp;quot;)
+      File &amp;quot;setup_posix.py&amp;quot;, line 25, in mysql_config
+        raise EnvironmentError(&amp;quot;%s not found&amp;quot; % (mysql_config.path,))
+    EnvironmentError: mysql_config not found
+    Complete output from command python setup.py egg_info:
+    sh: 1: mysql_config: not found
+
+Traceback (most recent call last):
+
+  File &amp;quot;&amp;lt;string&amp;gt;&amp;quot;, line 16, in &amp;lt;module&amp;gt;
+
+  File &amp;quot;/home/matt/Envs/collab/build/MySQL-python/setup.py&amp;quot;, line 17, in &amp;lt;module&amp;gt;
+
+    metadata, options = get_config()
+
+  File &amp;quot;setup_posix.py&amp;quot;, line 43, in get_config
+
+    libs = mysql_config(&amp;quot;libs_r&amp;quot;)
+
+  File &amp;quot;setup_posix.py&amp;quot;, line 25, in mysql_config
+
+    raise EnvironmentError(&amp;quot;%s not found&amp;quot; % (mysql_config.path,))
+
+EnvironmentError: mysql_config not found
+
+----------------------------------------
+&lt;/pre&gt;
+&lt;p&gt;Make sure you have the MySQL server package and the client development
+library installed. On Ubuntu you can accomplish this by running:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+sudo apt-get install mysql-server libmysqlclient-dev
+&lt;/pre&gt;
+</summary></entry><entry><title>My 2013 Software Development Year in Review</title><link href="http://www.mattmakai.com/2013-development-year-in-review.html" rel="alternate"></link><updated>2013-12-12T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2013-12-12:2013-development-year-in-review.html</id><summary type="html">&lt;p&gt;2013 was an incredible and fortunate year for me. The quick highlights:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;traveled the US for 5 months talking to tech startups and software
 developers&lt;/li&gt;
