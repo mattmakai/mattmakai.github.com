@@ -6,12 +6,18 @@ Presentations
 2014 Talks
 ----------
 
-Making DevOps Work in the Federal Government
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`Making DevOps Work in the Federal Government </presentations/2014-finra-devops-in-govt.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Making DevOps work right in any organization is difficult, but what about the
+additional challenges posed by federal government regulations? This talk 
+focuses on bridging the divide between application developer and system 
+administrator perspective, improving infrastructure incrementally, and 
+showing progress to skeptical non-technical colleagues in a highly regulated
+environment.
 
 Upcoming talk on January 22 to the 
 `Financial Industry Regulatory Authority <http://www.finra.org/>`_
-(FINRA) on January 22.
+(FINRA) on January 22 in Rockville, Maryland.
 
 ----
 
@@ -25,7 +31,7 @@ Django project and show how to use Ansible Playbooks with tasks,
 handlers, and templates to go from a bare Linux installation to a 
 running Django web application.
 
-Upcoming tech talk for 
+Tech talk given at
 `San Francisco Django <http://www.meetup.com/The-San-Francisco-Django-Meetup-Group/events/151920512/>`_ 
 on Tuesday, January 14 hosted at `Yelp <http://www.yelp.com/about>`_ 
 headquarters.
@@ -42,7 +48,7 @@ virtual private servers by using Ansible. Txt 2 React uses the Twilio platform
 to provision phone numbers for feedback collection through the audience's
 text messages.
 
-Upcoming talk and demo on January 8 at `Twilio <https://www.twilio.com/>`_ 
+Talk and demo presented on January 8 at `Twilio <https://www.twilio.com/>`_ 
 headquarters in San Francisco.
 
 ----

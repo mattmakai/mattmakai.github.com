@@ -6,7 +6,7 @@
 
 		<title>DevOps in the Federal Government</title>
 
-		<meta name="description" content="This talk will show how to fully automated Linux, Nginx, Gunicorn, and Python/Django stack deployments with Ansible (and a little bit of Fabric for ad hoc tasks). This talk will dive into an open source Django project and show how to use Ansible Playbooks with tasks, handlers, and templates to go from a bare Linux installation to a running Django web application." />
+		<meta name="description" content="Talk given to FINRA about DevOps cultural changes needed and potential tools for use." />
 		<meta name="author" content="Matt Makai" />
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -15,12 +15,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="/css/reveal/reveal.min.css">
-		<link rel="stylesheet" href="/css/reveal/theme/pony.css" id="theme">
+		<link rel="stylesheet" href="/css/reveal/theme/night.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="/lib/css/zenburn.css">
         <style>
-            h1.not-cool {font-size: 2.2em; margin-top: 1em;}
             ol.bigger li, 
             ul.bigger li {
                font-size: 1.4em;
@@ -32,6 +31,7 @@
             ol.bigger li {
                 margin-left: 1em;
             }
+            img.no-border-rounded {border: none; border-radius: 5px;}
         </style>
 
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
@@ -48,8 +48,8 @@
 		<div class="reveal">
             <div class="slides" style="text-align: left;">
 				<section>
-					<h1>Django Deployments with Ansible</h1>
-                    <h4><a href="http://www.meetup.com/The-San-Francisco-Django-Meetup-Group/events/151920512/">San Francisco Django January 2014</a></h4>
+					<h1>DevOps in the Federal Government</h1>
+                    <h4>FINRA January 2014</a></h4>
                     <br/>
 					<p><small>
                         <a href="http://www.mattmakai.com">Matt Makai</a> | 
@@ -62,14 +62,15 @@
 				</section>
                 
                 <section>
-                    <h2>Feedback number</h2>
-                    <div style="text-align: center;">
-                        <h2 style="margin-top: 1.1em; font-size: 4.2em;">202 999 3940</h2>
-                    </div>
+                    <h1>Application developers?</h1>
                 </section>
-
+                
                 <section>
-                    <h1 style="margin-top: 1.2em;">Back in the day...</h1>
+                    <h1>System administrators?</h1>
+                </section>
+                
+                <section>
+                    <img src="/img/presentations/2014-finra-devops-in-govt/sf.jpg" class="no-border-rounded" style="border: 1px solid #fefefe;" /> 
                 </section>
                 
                 <section>
@@ -441,7 +442,7 @@ $ ansible-playbook django-stack.yml --step \
 				center: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'page', // default/cube/page/concave/zoom/linear/fade/none
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
