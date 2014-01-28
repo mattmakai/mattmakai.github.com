@@ -6,9 +6,19 @@ Presentations
 2014 Talks
 ----------
 
-`DevOps Work in an Established Organization </presentations/2014-finra-devops-established-organization.html>`_
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Making DevOps work in any organization is difficult, but what about the
+`Appropriate Software Communications </presentations/2014-dc-nightowls-appropriate-software-communications.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Upcoming talk on March 3 to 
+`DC Nightowls <http://www.meetup.com/dcnightowls/>`_ in the Dupont 
+neighborhood of Washington, DC.
+
+----
+
+
+`Making DevOps Work in an Established Organization </presentations/2014-finra-devops-established-organization.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Getting DevOps to work in any organization is difficult but what about the
 additional challenges posed by an established organization's culture? This 
 talk focuses on bridging the divide between the application developer 
 and system administrator perspectives, improving infrastructure 
