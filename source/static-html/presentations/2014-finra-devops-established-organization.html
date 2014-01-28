@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>DevOps in the Federal Government</title>
+
+		<meta name="description" content="Talk given to FINRA about DevOps cultural changes needed and potential tools for use." />
+		<meta name="author" content="Matt Makai" />
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="/css/reveal/reveal.min.css">
+		<link rel="stylesheet" href="/css/reveal/theme/night.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="/lib/css/zenburn.css">
+        <style>
+            ol.bigger li, 
+            ul.bigger li {
+               font-size: 1.8em;
+               margin-top: 20px;
+               margin-bottom: 15px;
+               line-height: 1.1em;
+               margin-left: 20px;
+            }
+            ol.bigger li {
+                margin-left: 1em;
+            }
+            img.no-border-rounded {border: none; border-radius: 5px;}
+        </style>
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="/css/reveal/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+            <div class="slides" style="text-align: left;">
+				<section>
+					<h1>DevOps in the Federal Government</h1>
+                    <h4>FINRA January 2014</a></h4>
+                    <br/>
+					<p><small>
+                        <a href="http://www.mattmakai.com">Matt Makai</a> | 
+                        <a href="http://twitter.com/mattmakai">@mattmakai</a> |
+                        <a href="https://github.com/makaimc">makaimc</a> 
+                        on GitHub |
+                        <a href="https://www.twilio.com">Twilio</a> 
+                        Developer Evangelist
+                    </small></p>
+				</section>
+                
+                <section>
+                    <h1>Application developers?</h1>
+                </section>
+                
+                <section>
+                    <h1>System administrators?</h1>
+                </section>
+                
+                <section>
+                    <img src="/img/presentations/2014-finra-devops-in-govt/sf.jpg" class="no-border-rounded" style="border: 1px solid #fefefe;" /> 
+                </section>
+                
+                <section>
+                    <img src="/img/presentations/2014-finra-devops-in-govt/sf-django-talk.jpg" class="no-border-rounded" style="border: 1px solid #fefefe;" />
+                </section>
+                
+                <section>
+                    <h2>My first sys admin</h2>
+                    <img src="/img/presentations/2014-san-fran-django-ansible/sys-admin.jpg" style="border: 1px solid; border-radius: 5px;" />
+                    <p>
+                    <small><a href="http://farm5.static.flickr.com/4029/4360104794_4f3f2b7a2f_b.jpg">Picture reference</a></small>
+                    </p>
+                </section>
+                
+                <section style="text-align: center;">
+                    <h1 style="font-size: 6em; color: red;">ERROR</h1>
+                </section>
+                
+                <section>
+                    <h2 style="font-size: 3em;">Today</h2>
+                    <ul class="bigger">
+                        <li class="fragment">Dev + Ops</li>
+                        <li class="fragment">Incremental Improvement</li>
+                        <li class="fragment">Stories</li>
+                        <li class="fragment">Tools</li>
+                        <li class="fragment">What now?</li>
+                    </ul>
+                </section>
+                
+                <section style="text-align: center;">
+                    <h1 style="font-size: 6em; color: #eee;">Dev + Ops</h1>
+                </section>
+                
+                <section>
+                    <img src="/img/presentations/2014-finra-devops-in-govt/world-view.jpg" class="no-border-rounded" style="border: 1px solid #fefefe;" />
+                </section>
+                
+                <section>
+                    <img src="/img/presentations/2014-finra-devops-in-govt/world-view-inverted.jpg" class="no-border-rounded" style="border: 1px solid #fefefe;" />
+                </section>
+                
+                <section>
+                    <h2 style="font-size: 3em;">App Developers</h2>
+                    <ul class="bigger">
+                        <li class="fragment"></li>
+                        <li class="fragment"></li>
+                        <li class="fragment"></li>
+                        <li class="fragment"></li>
+                        <li class="fragment"></li>
+                    </ul>
+                </section>
+
+                <section style="text-align: center;">
+                    <h1 style="font-size: 4.5em; color: #eee;">Incremental Improvement</h1>
+                </section>
+                
+                <section>
+                    <h2>Playbook on GitHub</h2>
+                    <h4>
+                        <a href="https://github.com/makaimc/sf-django">https://github.com/makaimc/sf-django</a>
+                    </h4>
+                    <img src="/img/presentations/2014-san-fran-django-ansible/deploy-with-ansible-repo.jpg" style="border: 1px solid; box-shadow: none; background: none;" />
+                </section>
+                
+                <section>
+                    <h2>Organization</h2>
+                    <pre style="font-size: .9em;">
+deploy
+  |---- deploy.yml
+  |---- hosts
+  |---- group_vars/
+          |---- all
+          |---- dbservers
+          |---- webservers
+  |---- roles/
+          |---- all
+          |---- db
+              |---- handlers
+              |---- tasks
+              |---- templates
+          |---- web
+                    </pre>
+                </section>
+                
+                <section>
+                    <h2>Variables</h2>
+                    <ul class="bigger">
+                        <li class="fragment">Letters, numbers, underscores are valid names</li>
+                        <li class="fragment">Always start with a letter</li>
+                        <li class="fragment">Valid: port_number</li>
+                        <li class="fragment">{{ ansible_env }} pulls from environment</li>
+                        <li class="fragment">Precedence rules exist</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Roles</h2>
+                    <ul class="bigger">
+                        <li class="fragment">Allow multinode orchestration</li>
+                        <li class="fragment">Define behavior for server type</li>
+                        <li class="fragment">Enable reuse and organization</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Deployment Tasks</h2>
+                    <ul class="bigger">
+                        <li>Configure servers</li>
+                        <li>Set up [Python] environment</li>
+                        <li>Deploy code</li>
+                        <li>Migrate database schema &amp; data</li>
+                        <li>Perform ad hoc tasks</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Configure servers</h2>
+                    <img src="/img/presentations/2014-san-fran-django-ansible/deploy-config-mgmt.jpg" style="border: 1px solid; box-shadow: none; background: none; border-radius: 5px;" />
+                </section>
+                
+                <section>
+                    <h2>Configure servers</h2>
+                    <pre style="font-size: .9em;">
+- name: install latest version of Apache
+  yum: name=httpd state=latest
+
+- name: check if apache conf.d dir exists
+  stat: path=/etc/httpd/conf.d/
+  register: apache_dir
+
+- debug: msg="conf.d exists and is dir"
+  when: apache_dir.stat.isdir is defined 
+        and apache_dir.stat.isdir
+                    </pre>
+                </section>
+                
+                <section>
+                    <h2>Set up environment</h2>
+                    <img src="/img/presentations/2014-san-fran-django-ansible/deploy-python-env.jpg" style="border: 1px solid; box-shadow: none; background: none; border-radius: 5px;" />
+                </section>
+                
+                <section>
+                    <h2>Set up environment</h2>
+                    <pre style="font-size: .9em;">
+- name: check if virtualenv already exists
+  stat: path={{virtualenv_dir}}
+  register: venv_dir
+
+- name: create virtualenv for Django web app
+  shell: virtualenv {{virtualenv_dir}}
+  when: venv_dir.stat.isdir is not defined
+
+- name: install web application dependencies
+  pip: requirements={{app_dir}}/reqs.txt
+       virtualenv={{virtualenv_dir}}
+                    </pre>
+                </section>
+                
+                <section>
+                    <h2>Deploy code</h2>
+                    <img src="/img/presentations/2014-san-fran-django-ansible/deploy-code.jpg" style="border: 1px solid; box-shadow: none; background: none; border-radius: 5px;" />
+                </section>
+                
+                <section>
+                    <h2>Deploy code</h2>
+                    <pre style="font-size: .9em;">
+- name: install known_hosts file for GitHub
+  copy: src={{ ssh_dir }}/known_hosts 
+        dest=/home/{{ deploy_user }}/.ssh
+
+- name: checkout latest web app code
+  git: repo={{code_repo}} dest={{app_dir}}
+                    </pre>
+                </section>
+                
+                <section>
+                    <h2>Migrate DB schema &amp; data</h2>
+                    <img src="/img/presentations/2014-san-fran-django-ansible/deploy-database.jpg" style="border: 1px solid; box-shadow: none; background: none; border-radius: 5px;" />
+                </section>
+                
+                <section>
+                    <h2>Migrate DB schema &amp; data</h2>
+                    <pre style="font-size: .9em;">
+- name: Django syncdb
+  django_manage: command=syncdb
+                 app_path={{app_code_dir}}
+                 virtualenv={{venv_dir}}
+  environment: django_env_vars
+
+
+- name: Django migrate
+  django_manage: command=migrate
+                 app_path={{app_code_dir}}
+                 virtualenv={{venv_dir}}
+  environment: django_env_vars
+  when: django_use_south
+                    </pre>
+                </section>
+                
+                <section>
+                    <h2>Perform ad hoc tasks</h2>
+                    <img src="/img/presentations/2014-san-fran-django-ansible/deploy-ad-hoc.jpg" style="border: 1px solid; box-shadow: none; background: none; border-radius: 5px;" />
+                </section>
+                        
+                <section>
+                    <h2>Perform ad hoc tasks</h2>
+                    <pre style="font-size: .9em;">
+# playbook
+- name: Django collectstatic
+  django_manage: command=collectstatic 
+                 app_path={{app_code_dir}}
+                 virtualenv={{venv_dir}}
+  environment: django_env_vars
+
+# command line
+$ ansible-playbook django-stack.yml --step \
+  --start-at-task="Django collectstatic"   \
+  -u deployer -K
+                    </pre>
+                </section>
+
+                <section>
+                    <h2>Ansible downsides</h2>
+                    <ul class="bigger">
+                        <li class="fragment">No Windows support</li>
+                        <li class="fragment">Lack of testing tools</li>
+                        <li class="fragment">Reuse ambiguity</li>
+                    </ul>
+                </section>
+                
+                <section style="text-align: center;">
+                    <h2>Django deployment dream</h2>
+                    <ul class="bigger">
+                        <li class="fragment">pip install deploy-tool</li>
+                        <li class="fragment">
+                            INSTALLED_APPS += 'deploy_tool'
+                        </li>
+                        <li class="fragment">vim deploy-params.yml</li>
+                        <li class="fragment">python manage.py deploy</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Underwear</h2>
+                    <img src="/img/presentations/2014-san-fran-django-ansible/underwear-github.jpg" style="border: 1px solid; box-shadow: none; background: none;" />
+                </section>
+                
+                <section>
+                    <h2>Underwear</h2>
+                    <ul class="bigger">
+                        <li class="fragment">pip install underwear</li>
+                        <li class="fragment">
+                            INSTALLED_APPS += 'underwear'
+                        </li>
+                        <li class="fragment">wget underwear.yml</li>
+                        <li class="fragment">wget hosts</li>
+                        <li class="fragment">vim deploy/underwear.yml</li>
+                        <li class="fragment">vim deploy/hosts</li>
+                        <li class="fragment">python manage.py deploy</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Underwear Repository</h2>
+                    <p style="margin-top: 3.8em; font-size: 1.4em;"><a href="https://github.com/makaimc/underwear">https://github.com/makaimc/underwear</a></p>
+                </section>
+
+                <section>
+                    <h2>Resources</h2>
+                    <ul>
+                        <li><a href="http://www.ansibleworks.com/docs/">Ansible Docs</a></li>
+                        <li><a href="http://devopsu.com/newsletters/ansible-weekly-newsletter.html">Ansible Weekly Newsletter</a></li>
+                        <li><a href="http://www.fullstackpython.com/">Full Stack Python</a></li>
+                        <li><a href="http://devopsu.com/blog/ansible-vs-shell-scripts/">Ansible vs. Shell Scripts</a></li>
+                        <li><a href="http://missingm.co/2013/06/ansible-and-salt-a-detailed-comparison/">Ansible and Salt: A Detailed Comparison</a></li>
+                        <li><a href="http://www.nickhammond.com/automating-development-environment-ansible/">Automating your development environment with Ansible</a></li>
+                        <li><a href="http://devopsu.com/guides/ansible-post-install.html">Post-install steps with Ansible</a></li>
+                        <li><a href="http://lattejed.com/first-five-and-a-half-minutes-on-a-server-with-ansible">First Five (and a Half) Minutes on a Server with Ansible</a></li>
+                        <li><a href="http://davidwinter.me/articles/2013/11/23/introduction-to-ansible/">(Detailed) Introduction to Ansible</a></li>
+                        <li><a href="http://blog.couchbase.com/create-couchbase-cluster-with-ansible">Create a Couchbase Cluster with Ansible</a></li>
+                        <li><a href="https://groups.google.com/forum/#!msg/Ansible-project/WpRblldA2PQ/lYDpFjBXDlsJ">Idempotence, convergence, and other silly fancy words</a></li>
+                        <li><a href="https://github.com/makaimc/mattmakai.github.com/blob/gh-pages/static/presentations/2014-san-fran-django-ansible.html">This presentation's source code</a></li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Contact Information</h2>
+                    <ul class="bigger">
+                        <li>Matt Makai</li>
+                        <li><a href="http://twitter.com/mattmakai">@mattmakai</a></li>
+                        <li>matthew.makai@gmail.com</li>
+                        <li><a href="https://github.com/makaimc">makaimc</a> on GitHub</a>
+                        <li><a href="http://www.mattmakai.com/">www.mattmakai.com</a></li>
+                        <li><a href="http://www.codingacrossamerica.com/">www.codingacrossamerica.com</a></li>
+                    </ul>
+                </section>
+		</div>
+
+        <script src="/js/jquery.min.js"></script>
+		<script src="/lib/js/head.min.js"></script>
+		<script src="/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: '/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: '/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		</script>
+
+	</body>
+</html>

@@ -6,14 +6,14 @@ Presentations
 2014 Talks
 ----------
 
-`Making DevOps Work in the Federal Government </presentations/2014-finra-devops-in-govt.html>`_
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Making DevOps work right in any organization is difficult, but what about the
-additional challenges posed by federal government regulations? This talk 
-focuses on bridging the divide between application developer and system 
-administrator perspective, improving infrastructure incrementally, and 
-showing progress to skeptical non-technical colleagues in a highly regulated
-environment.
+`DevOps Work in an Established Organization </presentations/2014-finra-devops-established-organization.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Making DevOps work in any organization is difficult, but what about the
+additional challenges posed by an established organization's culture? This 
+talk focuses on bridging the divide between the application developer 
+and system administrator perspectives, improving infrastructure 
+incrementally, and showing progress to skeptical non-technical colleagues 
+in a "because we've always done it that way" environment.
 
 Upcoming talk on January 22 to the 
 `Financial Industry Regulatory Authority <http://www.finra.org/>`_
