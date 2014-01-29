@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2014-01-17T00:00:00-05:00</updated><entry><title>CFPB Collab MySQL requirements.txt Installation Error</title><link href="http://www.mattmakai.com/cfpb-collab-mysql-requirements-txt-installation-error.html" rel="alternate"></link><updated>2014-01-17T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2014-01-17:cfpb-collab-mysql-requirements-txt-installation-error.html</id><summary type="html">&lt;p&gt;In case you're trying to get &lt;a class="reference external" href="https://github.com/cfpb/collab"&gt;CFPB collab&lt;/a&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Makai</title><link href="http://www.mattmakai.com/" rel="alternate"></link><link href="http://www.mattmakai.com/feeds/all.atom.xml" rel="self"></link><id>http://www.mattmakai.com/</id><updated>2014-01-29T07:34:34-05:00</updated><entry><title>Big Questions in Tech</title><link href="http://www.mattmakai.com/big-questions-in-tech.html" rel="alternate"></link><updated>2014-01-29T07:34:34-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2014-01-29:big-questions-in-tech.html</id><summary type="html">&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Mobile&lt;/li&gt;
+&lt;li&gt;SaaS&lt;/li&gt;
+&lt;li&gt;Client side frameworks&lt;/li&gt;
+&lt;/ol&gt;
+</summary></entry><entry><title>The Seven Most Important Principles I've Learned About Design</title><link href="http://www.mattmakai.com/the-seven-most-important-principles-ive-learned-about-design.html" rel="alternate"></link><updated>2014-01-29T07:34:34-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2014-01-29:the-seven-most-important-principles-ive-learned-about-design.html</id><summary type="html">&lt;ol class="arabic simple"&gt;
+&lt;li&gt;CRAP (Contrast, Repetition, Alignment, and Proximity) Matters&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;2. Use similar style serif and sans serif fonts together
+Serif is better for blocks of text, while sans serif is perfect for
+headings.&lt;/p&gt;
+&lt;ol class="arabic simple" start="3"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.bootstrappingdesign.com/"&gt;Bootstrapping Design&lt;/a&gt; is a
+fantastic book for learning design.&lt;/li&gt;
+&lt;/ol&gt;
+</summary></entry><entry><title>CFPB Collab MySQL requirements.txt Installation Error</title><link href="http://www.mattmakai.com/cfpb-collab-mysql-requirements-txt-installation-error.html" rel="alternate"></link><updated>2014-01-17T00:00:00-05:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2014-01-17:cfpb-collab-mysql-requirements-txt-installation-error.html</id><summary type="html">&lt;p&gt;In case you're trying to get &lt;a class="reference external" href="https://github.com/cfpb/collab"&gt;CFPB collab&lt;/a&gt;
 working in your environment, there's a few errors you might run into. This is
 a quick post to highlight solutions to the issues I came across.&lt;/p&gt;
 &lt;p&gt;Collab currently requires MySQL for the backend. I do not believe MySQL is a
@@ -1186,21 +1201,6 @@ substitute for thinking. You’re encouraged to behave like a little
 gear in a complex machine. Frankly, it allows you to keep people who
 aren’t that smart, who aren’t that creative.&lt;/blockquote&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://www.wired.com/wiredscience/2012/10/ff-elon-musk-qa/all/"&gt;Awesome interview with Elon Musk on Wired.com&lt;/a&gt;.&lt;/p&gt;
-</summary></entry><entry><title>Big Questions in Tech</title><link href="http://www.mattmakai.com/big-questions-in-tech.html" rel="alternate"></link><updated>2012-10-27T11:16:24-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-10-27:big-questions-in-tech.html</id><summary type="html">&lt;ol class="arabic simple"&gt;
-&lt;li&gt;Mobile&lt;/li&gt;
-&lt;li&gt;SaaS&lt;/li&gt;
-&lt;li&gt;Client side frameworks&lt;/li&gt;
-&lt;/ol&gt;
-</summary></entry><entry><title>The Seven Most Important Principles I've Learned About Design</title><link href="http://www.mattmakai.com/the-seven-most-important-principles-ive-learned-about-design.html" rel="alternate"></link><updated>2012-10-27T11:16:24-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-10-27:the-seven-most-important-principles-ive-learned-about-design.html</id><summary type="html">&lt;ol class="arabic simple"&gt;
-&lt;li&gt;CRAP (Contrast, Repetition, Alignment, and Proximity) Matters&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;2. Use similar style serif and sans serif fonts together
-Serif is better for blocks of text, while sans serif is perfect for
-headings.&lt;/p&gt;
-&lt;ol class="arabic simple" start="3"&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://www.bootstrappingdesign.com/"&gt;Bootstrapping Design&lt;/a&gt; is a
-fantastic book for learning design.&lt;/li&gt;
-&lt;/ol&gt;
 </summary></entry><entry><title>Learning Vim - A Colleague's Question</title><link href="http://www.mattmakai.com/learning-vim-colleague-question.html" rel="alternate"></link><updated>2012-10-15T00:00:00-04:00</updated><author><name>Matt Makai</name></author><id>tag:www.mattmakai.com,2012-10-15:learning-vim-colleague-question.html</id><summary type="html">&lt;p&gt;I received the following email from my colleague this morning:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Hey buddy, finally taking the plunge to learn VIM because it will make
