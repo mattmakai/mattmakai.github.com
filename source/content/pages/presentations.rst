@@ -6,8 +6,9 @@ Presentations
 2014 Talks
 ----------
 
-`Appropriate Software Communications </presentations/2014-dc-nightowls-appropriate-software-communications.html>`_
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Appropriate Software Communications
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 Upcoming talk on March 3 to 
 `DC Nightowls <http://www.meetup.com/dcnightowls/>`_ in the Dupont 
@@ -16,15 +17,25 @@ neighborhood of Washington, DC.
 ----
 
 
+Overcoming Cultural Barriers to DevOps Adoption
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Upcoming talk at the ADAPT conference on February 20 in Arlington, Virginia.
+
+----
+
+
 `Making Dev + Ops Work </presentations/2014-finra-dev-plus-ops.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Getting DevOps to work in any organization is difficult because developers speak 
-a different language than ops. This talk focuses on bridging the divide 
+Getting DevOps to work in any organization is difficult because developers 
+speak a different language than ops. This talk focuses on bridging the divide 
 between the application developer and system administrator perspectives, 
 improving infrastructure incrementally, and showing progress to skeptical 
-non-technical colleagues in a 'because we've always done it that way environment.
+non-technical colleagues in a 'because we've always done it that way 
+environment.
 
-Upcoming talk on January 22 to the 
+Talk presented on January 22 to the 
 `Financial Industry Regulatory Authority <http://www.finra.org/>`_
 (FINRA) on January 22 in Rockville, Maryland.
 
