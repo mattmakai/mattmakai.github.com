@@ -6,6 +6,21 @@ Presentations
 2014 Talks
 ----------
 
+Automated Deployments with Ansible & Fabric
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This talk will show how to automated Linux and Python stack deployments with 
+Ansible and Fabric. You'll learn how to apply these libraries to your 
+project and see how to use Ansible Playbooks with tasks, handlers, and 
+templates to go from a bare Linux installation to a running Python web 
+application.
+
+Upcoming talk on March 11 to the 
+`Center for Open Science <http://centerforopenscience.org/>`_ in 
+Charlottesville, VA.
+
+----
+
+
 Appropriate Software Communications
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
