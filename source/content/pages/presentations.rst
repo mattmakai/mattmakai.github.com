@@ -32,8 +32,8 @@ neighborhood of Washington, DC.
 ----
 
 
-Overcoming Cultural Barriers to DevOps Adoption
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`What is DevOps? </presentations/2014-adapt-devops.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 Upcoming talk at the ADAPT conference on February 20 in Arlington, Virginia.

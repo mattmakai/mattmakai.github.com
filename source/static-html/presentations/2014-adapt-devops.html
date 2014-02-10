@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>What is DevOps?</title>
+
+		<meta name="description" content="" />
+
+		<meta name="author" content="Matt Makai" />
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="/css/reveal/reveal.min.css">
+		<link rel="stylesheet" href="/css/reveal/theme/night.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="/lib/css/zenburn.css">
+        <style>
+            ol.bigger li, 
+            ul.bigger li {
+               font-size: 1.8em;
+               margin-top: 20px;
+               margin-bottom: 15px;
+               line-height: 1.1em;
+               margin-left: 20px;
+            }
+            ol.bigger li {
+                margin-left: 1em;
+            }
+            img.no-border-rounded {border: none; border-radius: 5px;}
+        </style>
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="/css/reveal/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+            <div class="slides" style="text-align: left;">
+				<section>
+					<h1 style="line-height: 1em; font-size: 3.8em; margin-bottom: 50px;">What is DevOps?</h1>
+                    <h4>ADAPT February 2014</a></h4>
+                    <br/>
+                    <br/>
+					<p><small>
+                        <a href="https://github.com/samueltbrown">Sam Brown</a> | 
+                        <a href="http://twitter.com/SamuelBrownIV">@SamuelBrownIV</a> |
+                        <a href="https://www.blackboard.com">Blackboard</a> 
+                        Senior Manager, Engineering Services
+                    </small></p>
+					<p><small>
+                        <a href="http://www.mattmakai.com">Matt Makai</a> | 
+                        <a href="http://twitter.com/mattmakai">@mattmakai</a> |
+                        <a href="https://github.com/makaimc">makaimc</a> 
+                        on GitHub |
+                        <a href="https://www.twilio.com">Twilio</a> 
+                        Developer Evangelist
+                    </small></p>
+				</section>
+                
+                <section>
+                    <h1>A simpler time...</h1>
+                </section>
+                
+                <section>
+                    <h2>US Home Prices</h2>
+                    <img src="/img/presentations/2014-adapt-devops/housing-prices.png" style="border: none; border-radius: 5px; padding: 5px; background: white;" />
+                </section>
+                
+                <section>
+                    <img src="/img/presentations/2014-adapt-devops/ms-word.png" style="border: none; border-radius: 5px;" />
+                </section>
+                
+                <section>
+                    <h2>My first sys admin</h2>
+                    <img src="/img/presentations/2014-san-fran-django-ansible/sys-admin.jpg" style="border: 1px solid; border-radius: 5px;" />
+                </section>
+                
+                <section style="text-align: center;">
+                    <h1>#!/bin/bash</h1>
+                </section>
+                
+                <section>
+                    <h2 style="font-size: 3em;">Life was good</h2>
+                    <ul class="bigger">
+                        <li class="fragment">Weeks to iron out environment</li>
+                        <li class="fragment">Months to fix unplanned bugs</li>
+                        <li class="fragment">2 years to deliver value</li>
+                        <li class="fragment">Business users didn't need app</li>
+                    </ul>
+                </section>
+
+                
+                <section>
+                    <h2 style="font-size: 3em;">Life was NOT good</h2>
+                    <img src="/img/presentations/2014-adapt-devops/agile-process.png" class="no-border-rounded" style="border: 1px solid #fefefe; background: #eee; padding: 15px;" />
+                </section>
+                
+                <section>
+                    <h2 style="font-size: 3em;">Today</h2>
+                    <ul class="bigger">
+                        <li class="fragment">What is DevOps?</li>
+                        <li class="fragment">Why?</li>
+                        <li class="fragment">Gotchas</li>
+                        <li class="fragment">Specific Actions</li>
+                        <li class="fragment">Groups &amp; Resources</li>
+                    </ul>
+                </section>
+                
+                <section style="text-align: center;">
+                    <h1 style="font-size: 6em; color: #eee;">Sam - DevOps</h1>
+                </section>
+                
+                <section style="text-align: center;">
+                    <h1 style="font-size: 6em; color: #eee;">Specific Actions</h1>
+                </section>
+                
+                <section>
+                    <h2>Move from this...</h2>
+                    <img src="/img/presentations/2014-finra-devops-in-govt/class-diagram.png" style="border: 1px solid; border-radius: 5px;" width="80%" height="80%" />
+                </section>
+                
+                <section>
+                    <h2>...to this</h2>
+                    <img src="/img/presentations/2014-finra-devops-in-govt/codebase.jpg" style="border: 1px solid; border-radius: 5px;" width="110%" height="110%" />
+                </section>
+                
+                <section>
+                    <h2 style="font-size: 3em;">Measure progress</h2>
+                    <ul class="bigger">
+                        <li class="fragment">
+                            Time from feature requested 
+                            to available in production
+                        </li>
+                        <li class="fragment">
+                            Time from issue reported 
+                            to fixed in production
+                        </li>
+                        <li class="fragment">
+                            Getting into production 
+                            satisfaction survey
+                        </li>
+                    </ul>
+                    
+                </section>
+                
+                <section style="text-align: center;">
+                    <h1 style="font-size: 3em;">Create operations API</h2>
+                </section>
+                
+                <section>
+                    <h2 style="font-size: 2em;">Go to DevOps meetup groups</h2>
+                    <img src="/img/presentations/2014-finra-devops-in-govt/devopsdc.jpg" style="border: 1px solid; border-radius: 5px;" /> 
+                </section>
+                
+                <section>
+                    <h2 style="font-size: 2em;">Create metrics visibility app</h2>
+                    <img src="/img/presentations/2014-finra-devops-in-govt/metrics-admin.jpg" style="border: 1px solid; border-radius: 5px;" /> 
+                </section>
+                
+                
+                <section>
+                    <h2 style="font-size: 2em;">Go to DevOps meetup groups</h2>
+                    <img src="/img/presentations/2014-finra-devops-in-govt/dc-config-mgmt.jpg" style="border: 1px solid; border-radius: 5px;" /> 
+                </section>
+                
+                <section style="text-align: center;">
+                    <h1 style="font-size: 4.5em; color: #eee;">Groups &amp; Resources</h1> 
+                </section>
+                
+                <section>
+                    <h2>Groups</h2>
+                    <ul class="bigger">
+                        <li><a href="http://www.meetup.com/DevOpsDC/">DevOps DC</a></li>
+                        <li><a href="http://www.meetup.com/DC-Configuration-Management-Group/">DC Continuous Integration</a></li>
+                        <li><a href="http://www.meetup.com/DC-continuous-delivery/">DC Continuous Delivery</a></li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Resources</h2>
+                    <ul>
+                        <li><a href="http://devopsweekly.com/">DevOps Weekly Newsletter</a></li>
+                        <li><a href="http://www.fullstackpython.com/">Full Stack Python</a></li>
+                        <li><a href="http://www.slideshare.net/devopsguys/dev-opsguys-devops-101-for-recruiters">DevOps 101 for Recruiters (good simple intro)</a></li>
+                        <li><a href="http://puppetlabs.com/puppet/what-is-puppet">What is Puppet?</a></li>
+                        <li><a href="http://www.getchef.com/chef/">What is Chef?</a></li>
+                        <li><a href="http://www.ansible.com/about-ansible">What is Ansible?</a></li>
+                        <li><a href="http://devopsu.com/blog/ansible-vs-shell-scripts/">Ansible vs. Shell Scripts</a></li>
+                        <li><a href="https://github.com/makaimc/mattmakai.github.com/blob/gh-pages/static/presentations/2014-adapt-devops.html">This presentation's source code</a></li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Contact Information</h2>
+                    <ul class="bigger">
+                        <li>Sam Brown</li>
+                        <li><a href="http://twitter.com/SamuelBrownIV">@SamuelBrownIV</a></li>
+                        <li>samuel.t.brown@gmail.com</li>
+                    </ul>
+                    <br/>
+                    <ul>
+                        <li>Matt Makai</li>
+                        <li><a href="http://twitter.com/mattmakai">@mattmakai</a></li>
+                        <li>matthew.makai@gmail.com</li>
+                        <li><a href="https://github.com/makaimc">makaimc</a> on GitHub</a>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Picture references</h2>
+                    <ul>
+                        <li><a href="http://4.bp.blogspot.com/-kF3lmQxMEE8/UiowM015NrI/AAAAAAAAKEo/f8ZdJTOl2kM/s1600/Screen%2BShot%2B2013-09-06%2Bat%2B4.39.02%2BPM.png">Housing prices</a></li>
+                        <li><a href="http://images.pcworld.com/images/article/2012/08/pcw64920document20open20in20word20on20ipad-11399688.png">MS Word document</a></li>
+                        <li><a href="http://farm5.static.flickr.com/4029/4360104794_4f3f2b7a2f_b.jpg">"Sys admin"</a></li>
+                        <li><a href="http://www.xyleme.com/blog/wp/wp-content/uploads/2012/01/Agile-Development-Process.png">Agile process diagram</a></li>
+                        <li><a href="http://img153.imageshack.us/img153/8877/class.png">Class diagram</a></li>
+                        <li><a href="http://jeffhilimire.com/wp-content/uploads/2012/05/move-fast-break-things.jpg">Facebook move fast break things</a></li>
+                    </ul>
+                </section>
+		</div>
+
+        <script src="/js/jquery.min.js"></script>
+		<script src="/lib/js/head.min.js"></script>
+		<script src="/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: '/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: '/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		</script>
+
+	</body>
+</html>
