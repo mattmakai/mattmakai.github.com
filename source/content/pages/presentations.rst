@@ -25,18 +25,34 @@ Appropriate Software Communications
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Upcoming talk on March 3 to 
+Upcoming short 10 minute talk on March 3 to 
 `DC Nightowls <http://www.meetup.com/dcnightowls/>`_ in the Dupont 
-neighborhood of Washington, DC.
+neighborhood of Washington, D.C.
 
 ----
 
 
-`What is DevOps? </presentations/2014-adapt-devops.html>`_
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`DevOps: Adoption through Culture, Automation, Measurement, and Sharing </presentations/2014-adapt-devops.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The DevOps movement is built on a real need in the software development 
+community: how to rapidly deploy Agile teams' dramatically increased 
+output into production. This talk will show the advent of the DevOps 
+movement and provide greater understanding based on the Culture, Automation, 
+Measurement and Sharing (CAMS) framework. The audience will leave this 
+presentation with immediate actions to drive DevOps adoption within their 
+organizations.
+
+Upcoming talk at `ADAPT <http://afei.org/events/4A21/Pages/default.aspx>`_  on February 20 in Arlington, Virginia.
+
+----
 
 
-Upcoming talk at the ADAPT conference on February 20 in Arlington, Virginia.
+`How to Win Friends and Influence Hackathon Judges with Twilio </presentations/2014-codeday-dc-twilio-intro.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Upcoming talk at `CodeDay DC <http://dc.codeday.org/>`_ on February 15 in
+the Dupont neighborhood of Washington, D.C.
 
 ----
 
