@@ -25,6 +25,7 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
 	</head>
 
 	<body>		
@@ -34,10 +35,11 @@
 			<div class="slides">
 		
 				<section style="text-align: left;">
-                    <h2 style="font-size: 3em;">
-                        How to Win Friends and Influence Hackathon 
-                        Judges with Twilio
+                    <h2>
+                        How to Win Friends &amp; Influence Hackathon 
+                        Judges with <span style="color: #ff0000">Twilio</span>
                     </h2>
+                    <br/>
 					<p><small>
                         <a href="http://www.mattmakai.com">Matt Makai</a> | 
                         <a href="http://twitter.com/mattmakai">@mattmakai</a> |
@@ -72,48 +74,20 @@
                     </div>
                 </section>
 
-                <section>
+                <section style="text-align: left;">
                     <h2>With <span class="t">twilio</span> you can:</h2>
                     <ul>
-                        <li class="fragment">Build a custom phone support system</li>
-                        <li class="fragment">Send daily deals via SMS to customers</li>
-                        <li class="fragment">Instantly connect customers on your website to sales reps with a voice call</li>
-                        <li class="fragment">Let mobile users chat in a private conference call while using your app</li>
+                        <li class="fragment">Build a group chat app - <a href="https://groupme.com/">GroupMe</a></li>
+                        <li class="fragment">End no-shows for doctor's appointments - <a href="https://www.appointmentreminder.org/">Appointment Reminder</a></li>
+                        <li class="fragment">Make voice calls to a customer from your browser - <a href="http://www.zendesk.com/">Zendesk</a></li>
+                        <li class="fragment">Put everyone into a a group conference call</li>
                     </ul>
-                    <h4 class="fragment" style="margin-top: 40px;">Every human enterprise is based on communication.</h4>
-                </section>
-
-                <section data-state="segway">
-                    <h2 style="margin:0; color:#fff;">INTRODUCTIONS</h2>
                 </section>
 
                 <section>
                     <h2 class="t">Talk is cheap!</h2>
                     <p>(let's make some phones ring...)</p>
                 </section>
-
-                <!--
-                <section>
-                    <h2 class="t">Our Nine Things</h2>
-                    <table class="things">
-                        <tr>
-                            <td >Live the spirit of challenge</td>
-                            <td class="fragment">Empower others</td>
-                            <td class="fragment">Start with why</td>
-                        </tr>
-                        <tr>
-                            <td class="fragment">Create experiences</td>
-                            <td class="fragment">No shenanigans</td>
-                            <td class="fragment">Be humble</td>
-                        </tr>
-                        <tr>
-                            <td class="fragment">Think at scale</td>
-                            <td class="fragment">Be frugal</td>
-                            <td class="fragment">Draw the owl</td>
-                        </tr>
-                    </table>
-                </section>
-                -->
 
                 <section data-state="owl" style="margin-top: 250px;">
                     <h2 style="color:#fff; margin:0;">HOLY BISCUITS</h2>
@@ -137,29 +111,69 @@
                     </div>
                 </section>
                 
-                <section>
+                <section style="text-align: left;">
                     <h1>Challenge #1</h1>
-                    <h4><span class="t">Dial "A" for "Awesome"</span></h4>
-                    <div class="pull-left">
-                        <img src="/img/presentations/2014-codeday-dc-twilio-intro/operator.jpg" alt="pizza guy"/>
-                    </div>
-                    <div class="pull-right">
+                    <h4><span class="t">Sending text messages (SMS)</span></h4>
+                    <div style="text-align: left;">
                         <ul>
-                            <li>Use Case: Simple Call Forwarding</li>
-                            <li>
-                                Requirements:
-                                <ul>
-                                    <li>User dials in to a corporate number</li>
-                                    <li>User selects a person or department by pressing a button</li>
-                                    <li>System connects caller to that person or department</li>
-                                </ul>
-                            </li>
+                            <li>Pair up</li>
+                            <li>Create Twilio account</li>
+                            <li>Choose your programming language</li>
+                            <li>Send SMS to each other's phones</li>
+                            <li>Send SMS to (202) 552-0409</li>
                         </ul>
                     </div>
                 </section>
+                
+                <section style="text-align: left;">
+                    <h2>Stuff you'll need to know:</h2>
+                    <ul>
+                        <li>Twilio REST API</li>
+                        <li>Twilio Helper Libraries</li>
+                    </ul>
+                </section>
+                
+                <section style="text-align: left;">
+                    <h2>The <span class="t">twilio</span> REST API</h2>
+                    <div class="pull-left">
+                        <img src="/img/presentations/2014-codeday-dc-twilio-intro/cloud11.png" alt="" style="margin-top: 30px;"/>
+                    </div>
+                    <div class="pull-right">
+                        <ul>
+                            <li>Make phone calls</li>
+                            <li>Send text messages</li>
+                            <li>Get usage records</li>
+                            <li>Buy phone numbers</li>
+                            <li>Everything <span class="t">twilio</span> can do (just about)</li>
+                            <li><a href="http://www.twilio.com/docs/api/rest">Full Docs</a></li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section>
+                    <h2>A cURL Request</h2>
+                    <pre><code class="bash" contenteditable>
+$ curl -XPOST https://api.twilio.com/2010-04-01/Accounts/AC308ac9a994b1bd8b73ca0166442236c7/Calls.json \
+    -d "Url=http://demo.twilio.com/docs/voice.xml" \
+    -d "To=+14155551212" \
+    -d "From=+14158675309" \
+    -u 'AC308ac9a994b1bd8b73ca0166442236c7:{AuthToken}'
+                    </code></pre>
+                </section>
 
                 <section>
-                    <h2>Stuff you'll need to know:</h2>
+                    <h3>Available Helper Libraries</h3>
+                    <img src="/img/presentations/2014-codeday-dc-twilio-intro/java.jpg" alt=""/>
+                    <img src="/img/presentations/2014-codeday-dc-twilio-intro/node.png" alt=""/>
+                    <img src="/img/presentations/2014-codeday-dc-twilio-intro/dotnet.png" alt=""/>
+                    <img src="/img/presentations/2014-codeday-dc-twilio-intro/php.png" alt=""/>
+                    <img src="/img/presentations/2014-codeday-dc-twilio-intro/python.png" alt=""/>
+                    <img src="/img/presentations/2014-codeday-dc-twilio-intro/ruby.jpg" alt=""/>
+                </section>
+
+                <section style="text-align: left;">
+                    <h2>Advanced topics</h2>
+                    <h4><span class="t">If we have time, or after workshop</span></h4>
                     <ul>
                         <li>Webhooks</li>
                         <li>TwiML</li>
@@ -266,357 +280,47 @@
                     </div>
                 </section>
 
+
+                
                 <section>
-                    <h1>Challenge #1</h1>
-                    <h4><span class="t">Dial "A" for "Awesome"</span></h4>
+                    <h1>Challenge #2</h1>
+                    <h4><span class="t">Kicking @$$ and Taking Orders</span></h4>
                     <div class="pull-left">
-                        <img src="/img/presentations/2014-codeday-dc-twilio-intro/operator.jpg" alt="operator"/>
+                        <img src="/img/presentations/2014-codeday-dc-twilio-intro/pizza-guy.gif" alt="pizza guy"/>
                     </div>
                     <div class="pull-right">
                         <ul>
-                            <li>Use Case: Simple Call Forwarding</li>
+                            <li>Use Case: Pizza Orders via SMS</li>
                             <li>
                                 Requirements:
                                 <ul>
-                                    <li>User dials in to a corporate number</li>
-                                    <li>User selects a person or department by pressing a button</li>
-                                    <li>System connects caller to that person or department</li>
+                                    <li>Take (and acknowledge) order via SMS</li>
+                                    <li>Display list of orders on a web page</li>
+                                    <li>Send an SMS notification when a pizza order is on the way</li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
                 </section>
-
-                <section>
-                    <h2>Plan of Attack</h2>
-                    <ul>
-                        <li>Buy a Twilio number</li>
-                        <li>Write a Ruby server which will handle an HTTP callback from Twilio</li>
-                        <li>Put your service on the internet using localtunnel or heroku</li>
-                        <li>Call and test your number</li>
-                    </ul>
-                </section>
                 
-                <section>
+                <section style="text-align: left;">
                     <h2>Resources</h2>
                     <ul>
-                        <li><a href="http://github.com/kwhinnery/twilio-workshop">Workshop Code</a> (we'll do a quick run through...)</li>
                         <li><a href="http://www.twilio.com/docs">Twilio Docs</a></li>
-                        <li><a href="https://devcenter.heroku.com/articles/rack">Running Sinatra apps on Heroku</a></li>
+                        <li><a href="https://ngrok.com/">ngrok</a></li>
                         <li><a href="http://progrium.com/localtunnel/">Localtunnel</a></li>
-                        <li><a href="http://www.sinatrarb.com/">Sinatra</a></li>
                     </ul>
                 </section>
 
-                <section>
-                    <h1>Challenge #2</h1>
-                    <h4><span class="t">Kicking @$$ and Taking Orders</span></h4>
-                    <div class="pull-left">
-                        <img src="/img/presentations/2014-codeday-dc-twilio-intro/pizza-guy.gif" alt="pizza guy"/>
-                    </div>
-                    <div class="pull-right">
-                        <ul>
-                            <li>Use Case: Pizza Orders via SMS</li>
-                            <li>
-                                Requirements:
-                                <ul>
-                                    <li>Take (and acknowledge) order via SMS</li>
-                                    <li>Display list of orders on a web page</li>
-                                    <li>Send an SMS notification when a pizza order is on the way</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>Stuff you'll need to know:</h2>
-                    <ul>
-                        <li>Twilio REST API</li>
-                        <li>Twilio Helper Libraries</li>
-                    </ul>
-                </section>
-                
-                <section>
-                    <h2>The <span class="t">twilio</span> REST API</h2>
-                    <div class="pull-left">
-                        <img src="/img/presentations/2014-codeday-dc-twilio-intro/cloud11.png" alt="" style="margin-top: 30px;"/>
-                    </div>
-                    <div class="pull-right">
-                        <ul>
-                            <li>Make phone calls</li>
-                            <li>Send text messages</li>
-                            <li>Get usage records</li>
-                            <li>Buy phone numbers</li>
-                            <li>Everything <span class="t">twilio</span> can do (just about)</li>
-                            <li><a href="http://www.twilio.com/docs/api/rest">Full Docs</a></li>
-                        </ul>
-                    </div>
-                </section>
-                
-                <section>
-                    <h2>Security</h2>
-                    <div class="pull-left">
-                        <img src="/img/presentations/2014-codeday-dc-twilio-intro/lock.png" alt=""/>
-                    </div>
-                    <div class="pull-right">
-                        <ul>
-                            <li>HTTP Basic or Digest Authentication (not oAuth - w00t!)</li>
-                            <li>Username: Account SID</li>
-                            <li>Password: Auth Token</li>
-                            <li><a href="https://www.twilio.com/docs/security">More details</a></li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>A cURL Request</h2>
-                    <pre><code class="bash" contenteditable>
-$ curl -XPOST https://api.twilio.com/2010-04-01/Accounts/AC308ac9a994b1bd8b73ca0166442236c7/Calls.json \
-    -d "Url=http://demo.twilio.com/docs/voice.xml" \
-    -d "To=+14155551212" \
-    -d "From=+14158675309" \
-    -u 'AC308ac9a994b1bd8b73ca0166442236c7:{AuthToken}'
-                    </code></pre>
-                </section>
-
-                <section>
-                    <h3>Available Helper Libraries</h3>
-                    <img src="/img/presentations/2014-codeday-dc-twilio-intro/java.jpg" alt=""/>
-                    <img src="/img/presentations/2014-codeday-dc-twilio-intro/node.png" alt=""/>
-                    <img src="/img/presentations/2014-codeday-dc-twilio-intro/dotnet.png" alt=""/>
-                    <img src="/img/presentations/2014-codeday-dc-twilio-intro/php.png" alt=""/>
-                    <img src="/img/presentations/2014-codeday-dc-twilio-intro/python.png" alt=""/>
-                    <img src="/img/presentations/2014-codeday-dc-twilio-intro/ruby.jpg" alt=""/>
-                </section>
-
-                <section>
-                    <h2>Same Request, With Ruby Helper</h2>
-                    <pre><code class="ruby" contenteditable>
-require 'rubygems'
-# Download twilio-ruby from twilio.com/docs/libraries
-require 'twilio-ruby'
-
-# Get your Account Sid and Auth Token from twilio.com/user/account
-account_sid = 'AC308ac9a994b1bd8b73ca0166442236c7'
-auth_token = '{{ auth_token }}'
-@client = Twilio::REST::Client.new account_sid, auth_token
-
-call = @client.account.calls.create(
-    :url => "http://demo.twilio.com/docs/voice.xml",
-    :to => "+14155551212",
-    :from => "+14158675309"
-)
-puts call.sid
-                    </code></pre>
-                </section>
-
-                <section>
-                    <h1>Challenge #2</h1>
-                    <h4><span class="t">Kicking @$$ and Taking Orders</span></h4>
-                    <div class="pull-left">
-                        <img src="/img/presentations/2014-codeday-dc-twilio-intro/pizza-guy.gif" alt="pizza guy"/>
-                    </div>
-                    <div class="pull-right">
-                        <ul>
-                            <li>Use Case: Pizza Orders via SMS</li>
-                            <li>
-                                Requirements:
-                                <ul>
-                                    <li>Take (and acknowledge) order via SMS</li>
-                                    <li>Display list of orders on a web page</li>
-                                    <li>Send an SMS notification when a pizza order is on the way</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
 
                 <section>
                     <h2>Plan of Attack</h2>
                     <ul>
                         <li>Buy a Twilio number (or use one you already have)</li>
-                        <li>Write a Ruby server which will handle an HTTP callback from Twilio</li>
+                        <li>Write a server which will handle an HTTP callback from Twilio</li>
                         <li>Display a web page with all orders received</li>
                         <li>Click an order to indicate it has been finished</li>
                         <li>Use the Twilio REST API (via a helper library) to send an SMS to the orderer</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Resources</h2>
-                    <ul>
-                        <li><a href="http://github.com/kwhinnery/twilio-workshop">Workshop Code</a></li>
-                        <li><a href="http://www.twilio.com/docs">Twilio Docs</a></li>
-                        <li><a href="https://devcenter.heroku.com/articles/rack">Running Sinatra apps on Heroku</a></li>
-                        <li><a href="http://progrium.com/localtunnel/">Localtunnel</a></li>
-                        <li><a href="http://www.sinatrarb.com/">Sinatra</a></li>
-                        <li><a href="https://github.com/twilio/twilio-ruby">Twilio Ruby docs/examples</a></li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h1>Challenge #3</h1>
-                    <h4><span class="t">Making It Rain</span></h4>
-                    <div class="pull-left">
-                        <img src="/img/presentations/2014-codeday-dc-twilio-intro/salesperson.png" alt="salesperson"/>
-                    </div>
-                    <div class="pull-right">
-                        <ul>
-                            <li>Use Case: Click To Call</li>
-                            <li>
-                                Requirements:
-                                <ul>
-                                    <li>A customer arrives on your website</li>
-                                    <li>Customer clicks a button to talk to sales</li>
-                                    <li>The customer is connected in their browser to a sales rep on the phone</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>Stuff you'll need to know:</h2>
-                    <ul>
-                        <li>TwiML Applications</li>
-                        <li>Twilio Client SDKs</li>
-                        <li>Capability Tokens</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>TwiML Applications</h2>
-                    <ul>
-                        <li>
-                            Re-use TwiML webhook configuration across multiple numbers.
-                            <a href="https://www.twilio.com/user/account/apps">Manage TwiML apps here</a>.
-                        </li>
-                        <li>
-                            Also used to instruct VoIP clients on what to do when a connection is made.
-                        </li>
-                    </ul>
-                </section>
-                
-                <section>
-                    <h2>Twilio Client SDKs</h2>
-                    <ul>
-                        <li>Enable VoIP communications with soft and traditional phones</li>
-                        <li>Available for iOS, Android, and the browser</li>
-                        <li>Browser version uses WebRTC if available, Flash if not</li>
-                        <li>Get Started with <a href="https://www.twilio.com/docs/client/ios">iOS</a></li>
-                        <li>Get Started with <a href="https://www.twilio.com/docs/client/android">Android</a></li>
-                        <li>Get Started with <a href="https://www.twilio.com/docs/client/twilio-js">JavaScript (browser)</a></li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Capability Tokens</h2>
-                    <p>
-                        Twilio Client relies on "capability tokens" to sign communications from devices to Twilio.
-                        These tokens are a secure way of setting up your device to access various features of Twilio.
-                    </p>
-                    <p style="margin-top:30px">
-                        These tokens must be generated on a server, then sent to the browser or mobile device to authorize
-                        a client.
-                    </p>
-                </section>
-
-                <section>
-                    <h2>Outgoing Calls</h2>
-                    <p>If a client needs to make outgoing calls, it needs the "allowClientOutgoing" permission:</p>
-                    <pre><code class="ruby" contenteditable>
-require 'rubygems'
-require 'twilio-ruby'
-
-# put your own account credentials here:
-account_sid = 'AC043dcf9844e13758bc3a36a84c29761'
-auth_token = '{auth token}'
-
-# set up
-capability = Twilio::Util::Capability.new account_sid, auth_token
-
-# allow outgoing calls to this TwiML application
-capability.allow_client_outgoing 'AP89a0180a1a4ddf1da954efca349b7a20'
-
-# generate the token string
-@token = capability.generate
-                    </code></pre>
-                </section>
-
-                <section>
-                    <h2>Incoming Calls</h2>
-                    <p>If a client needs to accept incoming calls, it needs the "allowClientIncoming" permission:</p>
-                    <pre><code class="ruby" contenteditable>
-require 'rubygems'
-require 'twilio-ruby'
-
-# put your own account credentials here:
-account_sid = 'AC043dcf9844e13758bc3a36a84c29761'
-auth_token = '{auth token}'
-
-# set up
-capability = Twilio::Util::Capability.new account_sid, auth_token
-
-# allow incoming calls to this client name:
-capability.allow_client_incoming 'andrew' #could be anything
-
-# generate the token string
-@token = capability.generate
-                    </code></pre>
-                </section>
-
-                <section>
-                    <h2>Browser Configuration</h2>
-                    <p>The capability token is used to initialize the client in the browser like so:</p>
-                    <pre><code class="javascript" contenteditable>
-Twilio.Device.setup(token);
-// Make an outgoing call using the configured TwiML application
-Twilio.Device.connect();
-                    </code></pre>
-                </section>
-
-                <section>
-                    <h1>Challenge #3</h1>
-                    <h4><span class="t">Making It Rain</span></h4>
-                    <div class="pull-left">
-                        <img src="/img/presentations/2014-codeday-dc-twilio-intro/salesperson.png" alt="salesperson"/>
-                    </div>
-                    <div class="pull-right">
-                        <ul>
-                            <li>Use Case: Click To Call</li>
-                            <li>
-                                Requirements:
-                                <ul>
-                                    <li>A customer arrives on your website</li>
-                                    <li>Customer clicks a button to talk to sales</li>
-                                    <li>The customer is connected in their browser to a sales rep on the phone</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>Plan of Attack</h2>
-                    <ul>
-                        <li>Create a TwiML application with a Voice URL set to a server you control</li>
-                        <li>Write a Ruby endpoint which will return a TwiML document with a Dial command (your sales rep)</li>
-                        <li>Display a web page with a "click to call" button, using a server-generated capability token</li>
-                        <li>Initiate a phone call with Twilio Client to your "sales rep"</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Resources</h2>
-                    <ul>
-                        <li><a href="http://github.com/kwhinnery/twilio-workshop">Workshop Code</a></li>
-                        <li><a href="http://www.twilio.com/docs">Twilio Docs</a></li>
-                        <li><a href="https://devcenter.heroku.com/articles/rack">Running Sinatra apps on Heroku</a></li>
-                        <li><a href="http://progrium.com/localtunnel/">Localtunnel</a></li>
-                        <li><a href="http://www.sinatrarb.com/">Sinatra</a></li>
-                        <li><a href="https://github.com/twilio/twilio-ruby">Twilio Ruby docs/examples</a></li>
-                        <li><a href="https://www.twilio.com/docs/client/twilio-js">Twilio JS reference</a></li>
                     </ul>
                 </section>
 
@@ -638,29 +342,17 @@ Twilio.Device.connect();
                     </ul>
                 </section>
 
-                <section>
+                <section style="text-align: left;">
                     <h1>Thank You!</h1>
-                    <p><a href="http://twitter.com/kevinwhinnery">@kevinwhinnery</a></p>
-                    <p>kwhinnery@twilio.com</p>
+                    <p><a href="http://www.mattmakai.com/">Matt Makai</a></p>
+                    <p><a href="http://twitter.com/mattmakai">@mattmakai</a></p>
+                    <p>mmakai@twilio.com</p>
                 </section>
 
 			</div>
 
 		</div>
 		
-		<div id="menu">
-			<div id="menu_toggle">
-				&rarr;
-			</div>
-			<div id="menu_contents">
-				<a href="#/">Start</a> |
-				<a href="#/9">Challenge 1</a> |
-				<a href="#/22">Challenge 2</a> |
-				<a href="#/32">Challenge 3</a> |
-				<a href="https://github.com/kwhinnery/twilio-workshop">(code)</a>
-			</div>
-		</div>
-        
         <script src="/js/jquery.min.js"></script>
 		<script src="/lib/js/head.min.js"></script>
 		<script src="/js/reveal.min.js"></script>
@@ -690,18 +382,6 @@ Twilio.Device.connect();
 				]
 			});
 			
-			// Little slidey menu
-			var menuShown;
-			$(function() {
-				$('#menu_toggle').on('click', function() {
-					$(this).html((menuShown) ? '&rarr;' : '&larr;');
-					$('#menu_contents').animate({
-						left:(menuShown) ? '-1000px' : '35px'
-					});
-					menuShown = !menuShown;
-				});
-			});
-
 		</script>
 
 	</body>

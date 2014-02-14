@@ -5,12 +5,12 @@
  */
 @font-face {
   font-family: 'Gotham Black';
-  src: url("../../lib/font/GothamBlack.otf") format("opentype");
+  src: url("/lib/font/GothamBlack.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Gotham Ultra';
-  src: url("../../lib/font/GothamUltra.otf") format("opentype");
+  src: url("/lib/font/GothamUltra.otf") format("opentype");
 }
 
 /*********************************************
@@ -196,17 +196,17 @@ td {
 }
 
 .owl .reveal .state-background {
-  background: url(../../img/owl.jpg);
+  background: url(/img/presentations/2014-codeday-dc-twilio-intro/owl.jpg);
   background-size: cover;
 }
 
 .owl2 .reveal .state-background {
-  background: url(../../img/owl2.jpg);
+  background: url(/img/presentations/2014-codeday-dc-twilio-intro/owl2.jpg);
   background-size: cover;
 }
 
 .segway .reveal .state-background {
-  background: url(../../img/segway.jpg);
+  background: url(/img/presentations/2014-codeday-dc-twilio-intro/segway.jpg);
   background-size: cover;
 }
 
