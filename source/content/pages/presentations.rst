@@ -32,6 +32,15 @@ neighborhood of Washington, D.C.
 ----
 
 
+Finding, Evaluating, and Integrating APIs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Upcoming session at `Capital One <https://www.capitalone.com/>`_'s internal
+API Summit on March 5 in McLean, Virginia.
+
+----
+
+
 `DevOps: Adoption through Culture, Automation, Measurement, and Sharing </presentations/2014-adapt-devops.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The DevOps movement is built on a real need in the software development 
@@ -49,7 +58,11 @@ Upcoming talk at `ADAPT <http://afei.org/events/4A21/Pages/default.aspx>`_  on F
 
 `How to Win Friends and Influence Hackathon Judges with Twilio </presentations/2014-codeday-dc-twilio-intro.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+What is Twilio and how can you use its API to win at hackathons? Almost
+any web or mobile app can be made better by integrating text messaging or
+voice calling into its functionality. Twilio gives you the power to reach
+the audience and judges during your demo. It's also easily integrated within 
+a few minutes, which is key at time constrained events like hackathons.
 
 Upcoming talk at `CodeDay DC <http://dc.codeday.org/>`_ on February 15 in
 the Dupont neighborhood of Washington, D.C.
