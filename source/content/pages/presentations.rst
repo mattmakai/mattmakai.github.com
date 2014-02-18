@@ -26,6 +26,10 @@ in Washington, D.C. in late March (exact date TBD).
 
 Effective Software Communication Channels
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+There are many options for communicating with users. Where should you begin
+when you're evaluating adding push notifications, emails, text message 
+alerts, and voice calls to your application?
+
 
 Upcoming talk to the `Neon Guild <http://www.neonguild.org/>`_ of 
 Charlottesville, VA on the evening of March 11.
