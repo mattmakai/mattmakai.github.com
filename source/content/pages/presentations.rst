@@ -11,14 +11,15 @@ Improving the Un-automatable: Making Manual Build Steps More Efficient
 Virtually every build pipeline involves at least one manual step, whether
 due to government regulations, an external auditor, a change control review
 board, or just one last sanity check before deploying to production. These
-manual steps are often the least efficient part of the process. However,
-the subject is not well covered by continuous deployment guides. This talk
-addresses improving manual build steps head on by showing specific scenarios
-and improvements that minimize delay in the build process. Code examples will
-be provided in Ansible but are applicable to any configuration management
-tool.
+manual steps are often the least efficient part of the build process. However,
+the subject is not well covered in existing continuous deployment guides. 
+This talk addresses improving manual build steps head on by showing specific 
+scenarios and improvements that minimize delay in the build process. Code 
+examples are provided in Ansible but are applicable to any configuration 
+management tool.
 
-Upcoming talk to the DC Configuration Management group in Washington, D.C.
+Upcoming talk to the `DC Configuration Management Group <http://www.meetup.com/DC-Configuration-Management-Group/>`_ 
+in Washington, D.C. in late March (exact date TBD).
 
 ----
 
@@ -49,6 +50,12 @@ Charlottesville, VA.
 
 Finding, Evaluating, and Integrating APIs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Modern software applications combine custom code with third party APIs, 
+such as Twilio and Stripe, to create a complete product. Choosing the 
+right services for your application can make or break its usefulness to 
+users as well as your sanity during maintenance. This talk will show you 
+how to find, evaluate, and integrate external APIs to maximize their value
+in your software application.
 
 Upcoming session at `Capital One <https://www.capitalone.com/>`_'s internal
 API Summit on March 5 in McLean, Virginia.
