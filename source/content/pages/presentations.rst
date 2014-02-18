@@ -6,6 +6,32 @@ Presentations
 2014 Talks
 ----------
 
+Improving the Un-automatable: Making Manual Build Steps More Efficient
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Virtually every build pipeline involves at least one manual step, whether
+due to government regulations, an external auditor, a change control review
+board, or just one last sanity check before deploying to production. These
+manual steps are often the least efficient part of the process. However,
+the subject is not well covered by continuous deployment guides. This talk
+addresses improving manual build steps head on by showing specific scenarios
+and improvements that minimize delay in the build process. Code examples will
+be provided in Ansible but are applicable to any configuration management
+tool.
+
+Upcoming talk to the DC Configuration Management group in Washington, D.C.
+
+----
+
+
+Effective Software Communication Channels
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Upcoming talk to the `Neon Guild <http://www.neonguild.org/>`_ of 
+Charlottesville, VA on the evening of March 11.
+
+----
+
+
 Automated Deployments with Ansible & Fabric
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This talk will show how to automated Linux and Python stack deployments with 
@@ -21,22 +47,25 @@ Charlottesville, VA.
 ----
 
 
-Appropriate Software Communications
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-Upcoming short 10 minute talk on March 3 to 
-`DC Nightowls <http://www.meetup.com/dcnightowls/>`_ in the Dupont 
-neighborhood of Washington, D.C.
-
-----
-
-
 Finding, Evaluating, and Integrating APIs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Upcoming session at `Capital One <https://www.capitalone.com/>`_'s internal
 API Summit on March 5 in McLean, Virginia.
+
+----
+
+
+Appropriate Software Communications
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+When is it appropriate to send an email, push notification, text message,
+or voice call to users from your web or mobile application? This
+short talk covers several important rules for fostering maximum user 
+engagement while avoiding spamming your customers.
+
+Upcoming short 10 minute talk on March 3 to 
+`DC Nightowls <http://www.meetup.com/dcnightowls/>`_ in the Dupont 
+neighborhood of Washington, D.C.
 
 ----
 
@@ -64,8 +93,9 @@ voice calling into its functionality. Twilio gives you the power to reach
 the audience and judges during your demo. It's also easily integrated within 
 a few minutes, which is key at time constrained events like hackathons.
 
-Upcoming talk at `CodeDay DC <http://dc.codeday.org/>`_ on February 15 in
-the Dupont neighborhood of Washington, D.C.
+Postponed due to inclement weather in D.C. on February 15. Talk was to be
+presented at `CodeDay DC <http://dc.codeday.org/>`_ in the Dupont 
+neighborhood of Washington, D.C.
 
 ----
 
