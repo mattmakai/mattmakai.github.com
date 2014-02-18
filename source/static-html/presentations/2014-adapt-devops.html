@@ -16,7 +16,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="/css/reveal/reveal.min.css">
-		<link rel="stylesheet" href="/css/reveal/theme/night.css" id="theme">
+		<link rel="stylesheet" href="/css/reveal/theme/night-adapt.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="/lib/css/zenburn.css">
@@ -33,6 +33,34 @@
                 margin-left: 1em;
             }
             img.no-border-rounded {border: none; border-radius: 5px;}
+
+            .culture .reveal .state-background {
+              background: url(/img/presentations/2014-adapt-devops/soccer-team.jpg);
+              background-size: cover;
+            }
+            
+            .automation .reveal .state-background {
+              background: url(/img/presentations/2014-adapt-devops/automation-gears.jpg);
+              background-size: cover;
+            }
+            
+            .measurement .reveal .state-background {
+              background: url(/img/presentations/2014-adapt-devops/measurement-monitors.jpg);
+              background-size: cover;
+            }
+            
+            .sharing .reveal .state-background {
+              background: url(/img/presentations/2014-adapt-devops/sharing-keyboard.jpg);
+              background-size: cover;
+            }
+
+            h2.background-img {
+                font-size: 4.5em;
+                color: white;
+                text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, 
+                -1px 1px 0 #222, 1px 1px 0 #222; 
+            }
+
         </style>
 
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
@@ -139,6 +167,18 @@
                     frustrated <strong>DEV</strong>elopers and 
                     <strong>OP</strong>erations staff</p>
                 </section>
+                
+                <section style="text-align: center;">
+                    <h2 style="font-size: 3em;">DevOps Emphasizes</h2>
+                    <h3 style="margin-top: 50px; font-size: 2.5em;">Collaboration</h3>
+                    <h3 style="margin-top: 30px; font-size: 2.5em;">Communication</h3>
+                    <h3 style="margin-top: 30px; font-size: 2.5em;">Integration</h3>
+                </section>
+
+                <section>
+                    <h2 style="font-size: 3em; color: green;">Goal</h2>
+                    <h1 style="font-size: 3em;">Highly effective team</h1>
+                </section>
 
 
                 <section>
@@ -149,8 +189,24 @@
                     something you can create overnight</h3>
                 </section>
 
+                <section style="text-align: center;" data-state="culture">
+                    <h2 class="background-img">Culture</h2>
+                </section>
+                
+                <section style="text-align: center;" data-state="automation">
+                    <h2 class="background-img">Automation</h2>
+                </section>
+                
+                <section style="text-align: center;" data-state="measurement">
+                    <h2 class="background-img">Measurement</h2>
+                </section>
+                
+                <section style="text-align: center;" data-state="sharing">
+                    <h2 class="background-img">Sharing</h2>
+                </section>
 
-                <section style="text-align: center;">
+                <section>
+                    <h1 style="font-size: 4em; color: #bbb;">CAMS</h1>
                     <h1 style="font-size: 4em; color: #eee;">Specific Actions</h1>
                 </section>
                 
@@ -313,6 +369,7 @@
                         <li><a href="http://farm5.static.flickr.com/4029/4360104794_4f3f2b7a2f_b.jpg">"Sys admin"</a></li>
                         <li><a href="http://www.xyleme.com/blog/wp/wp-content/uploads/2012/01/Agile-Development-Process.png">Agile process diagram</a></li>
                         <li><a href="http://www.nomadic-project.com/wp-content/uploads/2011/09/MIbook-e1318526432992.jpg">Agile success?</a></li>
+                        <li><a href="http://www.wantedbricks.com/wp-content/gallery/stack-puzzle-cube/wantedbricks-building-blocks-toy-447-unique-stack-puzzle-cube-construction-set-1.jpg">Bricks</a></li>
                         <li><a href="http://img153.imageshack.us/img153/8877/class.png">Class diagram</a></li>
                         <li><a href="http://jeffhilimire.com/wp-content/uploads/2012/05/move-fast-break-things.jpg">Facebook move fast break things</a></li>
                     </ul>
