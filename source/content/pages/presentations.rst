@@ -66,19 +66,16 @@ API Summit on March 5 in McLean, Virginia.
 
 ----
 
-
-Appropriate Software Communications
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-When is it appropriate to send an email, push notification, text message,
-or voice call to users from your web or mobile application? This
-short talk covers several important rules for fostering maximum user 
-engagement while avoiding spamming your customers.
-
-Upcoming short 10 minute talk on March 3 to 
-`DC Nightowls <http://www.meetup.com/dcnightowls/>`_ in the Dupont 
-neighborhood of Washington, D.C.
-
-----
+..  Appropriate Software Communications
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    When is it appropriate to send an email, push notification, text message,
+    or voice call to users from your web or mobile application? This
+    short talk covers several important rules for fostering maximum user 
+    engagement while avoiding spamming your customers.
+    Upcoming short 10 minute talk on March 3 to 
+    `DC Nightowls <http://www.meetup.com/dcnightowls/>`_ in the Dupont 
+    neighborhood of Washington, D.C.
+    ----
 
 
 `DevOps: Adoption through Culture, Automation, Measurement, and Sharing </presentations/2014-adapt-devops.html>`_
