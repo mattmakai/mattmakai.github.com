@@ -52,8 +52,8 @@ Charlottesville, VA.
 ----
 
 
-Finding, Evaluating, and Integrating APIs
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`Finding, Evaluating, and Integrating External APIs </presentations/2014-capital-one-find-evaluate-integrate-external-apis.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Modern software applications combine custom code with third party APIs, 
 such as Twilio and Stripe, to create a complete product. Choosing the 
 right services for your application can make or break its usefulness to 
@@ -136,7 +136,7 @@ running Django web application.
 Tech talk given at
 `San Francisco Django <http://www.meetup.com/The-San-Francisco-Django-Meetup-Group/events/151920512/>`_ 
 on Tuesday, January 14 hosted at `Yelp <http://www.yelp.com/about>`_ 
-headquarters.
+headquarters. There is a `video available of the talk <http://www.youtube.com/watch?v=pg-cOPVYKCw>`_.
 
 ----
 
