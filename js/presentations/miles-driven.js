@@ -1,7 +1,8 @@
 function drawMilesDrivenChart(data) {
 /* MILES DRIVEN chart */
-var milesDrivenContainerWidth = 900, /*$("#miles-driven-chart").width(),*/
-    milesDrivenContainerHeight = 500; /*$("#caa-map").height();*/
+    console.log($(".slides").width() * .80);
+var milesDrivenContainerWidth = $(".slides").width() *.9, /*$("#miles-driven-chart").width(),*/
+    milesDrivenContainerHeight = $(".slides").height() * .9; /*$("#caa-map").height();*/
 
 var margin = {top: 5, right: 5, bottom: 5, left: 5},
     milesDrivenWidth = milesDrivenContainerWidth,
