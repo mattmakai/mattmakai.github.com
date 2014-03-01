@@ -72,14 +72,69 @@
                     </small></p>
 				</section>
                 
+                <section data-state="bubbles-viz">
+                    <div id="bubbles-viz" style="border: 2px solid white;"></div>
+                </section>
+                
+                <section>
+                    <h1>API growth chart</h1>
+                </section>
+                
+                <section>
+                    <h1>There's reason APIs are proliferating</h1>
+                </section>
+                
+                <section>
+                    <h1>Applications becoming APIS + custom code</h1>
+                </section>
+                
                 <section>
                     <h1>Composable Enterprise</h1>
                 </section>
                 
+                <section>
+                    <h1>This isn't new, and it isn't a fad</h1>
+                </section>
+                
+                <section>
+                    <h1>But there's a missing piece in this discussion</h1>
+                </section>
+                
+                <section>
+                    <h1>You</h1>
+                </section>
+
+                <section>
+                    <h1>"Ok, awesome I'm sold. But how do I start?"</h1>
+                </section>
+
+                
+                
                 <section data-state="bottom-mountain">
                 </section>
                 
+                <section>
+                    <h1>Base jumper picture - context is how do i get up there, let alone master it enough to jump off?</h1>
+                </section>
+                
+                
                 <section data-state="top-mountain">
+                </section>
+
+                <section>
+                    <h1>Introduce Funnel concept</h1>
+                </section>
+
+                <section>
+                    <h1>Finding</h1>
+                </section>
+                
+                <section>
+                    <h1>Push, Pull, Reference</h1>
+                </section>
+                
+                <section>
+                    <h1>Pull - resources to check</h1>
                 </section>
                 
                 <section data-state="dc-api-group">
@@ -116,8 +171,7 @@
 		<script src="/lib/js/head.min.js"></script>
         <script src="/js/d3.min.js" charset="utf-8"></script>
 		<script src="/js/reveal.min.js"></script>
-        <script src="/theme/js/presentations/miles-driven.js"></script>
-        <script src="/theme/js/presentations/bubble-chart.js"></script>
+        <script src="/theme/js/presentations/std-bubbles.js"></script>
 
 		<script>
             $(document).ready(function() {
@@ -131,7 +185,7 @@
                     center: true,
 
                     theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-                    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+                    transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
                     // Optional libraries used to extend on reveal.js
                     dependencies: [
@@ -147,6 +201,25 @@
                 });
                 
             });
+
+            var containerWidth = $(".slides").width(),
+                containerHeight = $(".slides").height();
+
+            var margin = {top: 5, right: 5, bottom: 5, left: 5},
+                vizWidth = containerWidth,
+                vizHeight = containerHeight;
+
+            /* bubbles of APIs visualization */
+            var svg = d3.select("#bubbles-viz").append("svg")
+                .attr("width", vizWidth + margin.left + margin.right)
+                .attr("height", vizHeight + margin.top + margin.bottom)
+                .attr("class", "bubble")
+                .attr("id", "bubbles-svg");
+
+            
+            Reveal.addEventListener( 'bubbles-viz', function() {
+                d3.json('/static/data/bubbles.json', drawBubblesChart);
+            } );
 		</script>
 
 	</body>
