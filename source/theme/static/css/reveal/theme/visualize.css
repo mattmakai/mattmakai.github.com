@@ -153,6 +153,13 @@ body {
   background: #3399FF;
 }
 
+.evaluate-title .reveal .state-background {
+  background: #FF9900;
+}
+
+.integrate-title .reveal .state-background {
+  background: #009900;
+}
 
 .dc-api-group .reveal .state-background {
   background: url(/img/presentations/2014-capital-one-apis/dc-web-api-group.jpg);

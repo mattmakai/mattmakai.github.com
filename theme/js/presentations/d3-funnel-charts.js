@@ -79,7 +79,7 @@ function FunnelChart(data, width, height, bottomPct) {
                       .y(function(d) { return d[1]; });
 
       // Automatically generates colors for each trapezoid in funnel
-      var colorScale = d3.scale.category10()
+      var colorScale = ['#990033', '#3399FF', '#FF9900', '#009900']
 
       var paths = this.createPaths();
 
@@ -98,7 +98,7 @@ function FunnelChart(data, width, height, bottomPct) {
                           .duration(totalLength/speed)
                           .ease("linear")
                           .attr("d", function(d){return funnelPath(paths[i])})
-                          .attr("fill", function(d){return colorScale(i)});
+                          .attr("fill", function(d){return colorScale[i]});
 
         funnelSvg
         .append('text')
