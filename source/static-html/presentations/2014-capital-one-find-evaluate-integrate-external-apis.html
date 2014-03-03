@@ -41,6 +41,25 @@
                 text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, 
                 -1px 1px 0 #222, 1px 1px 0 #222; 
             }
+            .total-miles-tooltip {
+                color: #222;
+                background: #eee;
+                border: 1px solid #222;
+                padding: 3px;
+                -webkit-border-radius:3px;
+                -moz-border-radius:3px;
+                border-radius:3px;
+            }
+
+            .miles-driven-tooltip {
+                color: #eee;
+                background: #406BB4;
+                border: 1px solid #222;
+                padding: 3px;
+                -webkit-border-radius:3px;
+                -moz-border-radius:3px;
+                border-radius:3px;
+            }
 
         </style>
 
@@ -109,26 +128,31 @@
                 <section data-state="funnel-viz">
                     <div id="funnel-container"></div>
                 </section>
+                
+                <section>
+                    <h1>Example</h1>
+                </section>
 
-                <section>
-                    <h1>Find</h1>
+                <section data-state="find-title">
+                    <h1 style="color: #222;">Find</h1>
                 </section>
                 
                 <section>
-                    <h1>Push &amp; Pull</h1>
+                    <h1>Push</h1>
                 </section>
                 
                 <section>
-                    <h2>"Push" sources</h2>
-                    <ul class="bigger">
-                        <li><a href="http://leanstack.io/">Leanstack</a></li>
-                        <li><a href="http://saasclub.com/">SaaS Club</a></li>
-                    </ul>
+                    <h2>leanstack.io</h2>
+                    <img src="/img/presentations/2014-capital-one-apis/leanstack.jpg" class="standard" style="border: none;"/>
                 </section>
                 
                 <section>
-                    <h2>Heroku Addons</h2>
-                    <img src="/img/presentations/django-district-aug-27-2013/heroku-addons.jpg" class="standard" style="border: none;"/>
+                    <h2>saasclub.com</h2>
+                    <img src="/img/presentations/2014-capital-one-apis/saas-club.jpg" class="standard" style="border: none;"/>
+                </section>
+                
+                <section>
+                    <h1>Pull</h1>
                 </section>
                 
                 <section>
@@ -140,8 +164,20 @@
                     <h2>Ducksboard Integrations</h2>
                     <img src="/img/presentations/django-district-aug-27-2013/ducksboard-integrations.jpg" class="standard" style="border: none;" />
                 </section>
+                
+                <section>
+                    <h2>Heroku Addons</h2>
+                    <img src="/img/presentations/django-district-aug-27-2013/heroku-addons.jpg" class="standard" style="border: none;"/>
+                </section>
+                
+                <section>
+                    <h2>Programmable Web</h2>
+                    <img src="/img/presentations/2014-capital-one-apis/programmableweb.jpg" class="standard" style="border: none;"/>
+                </section>
 
-                <section data-state="dc-api-group">
+                <section>
+                    <h2>DC API Group</h2>
+                    <img src="/img/presentations/2014-capital-one-apis/dc-web-api-group.jpg" class="standard" style="border: none;"/>
                 </section>
 
                 <section>
@@ -280,7 +316,7 @@
             var alreadyDrawn = false;
             Reveal.addEventListener('funnel-viz', function() {
                 data = [['Potential', 2000], ['Find', 1000], 
-                        ['Evaluate', 300], ['Integrate', 60]];
+                        ['Evaluate', 400], ['Integrate', 100]];
                 chart = new FunnelChart(data, 900, 500, 1/4);
                 if (!alreadyDrawn) {
                     alreadyDrawn = true;

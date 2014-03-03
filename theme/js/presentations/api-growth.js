@@ -7,7 +7,7 @@ var margin = {top: 5, right: 5, bottom: 5, left: 5},
     milesDrivenWidth = milesDrivenContainerWidth,
     milesDrivenHeight = milesDrivenContainerHeight;
 
-var maxDays = 12, maxMiles = 12000,
+var maxDays = 12, maxMiles = 17000,
     lineWidth = milesDrivenWidth / maxDays;
 
 var x = d3.scale.linear()    .domain([0, maxDays])
@@ -63,7 +63,7 @@ svg.append("g")
             .style("stroke","#fff")
             .style("fill","#F9A31A")
             .on("mouseover", function(d, i) {
-                var tipMsg = d.day + ": " + d.total + " total APIs available";
+                var tipMsg = d.total + " total APIs available";
                 return totalTooltip.style("visibility", "visible")
                     .text(tipMsg);
             })
@@ -80,7 +80,7 @@ svg.append("g")
             .attr("height", function(d) {
                     return milesDrivenHeight - y(d.total);
                 })
-            .delay(function(d, i) {return (i * 50) + 100;})
+            .delay(function(d, i) {return (i * 200) + 1000;})
             .duration(1200);
 
     var bars = svg.selectAll("rect.daily-miles")
@@ -95,7 +95,7 @@ svg.append("g")
             .style("stroke","#fff")
             .style("fill","#406BB4")
             .on("mouseover", function(d, i) {
-                var tipMsg = d.day + ": " + d.miles + " APIs added this year";
+                var tipMsg = d.miles + " APIs added this year";
                 return byDayTooltip.style("visibility", "visible")
                     .text(tipMsg);
             })

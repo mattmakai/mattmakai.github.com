@@ -149,6 +149,10 @@ body {
   background-size: cover;
 }
 
+.find-title .reveal .state-background {
+  background: #3399FF;
+}
+
 
 .dc-api-group .reveal .state-background {
   background: url(/img/presentations/2014-capital-one-apis/dc-web-api-group.jpg);
