@@ -283,12 +283,19 @@
         {"name": "ArrowType", "size": 698},
         {"name": "EdgeRenderer", "size": 5569},
         {"name": "IRenderer", "size": 353},
-        {"name": "ShapeRenderer", "size": 2247}
+        {"name": "ShapeRenderer", "size": 2247},
+        {"name": "ArrowType2", "size": 1098},
+        {"name": "EdgeRenderer2", "size": 7012},
+        {"name": "IRenderer2", "size": 3530},
+        {"name": "ShapeRenderer2", "size": 4247}
        ]
       },
       {"name": "ScaleBinding", "size": 11275},
       {"name": "Tree", "size": 7147},
-      {"name": "TreeBuilder", "size": 9930}
+      {"name": "TreeBuilder", "size": 9930},
+      {"name": "ScaleBinding2", "size": 1275},
+      {"name": "Tree2", "size": 2285},
+      {"name": "TreeBuilder2", "size": 5130}
      ]
     },
     {
@@ -305,7 +312,10 @@
      "children": [
       {"name": "Legend", "size": 20859},
       {"name": "LegendItem", "size": 4614},
-      {"name": "LegendRange", "size": 10530}
+      {"name": "LegendRange", "size": 10530},
+      {"name": "Legend2", "size": 10859},
+      {"name": "LegendItem2", "size": 2614},
+      {"name": "LegendRange2", "size": 5530}
      ]
     },
     {
