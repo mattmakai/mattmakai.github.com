@@ -263,6 +263,10 @@
                         <li>HTTP calls</li>
                     </ul>
                 </section>
+                
+                <section data-state="funnel-viz-2">
+                    <div id="funnel-container-2"></div>
+                </section>
 
                 <section data-state="resources">
                     <h1 style="color: #222;">Resources</h1>
@@ -303,6 +307,7 @@
         <script src="/js/presentations/std-bubbles.js"></script>
         <script src="/js/presentations/api-growth.js"></script>
         <script type="text/javascript" src="/js/presentations/d3-funnel-charts.js"></script>
+        <script type="text/javascript" src="/js/presentations/d3-funnel-chart-2.js"></script>
 		<script>
             $(document).ready(function() {
 
@@ -359,6 +364,13 @@
                                 .attr('width', vizWidth)
                                 .attr('height', vizHeight)
                             .append('g');
+           
+            /* funnel visualization 2 */
+            var funnelSvg2 = d3.select("#funnel-container-2").append('svg')
+                                .attr('id', 'funnel-svg-2')
+                                .attr('width', vizWidth)
+                                .attr('height', vizHeight)
+                            .append('g');
 
             var apiGrowthAlreadyDrawn = false;
             Reveal.addEventListener( 'api-growth-viz', function() {
@@ -380,6 +392,17 @@
                 if (!alreadyDrawn) {
                     alreadyDrawn = true;
                     chart.draw('#funnel-container', 2);
+                }
+            } );
+            
+            var funnelAlreadyDrawn = false;
+            Reveal.addEventListener('funnel-viz-2', function() {
+                data2 = [['Potential', 50], ['Find', 40], 
+                        ['Evaluate', 20], ['Integrate', 5]];
+                chart2 = new FunnelChart2(data2, 900, 500, 1/4);
+                if (!funnelAlreadyDrawn) {
+                    funnelAlreadyDrawn = true;
+                    chart2.draw('#funnel-container-2', 2);
                 }
             } );
 		</script>

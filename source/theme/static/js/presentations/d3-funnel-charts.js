@@ -10,8 +10,6 @@ function FunnelChart(data, width, height, bottomPct) {
       Optional parameter that specifies the percent of the total width the bottom of the trapezoid is
       This is used to calculate the slope, so the chart's view can be changed by changing this value
   */
-    var alreadyDrawn = $('#funnel-svg').children().length;
-
       var DEFAULT_HEIGHT = 400,
           DEFAULT_WIDTH = 600, 
           DEFAULT_BOTTOM_PERCENT = 1/3;

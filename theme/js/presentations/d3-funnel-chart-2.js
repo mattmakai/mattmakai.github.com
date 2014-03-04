@@ -1,4 +1,4 @@
-function FunnelChart(data, width, height, bottomPct) {
+function FunnelChart2(data, width, height, bottomPct) {
   /* Parameters:
     data: 
       Array containing arrays of categories and engagement in order from greatest expected funnel engagement to lowest.  
@@ -25,17 +25,17 @@ function FunnelChart(data, width, height, bottomPct) {
       this.slope = 2*this.height/(this.width - this.bottomPct*this.width);
       this.totalArea = (this.width+this.bottomPct*this.width)*this.height/2;
 
-    FunnelChart.prototype.getLabel = function(ind){
+    FunnelChart2.prototype.getLabel = function(ind){
       /* Get label of a category at index 'ind' in this.data */
       return this.data[ind][0]
     }
 
-    FunnelChart.prototype.getEngagementCount = function(ind){
+    FunnelChart2.prototype.getEngagementCount = function(ind){
       /* Get engagement value of a category at index 'ind' in this.data */
       return this.data[ind][1]
     }
 
-    FunnelChart.prototype.createPaths = function(){
+    FunnelChart2.prototype.createPaths = function(){
       /* Returns an array of points that can be passed into d3.svg.line to create a path for the funnel */
       trapezoids = []
 
@@ -65,11 +65,11 @@ function FunnelChart(data, width, height, bottomPct) {
       return trapezoids;
     }
 
-    FunnelChart.prototype.draw = function(elem, speed){
+    FunnelChart2.prototype.draw = function(elem, speed){
       var DEFAULT_SPEED = 2.5
       speed = typeof speed !== 'undefined' ? speed : DEFAULT_SPEED;
 
-      var funnelSvg = d3.select("#funnel-svg");
+      var funnelSvg = d3.select("#funnel-svg-2");
 
       // Creates the correct d3 line for the funnel
       var funnelPath = d3.svg.line()
