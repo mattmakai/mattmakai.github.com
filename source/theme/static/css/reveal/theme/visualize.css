@@ -161,6 +161,10 @@ body {
   background: #009900;
 }
 
+.resources .reveal .state-background {
+  background: #eee;
+}
+
 .dc-api-group .reveal .state-background {
   background: url(/img/presentations/2014-capital-one-apis/dc-web-api-group.jpg);
   background-size: cover;
