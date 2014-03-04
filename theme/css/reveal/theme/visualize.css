@@ -169,3 +169,8 @@ body {
   background: url(/img/presentations/2014-capital-one-apis/dc-web-api-group.jpg);
   background-size: cover;
 }
+
+.postman-demo .reveal .state-background {
+  background: url(/img/presentations/2014-capital-one-apis/postman-rest-client.jpg);
+  background-size: cover;
+}
