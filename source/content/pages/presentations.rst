@@ -37,8 +37,8 @@ Charlottesville, VA on the evening of March 11.
 ----
 
 
-Automated Deployments with Ansible & Fabric
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`Automated Deployments with Ansible & Fabric </presentations/2014-cos-ansible.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This talk will show how to automated Linux and Python stack deployments with 
 Ansible and Fabric. You'll learn how to apply these libraries to your 
 project and see how to use Ansible Playbooks with tasks, handlers, and 
