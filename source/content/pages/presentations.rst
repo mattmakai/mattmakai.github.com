@@ -6,6 +6,15 @@ Presentations
 2014 Talks
 ----------
 
+Learning Flask When You Already Know Django
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Upcoming talk to `NOVA Python <http://www.meetup.com/NOVA-Python/>`_ in
+Alexandria, Virginia (exact May date TBD).
+
+----
+
+
 Improving the Un-automatable: Making Manual Build Steps More Efficient
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Virtually every build pipeline involves at least one manual step, whether
@@ -24,12 +33,13 @@ in Washington, D.C. in late March (exact date TBD).
 ----
 
 
-Effective Software Communication Channels
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`Effective Software-to-User Communication </presentations/2014-neon-guild-effective-software-to-user-communication.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 There are many options for communicating with users. Where should you begin
 when you're evaluating adding push notifications, emails, text message 
-alerts, and voice calls to your application?
-
+alerts, and voice calls to your application? This talk will cover when it is
+appropriate and effective to use certain forms of communication as well as
+how you integrate those methods into your application.
 
 Upcoming talk to the `Neon Guild <http://www.neonguild.org/>`_ of 
 Charlottesville, VA on the evening of March 11.

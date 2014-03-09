@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Effective Software-to-User Communication</title>
+
+		<meta name="description" content="There are many options for communicating with users. Where should you begin when you're evaluating adding push notifications, emails, text message alerts, and voice calls to your application?">
+
+		<meta name="author" content="Matt Makai" >
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="/css/reveal/reveal.min.css">
+		<link rel="stylesheet" href="/css/reveal/theme/visualize.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="/lib/css/zenburn.css">
+        <style>
+            img.standard {border: none; border-radius: 5px;}
+            ol.bigger li, 
+            ul.bigger li {
+               font-size: 1.8em;
+               margin-top: 20px;
+               margin-bottom: 15px;
+               line-height: 1.1em;
+               margin-left: 20px;
+            }
+            ol.bigger li {
+                margin-left: 1em;
+            }
+            img.no-border-rounded {border: none; border-radius: 5px;}
+
+            h2.background-img {
+                font-size: 4.5em;
+                color: white;
+                text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, 
+                -1px 1px 0 #222, 1px 1px 0 #222; 
+            }
+            .total-miles-tooltip {
+                color: #222;
+                background: #eee;
+                border: 1px solid #222;
+                padding: 3px;
+                -webkit-border-radius:3px;
+                -moz-border-radius:3px;
+                border-radius:3px;
+            }
+
+            .miles-driven-tooltip {
+                color: #eee;
+                background: #406BB4;
+                border: 1px solid #222;
+                padding: 3px;
+                -webkit-border-radius:3px;
+                -moz-border-radius:3px;
+                border-radius:3px;
+            }
+
+        </style>
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="/css/reveal/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+            <div class="slides" style="text-align: left;">
+				<section>
+					<h1 style="font-size: 3.5em;">Effective Software-to-User Communication</h1>
+                    <h4>Charlottesville Neon Guild March 2014</a></h4>
+                    <br/>
+                    <br/>
+					<p><small>
+                        <a href="http://www.mattmakai.com">Matt Makai</a> | 
+                        <a href="http://twitter.com/mattmakai">@mattmakai</a> |
+                        <a href="https://github.com/makaimc">makaimc</a> 
+                        on GitHub |
+                        <a href="https://www.twilio.com">Twilio</a> 
+                        Developer Evangelist
+                    </small></p>
+				</section>
+
+                <section>
+                    <h1>Proliferation of software communications</h1>
+                </section>
+
+                <section>
+                    <h2>Resources</h2>
+                    <ul>
+                        <li><a href="http://www.fullstackpython.com/">Full Stack Python</a></li>
+                        <li><a href="https://github.com/makaimc/mattmakai.github.com/blob/gh-pages/static/presentations/2014-neon-guild-effective-software-to-user-communications.html">This presentation's source code</a></li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Matt Makai</h2>
+                    <ul class="bigger">
+                        <li><a href="http://twitter.com/mattmakai">@mattmakai</a></li>
+                        <li>matthew.makai@gmail.com</li>
+                        <li><a href="https://www.twilio.com/">Twilio</a></li>
+                        <li><a href="https://github.com/makaimc">makaimc</a> on GitHub</a>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Picture references</h2>
+                    <ul>
+                        <li><a href="#">TBD</a></li>
+                    </ul>
+                </section>
+		</div>
+
+        <script src="/js/jquery.min.js"></script>
+		<script src="/lib/js/head.min.js"></script>
+        <script src="/js/d3.min.js" charset="utf-8"></script>
+		<script src="/js/reveal.min.js"></script>
+        <script src="/js/presentations/std-bubbles.js"></script>
+        <script src="/js/presentations/api-growth.js"></script>
+        <script type="text/javascript" src="/js/presentations/d3-funnel-charts.js"></script>
+        <script type="text/javascript" src="/js/presentations/d3-funnel-chart-2.js"></script>
+		<script>
+            $(document).ready(function() {
+
+                // Full list of configuration options available here:
+                // https://github.com/hakimel/reveal.js#configuration
+                Reveal.initialize({
+                    controls: true,
+                    progress: true,
+                    history: true,
+                    center: true,
+
+                    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                    transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+                    // Optional libraries used to extend on reveal.js
+                    dependencies: [
+                        { src: '/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: '/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: '/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: '/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                        { src: '/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                        { src: '/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                        // { src: '/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                        // { src: '/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    ]
+                });
+                
+            });
+
+            var containerWidth = $(".slides").width(),
+                containerHeight = $(".slides").height();
+
+            var margin = {top: 5, right: 5, bottom: 5, left: 5},
+                vizWidth = containerWidth,
+                vizHeight = containerHeight;
+
+            /* API growth visualization */
+            var apiGrowthSvg = d3.select("#api-growth-viz").append("svg")
+                .attr("width", vizWidth + margin.left + margin.right)
+                .attr("height", vizHeight + margin.top + margin.bottom)
+                .attr("class", "api-growth")
+                .attr("id", "api-growth-svg");
+
+            /* bubbles of APIs visualization */
+            var svg = d3.select("#bubbles-viz").append("svg")
+                .attr("width", vizWidth + margin.left + margin.right)
+                .attr("height", vizHeight + margin.top + margin.bottom)
+                .attr("class", "bubble")
+                .attr("id", "bubbles-svg");
+
+            /* funnel visualization */
+            var funnelSvg = d3.select("#funnel-container").append('svg')
+                                .attr('id', 'funnel-svg')
+                                .attr('width', vizWidth)
+                                .attr('height', vizHeight)
+                            .append('g');
+           
+            /* funnel visualization 2 */
+            var funnelSvg2 = d3.select("#funnel-container-2").append('svg')
+                                .attr('id', 'funnel-svg-2')
+                                .attr('width', vizWidth)
+                                .attr('height', vizHeight)
+                            .append('g');
+
+            var apiGrowthAlreadyDrawn = false;
+            Reveal.addEventListener( 'api-growth-viz', function() {
+                if (!apiGrowthAlreadyDrawn) {
+                    apiGrowthAlreadyDrawn = true;
+                    d3.json('/static/data/api-growth.json', drawApiGrowth);
+                }
+            } );
+            
+            Reveal.addEventListener( 'bubbles-viz', function() {
+                d3.json('/static/data/bubbles.json', drawBubblesChart);
+            } );
+
+            var alreadyDrawn = false;
+            Reveal.addEventListener('funnel-viz', function() {
+                data = [['Potential', 2000], ['Find', 1000], 
+                        ['Evaluate', 400], ['Integrate', 100]];
+                chart = new FunnelChart(data, 900, 500, 1/4);
+                if (!alreadyDrawn) {
+                    alreadyDrawn = true;
+                    chart.draw('#funnel-container', 2);
+                }
+            } );
+            
+            var funnelAlreadyDrawn = false;
+            Reveal.addEventListener('funnel-viz-2', function() {
+                data2 = [['Potential', 50], ['Find', 40], 
+                        ['Evaluate', 20], ['Integrate', 5]];
+                chart2 = new FunnelChart2(data2, 900, 500, 1/4);
+                if (!funnelAlreadyDrawn) {
+                    funnelAlreadyDrawn = true;
+                    chart2.draw('#funnel-container-2', 2);
+                }
+            } );
+		</script>
+
+	</body>
+</html>
