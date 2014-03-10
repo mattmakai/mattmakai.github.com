@@ -215,3 +215,9 @@ body {
   opacity: 0.4;
   background-size: cover;
 }
+
+.email-phishing .reveal .state-background {
+  background: url(/img/presentations/2014-neon-guild-software-comm/email-phishing.png);
+  opacity: 0.4;
+  background-size: cover;
+}
