@@ -179,7 +179,7 @@ body {
 
 .push-notification .reveal .state-background {
   background: url(/img/presentations/2014-neon-guild-software-comm/push-notifications.png); 
-  opacity: 0.5;
+  opacity: 0.4;
   background-size: cover;
 }
 
@@ -199,3 +199,7 @@ body {
   background: #eee;
 }
 
+.demo .reveal .state-background {
+  background: #eee;
+  color: #222;
+}
