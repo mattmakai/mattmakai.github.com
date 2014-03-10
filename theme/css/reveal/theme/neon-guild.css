@@ -221,3 +221,9 @@ body {
   opacity: 0.4;
   background-size: cover;
 }
+
+.bloodhound .reveal .state-background {
+  background: url(/img/presentations/2014-neon-guild-software-comm/bloodhound.jpg);
+  opacity: 0.4;
+  background-size: cover;
+}
