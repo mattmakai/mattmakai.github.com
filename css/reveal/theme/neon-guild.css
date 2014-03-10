@@ -203,3 +203,15 @@ body {
   background: #eee;
   color: #222;
 }
+
+.newsletter .reveal .state-background {
+  background: url(/img/presentations/2014-neon-guild-software-comm/real-time-weekly.jpg);
+  opacity: 0.5;
+  background-size: cover;
+}
+
+.uber-receipt .reveal .state-background {
+  background: url(/img/presentations/2014-neon-guild-software-comm/uber-receipt.png);
+  opacity: 0.4;
+  background-size: cover;
+}
