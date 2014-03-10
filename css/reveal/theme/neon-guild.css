@@ -194,3 +194,7 @@ body {
   opacity: 0.5;
   background-size: cover;
 }
+
+.appropriate .reveal .state-background {
+  background: #eee;
+}
