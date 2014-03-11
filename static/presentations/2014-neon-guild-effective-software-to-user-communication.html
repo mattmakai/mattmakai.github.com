@@ -117,10 +117,12 @@
                 <section data-state="text-message">
                     <h1 class="light-letters">Text messages</h1>
                 </section>
-                
+               
+                <!--
                 <section data-state="push-notification">
                     <h1 class="light-letters">Push notifications</h1>
                 </section>
+                -->
                 
                 <section data-state="automated-voice-call">
                     <h1 class="light-letters">Automated Voice Calls</h1>
@@ -128,7 +130,7 @@
                 
                 <section data-state="human-voice-call">
                     <div style="opacity: 0.8;">
-                    <h1 class="light-letters">Voice Calls</h1>
+                    <h1 class="light-letters">Human-to-Human Voice Calls</h1>
                     </div>
                 </section>
 
@@ -191,6 +193,26 @@
                     </ul>
                 </section>
 
+                <section>
+                    <pre style="font-size: 1.2em;">
+import sendgrid
+
+sg = sendgrid.SendGridClient(
+    'YOUR_SENDGRID_USERNAME',
+    'YOUR_SENDGRID_PASSWORD')
+
+message = sendgrid.Mail(
+    to='john@email.com',
+    subject='Example', html='Body', 
+    text='Body', 
+    from_email='doe@email.com') 
+
+message.add_to('Example Dude <example@email.com>')
+
+status, msg = sg.send(message)
+                    </pre>
+                </section>
+
                 <!-- Text messages --> 
                 <section data-state="text-message">
                     <h1 class="light-letters">Text messages</h1>
@@ -204,11 +226,22 @@
                 </section>
                 
                 <section>
-                    <h1>Immediate Action</h1> 
+                    <h1>Take action!</h1>
                 </section>
                 
                 <section data-state="bloodhound">
                     <h1 style="color: #eee;">Mobile App Distribution</h1> 
+                </section>
+                
+                <section data-state="two-factor-auth">
+                    <h1 style="color: #eee;">Two Factor Authentication</h1>
+                </section>
+                
+                <section data-state="github-pull-request">
+                </section>
+                
+                <section data-state="github-pull-request-dim">
+                    <h1 style="color: #eee;">Zapier</h1>
                 </section>
                 
                 <section>
@@ -217,21 +250,21 @@
                         <span style="color: #fff;">SMS</span>
                     </h1>
                 </section>
-               
-                <section>
-                    <h1>(Event) Summary</h1> 
-                </section>
                 
+                <section>
+                    <h1>!immediately actionable marketing</h1> 
+                </section>
+               
                 <section>
                     <h1>Receipts</h1> 
                 </section>
-
+                
                 <section data-state="demo">
                     <h2 style="color: #222;">SMS Demo</h2>
                     <img src="/img/presentations/2014-neon-guild-software-comm/python-console.jpg" style="border-radius: 5px; border: none;"/>
                 </section>
                 
-                <!-- Push notifications -->
+                <!-- Push notifications 
                 <section data-state="push-notification">
                     <h1 class="light-letters">Push notifications</h1>
                 </section>
@@ -243,6 +276,8 @@
                         <li class="fragment">API</li>
                     </ul>
                 </section>
+
+                -->
                 
                 <!-- Automated voice calls -->
                 <section data-state="automated-voice-call">
@@ -256,11 +291,23 @@
                     </h1>
                 </section>
                 
+                <section data-state="prescription">
+                    <h1>Prescription pick-up</h1>
+                </section>
+                
+                <section data-state="call-trees">
+                    <h1>Emergency call trees</h1>
+                </section>
+                
                 <section>
                     <h1>
                         <span style="color: red;">Ineffective</span> 
                         <span style="color: #fff;">Automated Calls</span>
                     </h1>
+                </section>
+                
+                <section>
+                    <h1>When you're expecting a human...</h1>
                 </section>
                 
                 <section data-state="demo">
@@ -283,23 +330,18 @@
                     </h1>
                 </section>
                 
-                <section data-state="demo">
-                    <h2 style="color: #222;">Automated Calling Demo</h2>
-                    <img src="/img/presentations/2014-neon-guild-software-comm/python-console.jpg" style="border-radius: 5px; border: none;"/>
+                <section>
+                    <h2>Helpdesk software</h2>
+                    <img src="/img/presentations/2014-neon-guild-software-comm/zendesk.jpg" style="border-radius: 5px; border: none;"/>
                 </section>
                 
+                <section data-state="conference-call">
+                    <h1>Conference calling</h1>
+                </section>
                 
-                <!-- Resources -->
-                <section data-state="appropriate">
-                    <h1 style="color: #222;">Resources</h1>
-                </section> 
-                
-                <section>
-                    <h2>Resources</h2>
-                    <ul>
-                        <li><a href="http://www.fullstackpython.com/">Full Stack Python</a></li>
-                        <li><a href="https://github.com/makaimc/mattmakai.github.com/blob/gh-pages/static/presentations/2014-neon-guild-effective-software-to-user-communications.html">This presentation's source code</a></li>
-                    </ul>
+                <section data-state="demo">
+                    <h2 style="color: #222;">Voice Calling Demo</h2>
+                    <img src="/img/presentations/2014-neon-guild-software-comm/python-console.jpg" style="border-radius: 5px; border: none;"/>
                 </section>
                 
                 <section>
@@ -310,6 +352,10 @@
                         <li><a href="https://www.twilio.com/">Twilio</a></li>
                         <li><a href="https://github.com/makaimc">makaimc</a> on GitHub</a>
                     </ul>
+                </section>
+
+                <section data-style="resources">
+                    <h1>Future of communication...</h1>
                 </section>
 
                 <section>
@@ -323,6 +369,8 @@
                         <li><a href="http://gerald-chan.com/wp-content/uploads/2013/02/uber-receipt.png">Uber Receipt</a></li>
                         <li><a href="http://insideintercom.io/wp-content/uploads/2012/09/WhatCustomerSees.jpg">Customer check-ins</a></li>
                         <li><a href="http://www.securelist.com/en/images/vlweblog/crying_fraud_01.png">Phishing attempt email</a></li>
+                        <li><a href="http://gtpolice.com/wp-content/uploads/2013/09/PrescriptionDrugs-BottlesPills.jpg">Prescription drugs</a></li>
+                        <li><a href="http://2.bp.blogspot.com/-3jaf_1EwxMM/TlP9fyNQDpI/AAAAAAAAAVo/8ZojjRWavKc/s1600/08.24.11+Earthquake.JPG">Earthquake TV screenshot</a></li>
                     </ul>
                 </section>
 		</div>

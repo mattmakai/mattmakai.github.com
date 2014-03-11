@@ -227,3 +227,38 @@ body {
   opacity: 0.4;
   background-size: cover;
 }
+
+.prescription .reveal .state-background {
+  background: url(/img/presentations/2014-neon-guild-software-comm/prescription-drugs.jpg);
+  opacity: 0.4;
+  background-size: cover;
+}
+
+.call-trees .reveal .state-background {
+  background: url(/img/presentations/2014-neon-guild-software-comm/earthquake.jpg);
+  opacity: 0.5;
+  background-size: cover;
+}
+
+.two-factor-auth .reveal .state-background {
+  background: url(/img/presentations/2014-neon-guild-software-comm/two-factor-auth.jpg);
+  opacity: 0.5;
+  background-size: cover;
+}
+
+.github-pull-request .reveal .state-background {
+  background: url(/img/presentations/2014-neon-guild-software-comm/github-pull-request.jpg);
+  background-size: cover;
+}
+
+.github-pull-request-dim .reveal .state-background {
+  background: url(/img/presentations/2014-neon-guild-software-comm/github-pull-request.jpg);
+  opacity: 0.3;
+  background-size: cover;
+}
+
+.conference-call .reveal .state-background {
+  background: url(/img/presentations/2014-neon-guild-software-comm/hipdial.jpg);
+  opacity: 0.3;
+  background-size: cover;
+}
