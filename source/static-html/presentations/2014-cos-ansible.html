@@ -106,7 +106,7 @@
                 <section>
                     <h2>Deployment Tasks</h2>
                     <ul class="bigger">
-                        <li class="fragment">Configure servers</li>
+                        <li>Configure servers</li>
                         <li class="fragment">Set up [Python] environment</li>
                         <li class="fragment">Deploy code</li>
                         <li class="fragment">Migrate database schema &amp; data</li>
@@ -121,9 +121,7 @@
                 <section>
                     <h2>What is Ansible?</h2>
                     <ul class="bigger">
-                        <li class="fragment">
-                            Multinode orchestration framework
-                        </li>
+                        <li>Multinode orchestration framework</li>
                         <li class="fragment">Configuration management</li>
                         <li class="fragment">Application deployment</li>
                         <li class="fragment">Ad hoc tasks</li>
@@ -133,7 +131,7 @@
                 <section>
                     <h2>Ansible technology</h2>
                     <ul class="bigger">
-                        <li class="fragment">YAML syntax</li>
+                        <li>YAML syntax</li>
                         <li class="fragment">Jinja2 templates</li>
                         <li class="fragment">SSH (no remote agents)</li>
                         <li class="fragment">Ansible module library</li>
@@ -159,7 +157,7 @@
                     <pre style="font-size: 1em;">
 
 $ ansible webservers -m user -a   \
-  "name=sanfran state=present     \
+  "name=cville state=present     \
   uid=1040 group=meetup" -u deployer
 
                     </pre>
@@ -170,8 +168,8 @@ $ ansible webservers -m user -a   \
                     <br/>
                     <pre style="font-size: 1em;">
 
-- name: ensure user "sanfran" exists
-  user: name=sanfran state=present 
+- name: ensure user "cville" exists
+  user: name=cville state=present 
         uid=1040 group=meetup
 
                     </pre>
@@ -208,7 +206,7 @@ deploy
                 <section>
                     <h2>Variables</h2>
                     <ul class="bigger">
-                        <li class="fragment">Letters, numbers, underscores are valid names</li>
+                        <li>Letters, numbers, underscores are valid names</li>
                         <li class="fragment">Always start with a letter</li>
                         <li class="fragment">Valid: port_number</li>
                         <li class="fragment">{{ ansible_env }} pulls from environment</li>
@@ -219,7 +217,7 @@ deploy
                 <section>
                     <h2>Roles</h2>
                     <ul class="bigger">
-                        <li class="fragment">Allow multinode orchestration</li>
+                        <li>Allow multinode orchestration</li>
                         <li class="fragment">Define behavior for server type</li>
                         <li class="fragment">Enable reuse and organization</li>
                     </ul>
@@ -345,16 +343,16 @@ $ ansible-playbook django-stack.yml --step \
                 <section>
                     <h2>Ansible downsides</h2>
                     <ul class="bigger">
-                        <li class="fragment">No Windows support</li>
+                        <li>No Windows support</li>
                         <li class="fragment">Lack of testing tools</li>
                         <li class="fragment">Reuse ambiguity</li>
                     </ul>
                 </section>
                 
-                <section style="text-align: center;">
+                <section>
                     <h2>Django deployment dream</h2>
                     <ul class="bigger">
-                        <li class="fragment">pip install deploy-tool</li>
+                        <li>pip install deploy-tool</li>
                         <li class="fragment">
                             INSTALLED_APPS += 'deploy_tool'
                         </li>
@@ -371,7 +369,7 @@ $ ansible-playbook django-stack.yml --step \
                 <section>
                     <h2>Underwear</h2>
                     <ul class="bigger">
-                        <li class="fragment">pip install underwear</li>
+                        <li>pip install underwear</li>
                         <li class="fragment">
                             INSTALLED_APPS += 'underwear'
                         </li>
@@ -410,11 +408,11 @@ $ ansible-playbook django-stack.yml --step \
                     <h2>Contact Information</h2>
                     <ul class="bigger">
                         <li>Matt Makai</li>
+                        <li><a href="https://www.twilio.com/">Twilio</a></li>
                         <li><a href="http://twitter.com/mattmakai">@mattmakai</a></li>
                         <li>matthew.makai@gmail.com</li>
                         <li><a href="https://github.com/makaimc">makaimc</a> on GitHub</a>
                         <li><a href="http://www.mattmakai.com/">www.mattmakai.com</a></li>
-                        <li><a href="http://www.codingacrossamerica.com/">www.codingacrossamerica.com</a></li>
                     </ul>
                 </section>
 		</div>
