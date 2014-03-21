@@ -15,20 +15,17 @@ Alexandria, Virginia (exact May date TBD).
 ----
 
 
-Improving the Un-automatable: Making Manual Build Steps More Efficient
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Virtually every build pipeline involves at least one manual step, whether
-due to government regulations, an external auditor, a change control review
-board, or just one last sanity check before deploying to production. These
-manual steps are often the least efficient part of the build process. However,
-the subject is not well covered in existing continuous deployment guides. 
-This talk addresses improving manual build steps head on by showing specific 
-scenarios and improvements that minimize delay in the build process. Code 
-examples are provided in Ansible but are applicable to any configuration 
-management tool.
+`Hacking Your Build Process with Ansible </presentations/2014-hacking-build-process-ansible.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+What're the most fun and useful build hacks you can do with Ansible? You'll 
+find out during this talk how to receive an SMS alert during lunch if 
+something goes wrong with your latest build, hook your build pipeline into 
+analytics infrastructure such as New Relic, and automate build status phone 
+calls to micromanaging bosses. You'll learn how a few extra lines of code in 
+your deployment process can make your developer life a whole lot easier.
 
-Upcoming talk to the `DC Configuration Management Group <http://www.meetup.com/DC-Configuration-Management-Group/>`_ 
-in Washington, D.C. in late March (exact date TBD).
+Upcoming talk to the `DC Configuration Management Group <http://www.meetup.com/DC-Configuration-Management-Group/events/170471292/>`_
+in Arlington, Virginia on March 26.
 
 ----
 
