@@ -1,4 +1,5 @@
 run:
+	rm -rf output/
 	mkdir ./output
 	mkdir ./output/static/
 	cp -R theme/static/css theme/static/js theme/static/img output/
