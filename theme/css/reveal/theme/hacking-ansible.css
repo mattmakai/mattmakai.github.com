@@ -150,4 +150,14 @@ body {
   background-size: cover;
 }
 
+.demo-terminal .reveal .state-background {
+  background: url(/img/presentations/2014-hacking-ansible/demo-terminal.jpg);
+  background-size: cover;
+}
+
+.lets-hack-dc .reveal .state-background {
+  background: url(/img/presentations/2014-hacking-ansible/letshackdc-browser.jpg);
+  background-size: cover;
+}
+
 h1.light-bg {color: #222;}
