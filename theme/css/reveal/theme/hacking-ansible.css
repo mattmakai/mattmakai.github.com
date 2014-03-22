@@ -145,8 +145,13 @@ body {
   background-size: cover;
 }
 
-.uri-module .reveal .state-background {
-  background: url(/img/presentations/2014-hacking-ansible/uri-module.png);
+.get-url-module .reveal .state-background {
+  background: url(/img/presentations/2014-hacking-ansible/get-url-module.jpg);
+  background-size: cover;
+}
+
+.get-url-examples .reveal .state-background {
+  background: url(/img/presentations/2014-hacking-ansible/get-url-examples.png);
   background-size: cover;
 }
 
@@ -176,12 +181,17 @@ body {
 }
 
 .notification-modules .reveal .state-background {
-  background: url(/img/presentations/2014-hacking-ansible/notification-modules.jpg);
+  background: url(/img/presentations/2014-hacking-ansible/notification-modules.png);
   background-size: cover;
 }
 
 .notification-modules-twilio .reveal .state-background {
-  background: url(/img/presentations/2014-hacking-ansible/notification-modules.jpg);
+  background: url(/img/presentations/2014-hacking-ansible/notification-modules.png);
+  background-size: cover;
+}
+
+.mad-men-lunch .reveal .state-background {
+  background: url(/img/presentations/2014-hacking-ansible/mad-men-lunch.jpg);
   background-size: cover;
 }
 
