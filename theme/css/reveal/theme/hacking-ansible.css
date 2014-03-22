@@ -170,4 +170,19 @@ body {
   background-size: cover;
 }
 
+.chicken-sandwich .reveal .state-background {
+  background: url(/img/presentations/2014-hacking-ansible/chicken-sandwich.jpg);
+  background-size: cover;
+}
+
+.notification-modules .reveal .state-background {
+  background: url(/img/presentations/2014-hacking-ansible/notification-modules.jpg);
+  background-size: cover;
+}
+
+.notification-modules-twilio .reveal .state-background {
+  background: url(/img/presentations/2014-hacking-ansible/notification-modules.jpg);
+  background-size: cover;
+}
+
 h1.light-bg {color: #222;}
