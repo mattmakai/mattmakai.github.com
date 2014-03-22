@@ -180,6 +180,16 @@ body {
   background-size: cover;
 }
 
+.modules-list-notifications .reveal .state-background {
+  background: url(/img/presentations/2014-hacking-ansible/modules-list-notifications.jpg);
+  background-size: cover;
+}
+
+.out-to-lunch .reveal .state-background {
+  background: url(/img/presentations/2014-hacking-ansible/out-to-lunch.jpg);
+  background-size: cover;
+}
+
 .notification-modules .reveal .state-background {
   background: url(/img/presentations/2014-hacking-ansible/notification-modules.png);
   background-size: cover;
