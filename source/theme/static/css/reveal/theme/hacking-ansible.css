@@ -160,4 +160,14 @@ body {
   background-size: cover;
 }
 
+.car-accident .reveal .state-background {
+  background: url(/img/presentations/2014-hacking-ansible/car-crash.jpg);
+  background-size: cover;
+}
+
+.rainbow-cat .reveal .state-background {
+  background: url(/img/presentations/2014-hacking-ansible/rainbow-cat.jpg);
+  background-size: cover;
+}
+
 h1.light-bg {color: #222;}
