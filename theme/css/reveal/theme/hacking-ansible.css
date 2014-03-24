@@ -220,4 +220,8 @@ body {
   background-size: cover;
 }
 
+.resources .reveal .state-background {
+  background-color: #eee;
+}
+
 h1.light-bg {color: #222;}
