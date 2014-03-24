@@ -170,6 +170,16 @@ body {
   background-size: cover;
 }
 
+.alert-siren .reveal .state-background {
+  background: url(/img/presentations/2014-hacking-ansible/alert-siren.jpg);
+  background-size: cover;
+}
+
+.build-process .reveal .state-background {
+  background: url(/img/presentations/2014-hacking-ansible/build-process.jpg);
+  background-size: cover;
+}
+
 .rainbow-cat .reveal .state-background {
   background: url(/img/presentations/2014-hacking-ansible/rainbow-cat.jpg);
   background-size: cover;
@@ -187,6 +197,11 @@ body {
 
 .out-to-lunch .reveal .state-background {
   background: url(/img/presentations/2014-hacking-ansible/out-to-lunch.jpg);
+  background-size: cover;
+}
+
+.github-ddos .reveal .state-background {
+  background: url(/img/presentations/2014-hacking-ansible/codercat-ddos.png);
   background-size: cover;
 }
 
