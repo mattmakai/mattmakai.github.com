@@ -220,6 +220,11 @@ body {
   background-size: cover;
 }
 
+.drunk-guy .reveal .state-background {
+  background: url(/img/presentations/2014-hacking-ansible/drunk-guy.jpg);
+  background-size: cover;
+}
+
 .resources .reveal .state-background {
   background-color: #eee;
 }
