@@ -38,7 +38,7 @@ alerts, and voice calls to your application? This talk will cover when it is
 appropriate and effective to use certain forms of communication as well as
 how you integrate those methods into your application.
 
-Upcoming talk to the `Neon Guild <http://www.neonguild.org/>`_ of 
+Talk given at the `Neon Guild <http://www.neonguild.org/>`_ meeting in 
 Charlottesville, VA on the evening of March 11.
 
 ----
@@ -52,9 +52,9 @@ project and see how to use Ansible Playbooks with tasks, handlers, and
 templates to go from a bare Linux installation to a running Python web 
 application.
 
-Upcoming talk on March 11 to the 
+Talk given to the
 `Center for Open Science <http://centerforopenscience.org/>`_ in 
-Charlottesville, VA.
+Charlottesville, VA on March 11 at lunch.
 
 ----
 
