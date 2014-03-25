@@ -225,6 +225,16 @@ body {
   background-size: cover;
 }
 
+.superhero .reveal .state-background {
+  background: url(/img/presentations/2014-hacking-ansible/superheroes.jpg);
+  background-size: cover;
+}
+
+.supervillians .reveal .state-background {
+  background: url(/img/presentations/2014-hacking-ansible/supervillians.jpg);
+  background-size: cover;
+}
+
 .resources .reveal .state-background {
   background-color: #eee;
 }
