@@ -211,7 +211,7 @@ body {
 }
 
 .notification-modules-twilio .reveal .state-background {
-  background: url(/img/presentations/2014-hacking-ansible/notification-modules.png);
+  background: url(/img/presentations/2014-hacking-ansible/notification-modules-twilio.png);
   background-size: cover;
 }
 
