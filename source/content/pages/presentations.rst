@@ -24,7 +24,7 @@ analytics infrastructure such as New Relic, and automate build status phone
 calls to micromanaging bosses. You'll learn how a few extra lines of code in 
 your deployment process can make your developer life a whole lot easier.
 
-Upcoming talk to the `DC Configuration Management Group <http://www.meetup.com/DC-Configuration-Management-Group/events/170471292/>`_
+Talk given at `DC Configuration Management Group <http://www.meetup.com/DC-Configuration-Management-Group/events/170471292/>`_
 in Arlington, Virginia on March 26.
 
 ----
