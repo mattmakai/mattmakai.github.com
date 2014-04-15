@@ -6,11 +6,18 @@ Presentations
 2014 Talks
 ----------
 
-Learning Flask When You Already Know Django
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Creating a Web App Around Existing Statsmodels Code
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+How do you build and deploy a web application for a project that uses the 
+`Statsmodels <https://github.com/statsmodels/statsmodels/>`_ library? 
+This talk will step through how to use the Python web application framework 
+Flask to wrap a simple web application around existing Statsmodels code. You'll
+then learn how to deploy the project to remote servers so it is accessible
+through the Web.
 
-Upcoming talk to `NOVA Python <http://www.meetup.com/NOVA-Python/>`_ in
-Alexandria, Virginia (exact May date TBD).
+Upcoming talk to 
+`Statistical Programming DC <http://www.meetup.com/stats-prog-dc/>`_ 
+in Washington, D.C. (exact May date TBD).
 
 ----
 
