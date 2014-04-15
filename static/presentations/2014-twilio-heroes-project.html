@@ -31,12 +31,12 @@
               background: url(/img/presentations/2014-twilio-heroes/chicago.jpg);
               background-size: cover;
             }
+            
+            .google-analytics .reveal .state-background {
+              background: url(/img/presentations/2014-twilio-heroes/ga.png);
+              background-size: cover;
+            }
         </style>
-
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -119,17 +119,46 @@
                     <h1 style="font-size: 3em;">Expectations</h1>
                 </section>
                 
+                <section>
+                    <h2>Your Project</h2>
+                    <ul class="bigger">
+                        <li>Information site</li>
+                        <li>API Binding</li>
+                        <li>Web app</li>
+                        <li>...?</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Why projects?</h2>
+                    <ul class="bigger">
+                        <li>Every job</li>
+                        <li>Empowerment</li>
+                        <li>Become known in the community</li>
+                    </ul>
+                </section>
+                
+                <section data-state="google-analytics">
+                </section>
+                
+                <section>
+                    <h1 style="font-size: 3em;">Schedule</h1>
+                </section>
+                
+                <section>
+                    <h1 style="font-size: 3em;">Q &amp; A</h1>
+                </section>
                 
                 <section>
                     <h2>Contact Information</h2>
                     <h4 style="margin-bottom: 2px;">Greg Baugues</h4>
-                    <ul> 
+                    <ul style="margin-left: 60px;"> 
                         <li><a href="http://twitter.com/greggyb">@greggyb</a></li>
                         <li>greg@twilio.com</li>
                     </ul>
                     
                     <h4 style="margin: 30px 0 2px 0;">Matt Makai</h4>
-                    <ul>
+                    <ul style="margin-left: 60px;">
                         <li><a href="http://twitter.com/mattmakai">@mattmakai</a></li>
                         <li>mmakai@twilio.com</li>
                         <li><a href="https://github.com/makaimc">makaimc</a> on GitHub</a>
@@ -163,9 +192,6 @@
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
