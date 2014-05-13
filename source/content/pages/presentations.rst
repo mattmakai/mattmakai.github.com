@@ -6,6 +6,21 @@ Presentations
 2014 Talks
 ----------
 
+`Ansible and Notification Modules </presentations/2014-ansible-notification-modules.html>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Immediate notification when a deployment step has issues is critical for 
+efficient continuous delivery. This talk walks through the available Ansible 
+core notifications modules library. You'll learn how to easily integrate 
+various notification types into playbooks, especially the brand new modules 
+that come with Ansible 1.6.
+
+Upcoming talk at 
+`AnsibleFest NYC 2014 <https://www.eventbrite.com/e/ansiblefest-nyc-2014-tickets-10952628607>`_
+in New York, NY on May 20.
+
+----
+
+
 Creating a Web App Around Existing Statsmodels Code
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 How do you build and deploy a web application for a project that uses the 
@@ -17,7 +32,7 @@ through the Web.
 
 Upcoming talk to 
 `Statistical Programming DC <http://www.meetup.com/stats-prog-dc/>`_ 
-in Washington, D.C. (exact May date TBD).
+in Washington, D.C. (exact date TBD).
 
 ----
 
