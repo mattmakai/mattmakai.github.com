@@ -6,7 +6,27 @@ Presentations
 2014 Talks
 ----------
 
-`Ansible and Notification Modules </presentations/2014-ansible-notification-modules.html>`_
+Full Stack Python
+~~~~~~~~~~~~~~~~~
+This talk is a high level overview for developers new to Python web 
+development and need to understand how various web stack layers fit 
+together. The content is based on information from the open source guide 
+`Full Stack Python <http://www.fullstackpython.com/>`_. This DC Python 
+version is a preview of the talk that will be delivered at 
+`EuroPython 2014 in Berlin <https://ep2014.europython.eu/en/event/talks/>`_.
+
+We'll cover what web developers need to know about virtual servers, web 
+servers, and WSGI servers, what web frameworks provide, the important 
+parts of a web application to monitor, how to handle static files and 
+conclude with resources to learn more about each layer of the Python web 
+stack.
+
+Upcoming talk at DC Python in Washington, D.C. on June 3.
+
+----
+
+
+`Ansible Notification Modules </presentations/2014-ansible-notification-modules.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Immediate notification when a deployment step has issues is critical for 
 efficient continuous delivery. This talk walks through the available Ansible 

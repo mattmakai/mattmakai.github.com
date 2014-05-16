@@ -200,6 +200,26 @@ body {
   background-size: cover;
 }
 
+.hipchat .reveal .state-background {
+  background: url(/img/presentations/2014-ansible-notifications/hipchat.jpg);
+  background-size: cover;
+}
+
+.flowdock .reveal .state-background {
+  background: url(/img/presentations/2014-ansible-notifications/flowdock.jpg);
+  background-size: cover;
+}
+
+.slack .reveal .state-background {
+  background: url(/img/presentations/2014-ansible-notifications/slack.jpg);
+  background-size: cover;
+}
+
+.typetalk .reveal .state-background {
+  background: url(/img/presentations/2014-ansible-notifications/typetalk.jpg);
+  background-size: cover;
+}
+
 .out-to-lunch .reveal .state-background {
   background: url(/img/presentations/2014-hacking-ansible/out-to-lunch.jpg);
   background-size: cover;
@@ -227,16 +247,6 @@ body {
 
 .drunk-guy .reveal .state-background {
   background: url(/img/presentations/2014-hacking-ansible/drunk-guy.jpg);
-  background-size: cover;
-}
-
-.superhero .reveal .state-background {
-  background: url(/img/presentations/2014-hacking-ansible/superheroes.jpg);
-  background-size: cover;
-}
-
-.supervillians .reveal .state-background {
-  background: url(/img/presentations/2014-hacking-ansible/supervillians.jpg);
   background-size: cover;
 }
 
