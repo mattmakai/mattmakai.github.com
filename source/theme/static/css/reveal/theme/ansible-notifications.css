@@ -235,6 +235,11 @@ body {
   background-size: cover;
 }
 
+.misc-notifications .reveal .state-background {
+  background: url(/img/presentations/2014-ansible-notifications/misc-notifications.png);
+  background-size: cover;
+}
+
 .out-to-lunch .reveal .state-background {
   background: url(/img/presentations/2014-hacking-ansible/out-to-lunch.jpg);
   background-size: cover;
