@@ -220,6 +220,21 @@ body {
   background-size: cover;
 }
 
+.team-notifications .reveal .state-background {
+  background: url(/img/presentations/2014-ansible-notifications/team-notifications.png);
+  background-size: cover;
+}
+
+.email-notifications .reveal .state-background {
+  background: url(/img/presentations/2014-ansible-notifications/email-notifications.png);
+  background-size: cover;
+}
+
+.text-notifications .reveal .state-background {
+  background: url(/img/presentations/2014-ansible-notifications/text-notifications.png);
+  background-size: cover;
+}
+
 .out-to-lunch .reveal .state-background {
   background: url(/img/presentations/2014-hacking-ansible/out-to-lunch.jpg);
   background-size: cover;
