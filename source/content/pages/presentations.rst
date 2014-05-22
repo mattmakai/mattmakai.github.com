@@ -3,8 +3,9 @@ Presentations
 
 :category: presentations
 
-2014 Talks
-----------
+
+12 talks so far from 2014
+-------------------------
 
 Full Stack Python
 ~~~~~~~~~~~~~~~~~
@@ -206,8 +207,8 @@ headquarters in San Francisco.
 
 
 
-2013 Talks
-----------
+14 talks from 2013
+------------------
 
 `Static Sites With Pelican </presentations/pelican-static-sites.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -428,10 +429,11 @@ best jobs out of school.
 
 Presented to `JMU's ACM group <http://acm.cs.jmu.edu/>`_ on January 23, 2013.
 
+
 ----
 
-2012 Talks
-----------
+7 talks from 2012
+-----------------
 
 `Agile Software Development in the Federal Government </presentations/agile-software-development-in-federal-government.html>`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
